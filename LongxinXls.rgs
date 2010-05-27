@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{925AA683-8D85-4CD2-9789-58BEB179D646} = s 'LongxinXls'
+		'LongxinXls.EXE'
+		{
+			val AppID = s {925AA683-8D85-4CD2-9789-58BEB179D646}
+		}
+	}
+}

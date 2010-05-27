@@ -1,0 +1,19 @@
+
+	// LongxinXls.idl : IDL source for LongxinXls.exe
+//
+// This file will be processed by the MIDL tool to
+// produce the type library (LongxinXls.tlb) and marshalling code.
+import "oaidl.idl";
+import "ocidl.idl";
+[
+	uuid(70E2DCCC-CFB1-40FC-8646-06C4C7AD75BC),
+	version(1.0),
+	helpstring("LongxinXls 1.0 Type Library")
+]
+library LongxinXlsLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+};
+
+	
