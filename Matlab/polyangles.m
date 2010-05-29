@@ -10,7 +10,7 @@ function angles = polyangles(x, y)
 %   Digital Image Processing Using MATLAB, Prentice-Hall, 2004
 %   $Revision: 1.6 $  $Date: 2003/11/21 14:44:06 $
 
-% Preliminaries.
+% Preliminaries.  %123
 [x y] = dupgone(x, y); % Eliminate duplicate vertices.
 xy = [x(:) y(:)];
 if isempty(xy)
