@@ -59,3 +59,6 @@ njkd107130836@adsl
 金陵图书馆密码：9066419 PWD:111111
 
 电信手机上网：ISP名称可以随便填写，电话号码“#777”，用户名：ctnet@mycdma.cn、密码都为“vnet.mobi” 最后点击完成
+
+无线猫：Chinanet-vx2p pwd:6aje5qhd
+路由器：56-202 pwd:caxa1
