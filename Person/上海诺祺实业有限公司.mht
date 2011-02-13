@@ -22,18 +22,18 @@ xmlns=3D"http://www.w3.org/TR/REC-html40">
  <o:DocumentProperties>
   <o:Author>wym</o:Author>
   <o:LastAuthor>wym</o:LastAuthor>
-  <o:Revision>16</o:Revision>
-  <o:TotalTime>35</o:TotalTime>
+  <o:Revision>20</o:Revision>
+  <o:TotalTime>37</o:TotalTime>
   <o:Created>2011-02-12T14:38:00Z</o:Created>
-  <o:LastSaved>2011-02-13T01:17:00Z</o:LastSaved>
+  <o:LastSaved>2011-02-13T13:00:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
-  <o:Words>132</o:Words>
-  <o:Characters>756</o:Characters>
+  <o:Words>133</o:Words>
+  <o:Characters>761</o:Characters>
   <o:Company>&#28145;&#22323;&#24066;&#26031;&#23572;&#39039;&#31185;&#2521=
 6;&#26377;&#38480;&#20844;&#21496;</o:Company>
   <o:Lines>6</o:Lines>
   <o:Paragraphs>1</o:Paragraphs>
-  <o:CharactersWithSpaces>887</o:CharactersWithSpaces>
+  <o:CharactersWithSpaces>893</o:CharactersWithSpaces>
   <o:Version>11.9999</o:Version>
  </o:DocumentProperties>
 </xml><![endif]--><!--[if gte mso 9]><xml>
@@ -314,7 +314,7 @@ lang=3DEN-US><o:p></o:p></span></span></p>
 
 <p class=3DMsoNormal><span style=3D'font-size:12.0pt;font-family:SimSun'>&#=
 30005;&#35805;&#65306;<span
-lang=3DEN-US>025-66077658 <o:p></o:p></span></span></p>
+lang=3DEN-US>025-66077658<o:p></o:p></span></span></p>
 
 </span>
 
@@ -404,7 +404,7 @@ class=3DGramE>&#36146;</span>&#20426;</span></p>
 y:Calibri;
 mso-hansi-font-family:Calibri'>&#20844;&#21496;&#65306;&#19978;&#28023;&#35=
 834;&#31098;&#23454;&#19994;&#26377;&#38480;&#20844;&#21496;&#21335;&#20140=
-;&#21150;</span></span></p>
+;&#20998;&#20844;&#21496;</span></p>
 
 <p class=3DMsoNormal><span style=3D'font-family:SimSun;mso-ascii-font-famil=
 y:Calibri;
@@ -417,13 +417,18 @@ mso-hansi-font-family:Calibri'>&#20851;&#38190;&#35789;&#65306;&#36827;&#21=
 475;&#27700;&#27893;</span>
 <span style=3D'font-size:12.0pt;font-family:SimSun;color:#333333'>&#28508;&=
 #27700;&#27893;
-<span style=3D'mso-spacerun:yes'>&nbsp;</span>&#26426;&#26800;&#23494;&#235=
-53; &#27700;&#23553;
-&#31163;&#24515;&#27893; &#31649;&#36947;&#27893;</span></p>
+<span lang=3DEN-US><span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;</span></sp=
+an>&#26426;&#26800;&#23494;&#23553;
+<span style=3D'mso-spacerun:yes'>&nbsp;</span>&#27700;&#23553;<span lang=3D=
+EN-US><span
+style=3D'mso-spacerun:yes'>&nbsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp;</span></span>&#31163;&#24515;&#27893; <sp=
+an
+style=3D'mso-spacerun:yes'>&nbsp;</span>&#31649;&#36947;&#27893;</span></p>
 
 <p class=3DMsoNormal><span lang=3DEN-US><o:p>&nbsp;</o:p></span></p>
 
-</div>
+</span></div>
 
 </body>
 
