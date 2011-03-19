@@ -1,1 +1,204 @@
-让子弹飞：http://www.dygvod.com/thread-10932-1-1.html
+注册 登录 论坛搜索帮助导航游戏私人消息 (0)公共消息 (0)系统消息 (0)好友消息 (0)帖子消息 (0)Rongame|汽车工厂|魔王名单|快来挖Wa|荣光医院 ? 车友会 ? IE不能显示JS或flash的解决办法
+ 返回列表 发帖  
+
+远洋小宝 发短消息 
+加为好友 
+远洋小宝 当前离线 
+
+UID13282 帖子697 精华0 积分1248 阅读权限70 在线时间79 小时 注册时间2010-7-13 最后登录2010-10-30   
+金牌会员
+
+
+
+UID13282 积分1248 威望1248  在线时间79 小时 注册时间2010-7-13 最后登录2010-10-30  1# 跳转到 ? 倒序看帖 打印 字体大小: tT  发表于 2010-7-23 20:22 | 只看该作者 
+        
+IE不能显示JS或flash的解决办法
+一.如果你的ie不能打开js脚本（连系统里所有的js文件都不运行，网页上的js广告或好多页面都显示不了），请按一下步骤进行排查与解决： 
+1.查看是否IE的安全里面禁止了JS的运行： 
+将工具=>internet选项==>高级=>禁止脚本调试去勾,显示脚本显示提示打上勾,如果还没反应   
+2.看是否装了杀毒软件禁止了用程序打开窗口,检查设置.   
+3.手动修复IE浏览器:开始→运行,分别输入以下内容： 
+regsvr32 Shdocvw.dll ==》确定 
+regsvr32 Oleaut32.dll ==》确定 
+regsvr32 Actxprxy.dll ==》确定 
+regsvr32 Mshtml.dll ==》确定 
+regsvr32 Urlmon.dll ==》确定 
+regsvr32 browseui.dll ==》确定 
+作用： 
+a、同时运行以上命令不仅可以解决IE不能打开新的窗口，用鼠标点击超链接也没有任何反应的问题； 
+b、还能解决大大小小的其它IE问题，比如网页显示不完整，JAVA效果不出现，网页不自动跳转，打开某些网站时总提示‘无法显示该页’等。 
+4.如果还是不行，应该是JS脚本没有注册或者JS脚本被卸载的原因 
+开始→运行,输入以下内容：输入regsvr32 jscript.dll==》确定 
+输入regsvr32 vbscript.dll==》确定 
+5.如果以上设置没有问题或是还不能解决js脚本不执行的问题，请把以下代码用记事本的形式编写,而后再以*.bat的后缀保存. 
+rundll32.exe advpack.dll /DelNodeRunDLL32 %systemroot%\System32\dacui.dll 
+rundll32.exe advpack.dll /DelNodeRunDLL32 %systemroot%\Catroot\icatalog.mdb 
+regsvr32 /s comcat.dll 
+regsvr32 /s asctrls.ocx 
+regsvr32 /s oleaut32.dll 
+regsvr32 /s shdocvw.dll /I 
+regsvr32 /s shdocvw.dll 
+regsvr32 /s browseui.dll 
+regsvr32 /s browseui.dll /I 
+regsvr32 /s msrating.dll 
+regsvr32 /s mlang.dll 
+regsvr32 /s hlink.dll 
+regsvr32 /s mshtml.dll 
+regsvr32 /s mshtmled.dll 
+regsvr32 /s urlmon.dll 
+regsvr32 /s plugin.ocx 
+regsvr32 /s sendmail.dll 
+regsvr32 /s mshtml.dll /i 
+regsvr32 /s scrobj.dll 
+regsvr32 /s corpol.dll 
+regsvr32 /s jscript.dll 
+regsvr32 /s msxml.dll 
+regsvr32 /s imgutil.dll 
+regsvr32 /s cryptext.dll 
+regsvr32 /s inseng.dll 
+regsvr32 /s iesetup.dll /i 
+regsvr32 /s cryptdlg.dll 
+regsvr32 /s actxprxy.dll 
+regsvr32 /s dispex.dll 
+regsvr32 /s occache.dll 
+regsvr32 /s iepeers.dll 
+regsvr32 /s urlmon.dll /i 
+regsvr32 /s cdfview.dll 
+regsvr32 /s webcheck.dll 
+regsvr32 /s mobsync.dll 
+regsvr32 /s pngfilt.dll 
+regsvr32 /s licmgr10.dll 
+regsvr32 /s hhctrl.ocx 
+regsvr32 /s inetcfg.dll 
+regsvr32 /s trialoc.dll 
+regsvr32 /s tdc.ocx 
+regsvr32 /s MSR2C.DLL 
+regsvr32 /s msident.dll 
+regsvr32 /s msieftp.dll 
+regsvr32 /s xmsconf.ocx 
+regsvr32 /s ils.dll 
+regsvr32 /s msoeacct.dll 
+regsvr32 /s wab32.dll 
+regsvr32 /s wabimp.dll 
+regsvr32 /s wabfind.dll 
+regsvr32 /s oemiglib.dll 
+regsvr32 /s directdb.dll 
+regsvr32 /s inetcomm.dll 
+regsvr32 /s msoe.dll 
+regsvr32 /s oeimport.dll 
+regsvr32 /s msdxm.ocx 
+regsvr32 /s dxmasf.dll 
+regsvr32 /s laprxy.dll 
+regsvr32 /s l3codecx.ax 
+regsvr32 /s acelpdec.ax 
+regsvr32 /s mpg4ds32.ax 
+regsvr32 /s danim.dll 
+regsvr32 /s Daxctle.ocx 
+regsvr32 /s lmrt.dll 
+regsvr32 /s datime.dll 
+regsvr32 /s dxtrans.dll 
+regsvr32 /s dxtmsft.dll 
+regsvr32 /s wshom.ocx 
+regsvr32 /s wshext.dll 
+regsvr32 /s vbscript.dll 
+regsvr32 /s scrrun.dll mstinit.exe /setup 
+regsvr32 /s msnsspc.dll /SspcCreateSspiReg 
+regsvr32 /s msapsspc.dll /SspcCreateSspiReg 
+echo 修复成功！任意键退出！ 
+pause>nul 
+接下来要做的就是,双击这个bat文件，然后重新启动. 
+你的IE又能像以前一样显示网站中的JS文件或JS脚本了：） 
+二.HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility 下建了个 
+clsid :{D27CDB6E-AE6D-11CF-96B8-444553540000} 
+
+
+
+就是它禁用了flashplayer的activex控件,马上删除, 
+刷新页面 
+一般来说如果IE不能显示flash呢，先检查有没有装player,安装地址： 
+
+http://www.macromedia.com/shockw ... sion=ShockwaveFlash 
+
+然后再看看internet选项-高级-多媒体-播放动画的选项， 有没有选中。 
+在internet 选项—安全—自定义级别里要把运行activeX控件和插件，选为启用。 
+
+
+最后就是看有没有BanActiveX之类的程序禁用了flashplayer的activex控件，有就删除。 
+
+注:js重在JS,VS组件的重新注册,FLASH重在插件的下载. 
+
+   
+
+收藏 分享  
+ 
+ 
+ 
+  
+
+零落3 发短消息 
+加为好友 
+零落3 当前离线 
+
+UID17182 帖子352 精华0 积分772 阅读权限50 在线时间93 小时 注册时间2010-7-15 最后登录2010-12-11   
+高级会员
+
+
+
+UID17182 积分772 威望772  在线时间93 小时 注册时间2010-7-15 最后登录2010-12-11  2#  发表于 2010-7-23 20:25 | 只看该作者 
+看不懂的贴就是好贴顶 
+ 
+三千发丝心中系.人生真是寂寞如雪啊... 
+ TOP 
+ 
+  
+
+toheart2004 发短消息 
+加为好友 
+toheart2004 当前离线 
+
+UID2569 帖子116 精华0 积分133 阅读权限20 在线时间154 小时 注册时间2010-3-6 最后登录2011-2-23   
+注册会员
+
+
+
+UID2569 积分133 威望133  在线时间154 小时 注册时间2010-3-6 最后登录2011-2-23  3#  发表于 2010-7-23 20:30 | 只看该作者 
+回复 2# 零落3 
+
+
+     
+ 
+ 
+ TOP 
+ 
+  
+
+远洋小宝 发短消息 
+加为好友 
+远洋小宝 当前离线 
+
+UID13282 帖子697 精华0 积分1248 阅读权限70 在线时间79 小时 注册时间2010-7-13 最后登录2010-10-30   
+金牌会员
+
+
+
+UID13282 积分1248 威望1248  在线时间79 小时 注册时间2010-7-13 最后登录2010-10-30  4#  发表于 2010-7-24 01:01 | 只看该作者 
+谢了！！！！！！！！ 
+ 
+ 
+ TOP 
+ 
+  
+
+    
+ 返回列表  
+
+[收藏此主题]  [关注此主题的新回复] 
+[通过 QQ、MSN 分享给朋友]
+
+
+rongame.com ( 京ICP备10056492号)|联系我们 |Archiver
+
+GMT+8, 2011-3-19 23:05, Processed in 0.008604 second(s), 5 queries. 
+Powered by Discuz! 7.2
+
+? 2001-2009 Comsenz Inc.
