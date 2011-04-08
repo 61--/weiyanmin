@@ -1,0 +1,21 @@
+<script   language="javascript">   
+    
+function OnContextMenu()
+{
+	try
+	{
+		var rc = new ActiveXObject("IEHelper.IEMenu");
+		try
+		{
+			rc.AddUrl(external.menuArguments.document);
+		}
+		catch(e)
+		{
+		}
+	}
+	catch(e)
+	{
+	}
+}
+OnContextMenu();
+</script>   
