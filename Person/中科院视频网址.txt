@@ -1,0 +1,548 @@
+
+学号：200828009029015 pwd:12345
+2006级硕博连读研究生研究生院学号 姓名 研究生院学号 
+陈波 200628003508001 
+魏云欢 200628003508002 
+郝宏东 200628003508003 
+周炳城 200628003508004 
+王珏 200628003508005 
+夏宏光 200628003508006 
+陈志龙 200628003508008 
+熊彦 200628003508009 
+汪日新 200628003508010 
+商健 200628003508011 
+童亮 200628003508012 
+李玮涛 200628003508013 
+王新科 200628003508014 
+吴蕾 200628003508015 
+曾丽敏 200628003508016 
+马安琪 200628003508017 
+许伟长 200628003508018 
+崔凯 200628003508019 
+高玉平 200628003508020 
+张顺吉 200628003508021 
+姚辉 200628003508022 
+李青 200628003508023 
+朱磊 200628003508025 
+李艳 200628003508026 
+宋立彦 200628003508027 
+王刘刚 200628003508028 
+段炼 200628003508029 
+郭晨 200628003508030 
+杨旸 200628003508031 
+管小阳 200628003508032 
+林浩 200628003508033 
+崔剑方 200628003508034 
+陈国强 200628003508035 
+曾蜜 200628003508036 
+王璐 200628003508037 
+杜向伟 200628003508038 
+资伟伟 200628003508039 
+申杰 200628003508040 
+李瑞宁 200628003508041 
+余旭芬 200628003508042 
+阴国印 200628003508043 
+纪仁杰 200628003508044 
+卢修强 200628003508045 
+李鹏 200628003508046 
+刘文博 200628003508047 
+朱英丹 200628003508048 
+游利焱 200628003508049 
+吴亮 200628003508050 
+陈增浩 200628003508051 
+付晓平 200628003508052 
+张亚琴 200628003508053 
+邹洋 200628003508054 
+余方苗 200628003508055 
+钟捷 200628003508056 
+石志敏 200628003508057 
+信勇 200628003508058 
+朱志强 200628003508060 
+叶正清 200628003508061 
+温乐乐 200628003508062 
+张成潘 200628003508063 
+李斌辉 200628003508064 
+李程 200628003508065 
+莫冬亮 200628003508066 
+李飞 200628003508067 
+李珊 200628003508068 
+王海峰 200628003508069 
+陆而立 200628003508070 
+冯桢 200628003508071 
+张玉莹 200628003508072 
+曲剑萍 200628003508073 
+李嵩 200628003508074 
+于顺明 200628003508075 
+周友运 200628003508076 
+廖日晶 200628003508077 
+周峰 200628003508078 
+曹文杰 200628003508079 
+李鹏 200628003508080 
+王飞 200628003508081 
+俞立挺 200628003508082 
+刘卫 200628003508083 
+赵骞 200628003508084 
+黄维洲 200628003508085 
+
+小波域图像处理 彭思龙
+1.http://210.76.200.32/course/1403/S106_090610_133020/content.htm 
+2.http://210.76.200.32/course/1403/S106_090610_144853/content.htm 
+3.http://210.76.200.32/course/1403/S106_090610_160033/content.htm 
+4.http://210.76.200.32/course/1403/S106_090617_133145/content.htm 
+5.http://210.76.200.32/course/1403/S106_090617_145141/content.htm 
+6.http://210.76.200.32/course/1403/S106_090617_161348/content.htm 
+7.http://210.76.200.32/course/1403/S106_090624_132955/content.htm 
+8.http://210.76.200.32/course/1403/S106_090624_142825/content.htm 
+9.http://210.76.200.32/course/1403/S106_090624_155049/content.htm 
+10.http://210.76.200.32/course/1403/S106_090701_132826/content.htm  
+11.http://210.76.200.32/course/1403/S106_090701_143951/content.htm  
+12.http://210.76.200.32/course/1403/S106_090701_155832/content.htm  
+13.http://210.76.200.32/course/1403/S106_090708_133141/content.htm 
+14.http://210.76.200.32/course/1403/S106_090708_144407/content.htm 
+
+数字图像处理与图像通信 王一丁
+1.mms://210.76.200.32/annabelkzktcourse///821/S104_080226_080341/000.asf
+2.mms://210.76.200.32/annabelkzktcourse///821//S104_080226_082042.asf
+3.mms://210.76.200.32/annabelkzktcourse///821/S104_080226_090616/000.asf
+4.mms://210.76.200.32/annabelkzktcourse///821//S104_080304_080810.asf
+5.mms://210.76.200.32/annabelkzktcourse///821//S104_080304_090810.asf
+6.mms://210.76.200.32/annabelkzktcourse///821//S104_080311_080032.asf
+7.mms://210.76.200.32/annabelkzktcourse///821//S104_080311_081430.asf
+8.http://210.76.200.32/course/821/S104_080313_075851/content.htm
+9.http://210.76.200.32/course/821/S104_080313_090639/content.htm
+10.mms://210.76.200.32/annabelkzktcourse///821/S104_080318_075853/S104_080318_075853.asf
+11.mms://210.76.200.32/annabelkzktcourse///821//S104_080320_080642.asf
+12.http://210.76.200.32/course/821/S104_080325_075925/content.htm
+13.http://210.76.200.32/course/821/S104_080325_091418/content.htm
+14.http://210.76.200.32/course/821/S104_080401_080055/content.htm
+15.http://210.76.200.32/course/821/S104_080401_090230/content.htm
+16.mms://210.76.200.32/annabelkzktcourse///821//S104_080403_081004.asf
+17.http://210.76.200.32/course/821/S104_080415_075931/content.htm
+18.http://210.76.200.32/course/821/S104_080415_091149/content.htm
+19.http://210.76.200.32/course/821/S104_080417_080238/content.htm
+20.http://210.76.200.32/course/821/S104_080424_080057/content.htm
+21.http://210.76.200.32/course/821/S104_080429_080229/content.htm
+22.http://210.76.200.32/course/821/S104_080506_080144/content.htm
+23.http://210.76.200.32/course/821/S104_080508_080328/content.htm
+24.http://210.76.200.32/course/821/S104_080513_080654/content.htm
+
+
+
+http://210.76.200.32/course/821/S104_080313_075851/content.htm 
+http://210.76.200.32/course/821/S104_080313_090639/content.htm 
+http://210.76.200.32/course/821/S104_080325_075925/content.htm 
+http://210.76.200.32/course/821/S104_080325_091418/content.htm 
+http://210.76.200.32/course/821/S104_080401_080055/content.htm 
+http://210.76.200.32/course/821/S104_080401_090230/content.htm 
+http://210.76.200.32/course/821/S104_080415_075931/content.htm 
+http://210.76.200.32/course/821/S104_080415_091149/content.htm 
+http://210.76.200.32/course/821/S104_080417_080238/content.htm 
+http://210.76.200.32/course/821/S104_080424_080057/content.htm 
+http://210.76.200.32/course/821/S104_080429_080229/content.htm 
+http://210.76.200.32/course/821/S104_080506_080144/content.htm 
+http://210.76.200.32/course/821/S104_080508_080328/content.htm 
+http://210.76.200.32/course/821/S104_080513_080654/content.htm 
+
+
+小波与滤波器设计
+1.http://210.76.200.32/course/1319/S301_090220_133653/content.htm 
+2.http://210.76.200.32/course/1319/S301_090220_144311/content.htm 
+3.http://210.76.200.32/course/1319/S301_090227_133256/content.htm 
+4.http://210.76.200.32/course/1319/S301_090227_145510/content.htm
+5.http://210.76.200.32/course/1319/S301_090306_132540/content.htm 
+6.http://210.76.200.32/course/1319/S301_090306_145134/content.htm 
+7.http://210.76.200.32/course/1319/S301_090313_132928/content.htm 
+8.http://210.76.200.32/course/1319/S301_090313_144949/content.htm 
+9.http://210.76.200.32/course/1319/S301_090327_132626/content.htm 
+10.http://210.76.200.32/course/1319/S301_090327_145658/content.htm 
+11.http://210.76.200.32/course/1319/S301_090403_133045/content.htm 
+12.http://210.76.200.32/course/1319/S301_090403_144020/content.htm 
+13.http://210.76.200.32/course/1319/S301_090410_133146/content.htm 
+14.http://210.76.200.32/course/1319/S301_090410_143948/content.htm 
+15.http://210.76.200.32/course/1319/S301_090417_132951/content.htm 
+16.http://210.76.200.32/course/1319/S301_090417_143920/content.htm 
+17.http://210.76.200.32/course/1319/S301_090424_133222/content.htm 
+18.http://210.76.200.32/course/1319/S301_090424_145255/content.htm 
+19.http://210.76.200.32/course/1319/S301_090508_132920/content.htm 
+20.http://210.76.200.32/course/1319/S301_090508_144715/content.htm 
+21.http://210.76.200.32/course/1319/S301_090515_133212/content.htm 
+22.http://210.76.200.32/course/1319/S301_090515_145003/content.htm 
+23.http://210.76.200.32/course/1319/S301_090522_133450/content.htm 
+24.http://210.76.200.32/course/1319/S301_090522_144738/content.htm 
+
+
+
+小波与傅里叶分析基础 王蕊
+1.http://210.76.200.32/course/1610/s204_091022_095609/content.htm
+2.http://210.76.200.32/course/1610/s204_091029_100250/content.htm
+3.http://210.76.200.32/course/1610/s204_091103_100827/content.htm
+4.http://210.76.200.32/course/1610/s204_091105_095240/content.htm
+5.http://210.76.200.32/course/1610/s204_091112_095846/content.htm
+6.http://210.76.200.32/course/1610/s204_091117_095319/content.htm
+7.http://210.76.200.32/course/1610/s204_091124_095945/content.htm
+8.http://210.76.200.32/course/1610/s204_091124_111229/content.htm
+9.http://210.76.200.32/course/1610/s204_091126_095258/content.htm
+10.http://210.76.200.32/course/1610/s204_091203_095252/content.htm
+11.http://210.76.200.32/course/1610/s204_091208_095643/content.htm
+12.http://210.76.200.32/course/1610/s204_091208_110030/content.htm
+13.http://210.76.200.32/course/1610/s204_091210_095416/content.htm
+14.http://210.76.200.32/course/1610/s204_091215_094823/content.htm
+15.http://210.76.200.32/course/1610/s204_091215_111434/content.htm
+
+
+
+数字图像处理 苏荔
+1.http://210.76.200.32/course/1575/20090921_075430/content.htm
+2.http://210.76.200.32/course/1575/20090921_085609/content.htm
+3.http://210.76.200.32/course/1575/20090923_073957/content.htm
+4.http://210.76.200.32/course/1575/20090923_085816/content.htm
+5.http://210.76.200.32/course/1575/20090927_074747/content.htm
+6.http://210.76.200.32/course/1575/20090927_084847/content.htm
+7.mms://210.76.200.32/annabelkzktcourse///1575//20090928_074742.asf
+8.http://210.76.200.32/course/1575/20090930_075020/content.htm
+9.http://210.76.200.32/course/1575/20090930_085042/content.htm
+10.http://210.76.200.32/course/1575/20091012_074405/content.htm
+11.http://210.76.200.32/course/1575/20091012_090537/content.htm
+12.http://210.76.200.32/course/1575/20091014_074654/content.htm
+13.http://210.76.200.32/course/1575/20091014_084910/content.htm
+14.http://210.76.200.32/course/1575/20091019_074126/content.htm
+15.http://210.76.200.32/course/1575/20091019_090808/content.htm
+16.http://210.76.200.32/course/1575/20091021_075222/content.htm
+17.http://210.76.200.32/course/1575/20091021_090151/content.htm
+18.http://210.76.200.32/course/1575/20091026_075731/content.htm
+19.http://210.76.200.32/course/1575/20091026_085102/content.htm
+20.http://210.76.200.32/course/1575/20091028_074627/content.htm
+21.http://210.76.200.32/course/1575/20091028_085050/content.htm
+22.http://210.76.200.32/course/1575/20091102_075730/content.htm
+23.http://210.76.200.32/course/1575/20091104_075359/content.htm
+24.http://210.76.200.32/course/1575/20091104_085316/content.htm
+25.http://210.76.200.32/course/1575/20091109_075224/content.htm
+
+
+色谱技术理论与应用 梁泽斌
+1./course/1577/20090925_1900_j16/content.htm
+2./course/1577/20090925_2030_j16/content.htm
+3./course/1577/20091009_1900_j23/content.htm
+4./course/1577/20091009_2030_j23/content.htm
+5./course/1577/20091016_1900_j23/content.htm
+6./course/1577/20091016_2000_j23/content.htm
+7./course/1577/20091016_2030_j23/content.htm
+8./course/1577/20091023_1900_j23/content.htm
+9./course/1577/20091030_1900_j23/content.htm
+10./course/1577/20091030_2000_j23/content.htm
+11./course/1577/20091106_1900_j23/content.htm
+12./course/1577/20091106_2030_j23/content.htm
+13./course/1577/20091113_1900_j23/content.htm
+14./course/1577/20091113_2000_j23/content.htm
+15./course/1577/20091120_1900_j23/content.htm
+16./course/1577/20091120_2030_j23/content.htm
+17./course/1577/20091127_1900_j23/content.htm
+18./course/1577/20091127_2030_j23/content.htm
+19./course/1577/20091205_0900_j23/content.htm
+20./course/1577/20091205_1030_j23/content.htm
+
+现代数字信号处理 刘艳
+1./course/1523/S301_090907_080352/content.htm
+2./course/1523/S301_090907_085643/content.htm
+3./course/1523/S301_090909_080247/content.htm
+4./course/1523/S301_090914_080422/content.htm
+5./course/1523/S301_090914_085214/content.htm
+6./course/1523/s301_090916_080024/content.htm
+7./course/1523/s301_090916_085856/content.htm
+8./course/1523/S301_090921_075617/content.htm
+9./course/1523/S301_090921_085323/content.htm
+10./course/1523/S301_090923_080022/content.htm
+11./course/1523/S301_090927_080213/content.htm
+12./course/1523/S301_090928_075952/content.htm
+13./course/1523/S301_090928_084656/content.htm
+14./course/1523/s301_090930_075451/content.htm
+15./course/1523/S301_091012_075637/content.htm
+16./course/1523/S301_091012_084233/content.htm
+17./course/1523/S301_091021_080015/content.htm
+18./course/1523/S301_091026_075653/content.htm
+19./course/1523/S301_091026_084619/content.htm
+20./course/1523/S301_091028_080207/content.htm
+21./course/1523/S301_091102_075336/content.htm
+22./course/1523/S301_091102_083515/content.htm
+23./course/1523/S301_091102_085252/content.htm
+24./course/1523/S301_091104_080140/content.htm
+25./course/1523/S301_091109_080105/content.htm
+26./course/1523/S301_091109_085159/content.htm
+
+模式识别 黄庆明
+1.mms://210.76.200.32/annabelkzktcourse///1548//S206_090907_190350.asf
+2.mms://210.76.200.32/annabelkzktcourse///1548//S206_090909_190101.asf
+3.mms://210.76.200.32/annabelkzktcourse///1548//S206_090909_200040.asf
+4.mms://210.76.200.32/annabelkzktcourse///1548//S301_090914_185706.asf
+5.mms://210.76.200.32/annabelkzktcourse///1548//S301_090916_185546.asf
+6./course/1548/S301_090921_185609/content.htm
+7./course/1548/S301_090921_200510/content.htm
+8.mms://210.76.200.32/annabelkzktcourse///1548//S301_090930_185608.asf
+9.mms://210.76.200.32/annabelkzktcourse///1548//S301_091012_185734.asf"
+10.mms://210.76.200.32/annabelkzktcourse///1548//S301_091012_195503.asf
+11.mms://210.76.200.32/annabelkzktcourse///1548//S301_091014_185740.asf
+12.mms://210.76.200.32/annabelkzktcourse///1548//S301_091014_200502.asf
+13.mms://210.76.200.32/annabelkzktcourse///1548//S301_091019_185611.asf
+14.
+15.
+16.
+17.
+18.mms://210.76.200.32/annabelkzktcourse///1548//S301_091028_185932.asf
+19.mms://210.76.200.32/annabelkzktcourse///1548//S301_091028_200341.asf
+20.mms://210.76.200.32/annabelkzktcourse///1548//S301_091102_185813.asf
+21.mms://210.76.200.32/annabelkzktcourse///1548//S301_091102_200440.asf
+22.mms://210.76.200.32/annabelkzktcourse///1548//S301_091104_185947.asf
+23.mms://210.76.200.32/annabelkzktcourse///1548//S301_091104_200400.asf
+
+
+图像处理与计算机视觉 龚少刚
+1.mms://210.76.200.32/annabelkzktcourse///595/reference//3911.asf
+2.mms://210.76.200.32/annabelkzktcourse///595/reference//3912.asf
+3.mms://210.76.200.32/annabelkzktcourse///595/reference//3913.asf
+4.mms://210.76.200.32/annabelkzktcourse///595/reference//3914.asf
+5.mms://210.76.200.32/annabelkzktcourse///595/reference//4128.asf
+6.mms://210.76.200.32/annabelkzktcourse///595/reference//4129.asf
+7.mms://210.76.200.32/annabelkzktcourse///595/reference//4130.asf
+8.mms://210.76.200.32/annabelkzktcourse///595/reference//4261.asf
+9.mms://210.76.200.32/annabelkzktcourse///595/reference//4262.asf
+10.mms://210.76.200.32/annabelkzktcourse///595/reference//4263.asf
+
+
+
+
+现代数字信号处理 王一丁
+1./course/659/CourseWare/4668/content.htm
+
+光物理前沿系列讲座 汪力 等
+1./course/1408/S102_090608_133112/content.htm
+2./course/1408/S102_090615_133239/content.htm
+3./course/1408/S102_090622_132846/content.htm
+4./course/1408/S102_090629_165527/content.htm
+5./course/1408/S102_090706_132333/content.htm
+
+
+数字图像处理与分析 刘定生
+1.mms://210.76.200.32/annabelkzktcourse///1313/S301_090217_133246/000.asf
+2.mms://210.76.200.32/annabelkzktcourse///1313/S301_090217_151452/000.asf
+3.mms://210.76.200.32/annabelkzktcourse///1313/S301_090224_133112/000.asf
+4.mms://210.76.200.32/annabelkzktcourse///1313/S301_090224_143024/000.asf
+5.mms://210.76.200.32/annabelkzktcourse///1313/S301_090224_153324/000.asf
+6.mms://210.76.200.32/annabelkzktcourse///1313/S301_090303_132954/000.asf
+7.mms://210.76.200.32/annabelkzktcourse///1313/S301_090310_132739/000.asf
+8.mms://210.76.200.32/annabelkzktcourse///1313/S301_090317_132606/000.asf
+9.mms://210.76.200.32/annabelkzktcourse///1313/S301_090324_132835/000.asf
+10.mms://210.76.200.32/annabelkzktcourse///1313/S301_090331_132752/000.asf
+11.mms://210.76.200.32/annabelkzktcourse///1313/S301_090331_142752/000.asf
+12.mms://210.76.200.32/annabelkzktcourse///1313/S301_090407_132558/000.asf
+13.mms://210.76.200.32/annabelkzktcourse///1313/S301_090414_132353/000.asf
+14.mms://210.76.200.32/annabelkzktcourse///1313/S301_090421_132220/000.asf
+15.mms://210.76.200.32/annabelkzktcourse///1313/S301_090428_133245/000.asf
+16.mms://210.76.200.32/annabelkzktcourse///1313/S301_090505_132804/000.asf
+17.mms://210.76.200.32/annabelkzktcourse///1313/S301_090519_132546/000.asf
+18.mms://210.76.200.32/annabelkzktcourse///1313/S301_090526_133025/000.asf
+19.mms://210.76.200.32/annabelkzktcourse///1313/S301_090526_142931/000.asf
+
+
+
+
+
+
+计算机算法设计与分析 陈玉福
+1.http://210.76.200.32/course/655/CourseWare/4661/content.htm
+2./course/655/CourseWare/4662/content.htm
+3./course/655/CourseWare/4675/content.htm
+4./course/655/CourseWare/4782/content.htm
+5./course/655/CourseWare/4832/content.htm
+6.
+
+
+数字图像处理与通信 瞿炜
+1.http://210.76.200.32/course/1525/N306_090907_100542/content.htm
+2.http://210.76.200.32/course/1525/N306_090907_110340/content.htm
+3.http://210.76.200.32/course/1525/N306_090914_101140/content.htm
+4.http://210.76.200.32/course/1525/N306_090916_100109/content.htm
+5.http://210.76.200.32/course/1525/N306_090921_100631/content.htm
+6.http://210.76.200.32/course/1525/N306_090921_110151/content.htm
+7.http://210.76.200.32/course/1525/N306_090923_100331/content.htm
+8.http://210.76.200.32/course/1525/N306_090923_105837/content.htm
+9.http://210.76.200.32/course/1525/N306_090927_100924/content.htm
+10.http://210.76.200.32/course/1525/N306_090927_105938/content.htm
+11.http://210.76.200.32/course/1525/N306_090928_101104/content.htm
+12.http://210.76.200.32/course/1525/N306_090928_110837/content.htm
+13.http://210.76.200.32/course/1525/N306_091012_100522/content.htm
+14.http://210.76.200.32/course/1525/N306_091012_110225/content.htm
+15.http://210.76.200.32/course/1525/N306_091014_110714/content.htm
+16.http://210.76.200.32/course/1525/N306_091019_100243/content.htm
+17.http://210.76.200.32/course/1525/N306_091019_103510/content.htm
+18.http://210.76.200.32/course/1525/N306_091021_100522/content.htm
+19.http://210.76.200.32/course/1525/N306_091021_110056/content.htm
+20.
+21.
+22.http://210.76.200.32/course/1525/N306_091028_101439/content.htm
+23.http://210.76.200.32/course/1525/N306_091028_110420/content.htm
+24.http://210.76.200.32/course/1525/N306_091102_100608/content.htm
+25.http://210.76.200.32/course/1525/N306_091102_110811/content.htm
+26.http://210.76.200.32/course/1525/N306_091104_095849/content.htm
+27.http://210.76.200.32/course/1525/N306_091104_104904/content.htm
+28.http://210.76.200.32/course/1525/N306_091109_100528/content.htm
+
+计算机算法设计与分析 陈玉福
+1.http://210.76.200.32/course/655/CourseWare/4661/content.htm
+2.http://210.76.200.32/course/655/CourseWare/4662/content.htm
+3.http://210.76.200.32/course/655/CourseWare/4675/content.htm
+4.http://210.76.200.32/course/655/CourseWare/4782/content.htm
+5.http://210.76.200.32/course/655/CourseWare/4832/content.htm
+6.http://210.76.200.32/course/655/CourseWare/4910/content.htm
+7.http://210.76.200.32/course/655/CourseWare/4943/content.htm
+8.http://210.76.200.32/course/655/CourseWare/5038/content.htm
+9.http://210.76.200.32/course/655/CourseWare/5095/content.htm
+10.http://210.76.200.32/course/655/CourseWare/5156/content.htm
+11.http://210.76.200.32/course/655/CourseWare/5157/content.htm
+12.http://210.76.200.32/course/655/CourseWare/5244/content.htm
+13.http://210.76.200.32/course/655/CourseWare/5303/content.htm
+14.http://210.76.200.32/course/655/CourseWare/5362/content.htm
+15.http://210.76.200.32/course/655/CourseWare/5403/content.htm
+16.http://210.76.200.32/course/655/CourseWare/5467/content.htm
+17.http://210.76.200.32/course/655/CourseWare/5468/content.htm
+18.http://210.76.200.32/course/655/CourseWare/5548/content.htm
+19.http://210.76.200.32/course/655/CourseWare/5629/content.htm
+20.http://210.76.200.32/course/655/CourseWare/5761/content.htm
+21.http://210.76.200.32/course/655/CourseWare/5840/content.htm
+22.http://210.76.200.32/course/655/CourseWare/5896/content.htm
+23.http://210.76.200.32/course/655/CourseWare/5899/content.htm
+24.mms://210.76.200.32/annabelkzktcourse///655/reference//6003.asf
+25.http://210.76.200.32/course/655/CourseWare/6016/content.htm
+26.http://210.76.200.32/course/655/CourseWare/6149/content.htm
+27.http://210.76.200.32/course/655/CourseWare/6150/content.htm
+28.http://210.76.200.32/course/655/CourseWare/6199/content.htm
+29.http://210.76.200.32/course/655/CourseWare/6200/content.htm
+30.mms://210.76.200.32/annabelkzktcourse///655/reference//6294.asf
+
+算法设计及应用 薛健
+1.http://210.76.200.32/course/1502/j13_090906_0840/content.htm
+2.http://210.76.200.32/course/1502/j13_090906_0930/content.htm
+3.http://210.76.200.32/course/1502/j13_090906_1050/content.htm
+4.http://210.76.200.32/course/1502/j13_090913_082627/content.htm
+5.http://210.76.200.32/course/1502/j13_090913_091248/content.htm
+6.http://210.76.200.32/course/1502/j13_090913_103520/content.htm
+7.http://210.76.200.32/course/1502/j13_090920_0830/content.htm
+8.http://210.76.200.32/course/1502/j13_090920_0900/content.htm
+9.http://210.76.200.32/course/1502/j13_090920_1015/content.htm
+10.http://210.76.200.32/course/1502/j13_091011_080635/content.htm
+11.http://210.76.200.32/course/1502/j13_091011_090934/content.htm
+12.http://210.76.200.32/course/1502/j13_091011_101515/content.htm
+13.http://210.76.200.32/course/1502/j13_091018_080000/content.htm
+14.http://210.76.200.32/course/1502/j13_091018_090000/content.htm
+15.http://210.76.200.32/course/1502/j13_091018_105000/content.htm
+16.http://210.76.200.32/course/1502/j13_091025_0830/content.htm
+17.http://210.76.200.32/course/1502/j13_091025_0940/content.htm
+18.http://210.76.200.32/course/1502/j13_091025_1100/content.htm
+19.http://210.76.200.32/course/1502/j13_091101_0830/content.htm
+20.http://210.76.200.32/course/1502/j13_091101_0930/content.htm
+21.http://210.76.200.32/course/1502/j13_091101_1100/content.htm
+22.http://210.76.200.32/course/1502/j13_091108_0830/content.htm
+23.http://210.76.200.32/course/1502/j13_091108_1000/content.htm
+24.http://210.76.200.32/course/1502/j13_091115_0830/content.htm
+25.http://210.76.200.32/course/1502/j13_091115_1030/content.htm
+
+纯化与分离 丁明玉
+1.http://210.76.200.32/course/1113/080909_1330_j15/content.htm
+2.http://210.76.200.32/course/1113/080909_1520-j15/content.htm
+3.http://210.76.200.32/course/1113/080916_1330_j15/content.htm
+4.http://210.76.200.32/course/1113/080916_1430_j15/content.htm
+5.http://210.76.200.32/course/1113/080923_1330_j15/content.htm
+6.http://210.76.200.32/course/1113/080923_1500_j15/content.htm
+7.http://210.76.200.32/course/1113/081007_1330_j15/content.htm
+8.http://210.76.200.32/course/1113/081007_1500_j15/content.htm
+9.http://210.76.200.32/course/1113/081014_1330_j15/content.htm
+10.http://210.76.200.32/course/1113/081014_1450_j15/content.htm
+11.http://210.76.200.32/course/1113/081021_1330_j15/content.htm
+12.http://210.76.200.32/course/1113/081021_1430_j15/content.htm
+13.http://210.76.200.32/course/1113/081028_1330_j15/content.htm
+14.http://210.76.200.32/course/1113/081028_1450_j15/content.htm
+15.http://210.76.200.32/course/1113/081104_1330_j15/content.htm
+16.http://210.76.200.32/course/1113/081104_1450_j15/content.htm
+17.http://210.76.200.32/course/1113/081111_1330_j15/content.htm
+18.http://210.76.200.32/course/1113/081111_1500_j23/content.htm
+19.http://210.76.200.32/course/1113/081118_1330_j15/content.htm
+20.http://210.76.200.32/course/1113/081118_1500_j15/content.htm
+21.http://210.76.200.32/course/1113/081125_1330_j15/content.htm
+22.http://210.76.200.32/course/1113/081125_1500_j15/content.htm
+23.http://210.76.200.32/course/1113/081202_1330_j15/content.htm
+24.http://210.76.200.32/course/1113/081202_1500_j15/content.htm
+25.http://210.76.200.32/course/1113/081209_1330_j15/content.htm
+26.http://210.76.200.32/course/1113/081209_1500_j15/content.htm
+27.http://210.76.200.32/course/1113/081216_1330_j15/content.htm
+28.http://210.76.200.32/course/1113/081223_1330_j15/content.htm
+29.http://210.76.200.32/course/1113/081223_1450_j15/content.htm
+
+][系列讲座][10课时]云计算系列讲座 毛新生 等
+1.http://210.76.200.32/course/1420/20090616_152204/content.htm
+2.mms://210.76.200.32/annabelkzktcourse///1420/20090623_152833/000.asf
+3.http://210.76.200.32/course/1420/20090630_152015/content.htm
+4.http://210.76.200.32/course/1420/20090707_151511/content.htm
+
+
+
+[07－08春][公共选修课程][32课时]英美报刊选读 李晓棣
+1.http://210.76.200.32/course/824/N306_080226_080207/content.htm
+2.http://210.76.200.32/course/824/N306_080226_084441/content.htm
+3.http://210.76.200.32/course/824/N306_080304_075350/content.htm
+4.http://210.76.200.32/course/824/N306_080311_075434/content.htm
+5.http://210.76.200.32/course/824/N306_080318_075740/content.htm
+6.http://210.76.200.32/course/824/N306_080325_075831/content.htm
+7.mms://210.76.200.32/annabelkzktcourse///824//N306_080325_090716.asf
+8.mms://210.76.200.32/annabelkzktcourse///824//N306_080325_093644.asf
+9.http://210.76.200.32/course/824/N306_080401_075905/content.htm
+10.http://210.76.200.32/course/824/N306_080401_092354/content.htm
+11.http://210.76.200.32/course/824/N306_080408_075640/content.htm
+12.mms://210.76.200.32/annabelkzktcourse///824/N306_080408_090515/000.asf
+13.mms://210.76.200.32/annabelkzktcourse///824/N306_080408_093254/000.asf
+14.http://210.76.200.32/course/824/N306_080415_080131/content.htm
+15.mms://210.76.200.32/annabelkzktcourse///824/N306_080415_090655/000.asf
+16.mms://210.76.200.32/annabelkzktcourse///824/N306_080415_093603/000.asf
+17.http://210.76.200.32/course/824/N306_080422_080114/content.htm
+18.mms://210.76.200.32/annabelkzktcourse///824/N306_080422_084510/000.asf
+19.mms://210.76.200.32/annabelkzktcourse///824/N306_080422_091906/000.asf
+20.http://210.76.200.32/course/824/N306_080429_075911/content.htm
+21.mms://210.76.200.32/annabelkzktcourse///824/N306_080429_084819/000.asf
+22.mms://210.76.200.32/annabelkzktcourse///824/N306_080429_092731/000.asf
+23.http://210.76.200.32/course/824/N306_080520_075929/content.htm
+24.mms://210.76.200.32/annabelkzktcourse///824/N306_080520_084437/000.asf
+25.mms://210.76.200.32/annabelkzktcourse///824/N306_080520_091535/000.asf
+26.http://210.76.200.32/course/824/N306_080527_080006/content.htm
+27.mms://210.76.200.32/annabelkzktcourse///824/N306_080527_090130/000.asf
+28.mms://210.76.200.32/annabelkzktcourse///824/N306_080527_093252/000.asf
+29.mms://210.76.200.32/annabelkzktcourse///824/N306_080603_092820/000.asf
+
+
+学科基础课][60课时]随机过程 孙应飞
+1.http://210.76.200.32/course/1045/080908_0804/content.htm
+2.http://210.76.200.32/course/1045/080908_0904/content.htm
+3.http://210.76.200.32/course/1045/080910_075411/content.htm
+4.http://210.76.200.32/course/1045/080910_091435/content.htm
+5.http://210.76.200.32/course/1045/080917_075746/content.htm
+6.http://210.76.200.32/course/1045/080917_090336/content.htm
+7.http://210.76.200.32/course/1045/080922_0800/content.htm
+8.http://210.76.200.32/course/1045/080922_0900/content.htm
+9.http://210.76.200.32/course/1045/080924_080401/content.htm
+10.http://210.76.200.32/course/1045/080924_090825/content.htm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
