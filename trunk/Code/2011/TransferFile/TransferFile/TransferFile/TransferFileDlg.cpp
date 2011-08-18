@@ -205,6 +205,7 @@ void CTransferFileDlg::OnBnClickedButtonSelPath()
 	}
 	m_strSelPath = dlg.GetPathName();
 	m_strSelPath = m_strSelPath.Left(m_strSelPath.ReverseFind(_T('\\')) + 1);
+	SetCurrentDirectory(_T("C:\\"));
 	UpdateData(FALSE);
 }
 
@@ -242,6 +243,7 @@ void CTransferFileDlg::TransFileandPath(CString _strPath,std::list<std::pair<CSt
 		strPath += _T("\\");
 	}
 	strPath += _T("*.*");
+	BOOL bChangeDir = FALSE;
 	CFileFind finder;
 	BOOL bWorking = finder.FindFile(strPath);
 	while (bWorking)
@@ -257,8 +259,11 @@ void CTransferFileDlg::TransFileandPath(CString _strPath,std::list<std::pair<CSt
 			if(strAfertTrans.CompareNoCase(sTemp) != 0)
 			{
 				//修改文件夹名字
-				_lstTransFileAndPath.push_back(std::make_pair(sTemp,strAfertTrans));
-
+				//_lstTransFileAndPath.push_back(std::make_pair(sTemp,strAfertTrans));
+				finder.Close();
+				MoveFile(sTemp,strAfertTrans);
+				bChangeDir = TRUE;
+				break;
 			}
 			TransFileandPath(sTemp,_lstTransFileAndPath);
 		}
@@ -270,9 +275,21 @@ void CTransferFileDlg::TransFileandPath(CString _strPath,std::list<std::pair<CSt
 			if(strAfertTrans.CompareNoCase(sTemp) != 0)
 			{
 				//修改文件名字
-				_lstTransFileAndPath.push_back(std::make_pair(sTemp,strAfertTrans));
+				//_lstTransFileAndPath.push_back(std::make_pair(sTemp,strAfertTrans));
+				finder.Close();
+				MoveFile(sTemp,strAfertTrans);
+				bChangeDir = TRUE;
+				break;
 			}
 		}
 	}
-	finder.Close();
+	
+	if(bChangeDir)
+	{
+		TransFileandPath(_strPath,_lstTransFileAndPath);
+	}
+	else
+	{
+		finder.Close();
+	}
 }
