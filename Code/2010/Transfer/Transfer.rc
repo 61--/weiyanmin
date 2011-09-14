@@ -1,0 +1,239 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Transfer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Transfer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Transfer"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Transfer 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_TRANSFER_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Transfer"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,207,171,50,14
+    PUSHBUTTON      "取消",IDCANCEL,263,171,50,14
+    EDITTEXT        IDC_EDIT1,13,9,79,14,ES_AUTOHSCROLL
+    LTEXT           "立方米/小时",IDC_STATIC,98,11,45,8
+    PUSHBUTTON      "=",IDC_BUTTON1,156,9,24,14
+    EDITTEXT        IDC_EDIT2,189,9,55,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "升/秒",IDC_STATIC,263,12,21,8
+    EDITTEXT        IDC_EDIT3,13,29,79,14,ES_AUTOHSCROLL
+    LTEXT           "立方米/小时",IDC_STATIC,258,31,45,8
+    PUSHBUTTON      "=",IDC_BUTTON2,155,29,24,14
+    EDITTEXT        IDC_EDIT4,189,29,55,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "升/秒",IDC_STATIC,99,34,21,8
+    EDITTEXT        IDC_EDIT5,12,50,79,14,ES_AUTOHSCROLL
+    LTEXT           "米",IDC_STATIC,256,52,9,8
+    PUSHBUTTON      "=",IDC_BUTTON3,154,50,24,14
+    EDITTEXT        IDC_EDIT6,188,50,55,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "帕",IDC_STATIC,98,54,9,8
+    EDITTEXT        IDC_EDIT7,13,70,77,15,ES_AUTOHSCROLL
+    LTEXT           "马力",IDC_STATIC,95,73,17,8
+    LTEXT           "KW",IDC_STATIC,255,72,9,8
+    PUSHBUTTON      "=",IDC_BUTTON4,153,70,24,14
+    EDITTEXT        IDC_EDIT8,187,70,55,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT9,12,94,77,15,ES_AUTOHSCROLL
+    LTEXT           "KW",IDC_STATIC,94,98,9,8
+    LTEXT           "马力",IDC_STATIC,254,96,17,8
+    PUSHBUTTON      "=",IDC_BUTTON5,152,94,24,14
+    EDITTEXT        IDC_EDIT10,186,94,55,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT11,11,138,79,14,ES_AUTOHSCROLL
+    LTEXT           "立方米/小时",IDC_STATIC,255,140,45,8
+    PUSHBUTTON      "=",IDC_BUTTON6,153,138,24,14
+    EDITTEXT        IDC_EDIT12,187,138,55,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "升/分钟",IDC_STATIC,97,144,29,8
+    EDITTEXT        IDC_EDIT13,10,116,79,14,ES_AUTOHSCROLL
+    LTEXT           "立方米/小时",IDC_STATIC,94,118,45,8
+    PUSHBUTTON      "=",IDC_BUTTON7,152,116,24,14
+    EDITTEXT        IDC_EDIT14,186,116,55,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "升/分钟",IDC_STATIC,260,118,29,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Transfer Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Transfer\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Transfer.EXE\0"
+            VALUE "ProductName", "Transfer 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TRANSFER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Transfer(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Transfer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
