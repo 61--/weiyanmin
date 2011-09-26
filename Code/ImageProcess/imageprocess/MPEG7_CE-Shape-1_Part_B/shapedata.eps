@@ -1,0 +1,2388 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: shapedata.eps
+%%Creator: fig2dev Version 3.2 Patchlevel 1
+%%CreationDate: Tue Nov 16 11:55:43 1999
+%%For: latecki@latecki (latecki)
+%%Orientation: Portrait
+%%BoundingBox: 0 0 428 314
+%%Pages: 0
+%%BeginSetup
+%%EndSetup
+%%Magnification: 1.0000
+%%EndComments
+/$F2psDict 200 dict def
+$F2psDict begin
+$F2psDict /mtrx matrix put
+/col-1 {0 setgray} bind def
+/col0 {0.000 0.000 0.000 srgb} bind def
+/col1 {0.000 0.000 1.000 srgb} bind def
+/col2 {0.000 1.000 0.000 srgb} bind def
+/col3 {0.000 1.000 1.000 srgb} bind def
+/col4 {1.000 0.000 0.000 srgb} bind def
+/col5 {1.000 0.000 1.000 srgb} bind def
+/col6 {1.000 1.000 0.000 srgb} bind def
+/col7 {1.000 1.000 1.000 srgb} bind def
+/col8 {0.000 0.000 0.560 srgb} bind def
+/col9 {0.000 0.000 0.690 srgb} bind def
+/col10 {0.000 0.000 0.820 srgb} bind def
+/col11 {0.530 0.810 1.000 srgb} bind def
+/col12 {0.000 0.560 0.000 srgb} bind def
+/col13 {0.000 0.690 0.000 srgb} bind def
+/col14 {0.000 0.820 0.000 srgb} bind def
+/col15 {0.000 0.560 0.560 srgb} bind def
+/col16 {0.000 0.690 0.690 srgb} bind def
+/col17 {0.000 0.820 0.820 srgb} bind def
+/col18 {0.560 0.000 0.000 srgb} bind def
+/col19 {0.690 0.000 0.000 srgb} bind def
+/col20 {0.820 0.000 0.000 srgb} bind def
+/col21 {0.560 0.000 0.560 srgb} bind def
+/col22 {0.690 0.000 0.690 srgb} bind def
+/col23 {0.820 0.000 0.820 srgb} bind def
+/col24 {0.500 0.190 0.000 srgb} bind def
+/col25 {0.630 0.250 0.000 srgb} bind def
+/col26 {0.750 0.380 0.000 srgb} bind def
+/col27 {1.000 0.500 0.500 srgb} bind def
+/col28 {1.000 0.630 0.630 srgb} bind def
+/col29 {1.000 0.750 0.750 srgb} bind def
+/col30 {1.000 0.880 0.880 srgb} bind def
+/col31 {1.000 0.840 0.000 srgb} bind def
+
+end
+save
+-27.0 341.0 translate
+1 -1 scale
+
+/cp {closepath} bind def
+/ef {eofill} bind def
+/gr {grestore} bind def
+/gs {gsave} bind def
+/sa {save} bind def
+/rs {restore} bind def
+/l {lineto} bind def
+/m {moveto} bind def
+/rm {rmoveto} bind def
+/n {newpath} bind def
+/s {stroke} bind def
+/sh {show} bind def
+/slc {setlinecap} bind def
+/slj {setlinejoin} bind def
+/slw {setlinewidth} bind def
+/srgb {setrgbcolor} bind def
+/rot {rotate} bind def
+/sc {scale} bind def
+/sd {setdash} bind def
+/ff {findfont} bind def
+/sf {setfont} bind def
+/scf {scalefont} bind def
+/sw {stringwidth} bind def
+/tr {translate} bind def
+/tnt {dup dup currentrgbcolor
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add srgb}
+  bind def
+/shd {dup dup currentrgbcolor 4 -2 roll mul 4 -2 roll mul
+  4 -2 roll mul srgb} bind def
+/$F2psBegin {$F2psDict begin /$F2psEnteredState save def} def
+/$F2psEnd {$F2psEnteredState restore end} def
+%%EndProlog
+
+$F2psBegin
+10 setmiterlimit
+n -1000 6412 m -1000 -1000 l 8212 -1000 l 8212 6412 l cp clip
+ 0.06299 0.06299 sc
+% Polyline
+%
+% Begin Imported GIF File: Bone-1.gif
+n gs
+450 450 tr
+3.781513 -3.075171 sc
+0 -439 tr
+0 0 tr
+sa
+/showpage {} def
+% GIF image follows:
+357 439 sc
+%***********************************************************************
+%*                                                                     *
+%* Object: Image decoding PS-routine                    Date: 01.02.93 *
+%* Author: Evgeni CHERNYAEV (chernaev@vxcern.cern.ch)                  *
+%*                                                                     *
+%* Function: Display a run-length encoded color image.                 *
+%*           The image is displayed in color on viewers and printers   *
+%*           that support color Postscript, otherwise it is displayed  *
+%*           as grayscale.                                             *
+%*                                                                     *
+%***********************************************************************
+/byte 1 string def
+/color 3 string def
+systemdict /colorimage known { /cnt 3 def } { /cnt 1 def } ifelse
+/String 256 cnt mul string def
+%***********************************************************************
+/DecodePacket            % Decode color packet                         *
+%***********************************************************************
+{
+  currentfile byte readhexstring pop 0 get
+  /Nbyte exch 1 add cnt mul def
+  /color ColorMap currentfile byte readhexstring pop 0 get get def
+  String dup
+  0 cnt Nbyte 1 sub { color putinterval dup } for
+  pop 0 Nbyte getinterval
+} bind def
+%***********************************************************************
+/DisplayImage            % Display run-length encoded color image      *
+%***********************************************************************
+{
+  gsave
+  currentfile String readline pop
+  token { /columns exch def } { } ifelse
+  token { /rows exch def pop } { } ifelse
+  currentfile String readline pop
+  token { /Ncol exch def pop } { } ifelse
+  /ColorMap Ncol array def
+  systemdict /colorimage known {
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      currentfile 3 string readhexstring pop put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } false 3 colorimage
+  }{
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      1 string dup 0
+      currentfile color readhexstring pop pop
+      color 0 get 0.299 mul
+      color 1 get 0.587 mul add
+      color 2 get 0.114 mul add
+      cvi put put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } image
+  } ifelse
+  grestore
+} bind def
+%***********************************************************************
+%*                          Image decoding                             *
+%***********************************************************************
+DisplayImage
+357 439
+2
+000000 ffffff
+ff001b000501ff0045001f01ff0035002f01ff0034002f01ff0033003101ff0031003201
+ff0031003301ff002f003401ff002e003501ff002e003601ff002c003701ff002b003901
+ff0029003a01ff0029003a01ff0028003c01ff0026003d01ff0025003f01ff0024003f01
+ff0023004101ff0021004201ff0021004201ff0020004401ff001e004501ff001d004701
+ff001c004701ff001b004901ff0019004a01ff0019004a01ff0018004c01ff0016004d01
+ff0015004f01ff0014004f01ff0013005001ff0012005201ff0010005301ff0010005a01
+ff0009006401ff0000006d01f6007601ed007701ed007701ec007701ed007601ed007701
+ec007701ed007601ed007701ed007601ed007601ed007701ed007601ed007601ee007601
+ed007601ed007601ee007601ed007601ee007501ee007601ed007601ee007501ee007601
+ee007501ee007501ee007601ee007501ee007501ef007501ee007501ee007501ef007501
+ee007501ef007401ef007501ee007501ef007401ef007501ef007401ef007401ef007501
+ef007401ef007401ee007601ec007601ed007501ed007601ed007501ed007501ed007501
+ee007501ed007501ed007501ee007401ee007401ee007501ee007401ee007401ee007401
+ef007401ee007401ef007301ef007301ef00320103003c01f000310108003801ef003101
+0c003401ef00310111002f01f000310115002a01f00031011a002601ef0031011e002201
+f000310122001d01f000310127001801f10030012c001301f10031012f001001f0003101
+34000b01f100300139000601f10031013d000101f1003101ff0032003001ff0032003101
+ff0031003101ff0032003001ff0032003101ff0031003101ff0032003001ff0032003101
+ff0032003001ff0032003001ff0032003101ff0032003001ff0032003001ff0032003101
+ff0032003001ff0032003001ff0032003101ff0032003001ff0032003001ff0033003001
+ff0032003001ff0032003001ff0033003001ff0032003001ff0032003001ff0033002f01
+ff0033003001ff0032003001ff0033002f01ff0033003001ff0033002f01ff0033002f01
+ff0033003001ff0033002f01ff0033002f01ff0033003001ff0033002f01ff0033002f01
+ff0033003001ff0033002f01ff0033002f01ff0033003001ff0033002f01ff0033002f01
+ff0034002f01ff0033002f01ff0033002f01ff0034002f01ff0033002f01ff0033002f01
+ff0034002f01ff0033002f01ff0033002f01ff0034002f01ff0033002f01ff0034002e01
+ff0034002f01ff0033002f01ff0034002e01ff0034002e01ff0034002f01ff0034002e01
+ff0034002e01ff0034002f01ff0034002e01ff0034002e01ff0034002f01ff0034002e01
+ff0034002e01ff0035002e01ff0034002e01ff0034002e01ff0035002e01ff0034002e01
+ff0034002e01ff0035002e01ff0034002e01ff0034002e01ff0035002e01ff0034002e01
+ff0035002d01ff0035002e01ff0034002e01ff0035002d01ff0035002e01ff0034002e01
+ff0035002d01ff0035002e01ff0034002e01ff0035002d01ff0035002e01ff0034002e01
+ff0035002d01ff0035002e01ff0035002d01ff0035002d01ff0035002d01ff0036002d01
+ff0035002d01ff0035002d01ff0036002d01ff0035002d01ff0035002d01ff0036002d01
+ff0035002d01ff0036002c01ff0036002d01ff0035002d01ff0036002c01ff0036002d01
+ff0035002d01ff0036002c01ff0036002d01ff0035002d01ff0036002c01ff0036002d01
+ff0036002c01ff0036002c01ff0036002d01ff0036002c01ff0036002c01ff0036002d01
+ff0036002c01ff0036002c01ff0036002d01ff0036002c01ff0036002c01ff0036002d01
+ff0036002c01ff0036002c01ff0037002c01ff0036002c01ff0036002c01ff0037002b01
+ff0037002c01ff0036002c01ff0037002b01ff0037002c01ff0036002c01ff0037002b01
+ff0037002c01ff0037002b01ff0037002b01ff0037002c01ff0037002b01ff0037002b01
+ff0037002c01ff0037002b01ff0037002b01ff0037002c01ff0037002b01ff0037002b01
+ff0037002c01ff0037002b01ff0037002b01ff0038002b01ff0037002b01ff0037002b01
+ff0038002b01ff0037002b01ff0037002b01ff0038002b01ff0037002b01ff0037002b01
+ff0038002b01ff0037002b01ff0038002a01ff0038002b01ff0037002b01ff0038002a01
+ff0038002a01ff0038002b01ff0038002a01ff0038002a01ff0038002b01ff0038002a01
+ff0038002a01ff0039002a01ff0038002a01ff0038002a01ff0039002a01ff0038002a01
+ff0038002a01ff0039002a01ff0038002a01ff0038002a01ff0039002a01ff0038002a01
+ff0038002a01ff0039002a01ff0038002a01ff0039002901ff0039002a01ff0038002a01
+ff0039002901ff0039002a01ff0038002a01ff0039002901ff0039002a01ff0038002a01
+ff0039002901ff0039002a01ff0039002901ff0039002901ff0039002901ff003a002901
+ff0039002901ff0039002901ff003a002901ff0039002901ff0039002901ff0004000001
+34002901ff000400020131002901ff00040005012e002901ff00040008012c002901ff00
+03000b0129002901ff0003000e0127002801ff000300110124002901ff00020014012100
+2901ff00020017011f002801ff0002001a011c002901ff0001001d0119002901ff000100
+200117002801ff000100230114002901ff000000260111002901ff00000029010f002801
+ff0000002c010c002901ff002f010a002801ff00320107002801ff00350104002901fe00
+380102002801fe003a0100002801fe006501fd006501fd006501fd006601fc006601fc00
+6601fc006701fb006701fd006501fe006401ff006401ff006301ff0000006201ff000200
+6101ff0002006001ff0003005f01ff0004005f01ff0004005f01ff0005005e01ff000500
+5f01ff0004005f01ff0004005f01ff0004005f01ff0005005e01ff0005005f01ff000400
+5f01ff0004005f01ff0005005e01ff0005005f01ff0004005f01ff0004005f01ff000400
+5f01ff0005005e01ff0005005f01ff0004005f01ff0004005f01ff0004005f01ff000500
+5f01ff0004005f01ff0004005f01ff0004005f01ff0004005f01ff000500000100005d01
+ff0010005301ff001a004901ff0024003f01ff0028003c01ff0026003d01ff0026003d01
+ff0026003d01ff0025003e01ff0025003f01ff0024003f01ff0023004001ff0023004001
+ff0023004101ff0022004101ff0021004201ff0021004201ff0021004201ff0020004401
+ff001f004401ff001f004401ff001e004501ff001e004601ff001d004601ff001c004601
+ff001d004401ff001f004301ff001f004201ff0021004101ff0022003f01ff0024003e01
+ff0024003d01ff0026003c01ff0027003a01ff002d003501ff0031003101ff0034002d01
+ff0039002901ff003c002501ff0041002101ff0045001c01ff0049001901ff004d001401
+ff0052001001ff0055000c01ff005a000801ff005d000401ff0062000001ff001a00
+restore grestore
+%
+% End Imported PIC File: Bone-1.gif
+%%EndDocument
+%
+% Polyline
+%
+% Begin Imported GIF File: Bone-11.gif
+n gs
+2250 450 tr
+4.078947 -3.075171 sc
+0 -439 tr
+0 0 tr
+sa
+/showpage {} def
+% GIF image follows:
+342 439 sc
+%***********************************************************************
+%*                                                                     *
+%* Object: Image decoding PS-routine                    Date: 01.02.93 *
+%* Author: Evgeni CHERNYAEV (chernaev@vxcern.cern.ch)                  *
+%*                                                                     *
+%* Function: Display a run-length encoded color image.                 *
+%*           The image is displayed in color on viewers and printers   *
+%*           that support color Postscript, otherwise it is displayed  *
+%*           as grayscale.                                             *
+%*                                                                     *
+%***********************************************************************
+/byte 1 string def
+/color 3 string def
+systemdict /colorimage known { /cnt 3 def } { /cnt 1 def } ifelse
+/String 256 cnt mul string def
+%***********************************************************************
+/DecodePacket            % Decode color packet                         *
+%***********************************************************************
+{
+  currentfile byte readhexstring pop 0 get
+  /Nbyte exch 1 add cnt mul def
+  /color ColorMap currentfile byte readhexstring pop 0 get get def
+  String dup
+  0 cnt Nbyte 1 sub { color putinterval dup } for
+  pop 0 Nbyte getinterval
+} bind def
+%***********************************************************************
+/DisplayImage            % Display run-length encoded color image      *
+%***********************************************************************
+{
+  gsave
+  currentfile String readline pop
+  token { /columns exch def } { } ifelse
+  token { /rows exch def pop } { } ifelse
+  currentfile String readline pop
+  token { /Ncol exch def pop } { } ifelse
+  /ColorMap Ncol array def
+  systemdict /colorimage known {
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      currentfile 3 string readhexstring pop put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } false 3 colorimage
+  }{
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      1 string dup 0
+      currentfile color readhexstring pop pop
+      color 0 get 0.299 mul
+      color 1 get 0.587 mul add
+      color 2 get 0.114 mul add
+      cvi put put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } image
+  } ifelse
+  grestore
+} bind def
+%***********************************************************************
+%*                          Image decoding                             *
+%***********************************************************************
+DisplayImage
+342 439
+2
+000000 ffffff
+ff00ff0077000001ff0053000101ff0053000201ff0051000301ff0051000401ff004f00
+0501ff004f000501ff004e000701ff004d000701ff004d000801ff004b000901ff004b00
+0901ff004a000b01ff0049000b01ff0048000d01ff0047000d01ff0046000f01ff004500
+0f01ff0045000f01ff0044001101ff0043001101ff0042001301ff0041001301ff004000
+1501ff003f001501ff003f001501ff003e001701ff003d001701ff003c001901ff003b00
+1901ff003a001a01ff003a001b01ff0038001c01ff0038001d01ff000000010134002001
+fe00010132002b01f400030130003501eb0004012d004001e10006012b004401dd000801
+28004401df00090126004301e0000b0124004301e1000b0122004301e2000d0120004301
+e2000f011d004301e40010011b004301e400120118004301e600130116004201e7001401
+14004301e700160112004201e900170110004201e90019010d004201eb001a010b004201
+eb001c0108004201ec001e0106004101ee001e0104004201ee00200102004101f0002101
+00004101f0006301f1006301f2006101f3006001f5005f01f5005e01f6005e01f7005c01
+f8005c01f9005a01fa005901fb005901fc005701fd005701fe005501ff005501ff005401
+ff0001005201ff0002005201ff0003005001ff0004005001ff0004004f01ff0006004e01
+ff0005004e01ff0005004e01ff0006004e01ff0005004e01ff0005004f01ff0005004e01
+ff0005004f01ff0004004f01ff0005004f01ff0004005001ff0003005201ff0002005301
+ff0000005401ff0000005501fe005701fc005901fb005901fa005b01f8005d01f7005d01
+f600310102002a01f400320106002701f30031010b002401f100310110002001f1003101
+13001e01ef00310118001b01ed0031011d001701ed00310121001401eb00310125001201
+e90031012a000f01e80031012e000b01e700310133000801e500310137000601e4003001
+3c000201e3003101ff0023003001ff0023003001ff0023003101ff0023003001ff002300
+3001ff0023003101ff0023003001ff0023003001ff0023003101ff0023003001ff002300
+3001ff0023003101ff0023003001ff0023003001ff0024003001ff0023003001ff002300
+3001ff0024003001ff0023003001ff0023003001ff0024003001ff0023003001ff002300
+3001ff0024003001ff0023003001ff0024002f01ff0024003001ff0023003001ff002400
+2f01ff0024003001ff0023003001ff0024002f01ff0024003001ff0023003001ff002400
+2f01ff0024002f01ff0025002f01ff0024002f01ff0024002f01ff0025002f01ff002400
+2f01ff0024002f01ff0025002f01ff0024002f01ff0024002f01ff0025002f01ff002400
+2f01ff0024002f01ff0025002f01ff0024002f01ff0025002e01ff0025002f01ff002400
+2f01ff0025002e01ff0025002f01ff0024002f01ff0025002e01ff0025002f01ff002400
+2f01ff0025002e01ff0025002f01ff0025002e01ff0025002e01ff0025002f01ff002500
+2e01ff0025002e01ff0025002f01ff0025002e01ff0025002e01ff0025002f01ff002500
+2e01ff0025002e01ff0026002e01ff0025002e01ff0025002e01ff0026002d01ff002600
+2e01ff0025002e01ff0026002d01ff0026002e01ff0025002e01ff0026002d01ff002600
+2e01ff0025002e01ff0026002d01ff0026002e01ff0026002d01ff0026002d01ff002600
+2e01ff0026002d01ff0026002d01ff0026002e01ff0026002d01ff0026002d01ff002600
+2e01ff0026002d01ff0026002d01ff0027002d01ff0026002d01ff0026002d01ff002700
+2d01ff0026002d01ff0026002d01ff0027002d01ff0026002d01ff0026002d01ff002700
+2d01ff0026002d01ff0027002c01ff0027002d01ff0026002d01ff0027002c01ff002700
+2c01ff0027002d01ff0027002c01ff0027002c01ff0027002d01ff0027002c01ff002700
+2c01ff0027002d01ff0027002c01ff0027002c01ff0028002c01ff0027002c01ff002700
+2c01ff0028002c01ff0027002c01ff0027002c01ff0028002c01ff0027002c01ff002700
+2c01ff0028002c01ff0027002c01ff0028002b01ff0028002c01ff0027002c01ff002800
+2b01ff0028002c01ff0027002c01ff0028002b01ff0028002c01ff0027002c01ff002800
+2b01ff0028002c01ff0027002c01ff0028002b01ff0028002c01ff0028002b01ff002800
+2b01ff0028002c01ff0028002b01ff0028002b01ff0028002b01ff0029002b01ff002800
+2b01ff0028002b01ff0029002b01ff0028002b01ff0029002a01ff0029002b01ff002800
+2b01ff0029002a01ff0029002b01ff0028002b01ff0029002a01ff0029002b01ff002800
+2b01ff0029002a01ff0029002b01ff0029002a01ff0029002a01ff0029002b01ff002900
+2a01ff0029002a01ff0029002b01ff0029002a01ff0029002a01ff0029002b01ff002900
+2a01ff0029002a01ff0029002b01ff0029002a01ff0029002a01ff002a002a01ff002900
+2a01ff0029002a01ff002a002a01ff0029002a01ff0029002a01ff002a002901ff002a00
+2a01ff0029002a01ff002a002901ff002a002a01ff002a002901ff002a002901ff002a00
+2a01ff002a002901ff002a002901ff002a002a01ff002a002901ff002a002901ff002a00
+2a01ff002a002901ff002a002901ff002b002901ff002a002901ff002a002901ff002b00
+2901ff002a002901ff002a002901f500000134002901f500020131002901f50005012e00
+2901f50008012c002901f4000b0129002901f4000e0126002901f400110124002901f300
+140121002901f30017011f002801f3001a011c002901f2001d0119002901f20020011700
+2801f200230114002901f100260111002901f10029010f002801f1002c010c002801f100
+2f0109002901f000320107002801f000350104002801f000380102002801ef003a010000
+2801ef006401ef006501ee006501ee006501ee006601ed006601ed006601ed006701ee00
+6501ef006401f0006401f0006301f1006201f3006101f3006001f4005f01f5005f01f500
+5f01f6005e01f6005e01f6005f01f5005f01f5005f01f6005e01f6005f01f5005f01f500
+5f01f5005f01f6005e01f6005f01f5005f01f5005f01f6005e01f6005f01f5005f01f500
+5f01f5005f01f6005e01f6005f01f5005f01f5005f01f5005f01f6005f01ff0000005401
+ff000a004a01ff0014004001ff0019003b01ff0018003d01ff0017003d01ff0017003d01
+ff0016003e01ff0016003f01ff0015003f01ff0014004001ff0014004001ff0014004001
+ff0014004101ff0012004201ff0012004201ff0012004201ff0011004401ff0010004401
+ff0010004401ff000f004501ff000f004501ff000f004601ff000d004601ff000e004401
+ff0010004301ff0010004201ff0012004101ff0013003f01ff0015003e01ff0015003d01
+ff0017003c01ff0018003a01ff001e003501ff0021003101ff0026002d01ff002a002901
+ff002d002501ff0032002101ff0036001c01ff003a001901ff003e001401ff0042001101
+ff0046000c01ff004b000801ff004e000401ff0053000001ff000b00
+restore grestore
+%
+% End Imported PIC File: Bone-11.gif
+%%EndDocument
+%
+% Polyline
+%
+% Begin Imported GIF File: Bone-8.gif
+n gs
+4050 450 tr
+3.781513 -3.075171 sc
+0 -439 tr
+0 0 tr
+sa
+/showpage {} def
+% GIF image follows:
+357 439 sc
+%***********************************************************************
+%*                                                                     *
+%* Object: Image decoding PS-routine                    Date: 01.02.93 *
+%* Author: Evgeni CHERNYAEV (chernaev@vxcern.cern.ch)                  *
+%*                                                                     *
+%* Function: Display a run-length encoded color image.                 *
+%*           The image is displayed in color on viewers and printers   *
+%*           that support color Postscript, otherwise it is displayed  *
+%*           as grayscale.                                             *
+%*                                                                     *
+%***********************************************************************
+/byte 1 string def
+/color 3 string def
+systemdict /colorimage known { /cnt 3 def } { /cnt 1 def } ifelse
+/String 256 cnt mul string def
+%***********************************************************************
+/DecodePacket            % Decode color packet                         *
+%***********************************************************************
+{
+  currentfile byte readhexstring pop 0 get
+  /Nbyte exch 1 add cnt mul def
+  /color ColorMap currentfile byte readhexstring pop 0 get get def
+  String dup
+  0 cnt Nbyte 1 sub { color putinterval dup } for
+  pop 0 Nbyte getinterval
+} bind def
+%***********************************************************************
+/DisplayImage            % Display run-length encoded color image      *
+%***********************************************************************
+{
+  gsave
+  currentfile String readline pop
+  token { /columns exch def } { } ifelse
+  token { /rows exch def pop } { } ifelse
+  currentfile String readline pop
+  token { /Ncol exch def pop } { } ifelse
+  /ColorMap Ncol array def
+  systemdict /colorimage known {
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      currentfile 3 string readhexstring pop put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } false 3 colorimage
+  }{
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      1 string dup 0
+      currentfile color readhexstring pop pop
+      color 0 get 0.299 mul
+      color 1 get 0.587 mul add
+      color 2 get 0.114 mul add
+      cvi put put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } image
+  } ifelse
+  grestore
+} bind def
+%***********************************************************************
+%*                          Image decoding                             *
+%***********************************************************************
+DisplayImage
+357 439
+2
+000000 ffffff
+ff001b000501ff0045001f01ff0035002f01ff0034002f01ff0033003101ff0031003201
+ff0031003301ff002f003401ff002e003501ff002e003601ff002c003701ff002b003901
+ff0029003a01ff0029003a01ff0028003c01ff0026003d01ff0025003f01ff0024003f01
+ff0023004101ff0021004201ff0021004201ff0020004401ff001e004501ff001d004701
+ff001c004701ff001b004901ff0019004a01ff0019004a01ff0018004c01ff0016004d01
+ff0015004f01ff0014004f01ff0013005001ff0012005201ff0010005301ff0010005a01
+ff0009006401ff0000006d01f6007601ed007701ed007701ec007701ed007601ed007701
+ec007701ed007601ed007701ed007601ed007601ed007701ed007601ed007601ee007601
+ed007601ed007601ee007601ed007601ee007501ee007601ed007601ee007501ee007601
+ee007501ee007501ee007601ee007501ee007501ef007501ee007501ee007501ef007501
+ee007501ef007401ef007501ee007501ef007401ef007501ef007401ef007401ef007501
+ef007401ef007401ef007501ee007401ee007401ef007401ef007301f0007201f1007101
+f2007101f2007001f2007001f3006f01f4006e01f5006e01f5006d01f6006c01f6006c01
+f7006c01f7006b01f8006a01f9006901fa00270103003c01fa00280107003801fa002801
+0a003401fb0028010e002f01fc00280112002a01fd00270117002601fd0027011a002201
+fd0028011e001d01fe00280122001801ff00280126001301ff00000027012a001001ff00
+000027012e000b01ff000100270132000601ff000100280136000101ff0002002801ff00
+3b002801ff003b002701ff003c002701ff003c002701ff003b002801ff003b002801ff00
+3b002701ff003c002701ff003c002701ff003c002701ff003b002801ff003b002701ff00
+3c002701ff003c002701ff003c002701ff003c002701ff003c002701ff003b002701ff00
+3c002701ff003c002701ff003c002701ff003c002701ff003c002601ff003c002701ff00
+3c002701ff003c002701ff003c002701ff003c002701ff003c002601ff003c002701ff00
+3c002701ff003c002701ff003c002701ff003c002601ff003d002601ff003c002701ff00
+3c002701ff003c002701ff003c002701ff003c002601ff003d002601ff003c002701ff00
+3c002701ff003c002701ff003c002601ff003d002601ff003d002601ff003c002701ff00
+3c002701ff003c002701ff003c002601ff003d002601ff003d002601ff003c002701ff00
+3c002701ff003c002601ff003d002601ff003d002601ff003d002601ff003c002701ff00
+3c002701ff003c002601ff003d002601ff003d002601ff003d002601ff003d002601ff00
+3c002601ff003d002601ff003d002601ff003d002601ff003d002601ff003d002501ff00
+3d002601ff003d002601ff003d002601ff003d002601ff003d002601ff003d002501ff00
+3d002601ff003d002601ff003d002601ff003d002601ff003d002501ff003e002501ff00
+3d002601ff003d002601ff003d002601ff003d002601ff003d002501ff003e002501ff00
+3d002601ff003d002601ff003d002601ff003d002501ff003e002501ff003e002501ff00
+3d002601ff003d002601ff003d002601ff003d002501ff003e002501ff003e002501ff00
+3d002601ff003d002601ff003d002501ff003e002501ff003e002501ff003e002501ff00
+3e002501ff003d002601ff003d002501ff003e002501ff003e002501ff003e002501ff00
+3e002501ff003d002501ff003d002601ff003c002701ff003b002801ff0039002a01ff00
+38002b01ff0037002b01ff0037002c01ff0035002e01ff0034002f01ff0033003001ff00
+32003001ff0031003201ff0030003301ff002f003401ff002e003501ff002c003601ff00
+2c003701ff002b003801ff002a003901ff0028003b01ff0027003b01ff0027003b01ff00
+26003c01ff0026003b01ff0027003b01ff0027003b01ff0026003b01ff0027003b01ff00
+27003b01ff0027003a01ff0027003b01ff0027003b01ff0027003a01ff0028003a01ff00
+27003b01ff0027003a01ff0028003a01ff0028003901ff0028003a01ff0028003a01ff00
+28003901ff0028003a01ff0028003a01ff0028003901ff0029003901ff0028003a01ff00
+28003901ff0029003901ff0029003901ff0028003901ff0029003901ff0029003901ff00
+29003801ff0029003901ff0029003901ff0029003801ff002a003801ff0029003901ff00
+29003801ff002a003801ff002a003801ff0029003801ff002a003801ff002a003801ff00
+29003801ff002a003801ff002a003801ff002a003701ff002a003801ff002a003701ff00
+2b003701ff002b003701ff002a003701ff002b003701ff002b003701ff002b003601ff00
+2b003701ff002b003701ff002b003601ff002c003601ff002b003701ff002b003601ff00
+2c003601ff002b003701ff002b003601ff002c003601ff002c003601ff002b003601ff00
+2c003601ff002c003601ff002c003501ff002c003601ff002c003601ff002c003501ff00
+2d003501ea00000140003601eb0002013d003501ec0005013a003501ec00080137003501
+ec000b0133003501ed000e0130003501ed0011012d003401ee0014012a003401ee001701
+26003501ee001a0123003401ef001d0120003401ef0020011c003501ef00230119003401
+f000260116003401f000290113003401f0002c010f003401f1002f010c003401f1003201
+09003401f100350106003301f200380102003401f2003a0100003401f2006f01f3006f01
+f3006f01f3006e01f4006e01f4006e01f4006d01f5006d01f7006b01f8006901fa006801
+fb006701fc006501ff006301ff0000006101ff0002006001ff0003005f01ff0004005f01
+ff0005005e01ff0005005f01ff0004005f01ff0004005f01ff0004005f01ff0005005e01
+ff0005005f01ff0004005f01ff0004005f01ff0005005e01ff0005005f01ff0004005f01
+ff0004005f01ff0004005f01ff0005005e01ff0005005f01ff0004005f01ff0004005f01
+ff0004005f01ff0005005f01ff0004005f01ff0004005f01ff0004005f01ff0004005f01
+ff000500000100005d01ff0010005301ff001a004901ff0024003f01ff0028003c01ff00
+26003d01ff0026003d01ff0026003d01ff0025003e01ff0025003f01ff0024003f01ff00
+23004001ff0023004001ff0023004101ff0022004101ff0021004201ff0021004201ff00
+21004201ff0020004401ff001f004401ff001f004401ff001e004501ff001e004601ff00
+1d004601ff001c004601ff001d004401ff001f004301ff001f004201ff0021004101ff00
+22003f01ff0024003e01ff0024003d01ff0026003c01ff0027003a01ff002d003501ff00
+31003101ff0034002d01ff0039002901ff003c002501ff0041002101ff0045001c01ff00
+49001901ff004d001401ff0052001001ff0055000c01ff005a000801ff005d000401ff00
+62000001ff001a00
+restore grestore
+%
+% End Imported PIC File: Bone-8.gif
+%%EndDocument
+%
+% Polyline
+%
+% Begin Imported GIF File: bat-1.gif
+n gs
+450 2250 tr
+2.156550 -2.307692 sc
+0 -585 tr
+0 0 tr
+sa
+/showpage {} def
+% GIF image follows:
+626 585 sc
+%***********************************************************************
+%*                                                                     *
+%* Object: Image decoding PS-routine                    Date: 01.02.93 *
+%* Author: Evgeni CHERNYAEV (chernaev@vxcern.cern.ch)                  *
+%*                                                                     *
+%* Function: Display a run-length encoded color image.                 *
+%*           The image is displayed in color on viewers and printers   *
+%*           that support color Postscript, otherwise it is displayed  *
+%*           as grayscale.                                             *
+%*                                                                     *
+%***********************************************************************
+/byte 1 string def
+/color 3 string def
+systemdict /colorimage known { /cnt 3 def } { /cnt 1 def } ifelse
+/String 256 cnt mul string def
+%***********************************************************************
+/DecodePacket            % Decode color packet                         *
+%***********************************************************************
+{
+  currentfile byte readhexstring pop 0 get
+  /Nbyte exch 1 add cnt mul def
+  /color ColorMap currentfile byte readhexstring pop 0 get get def
+  String dup
+  0 cnt Nbyte 1 sub { color putinterval dup } for
+  pop 0 Nbyte getinterval
+} bind def
+%***********************************************************************
+/DisplayImage            % Display run-length encoded color image      *
+%***********************************************************************
+{
+  gsave
+  currentfile String readline pop
+  token { /columns exch def } { } ifelse
+  token { /rows exch def pop } { } ifelse
+  currentfile String readline pop
+  token { /Ncol exch def pop } { } ifelse
+  /ColorMap Ncol array def
+  systemdict /colorimage known {
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      currentfile 3 string readhexstring pop put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } false 3 colorimage
+  }{
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      1 string dup 0
+      currentfile color readhexstring pop pop
+      color 0 get 0.299 mul
+      color 1 get 0.587 mul add
+      color 2 get 0.114 mul add
+      cvi put put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } image
+  } ifelse
+  grestore
+} bind def
+%***********************************************************************
+%*                          Image decoding                             *
+%***********************************************************************
+DisplayImage
+626 585
+256
+000000 010101 020202 030303 040404 050505 060606 070707 080808 090909
+0a0a0a 0b0b0b 0c0c0c 0d0d0d 0e0e0e 0f0f0f 101010 111111 121212 131313
+141414 151515 161616 171717 181818 191919 1a1a1a 1b1b1b 1c1c1c 1d1d1d
+1e1e1e 1f1f1f 202020 212121 222222 232323 242424 252525 262626 272727
+282828 292929 2a2a2a 2b2b2b 2c2c2c 2d2d2d 2e2e2e 2f2f2f 303030 313131
+323232 333333 343434 353535 363636 373737 383838 393939 3a3a3a 3b3b3b
+3c3c3c 3d3d3d 3e3e3e 3f3f3f 404040 414141 424242 434343 444444 454545
+464646 474747 484848 494949 4a4a4a 4b4b4b 4c4c4c 4d4d4d 4e4e4e 4f4f4f
+505050 515151 525252 535353 545454 555555 565656 575757 585858 595959
+5a5a5a 5b5b5b 5c5c5c 5d5d5d 5e5e5e 5f5f5f 606060 616161 626262 636363
+646464 656565 666666 676767 686868 696969 6a6a6a 6b6b6b 6c6c6c 6d6d6d
+6e6e6e 6f6f6f 707070 717171 727272 737373 747474 757575 767676 777777
+787878 797979 7a7a7a 7b7b7b 7c7c7c 7d7d7d 7e7e7e 7f7f7f 808080 818181
+828282 838383 848484 858585 868686 878787 888888 898989 8a8a8a 8b8b8b
+8c8c8c 8d8d8d 8e8e8e 8f8f8f 909090 919191 929292 939393 949494 959595
+969696 979797 989898 999999 9a9a9a 9b9b9b 9c9c9c 9d9d9d 9e9e9e 9f9f9f
+a0a0a0 a1a1a1 a2a2a2 a3a3a3 a4a4a4 a5a5a5 a6a6a6 a7a7a7 a8a8a8 a9a9a9
+aaaaaa ababab acacac adadad aeaeae afafaf b0b0b0 b1b1b1 b2b2b2 b3b3b3
+b4b4b4 b5b5b5 b6b6b6 b7b7b7 b8b8b8 b9b9b9 bababa bbbbbb bcbcbc bdbdbd
+bebebe bfbfbf c0c0c0 c1c1c1 c2c2c2 c3c3c3 c4c4c4 c5c5c5 c6c6c6 c7c7c7
+c8c8c8 c9c9c9 cacaca cbcbcb cccccc cdcdcd cecece cfcfcf d0d0d0 d1d1d1
+d2d2d2 d3d3d3 d4d4d4 d5d5d5 d6d6d6 d7d7d7 d8d8d8 d9d9d9 dadada dbdbdb
+dcdcdc dddddd dedede dfdfdf e0e0e0 e1e1e1 e2e2e2 e3e3e3 e4e4e4 e5e5e5
+e6e6e6 e7e7e7 e8e8e8 e9e9e9 eaeaea ebebeb ececec ededed eeeeee efefef
+f0f0f0 f1f1f1 f2f2f2 f3f3f3 f4f4f4 f5f5f5 f6f6f6 f7f7f7 f8f8f8 f9f9f9
+fafafa fbfbfb fcfcfc fdfdfd fefefe ffffff
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00c20000ff000000ff000001ffff00ff00630012ffff00ff005b0016ff0000
+00ff000000ffff00ff0052001eff000000ffff00ff00500023ffff00ff004c0027ffff00
+ff00480028ffff00ff0049002bffff00ff0047002cffff00ff0046002affff00ff004600
+2dffff00ff0044002effff00ff0043002fffff00ff00420030ffff00ff00410031ffff00
+ff00400031ff000000ffff00ff003d0034ffff00ff003d0034ffff00ff003c0035ffff00
+ff003c0038ffff00ff00380038ff000000ffff00ff0037003affff00ff0035003cffff00
+ff0036003bffff00ff0035003dffff00ff0033003dff000000ffff00ff00300042ffff00
+ff002f0042ff000000ffff00ff002c0044ffff00ff002d0045ffff00ff002b0046ffff00
+ff00290049ffff00ff0028004affff00ff0026004bffff00ff0025004cffff00ff002400
+4effff00ff00220050ffff00ff00200051ffff00ff001f0053ffff00ff001d0053ffff00
+ff001d0055ffff00ff001b0057ffff00ff00180058ffff00ff00190059ffff00ff001700
+59ffff00ff0017005bffff00ff0015005cffff00ff0013005effff00ff0012005fffff00
+ff00110061ffff00ff000f0062ffff00ff000d0064ffff00ff000c0066ffff00ff000a00
+65ffff00ff000b0066ffff00ff00090068ffff00ff00080069ffff00ff0007006bffff00
+ff0004006cffff00ff0003006effff00ff0002006fffff00ff0072ffff00ff0072ffff00
+fe0074ffff00fa0075ffff00fc0075ffff00fa0077ffff00f80079ffff00f7007affff00
+f4007cffff00f5007cffff00f5007bffff00f4007dffff00f5007dffff00f4007dffff00
+f4007bffff00f6007cffff00f3007cffff00f6007bffff00f6007cffff00f4007bffff00
+f6007bffff00f6007cffff00f5007affff00f6007bffff00f7007affff00f6007affff00
+f6007affff00f6007bffff00f6007bffff00f6007bffff00f4007cffff00f4007cffff00
+f6007bffff00f4007dffff00f4007cffff00f4007dffff00f3007effff00f3007dffff00
+f3007dffff00f3007dffff00f4007effff00f2007effff00f2007fffff00f2007effff00
+f1007fffff00f2007fffff00f2007fffff00f00080ffff00f10080ffff00ef0081ffff00
+f00080ffff00f00081ffff00ef0081ffff00ef0082ffff00ef0082ffff00ee0081ffff00
+ef0083ffff00ed0083ffff00ed0084ffff00ec0084ffff00ea0086ffff00eb0085ffff00
+ec0085ffff00ea0086ffff00ea0087ffff00ea0087ffff00e70088ffff00e90088ffff00
+e80089ffff00e6008affff00e6008bffff00e5008bffff00e5008bffff00e6008bffff00
+e3008dffff00e4008dffff00e4008dffff00e1008fffff00e1008fffff00e10090ffff00
+df0091ffff00e00093ffff00dc0096ffff00da0097ffff00d90099ffff00d7009affff00
+d5009cffff00d4009cffff00d3009effff00d2009effff00d100a0ffff00cf00a0ffff00
+d1009fffff00cf00a0ffff00d00098ff000005ffff00d10099ff000004ffff00d00098ff
+010003ffff00d20099ff020001ffff00d2009aff020000ffff00d0009bffff00d6009aff
+ff00d5009bffff00d4009bffff00d4009dffff00d2009effff00d1009effff00d2009fff
+ff00d1009effff00d100a0ffff00d0009fffff00cf00a1ffff00cf00a1ffff00ce00a2ff
+ff00cd00a2ffff00ce00a2ffff00cd00a2ffff00ce00a3ffff00cc00a5ffff00cb00a3ff
+ff00cc00a5ffff00cb00a5ffff00ca00a5ffff00cb00a5ffff00cc00a5ffff00cb0003ff
+02009dffff00cf0000ff030000ff00009affff00d80097ffff00da0096ffff00dc0094ff
+ff00dc0093ffff00df0092ffff00e0008fffff00e00090ffff00e1008fffff00e3008dff
+ff00e3008cffff00e5008bffff00e5008affff00e6008bffff00e60089ffff00e80088ff
+ff00e80088ffff00e90086ffff00e90087ffff00ea0086ffff00eb0085ffff00eb0084ff
+ff00ed0083ffff00ec0083ffff00ee0082ffff00ee0082ffff00ee0081ffff00f00080ff
+ff00f10080ffff00ef007fffff00f1007fffff00f2007fffff00f1007dffff00f3007eff
+ff00f1007effff00f3007dffff00f4007cffff00f3007bffff00f6007affff00f6007bff
+ff00f5007affff00f5007bffff00f6007affff00f5007affff00f70079ffff00f60079ff
+ff00f80079ffff00f60079ffff00f70078ffff00f90077ffff00f90077ffff00f80078ff
+ff00f80078ffff00f90077ffff00f70078ffff00f90077ffff00f80077ffff00f90078ff
+ff00f80077ffff00f90077ffff00f80077ffff00fa0077ffff00f80077ffff00f90077ff
+ff00f90077ffff00f80078ffff00f90077ffff00f70078ffff00f90077ffff00f90077ff
+ff00f70079ffff00f80078ffff00f70079ffff00f70078ffff00f80078ffff00f80079ff
+ff00f60079ffff00f70079ffff00f5007bffff00f5007bffff00f6007bffff00f3007cff
+ff00f4007dffff00f3007dffff00f2007effff00f1007fffff00f2007fffff00f00080ff
+ff00ef0081ff060000ff000000ff000002ff000001ff000001ff020000ff010000ffff00
+d30082ff05000eff000007ff010000ff000000ff000000ff0c0000ffff00ba0085ff0000
+2bff000003ff000001ff000000ffff00b400c0ff000000ff000000ffff00ab00c5ff0100
+00ff010000ffff00a500ceffff00a200d0ffff009e00d4ff000001ffff009900d9ff0100
+00ffff009300dbff000001ffff009100e0ffff009000e3ffff008b00e7ffff008800eaff
+ff008600ebffff008300eeffff008200efffff008100f1ff000000ffff007b00f5ffff00
+7a00f8ffff00570000ff000002ff000000ff1700faffff00540000ff010007ff1500fdff
+ff0052000cff1300feffff0050000eff1000ffff01ffff004e000fff1000ffff01ffff00
+4f000fff0e00ffff03ffff004d0011ff0a00ffff06ffff004b0014ff060000ff0000ffff
+08ffff00490015ff030000ff0000ffff0bffff00480017ff0000ffff0fffff004800ffff
+29ffff004700ffff29ffff004800ffff2affff004600ffff2affff004600ffff2affff00
+4500ffff2dffff004300ffff2effff004200ffff2dffff004300ffff2dffff004300ffff
+2fffff0041000aff000000ff0000ffff21ffff00420009ff0300ffff20ffff00430007ff
+0500ffff20ffff00430006ff0900ffff1dffff00440005ff0a00ffff1bffff00440004ff
+0f00ffff17ffff00460001ff1100ffff17ffff00460000ff1300ffff17ffff005800ffff
+17ffff005a00ffff17ffff005800ffff18ffff005700ffff19ffff005800ffff19ffff00
+5500ffff1bffff005600ffff1affff005600ffff1affff005400ffff1dffff005300ffff
+1eff020000ffff004f00ffff22ffff004c00ffff25ffff004a00ffff27ffff004900ffff
+29ffff004700ffff27ffff004800ffff28ffff004700ffff28ffff004800ffff27ffff00
+4800ffff26ffff004a00ffff25ff460000ff000000ffff000100ffff24ff000007ff0000
+03ff000000ff010000ff330006fffd00ffff39ff000001ff000000ff000001ff280009ff
+fc00ffff46ff21000cfffa00ffff4aff000000ff000000ff1a000dfffa00ffff4eff0000
+0fff08000efff800ffff61ff050010fff700ffff66ff000010fff700ffff78fff700ffff
+73ff010002fff800ffff73ff030000fff700ffff73fffd00ffff74fffb00ffff76fff900
+ffff7afff600ffff7bfff400ffff7efff100ffff81ffee00ffff83ffec00ffff86ffea00
+ffff88ffe700ffff8bffe300ffff8dffe300ffff90ffdf00ffff93ffdc00ffff94ffdc00
+ffff96ffd900ffff98ffd800ffff9bffd500ffff9cffd200ffff9fffd000ffffa1ffcf00
+ffffa3ffcc00ffffa6ffca00ffffa7ffc800ffffaaffc400ffffadffc300ffffaeffc100
+ffffb1ffbd00ffffb3ffbe00ffffb4ffba00ffffb6ffb90033ff000003ff010000ff0000
+01ff010001ff020000ff030000ff010001ff000000ff0000ffff66ffb70030ff010000ff
+1f0000ff000001ff0000ffff63ffb2002bff000001ff2b00ffff64ffb1002bff010000ff
+2e0000ff0000ffff60ffb10027ff3900ffff5effae0024ff000000ff000000ff3b000cff
+000001ff0000ffff4cffae0023ff410006ff000000ff070000ff0100ffff49ffad0020ff
+470000ff010000ff0e0000ff0000ffff47ffaa001dff6000ffff47ffa9001cff6300ffff
+48ffa60019ff000000ff6500ffff48ffa60017ff000000ff670033ff000001ff010003ff
+0000ffff0cffa30017ff6a0026ff000000ff000001ff010000ff0f0000ff030000ff0100
+ffff05ffa10015ff6b001dff000000ff020000ff280000ff000000ff0000fbffa20013ff
+6d001aff3800f9ffa00013ff6f0016ff3f00f7ff9c0012ff700014ff440000ff0100f3ff
+9c0011ff720011ff4c00f2ff9b000eff740011ff4e0001ff0000eeff98000eff750011ff
+5200efff98000cff760010ff5600ecff97000bff770012ff560000ff0000e9ff96000bff
+790011ff590000ff0000e8ff940009ff7a0013ff5b00e9ff920008ff7a0012ff5f00e7ff
+910007ff7c0013ff6000e5ff910007ff7a0015ff610000ff0000e4ff8e0006ff7b0015ff
+6500e3ff8e0006ff7b0015ff660000ff0000e1ff8e0004ff7c0014ff6a00e1ff8b0004ff
+7d0014ff6c00e0ff8c0003ff7e0012ff6e00dfff8d0001ff7f0011ff7100deffff001000
+0fff7300ddffff0010000bff000000ff7600dbffff00110009ff7900dcffff00110006ff
+000000ff7b00daffff00130000ff000002ff7e00dbffff009700d9ffff009700d9ffff00
+9900d8ffff009800d8ffff009a00d7ffff009a00d6ffff009b00d6ffff009c00d5ffff00
+9b00d4ffff009c00d5ffff009d00d4ffff009c00d4ffff009d00d4ffff009d00d4ffff00
+9c00d4ffff009e00d3ffff009e00d1ffff009f00d2ffff009f00d2ffff009f00d1ffff00
+9f00d2ffff009f00d1ffff009e00d3ffff009f00d1ffff00a000d1ffff009e00d1ffff00
+a100d0ffff009f00d1ffff00a000d1ffff00a100cfffff00a000d1ffff00a000d0ffff00
+a100d0ffff009f00d1ffff00a000d1ffff00a100cfffff00a00041ff000001ff010003ff
+000001ff000000ff000001ff00007cffff00a10035ff000001ff010000ff030000ff1200
+00ff010000ff000001ff000000ff000072ffff009f0032ff010000ff280000ff010000ff
+00006cffff00a1002aff000001ff37006affff00a10026ff000000ff410000ff000063ff
+ff009f0023ff000000ff490061ffff009f0020ff52005dffff00a0001cff010000ff5700
+59ffff009e001aff000000ff5d0056ffff00a00015ff010000ff630054ffff009f0013ff
+6a0052ffff009f000fff700050ffff009f000cff010000ff72004effff009f0008ff0000
+01ff76004effff00a10000ff000001ff7e004dffff00ff0026004affff00ff0026004aff
+ff00ff00280049ffff00ff00280049ffff00ff00260048ffff00ff002a0047ffff00ff00
+2b0045ffff00ff002b0045ffff00ff002b0046ffff00ff002b0043ffff00ff002e0043ff
+ff00ff002e0043ffff00ff002c000bff000002ff010001ff000000ff010000ff010000ff
+030023ffff00ff002e0009ff1a001dffff00ff002f0007ff1e0000ff000019ffff00ff00
+2f0003ff250016ffff00ff00310000ff000000ff260015ffff00ff005f0012ffff00ff00
+5e0011ffff00ff0061000fffff00ff0061000fffff00ff0063000dffff00ff0066000bff
+ff00ff00650009ffff00ff00690008ffff00ff006a0006ffff00ff006a0005ffff00ff00
+6d0003ffff00ff006e0001ffff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff006900
+restore grestore
+%
+% End Imported PIC File: bat-1.gif
+%%EndDocument
+%
+% Polyline
+%
+% Begin Imported GIF File: bat-14.gif
+n gs
+2250 2250 tr
+1.877608 -2.909483 sc
+0 -464 tr
+0 0 tr
+sa
+/showpage {} def
+% GIF image follows:
+719 464 sc
+%***********************************************************************
+%*                                                                     *
+%* Object: Image decoding PS-routine                    Date: 01.02.93 *
+%* Author: Evgeni CHERNYAEV (chernaev@vxcern.cern.ch)                  *
+%*                                                                     *
+%* Function: Display a run-length encoded color image.                 *
+%*           The image is displayed in color on viewers and printers   *
+%*           that support color Postscript, otherwise it is displayed  *
+%*           as grayscale.                                             *
+%*                                                                     *
+%***********************************************************************
+/byte 1 string def
+/color 3 string def
+systemdict /colorimage known { /cnt 3 def } { /cnt 1 def } ifelse
+/String 256 cnt mul string def
+%***********************************************************************
+/DecodePacket            % Decode color packet                         *
+%***********************************************************************
+{
+  currentfile byte readhexstring pop 0 get
+  /Nbyte exch 1 add cnt mul def
+  /color ColorMap currentfile byte readhexstring pop 0 get get def
+  String dup
+  0 cnt Nbyte 1 sub { color putinterval dup } for
+  pop 0 Nbyte getinterval
+} bind def
+%***********************************************************************
+/DisplayImage            % Display run-length encoded color image      *
+%***********************************************************************
+{
+  gsave
+  currentfile String readline pop
+  token { /columns exch def } { } ifelse
+  token { /rows exch def pop } { } ifelse
+  currentfile String readline pop
+  token { /Ncol exch def pop } { } ifelse
+  /ColorMap Ncol array def
+  systemdict /colorimage known {
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      currentfile 3 string readhexstring pop put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } false 3 colorimage
+  }{
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      1 string dup 0
+      currentfile color readhexstring pop pop
+      color 0 get 0.299 mul
+      color 1 get 0.587 mul add
+      color 2 get 0.114 mul add
+      cvi put put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } image
+  } ifelse
+  grestore
+} bind def
+%***********************************************************************
+%*                          Image decoding                             *
+%***********************************************************************
+DisplayImage
+719 464
+2
+000000 ffffff
+ff00ff00da001101ff00ff00b8001b01ff00ff00b0002201ff00ff00a9002b01ff00ff00
+a2002e01ff00ff009e003501ff00ff0098003f01ff00ff008d004601ff00ff0086004b01
+ff00ff0082004d01ff00ff0080004e01ff00ff007f005101ff00ff0080004f01ff00ff00
+7f005101ff00ff007d005101ff00ff007d005401ff00ff007a005601ff00ff0078005801
+ff00ff0076005a01ff00ff0074005b01ff00ff0073005c01ff00ff0079005901ff00ff00
+78005801ff00ff0079005701ff00ff0076005a01ff00ff0076005a01ff00ff0075005b01
+ff00ff0073005e01ff00ff0070005f01ff00ff006f006201ff00ff006c006301ff00ff00
+6c006401ff00ff006a006601ff00ff0069006601ff00ff0067006701ff00ff0067006701
+ff00ff0066006901ff00ff0064006a01ff00ff0064006a01ff00ff0064006b01ff00ff00
+63006b01ff00ff0062006c01ff00ff0062006d01ff00ff0060006e01ff00ff005f007001
+ff00ff005d007101ff00ff005d007101ff00ff005c007301ff00ff005b007301ff00ff00
+5b007301ff00ff005a007501ff00ff0058007701ff00ff0057007701ff00ff0056007801
+ff00ff0056007901ff00ff0055007901ff00ff0054007b01ff00ff0053007b01ff00ff00
+52007b01ff00ff0052007d01ff00ff0051007d01ff00ff0050007f01ff00ff004e008001
+ff00ff004d008101ff00ff004c008201ff00ff004b008401ff00ff004a008401ff00ff00
+49008501ff00ff0049008501ff00ff0048008701ff00ff0045008801ff00ff0045008a01
+ff00ff0043008b01ff00ff0042008b01ff00ff0043008c01ff00ff0041008d01ff00ff00
+40008e01ff00ff003f008f01ff00ff003f008f01ff00ff003e009101ff00ff003c009201
+ff00ff003b009301ff00ff0039009401ff00ff0039009601ff00ff0037009701ff00ff00
+3600980103000301ff00ff002d00a301ff00ff002a00a401ff00ff002800a701ff00ff00
+2600a701ff00ff002600a701ff00ff002500a801ff00ff002500a801ff00ff002500a801
+ff00ff002500a801ff00ff002500a801ff00ff002400a901ff00ff002300aa01ff00ff00
+2300aa01ff00ff002300aa01ff00ff002200ac01ff00ff002100ad01ff00ff001f00af01
+ff00ff001e00b001ff00ff001c00b201ff00ff001b00b301ff00ff001900b501ff00ff00
+1700b701ff00ff001500b901ff00ff001400ba01ff00ff001200bd01ff00ff000f00be01
+ff00ff000e00c101ff00ff000a00c501ff00ff000800c501ff00ff000600c901ff00ff00
+0300ca01ff00ff000300ca01ff00ff000300ca01ff00ff000300ca01ff00ff000300ca01
+ff00ff000300cb01ff00ff000200cb01ff00ff000700c601ff00ff000800c501ff00ff00
+0900c401ff00ff000b00c301ff00ff000a00c301ff00ff000c00c101ff00ff000e00bf01
+ff00ff000f00bf01ff00ff001100bc01ff00ff001400b901ff00ff001600b701ff00ff00
+1800b601ff00ff001800b501ff00ff001a00b301ff00ff001b00b201ff00ff001c00b201
+ff00ff001d00b001ff00ff001d00b001ff00ff001d00b001ff00ff001e00b001ff00ff00
+1e00af01ff00ff001f00ae01ff00ff002000ae01ff00ff002000ad01ff00ff002100ac01
+ff00ff002100ac01ff00ff002200ac01ff00ff002100ac01ff00ff002200ab01ff00ff00
+2300ab01ff00ff002300aa01ff00ff002300aa01ff00ff002300ab01ff00ff002300aa01
+ff00ff002300aa01ff00ff002300ab01ff00ff002200ac01ff00ff002200ab01ff00ff00
+2200ab01ff00b00005016b00ac01ff00a60017016200ac01ff00a4001d015f00ac01ff00
+9b0027015d00ac01ff0097002d015b00ac01ff00940032015a00ad01ff008e0036015a00
+ad01ff0089003d015800ad01ff00870040015700ae01ff00840043015600ae01ff008100
+46015600ae01ff007f0049015500af0185000401ef004e015400af0185000601e9005201
+5400b00184000801e60053015400b10183000901e10057015400b10183000a01dc005901
+5600b10183000b01d7005c015700b20182000c01d3005c015a00b20182000d01ce005f01
+5b00b20183000f01c70060015e00b30182000f01c4005f016200b40182001001be006001
+6500b40182001101ba005b016d00b40182001201b5005c017000b5018100130130000301
+7c005d017100b601810014012f00040179005e017200b601810015012e00040176005f01
+7400b7017e0017012e00050174005f017500b8017d0018012d000501710061017700b701
+7b001b012c0005016f0062017700b90179001d012b0006016d0062017800b90177001f01
+2b0007016a0063017900ba0176001f012b000701680064017a00ba017400230129000701
+660065017b00bb017300230129000801640066017b00bb01710026012800090161006701
+7b00bd016f002801270009015f0068017c00bd016f002801270009015e0069017c00bd01
+6d002a0127000a015b006a017c00bf016c002b0125000b0159006c017c00c00169002d01
+25000c0156006d017d00c00169002e0124000c0154006f017d00c00168002f0123000d01
+53006f017e00c0016700300123000d01510071017e00c2016500300122000e0150007101
+7f00c20164003201200010014d0072018000c30162003301200010014b0074017f00c401
+620033011f0011014a0075017f00c401610034011d001301470077018000c40161003801
+17001501460077018100c40160003d011200160143007a018100c7015d003e010f001801
+40007d018100c7015d004501070019013e007e018200c8015b004801050019013c007f01
+8300c9015a00480104001a01390081018400c9015a00490102001b01370083018400ca01
+58004a0100001d01330086018500cb0157006901310088018500cb01570069012f008901
+8600cc01560069012d008a018700cd01550069012a008d018700cd015500690129008c01
+8900ce014c00030102006a0127008e018900cf014b0003010200690126008f018a00d001
+4900040102006901230091018b00d00147007301200094018b00d101460073011d006101
+0f0024018c00d201400078011a005f0119001e018d00d4013b007b0117005f0122001801
+8d00d50137007f0114005f01280013018e00d6013400810113005d012d0011018e00d701
+3200820110005d0133000d018f00d801310082010e005c01390009019000da012f008201
+0d005a013d0008019100db012b0084010a005a01410006019200dd01290084010a005701
+450005019200de012600860107005801490003019200e0012200870107005601e300e101
+1e008a0106005401e600e2011c008b0104005401e700e4011a008c0102005501e800e601
+17008c0101005601e900e70115008d0100005601ea00e8011100e601ec00e9010e00e701
+ed00eb010b00e701ee0004010c00da010a00e70108000301f800d8010600e60106000a01
+f800d7010300e80101000f01f700ff01d601fb00ff01d201fd00ff01d001ff00ff01ce01
+ff000100ff01cc01ff000300ff01c901ff000600ff01c701ff000700ff01ab0100000b01
+01000b01ff000800ff01a9010300080100000c01ff000a00ff01a6010700030102000d01
+ff000c00ff01a3010d000e01ff000d00ff01a2010d000e01ff001000ff019e010f000a01
+ff001400ff01990114000801ff001800ff01950116000301ff001e00ff019201ff003c00
+ff019001ff003f00ff018c01ff004100ff018901ff004600ff018401ff004a00ff018001
+ff004e00ff017d01ff005200ff017a01ff005400ff017801ff005600ff017601ff005900
+ff017201ff005b00ff01260100004901ff005e00ff012b0100004201ff005f00ff016c01
+ff006300ff016901ff006500ff016601ff006800ff016501ff006900ff016201ff006c00
+ff016001ff006e00ff015d01ff007100ff015c01ff007200ff015901ff007400ff015801
+ff007600ff015601ff007800ff015401ff007a00ff015201ff007b00ff01180100003701
+ff007d00ff014f01ff007f00ff014d01ff008000ff014b01ff008300ff014a01ff008300
+ff014801ff008600ff014701ff008700ff014401ff008900ff014401ff008a00ff014201
+ff008c00ff014001ff008d00ff013f01ff008f00ff013d01ff009000ff013c01ff009200
+ff013a01ff009300ff013901ff009500ff013701ff009600ff013701ff009700ff013401
+ff009900ff013401ff009a00ff013101ff009c00ff013001ff009e00ff012f01ff009e00
+ff012e01ff009f00ff012d01ff00a100ff012c01ff00a100ff012b01ff00a300ff012901
+ff00a400ff012801ff00a600ff012601ff00a700ff012501ff00a900ff012301ff00aa00
+ff012301ff00aa00ff012201ff00ac00ff012001ff00ad00ff012001ff00ae00ff011e01
+ff00af00ff011d01ff00b000ff011c01ff00b200ff011b01ff00b200ff011901ff00b400
+ff011901ff00b500ff011801ff00b500ff011601ff00b700ff011601ff00b800ff011401
+ff00b900ff011401ff00b900ff011301ff00bb00ff011101ff00bc00ff011101ff00bc00
+ff011001ff00bd00ff010f01ff00be00ff010f01ff00bf00ff010e01ff00bf00ff010d01
+ff00c000ff010c01ff00c200ff010b01ff00c200ff010a01ff00c300ff010a01ff00c300
+ff010901ff00c400ff010901ff00c400ff010801ff00c500ff010701ff00c600ff010701
+ff00c700ff010501ff00c800ff010501ff00c800ff010401ff00ca00ff010201ff00cb00
+ff010201ff00cb00ff010201ff00cb00ff010101ff00cc00e50104001601ff00cd00e201
+0c000f01ff00ce00dc0114000c01ff00cf00da0116000c01ff00cf00d7011a000a01ff00
+d000d3011f000801ff00d100d10121000701ff00d200ce0125000501ff00d300cc012700
+0401ff00d500c90129000401ff00d500c701ff00ff000600c501ff00ff000800c201ff00
+ff000b00c101ff00ff000c00bf01ff00ff000e00bd01ff00ff001000ba01ff00ff001400
+b801ff00ff001500b501ff00ff001800b301ff00ff001a00b001ff00ff001e00ae01ff00
+ff001f00ac01ff00ff002100ab01ff00ff002200a801ff00ff002500a701ff00ff002500
+a601ff00ff002700a501ff00ff001c0005010500a301ff00ff001d00ae01ff00ff001d00
+af01ff00ff001c00af01ff00ff001d00ad01ff00ff001e00af01ff00ff001e00ad01ff00
+ff001f00ad01ff00ff001e00af01ff00ff001b00b001ff00ff001d00260100008801ff00
+ff001d00250104008301ff00ff001e00240107008001ff00ff002000240108007e01ff00
+ff00210022010a007d01ff00ff00220021010b007c01ff00ff0023001801030003010c00
+7a01ff00ff002500150117007a01ff00ff002500150117007901ff00ff00260014011800
+7801ff00ff002800130118007601ff00ff002a00130118007601ff00ff002b0012011800
+7501ff00ff002c00120118007301ff00ff002f00130116007201ff00ff00300013011600
+7101ff00ff003200120116007001ff00ff0038000d0116006f01ff00ff003a000b011700
+6d01ff00ff003d00090118006c01ff00ff003f00070119006a01ff00ff00430003011b00
+6a01ff00ff006300500107001001ff00ff0064004b010c000f01ff00ff00650047011000
+0e01ff00ff006600450112000e01ff00ff006600430114000d01ff00ff00670041011600
+0d01ff00ff0067003f0118000e01ff00ff0066003e0119000e01ff00ff0066003c011c00
+0d01ff00ff006700370120000e01ff00ff006600340124000d01ff00ff0066002e012a00
+0f01ff00ff0064002c012c000f01ff00ff00650029012f000e01ff00ff00650027013200
+0e01ff00ff006500250133000e01ff00ff006500230135000f01ff00ff00640023013500
+1001ff00ff006400200137001101ff00ff0063001d013b001001ff00ff0063001b013d00
+1101ff00ff006300170140001201ff00ff006200140143001301ff00ff00620010014700
+1301ff00ff0062000f0147001301ff00ff0062000f0147001301ff00ff0063000e014700
+1301ff00ff0064000d0145001501ff00ff006400080147001801ff00ff00650007014700
+1701ff00ff006700060147001701ff00ff006800050147001701ff00ff00670006014700
+1701ff00ff0067000c0143001401ff00ff0068000c0143001401ff00ff0068000c014500
+1201ff00ff006b00090147000f01ff00ff006e00070147000f01ff00ff00bf000a01ff00
+ff00c6000601ff009300
+restore grestore
+%
+% End Imported PIC File: bat-14.gif
+%%EndDocument
+%
+% Polyline
+%
+% Begin Imported GIF File: Bone-14.gif
+n gs
+5850 450 tr
+3.781513 -3.075171 sc
+0 -439 tr
+0 0 tr
+sa
+/showpage {} def
+% GIF image follows:
+357 439 sc
+%***********************************************************************
+%*                                                                     *
+%* Object: Image decoding PS-routine                    Date: 01.02.93 *
+%* Author: Evgeni CHERNYAEV (chernaev@vxcern.cern.ch)                  *
+%*                                                                     *
+%* Function: Display a run-length encoded color image.                 *
+%*           The image is displayed in color on viewers and printers   *
+%*           that support color Postscript, otherwise it is displayed  *
+%*           as grayscale.                                             *
+%*                                                                     *
+%***********************************************************************
+/byte 1 string def
+/color 3 string def
+systemdict /colorimage known { /cnt 3 def } { /cnt 1 def } ifelse
+/String 256 cnt mul string def
+%***********************************************************************
+/DecodePacket            % Decode color packet                         *
+%***********************************************************************
+{
+  currentfile byte readhexstring pop 0 get
+  /Nbyte exch 1 add cnt mul def
+  /color ColorMap currentfile byte readhexstring pop 0 get get def
+  String dup
+  0 cnt Nbyte 1 sub { color putinterval dup } for
+  pop 0 Nbyte getinterval
+} bind def
+%***********************************************************************
+/DisplayImage            % Display run-length encoded color image      *
+%***********************************************************************
+{
+  gsave
+  currentfile String readline pop
+  token { /columns exch def } { } ifelse
+  token { /rows exch def pop } { } ifelse
+  currentfile String readline pop
+  token { /Ncol exch def pop } { } ifelse
+  /ColorMap Ncol array def
+  systemdict /colorimage known {
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      currentfile 3 string readhexstring pop put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } false 3 colorimage
+  }{
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      1 string dup 0
+      currentfile color readhexstring pop pop
+      color 0 get 0.299 mul
+      color 1 get 0.587 mul add
+      color 2 get 0.114 mul add
+      cvi put put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } image
+  } ifelse
+  grestore
+} bind def
+%***********************************************************************
+%*                          Image decoding                             *
+%***********************************************************************
+DisplayImage
+357 439
+2
+000000 ffffff
+ff001b000501ff0045001f01ff0035002f01ff0034002f01ff0033003101ff0031003201
+ff0031003301ff002f003401ff002e003501ff002e003601ff002c003701ff002b003901
+ff0029003a01ff0029003a01ff0028003c01ff0026003d01ff0025003f01ff0024003f01
+ff0023004101ff0021004201ff0021004201ff0020004401ff001e004501ff001d004701
+ff001c004701ff001b004901ff0019004a01ff0019004a01ff0018004c01ff0016004d01
+ff0015004f01ff0014004f01ff0013005001ff0012005201ff0010005301ff0010005a01
+ff0008006501fe006f01f3007901ea007a01e8007c01e7007c01e6007d01e6007e01e400
+7f01e4007f01e3008101e2008101e1008201e1008301df008401df008401de008601dd00
+8601dc008701dc008801da008901da008901d9008b01d8008b01d7008c01d7008d01d500
+8e01d5008e01d4009001d3009001d2009101d2009201d0009301d0009301cf009501ce00
+9501cd009601cd009701cb009801cb009801ca009a01c9009a01c8009b01c8009c01c700
+9c01c6009d01c6009e01c5009d01c5009d01c6009d01c6009c01c6009c01c7009b01c800
+9b01c7009b01c8009a01c9009901c9009901ca009901ca009801ca009801cb009701cc00
+9701cb009701cc009601cd009501cd009501ce009501ce009401ce009401cf009301d000
+9301cf009301d0009201d1009101d1009101d2009101d2009001d2009001d3008f01d400
+8e01d4008e01d5008c01d7008b01d7008b01d8008901da008801da008801db008601dd00
+8501de008401de008301e0008201e1008101e1008001e3007f01e4007e01e4007d01e600
+7c01e7007b01e7007a01e9007901ea007801ea007801eb007601ed007501ed007501ee00
+7401ef007301ef007201f1007101f2007001f2007001f3006f01f4006d01f5006d01f600
+6c01f7006b01f7006b01f8006901fa006801fa006801fb006701fc006501fd006501fe00
+6401ff006301ff006301ff0000006101ff0002006001ff0002006001ff0003005f01ff00
+04005e01ff0004005d01ff0006005c01ff0007005b01ff0007005b01ff0008005a01ff00
+09005801ff000b005701ff000b005701ff000c005601ff000d005401ff000e005401ff00
+0f005301ff0010005201ff0010005201ff0011005001ff0013004f01ff0013004f01ff00
+14004e01ff0015004d01ff0015004c01ff0017004b01ff0018004a01ff0018004a01ff00
+19004901ff001a004701ff001b004701ff001c004601ff001d004501ff001d004401ff00
+1f004301ff0020004201ff0020004201ff0021004101ff0022003f01ff0023003f01ff00
+24003e01ff0025003d01ff0025003d01ff0026003b01ff0028003a01ff0028003a01ff00
+29003901ff002a003801ff002a003701ff002b003701ff002c003601ff002c003601ff00
+2c003501ff002e003401ff002e003401ff002e003401ff002f003301ff002f003201ff00
+31003101ff0031003101ff0031003101ff0032003001ff0032002f01ff0033002f01ff00
+34002e01ff0034002e01ff0034002e01ff0035002c01ff0036002d01ff0036002c01ff00
+36002c01ff0036002d01ff0036002c01ff0036002c01ff0036002d01ff0036002c01ff00
+36002c01ff0036002d01ff0036002c01ff0036002c01ff0036002d01ff0036002c01ff00
+36002c01ff0037002c01ff0036002c01ff0036002c01ff0037002b01ff0037002c01ff00
+36002c01ff0037002b01ff0037002c01ff0036002c01ff0037002b01ff0037002c01ff00
+37002b01ff0037002b01ff0037002c01ff0037002b01ff0037002b01ff0037002c01ff00
+37002b01ff0037002b01ff0037002c01ff0037002b01ff0037002b01ff0037002c01ff00
+37002b01ff0037002b01ff0038002b01ff0037002b01ff0037002b01ff0038002b01ff00
+37002b01ff0037002b01ff0038002b01ff0037002b01ff0037002b01ff0038002b01ff00
+37002b01ff0038002a01ff0038002b01ff0037002b01ff0038002a01ff0038002a01ff00
+38002b01ff0038002a01ff0038002a01ff0038002b01ff0038002a01ff0038002a01ff00
+39002a01ff0038002a01ff0038002a01ff0039002a01ff0038002a01ff0038002a01ff00
+39002a01ff0038002a01ff0038002a01ff0039002a01ff0038002a01ff0038002a01ff00
+39002a01ff0038002a01ff0039002901ff0039002a01ff0038002a01ff0039002901ff00
+39002a01ff0038002a01ff0039002901ff0039002a01ff0038002a01ff0039002901ff00
+39002a01ff0039002901ff0039002901ff0039002901ff003a002901ff0039002901ff00
+39002901ff003a002901ff0039002901ff0039002901ff000400000134002901ff000400
+020131002901ff00040005012e002901ff00040008012c002901ff0003000b0129002901
+ff0003000e0127002801ff000300110124002901ff000200140121002901ff0002001701
+1f002801ff0002001a011c002901ff0001001d0119002901ff000100200117002801ff00
+0100230114002901ff000000260111002901ff00000029010f002801ff0000002c010c00
+2901ff002f010a002801ff00320107002801ff00350104002901fe00380102002801fe00
+3a0100002801fe006501fd006501fd006501fd006601fc006601fc006601fc006701fb00
+6701fd006501fe006401ff006401ff006301ff0000006201ff0002006101ff0002006001
+ff0003005f01ff0004005f01ff0004005f01ff0005005e01ff0005005f01ff0004005f01
+ff0004005f01ff0004005f01ff0005005e01ff0005005f01ff0004005f01ff0004005f01
+ff0005005e01ff0005005f01ff0004005f01ff0004005f01ff0004005f01ff0005005e01
+ff0005005f01ff0004005f01ff0004005f01ff0004005f01ff0005005f01ff0004005f01
+ff0004005f01ff0004005f01ff0004005f01ff000500000100005d01ff0010005301ff00
+1a004901ff0024003f01ff0028003c01ff0026003d01ff0026003d01ff0026003d01ff00
+25003e01ff0025003f01ff0024003f01ff0023004001ff0023004001ff0023004101ff00
+22004101ff0021004201ff0021004201ff0021004201ff0020004401ff001f004401ff00
+1f004401ff001e004501ff001e004601ff001d004601ff001c004601ff001d004401ff00
+1f004301ff001f004201ff0021004101ff0022003f01ff0024003e01ff0024003d01ff00
+26003c01ff0027003a01ff002d003501ff0031003101ff0034002d01ff0039002901ff00
+3c002501ff0041002101ff0045001c01ff0049001901ff004d001401ff0052001001ff00
+55000c01ff005a000801ff005d000401ff0062000001ff001a00
+restore grestore
+%
+% End Imported PIC File: Bone-14.gif
+%%EndDocument
+%
+% Polyline
+%
+% Begin Imported GIF File: bat-12.gif
+n gs
+4050 2250 tr
+2.848101 -6.250000 sc
+0 -216 tr
+0 0 tr
+sa
+/showpage {} def
+% GIF image follows:
+474 216 sc
+%***********************************************************************
+%*                                                                     *
+%* Object: Image decoding PS-routine                    Date: 01.02.93 *
+%* Author: Evgeni CHERNYAEV (chernaev@vxcern.cern.ch)                  *
+%*                                                                     *
+%* Function: Display a run-length encoded color image.                 *
+%*           The image is displayed in color on viewers and printers   *
+%*           that support color Postscript, otherwise it is displayed  *
+%*           as grayscale.                                             *
+%*                                                                     *
+%***********************************************************************
+/byte 1 string def
+/color 3 string def
+systemdict /colorimage known { /cnt 3 def } { /cnt 1 def } ifelse
+/String 256 cnt mul string def
+%***********************************************************************
+/DecodePacket            % Decode color packet                         *
+%***********************************************************************
+{
+  currentfile byte readhexstring pop 0 get
+  /Nbyte exch 1 add cnt mul def
+  /color ColorMap currentfile byte readhexstring pop 0 get get def
+  String dup
+  0 cnt Nbyte 1 sub { color putinterval dup } for
+  pop 0 Nbyte getinterval
+} bind def
+%***********************************************************************
+/DisplayImage            % Display run-length encoded color image      *
+%***********************************************************************
+{
+  gsave
+  currentfile String readline pop
+  token { /columns exch def } { } ifelse
+  token { /rows exch def pop } { } ifelse
+  currentfile String readline pop
+  token { /Ncol exch def pop } { } ifelse
+  /ColorMap Ncol array def
+  systemdict /colorimage known {
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      currentfile 3 string readhexstring pop put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } false 3 colorimage
+  }{
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      1 string dup 0
+      currentfile color readhexstring pop pop
+      color 0 get 0.299 mul
+      color 1 get 0.587 mul add
+      color 2 get 0.114 mul add
+      cvi put put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } image
+  } ifelse
+  grestore
+} bind def
+%***********************************************************************
+%*                          Image decoding                             *
+%***********************************************************************
+DisplayImage
+474 216
+2
+000000 ffffff
+ff00f4001901ff00bb002301ff00b0002f01ff00a6003501ff00a1003a01ff009b004101
+ff0095004601ff0091004c01ff008b005001ff0087005301ff0084005701ff0080005b01
+ff007d005d01ff007b006101ff0077006401ff0074006801ff0070006901ff0071006c01
+ff0070006b01ff0070006c01ff006d006d0113000701ff00500070010f000701ff005200
+72010b000a01ff005000730109000a01ff005100750106000a01ff005100790104000801
+ff005300790102000801ff0054008301ff0056008201ff0057008101ff0058008101ff00
+58008201ff0056008301ff0056008301d600050178008501d200080178008501d1000801
+79008601cf00080179008701cd0009017a008701cc0009017a008901ca0007017d008801
+c90009017d008a01c500110176008a01c400190170008b01c0002a0161008d01bb003201
+5d008c01b9003b0157008c01b800420150008c01b6004a014b008e01b2004f0147008f01
+b000540144008f01ad00580142009001ab005c0140009101780003012b005f013f009201
+760003012a0061013e00930174000401290064013e00920171000701270067013c009301
+70000901240069013b0095016d000b0121006d013a0095016b000c0120006f0139009701
+68000e011e00720137009901640010011d00740136009a01630011011b00760135009a01
+610013011a00780134009d015d00150117007b0133009e015b00160116007c013300a201
+5600170115007e013300a30153001801140080013200a30153001801130082013100a401
+50001a01120083013100a7014d001a01110085013100a8014a001b01100086013100aa01
+47001d010e0088013a00a00147001d010d008a013c009e0145001e010c008c013d009e01
+43001e010b008d013e009e0142001d010b008f013f009e013f001e010a00900140009f01
+3d001e010800930140009f013c001e01070094014100a00139001f01060095014200a101
+37001f01040098014200a40133001e01040099014400a40131001e0103009a014400a601
+2e00bf014400a7012c00bf014500a9012800c0014500aa012500c2014700ab012100c301
+4800ac011d00b801040006014900ae011a00b4015b00b1011400b5015c00b4011000b401
+6000b6010900b5016300bb010200b5016500ff0171016800ff016f016a00ff016d016b00
+ff016c016e00ff016a016e00ff0169017000ff0167017200ff0166017300ff0164017400
+ff0164017500ff0162017600ff0162017600ff0162017700ff0161017800ff0160017800
+ff014a01010012017900ff0144010f000a017900ff013f01190005017a00ff013b019d00
+ff013801a100ff013401a400ff013201a600ff013101a700ff012e01ab00ff012c01ac00
+ff012a01ae00ff012801b000ff012601b200ff012401b400ff012301b500ff012001b900
+ff011f01b800ff011f01b900ff011f01b900ff011d01bb00ff011b01be00ff011901c000
+ff011701c100ff011701c100ff011601c200ff011501c300ff011401c400ff011201c600
+ff011201c600ff011101c800ff010f01c900ff010e01ca00ff010e01ca00ff010d01cc00
+ff010b01cd00ff010b01cd00ff010a01ce001a010100ed01cf000b011700e501cf000a01
+1a00e201d00007012100dd01d30003012700d901ff000200d601ff000500d201ff000800
+ab010e001501ff000a00a70115001001ff000c00a2011d000a01ff0010009b0125000501
+ff0012009801ff0042009501ff0045009101ff0048008e01ff004c008b01ff0050008501
+ff0054008301ff0056008001ff005a007c01ff005e007901ff0060007601ff0064007401
+ff0064007201ff0068006e01ff006c006b01ff006e006901ff0071006501ff0074006401
+ff0074006201ff0078005f01ff007a005c01ff007e005a01ff007e005801ff0082005501
+ff0083005401ff0085005201ff0083005401ff0082005501ff0082005401ff0082005601
+ff0081005501ff0082005601ff0082005501ff0083005401ff0084005201ff0087000d01
+05003d01ff0087000d0106003a01ff008b000b0107003801ff008d000a0107003701ff00
+a2003601ff00a2003501ff00a3003601ff00a3003701ff00a1003701ff00a2003701ff00
+a1003701ff00a100230107000b01ff00a2001f010c000901ff00a2001c010f000901ff00
+a300180112000901ff00a300140116000801ff00a500130116000701ff00a60012011a00
+0301ff00a9001001ff00c9000e01ff00cc000b01ff00cf000901ff00d1000501f600
+restore grestore
+%
+% End Imported PIC File: bat-12.gif
+%%EndDocument
+%
+% Polyline
+%
+% Begin Imported GIF File: bat-20.gif
+n gs
+5850 2250 tr
+2.042360 -3.435115 sc
+0 -393 tr
+0 0 tr
+sa
+/showpage {} def
+% GIF image follows:
+661 393 sc
+%***********************************************************************
+%*                                                                     *
+%* Object: Image decoding PS-routine                    Date: 01.02.93 *
+%* Author: Evgeni CHERNYAEV (chernaev@vxcern.cern.ch)                  *
+%*                                                                     *
+%* Function: Display a run-length encoded color image.                 *
+%*           The image is displayed in color on viewers and printers   *
+%*           that support color Postscript, otherwise it is displayed  *
+%*           as grayscale.                                             *
+%*                                                                     *
+%***********************************************************************
+/byte 1 string def
+/color 3 string def
+systemdict /colorimage known { /cnt 3 def } { /cnt 1 def } ifelse
+/String 256 cnt mul string def
+%***********************************************************************
+/DecodePacket            % Decode color packet                         *
+%***********************************************************************
+{
+  currentfile byte readhexstring pop 0 get
+  /Nbyte exch 1 add cnt mul def
+  /color ColorMap currentfile byte readhexstring pop 0 get get def
+  String dup
+  0 cnt Nbyte 1 sub { color putinterval dup } for
+  pop 0 Nbyte getinterval
+} bind def
+%***********************************************************************
+/DisplayImage            % Display run-length encoded color image      *
+%***********************************************************************
+{
+  gsave
+  currentfile String readline pop
+  token { /columns exch def } { } ifelse
+  token { /rows exch def pop } { } ifelse
+  currentfile String readline pop
+  token { /Ncol exch def pop } { } ifelse
+  /ColorMap Ncol array def
+  systemdict /colorimage known {
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      currentfile 3 string readhexstring pop put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } false 3 colorimage
+  }{
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      1 string dup 0
+      currentfile color readhexstring pop pop
+      color 0 get 0.299 mul
+      color 1 get 0.587 mul add
+      color 2 get 0.114 mul add
+      cvi put put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } image
+  } ifelse
+  grestore
+} bind def
+%***********************************************************************
+%*                          Image decoding                             *
+%***********************************************************************
+DisplayImage
+661 393
+2
+000000 ffffff
+ff00ff00f1001a01ff00ff0071002b01ff00ff0061003801ff00ff0056004201ff00ff00
+49004d01ff00ff0042005601ff00ff0037005f01ff00ff0030006601ff00ff0028006e01
+ff00ff0022007401ff00ff001a007a01ff00ff0016008101ff00ff000e008701ff00ff00
+09008d01ff00ff0004009201ff00ff009601ff00fb009b01ff00f500a001ff00f200a301
+ff00ee00a801ff00e900ac01ff00e700ae01ff00e300b201ff00e000b601ff00dc00b901
+ff00d900bb01ff00d700be01ff00d400c201ff00d000c401ff00cf00c701ff00cb00ca01
+ff00c800cd01ff00c600cf01ff00c300d20105000701ff00b200d50101000c01ff00af00
+e501ff00ae00e501ff00ae00e601ff00ad0003010100e001ff00bb00d801ff00bd00d601
+ff00be00d501ff00c100d201ff00c300ca0100000401ff00c400ca0100000301ff00c400
+ca01ff00cb00c901ff00cb00c901ff00cb00c901ff00cc00c701ff00cd00c701ff00cc00
+c801ff00cc00c801ff00cc00c701ff00cd00c701ff00cc00c801ff00cc00c701ff00cd00
+c701ff00cd00c601ff00ce00c601ff00cd00c601ff00ce00c601ff00cd00c701ff00cd00
+c701ff00cc00c701ff00cc00c801ff00cc00c701ff00cd00c701ff00cc00c801ff00cb00
+c801ff00cc00c801f0000501d400c801ee000901d200c901ec000a01d200c901ec000a01
+d200ca01ea000b01330005019800ca01ea000b01230022018c00ca01e8000c011a003401
+8300ca01e8000801150043017d00cb01e70008010e004f017900ca01e700080109005601
+7700ca01e700080103005f017400cb01e6006f017100cc01e50072016e00cc01e5007401
+6d00cc01e20079016b00cb01e0007d017000c401dd0082017200c101da0087017300bd01
+d9008a017500ba01d7008d017400b901d50091017400b701d40094017300b701d2009801
+7200b501d1009a017300b401cf009d017200b301ce00a0017200b201cc00a3017200b001
+760009014900a7017100af016c0015014500ab017000af01680019014200ae017000ae01
+630020013e00b2017000ad01620024013800b6016f00ac015d002d013300b8016f00ac01
+5c002e013000bc016e00ab015a0033012c00be016f00a90156003b012700c0016f00a801
+53003e012500c3016f00a801520042012000c6016e00a8014f0046011c00c9016e00a701
+4f0047011a00cc016c00a7014b004d01050006010900cf016b00a80149004f0104000601
+0800d0016d00a60147005d010600d3016c00a70144005f010500d6016b00a60143006001
+0400d7016c00a501410062010200da016b00a601400062010200dc016a00a5013d006401
+0100de016a00a6013b0065010000e0016a00a6013a0065010000e1016a00a5013800ff01
+4b016a00a4013600ff014d016a00a5013500ff014e016a00a4013300ff0151016a00a401
+3100ff0153016900a4013000ff0154016900a5012d00ff0157016900a4012c00ff015901
+6800a5012900ff015b016900a4012900ff015b016a00a4012600ff015d016a00a5012300
+ff015f016b00a4012100ff0154017800a5012000ff014c018000a5011e00ff0149018500
+a6011d00ff0147018800a6011900ff0149018900a6011800ff0147018c00a7011600ff01
+47018d00a7011500ff0146019000a7011200ff0145019300a8011000ff0146019300a901
+0f00ff0145019400a9010d00ff0145019700aa010a00ff0146019700ab010900ff014401
+9900ac010700ff0144019a00ad010600ff0143019c00ae010300ff0143019d00b0010000
+ff0142019f00ff01f4019f00ff01f301a000ff01f101a200ff01f101a200ff01f001a300
+ff01f001a300ff01f001a400ff01d60105001101a500ff01cf0112000b01a500ff01cb01
+1a000701a500ff01c9011d000501a600ff01c601cd00ff01c401cf00ff01c201d100ff01
+c001d300ff01bd01d700ff01bb01d800ff01b901da00ff01b701dc000c010900ff019f01
+de0009011000ff019701e10006011500ff019401e20005011900ff018f01e40005011a00
+ff018d01e60003011d00ff018901ff000c00ff018501ff000f00ff018301ff001200ff01
+8001ff001400ff017d01ff001800ff017a01ff001a00ff017701ff001d00ff017501ff00
+2000ff017201ff002100ff017001ff002500ff016d01ff002700ff016b01ff002900ff01
+6901ff002b00ff016701ff002c00ff016501ff002f00ff016301ff003100ff016101ff00
+3300ff015f01ff003500ff015e01ff003500ff015c01ff003900ff015901ff003a00ff01
+5801ff003c00ff015601ff003d00ff015501ff003f00ff015301ff004000ff015201ff00
+4200ff015101ff004200ff014f01ff004500ff014e01ff004600ff014c01ff004700ff01
+4b01ff004900ff014901ff004a00ff014901ff004b00ff014601ff004d00ff014601ff00
+4e00ff014401ff004f00ff014301ff005100ff014201ff005100ff014101ff005200ff01
+4001ff005400ff013f01ff005400ff013e01ff005600ff013c01ff005700ff013c01ff00
+5800ff013a01ff005900ff013901ff005a00ff013901ff005a00ff013801ff005b00f201
+00004401ff005c00e60116003801ff005d00e00121003201ff005e00db012c002b01ff00
+6000d60134002701ff006000d20139002501ff006100cf013f002201ff006100cc014500
+1e01ff006300c7014c001a01ff006400c6014e001901ff006400c30153001601ff006500
+bf015a001201ff006600bf015b001101ff006600bc0160000f01ff006600ba0163000c01
+ff006900b70166000b01ff006900b50169000901ff006a00b3016c000701ff006b00b201
+6e000601ff006b00b00171000301ff006d00af01ff00e400ad01ff00e600ac01ff00e700
+aa01ff00e900a901ff00ea00a801ff00eb00a601ff00ed00a501ff00ee00a401ff00ef00
+a201ff00f100a101ff00f200a001ff00f3009f01ff00f4009e01ff00f5009d01ff00f600
+9c01ff00f6009c01ff00f7009b01ff00f8009a01ff00f9009901ff00fa009801ff00fb00
+9601ff00fd009601ff00fd009501ff00fd009501ff00fe009401ff00ff009201ff00ff00
+00009301ff00ff009301ff00ff009301ff00ff0000009201ff00ff0000009301ff00f200
+050106009301ff00f1000b0102009201ff00f100a201ff00f100a101ff00f100a101ff00
+f200a101ff00f100a101ff00f100a201ff00f100a201ff00f100a201ff00f100a201ff00
+f200a301ff00f0008b0102001501ff00ef001b010400670107001301ff00ee001a010700
+650108001401ff00ed0017010a0063010b001401ff00ec0015010c0062010c001401ff00
+ec00100112005f010f001301ff00ee000d0113005f010f001301ff00ef000c0114005d01
+11001201ff00f0000b0114005c0112001201ff00f0000c0113005b0114001101ff00f000
+0d0112005b0114001101ff00f1000c011300580117001001ff00f2000b01130058011700
+1001ff00f2000b011300560119001001ff00ff00120051011f000e01ff00ff0013004e01
+22000e01ff00ff0014004b0123000f01ff00ff001400480126000e01ff00ff0015004701
+27000e01ff00ff001500450129000e01ff00ff00150043012c000c01ff00ff0017004001
+2e000a01ff00ff0019003f01ff00ff0054003d01ff00ff0057003c01ff00ff0057003a01
+ff00ff005a003801ff00ff005b003701ff00ff005c003601ff00ff005d003401ff00ff00
+5f003401ff00ff005f003201ff00ff0061003101ff00ff0062003001ff00ff0064002e01
+ff00ff0065002c01ff00ff0067002c01ff00ff0067002b01ff00ff0068002a01ff00ff00
+69002801ff00ff006b002801ff00ff006b002601ff00ff006d002601ff00ff006d002501
+ff00ff006e002401ff00ff006f002401ff00ff006f002401ff00ff006f002201ff00ff00
+71002201ff00ff0071002101ff00ff0072002101ff00ff0072002001ff00ff0073002001
+ff00ff0073001f01ff00ff0075001c01ff00ff0077001c01ff00ff0077001c01ff00ff00
+77001b01ff00ff0078001b01ff00ff0078001a01ff00ff0079001901ff00ff007b001801
+ff00ff007b001701ff00ff007b001701ff00ff007c001701ff00ff007c001701ff00ff00
+7c001601ff00ff007d001501ff00ff007e001501ff00ff007e001401ff00ff0080001301
+ff00ff007f001301ff00ff0080001301ff00ff0080001301ff00ff0080001201ff00ff00
+81001201ff00ff0081001101ff00ff0083001001ff00ff0083001001ff00ff0083000f01
+ff00ff0085000e01ff00ff0085000e01ff00ff0085000d01ff00ff0086000d01ff00ff00
+86000c01ff00ff0087000c01ff00ff0087000c01ff00ff0088000a01ff00ff0089000a01
+ff00ff0089000a01ff00ff0089000a01ff00ff0089000901ff00ff008a000901ff00ff00
+8b000801ff00ff008b000801ff00ff008c000601ff00ff008d000601ff00ff008d000601
+ff00ff008d000601ff00ff008e000501ff00ff008e000501ff00ff008e000501ff00ff00
+8f000401ff00ff008f000401ff00ff0090000301ff00ff0090000301ff00b900
+restore grestore
+%
+% End Imported PIC File: bat-20.gif
+%%EndDocument
+%
+% Polyline
+%
+% Begin Imported GIF File: device6-2.gif
+n gs
+4050 4050 tr
+2.419355 -2.419355 sc
+0 -558 tr
+0 0 tr
+sa
+/showpage {} def
+% GIF image follows:
+558 558 sc
+%***********************************************************************
+%*                                                                     *
+%* Object: Image decoding PS-routine                    Date: 01.02.93 *
+%* Author: Evgeni CHERNYAEV (chernaev@vxcern.cern.ch)                  *
+%*                                                                     *
+%* Function: Display a run-length encoded color image.                 *
+%*           The image is displayed in color on viewers and printers   *
+%*           that support color Postscript, otherwise it is displayed  *
+%*           as grayscale.                                             *
+%*                                                                     *
+%***********************************************************************
+/byte 1 string def
+/color 3 string def
+systemdict /colorimage known { /cnt 3 def } { /cnt 1 def } ifelse
+/String 256 cnt mul string def
+%***********************************************************************
+/DecodePacket            % Decode color packet                         *
+%***********************************************************************
+{
+  currentfile byte readhexstring pop 0 get
+  /Nbyte exch 1 add cnt mul def
+  /color ColorMap currentfile byte readhexstring pop 0 get get def
+  String dup
+  0 cnt Nbyte 1 sub { color putinterval dup } for
+  pop 0 Nbyte getinterval
+} bind def
+%***********************************************************************
+/DisplayImage            % Display run-length encoded color image      *
+%***********************************************************************
+{
+  gsave
+  currentfile String readline pop
+  token { /columns exch def } { } ifelse
+  token { /rows exch def pop } { } ifelse
+  currentfile String readline pop
+  token { /Ncol exch def pop } { } ifelse
+  /ColorMap Ncol array def
+  systemdict /colorimage known {
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      currentfile 3 string readhexstring pop put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } false 3 colorimage
+  }{
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      1 string dup 0
+      currentfile color readhexstring pop pop
+      color 0 get 0.299 mul
+      color 1 get 0.587 mul add
+      color 2 get 0.114 mul add
+      cvi put put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } image
+  } ifelse
+  grestore
+} bind def
+%***********************************************************************
+%*                          Image decoding                             *
+%***********************************************************************
+DisplayImage
+558 558
+2
+000000 ffffff
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ac000101ff00ff002a000201ff00ff0028000501ff00ff0026000601ff00
+ff0025000801ff00ff0023000901ff00ff0022000a01ff00ff0020000c01ff00ff001f00
+0e01ff00ff001d000f01ff00ff001b001101ff00ff001a001201ff00ff0019001401ff00
+ff00160016010a000101ff00ff00080017010b000201ff00ff00050019010a000301ff00
+ff0002001b010a000401ff00ff0000001c010b000401ff00fd001e010b000601ff00fa00
+20010a000701ff00f70022010a000801ff00f50023010a000a01ff00f10026010a000a01
+ff00ef0027010a000b01ff00ec0029010a000c01ff00ea002a010a000e01ff00e6002c01
+0b000e01ff00e3002f010a000f01ff00e10030010a001001ff00de0032010a001101ff00
+db00350109001201ff00d90036010a001301ff00d50038010a001401ff00d2003a010a00
+1501ff00d0003c0109001601ff00cd003d010b001601ff00ca0040010a001701ff00c700
+30010100100109001901ff00c3003101020010010a001901ff00c000310105000f010b00
+1901ff00be00310106000f010c001901ff00bb00310108000f010d001901ff00b8003201
+090010010e001801ff00b50032010b0010010f001801ff00b20033010d000f0110001801
+ff00af0033010f000f0111001801ff00ac0033011100100111001901ff00a80034011200
+100112001901ff00a50034011400100113001901ff00a200340117000f0115001701ff00
+a000340119000f0115001901ff009c0034011b000f0117001801ff009a0034011c001001
+17001801ff00960035011e00100118001801ff009400340121000f0119001801ff009100
+340123000f011a001801ff008e00340125000f011b001801ff008b003401270010011b00
+1801ff0088003401290010011c001801ff00850034012b0010011d001801ff0082003401
+2d0010011e001801ff007f00340130000f011f001801ff007c003401320010011f001801
+ff00790033013500100120001801ff00770032013700100121001801ff00740032013900
+100122001801ff00710032013b00100123001801ff006e0032013e000f0124001801ff00
+6b0032014000100124001801ff00680031014300100125001801ff006500310145001001
+26001801ff00630030014700100127001801ff00600030014900100128001801ff005d00
+2f014c00100129001801ff005a002f014e0010012a001801ff0057002f01500011012a00
+1801ff0055002e01530010012a001901ff0052002e01540011012c001801ff004f002e01
+570010012c001901ff004d002c015a0010012d001901ff004a002c015c0010012e001901
+ff0047002c015e0010012f001901ff0045002b016000100130001901ff0042002b016200
+100131001901ff003f002b016400110131001901ff003d002a016600110132001901ff00
+3a002a016800110133001901ff00380029016a00110133001a01ff00350029016c001101
+35001901ff00320029016e00110135001901ff00310028017000110136001a01ff002d00
+28017200110137001a01ff002b0028017300110138001901ff0029002801750011013900
+1a01ff0026002701780010013a001a01ff0023002701790011013b001a01ff0021002601
+7b0011013b001a01ff001f0027017c0011013c001b01ff001c0026017e0011013d001a01
+ff001b002501800011013e001b01ff0017002501820011013f001b01ff00150025018300
+110140001b01ff00120025018500120140001b01ff00100024018700110142001a01ff00
+0e0025018800120141001c01ff000b0024018a00110143001c01ff00090024018b001101
+44001c01ff00060024018d00110145001c01ff00040023018f00110146001c01ff000200
+23019000120146001c01ff00000022019200110148001c01ff000300000100001b019300
+110148001d01ff000a001301940012014a001c01ff001000000100000901950012014a00
+1d01ff001500000100000101970012014b001d01ff00b00012014c001d01ff00af001201
+4d001e01ff00ad0012014e001e01ff00ac0012014f001d01ff00ac00120150001e01ff00
+a900120152001e01ff00a800130152001e01ff00a700120153002001ff00a50012015500
+1e01ff00a500120155002001ff00a200130156002001ff00a100130157002001ff00a000
+130158002101e80000010100000100000001010001010000030100001201000000010000
+00010000000102000001880012015a002101d200000100004a0100000001010000017800
+12015b002101cf005801720013015c002101ce00600100000001680013015e002101cd00
+650100000001620013015e002201cc006b015e0013015f002201cb007001580013016200
+2201ca0073015400140161002301c90076015100130163002301c80079014d0014016500
+2301c7007c014900140165002401c6007f014600130168002401c4008201420014016900
+2401c30085013f0014016a002401c30086013d0014016b002501c1008901390015016c00
+2601bf008b01370014016e002601bf008d01340014016f002601be008e01320015017100
+2601bc0091012f00140173002701ba0092012d00150174002701ba0093012b0015017500
+2801b7002101010000010000000102000001030000010200000100000001000000010000
+010100005a012800160176002901b6001f012600010100004d012600150179002801b500
+1f012f00000100004701230016017a002901b4001f0137004101220015017c002901b300
+1e013d003e01200015017e002901b1001f0141003a011e0016017f002801b1001f014500
+37011c00160181002701b2001e01490035011a00160183002301b4001f014b0033011800
+170182002201b6001e014f0032011600160182002201b7001f0152002f01140017017f00
+2301ba001e0154002e01120017017f002301ba001f0157002d01100017017d002301bd00
+1e015a002b010e0017017d002201bf001f015a002b010d0017017b002301c0001f015d00
+29010b00180179002301c3001e015f0028010900180179002301c4001e01610027010700
+190177002301c6001e01630026010600180176002301c8001e0165002501040018017600
+2201cb001e01650025010200190174002301cc001e016700240100001a0172002301ce00
+1e0169003d0172002201d0001e016a003b0170002401d1001e016c0039016e002401d300
+1e016d0037016e00240111000001c2001e016e0035016c00240111000201c2001e016f00
+33016b00240112000301c2001e01700031016a00240113000301c3001e0172002f016800
+250112000501c4001d0173002d016700250113000601c4001d0174002b01660025011400
+0601c5001e01740029016500250114000801c5001d01760028016200260115000801c600
+1e01760026016100260116000901c6001e01770024015f00270116000b01c7001d017800
+22015e00280116000c01c7001d01790020015d00280116000d01c8001d017a001f015a00
+290117000e01c8001d017b001d015900290118000f01c9001c017b001c0157002a011800
+1001c9001e0179001c0155002b0119001101ca001d0177001e0152002c0119001201cb00
+1d01750022014d002d011a001301cb001d01730027014500000100002e011b001401cb00
+1d0171002d013d0032011c001401cd001c0170003101360033011f001401cd001c016e00
+38012c00360121001401cd001d016c003f011f003b0122001401ce001d016b004a010000
+0001010000010100000100000001000000010000410125001401ce001c016a0099012600
+1501ce001d016800970129001401d0001c01670095012b001501d0001c01650095012d00
+1401d1001c016400930130001401d1001d01620028010100660132001501d1001c016200
+29010400600135001401d3001c015f002b0106005a0138001501d2001d015f002b010900
+54013b001501d3001c015d002d010d004c013e001501d4001c015c002e01100045014200
+1501d4001c015b00300113003d0145001501d5001c015a00300118003301000000014900
+1501d5001c01590032011d00270150001501d7001b015800200101001001250000010000
+1001000001010100000157001501d7001c01560020010200100195001601d7001c015500
+1f010400100195001501d8001c0154001f010500110194001501d8001c0154001d010700
+110193001601d8001c0153001d010900100192001601da001b0152001c010b0010019200
+1601da001b0151001c010c00100191001601db001c014f001c010d00110190001601db00
+1c014e001b010f00110190001501dc001c014d001b01110010018f001601dd001b014c00
+1b01120010018e001701dd001b014c001a01130011018d001601de001b014b001a011400
+11018c001701de001b014a001a01160010018c001601df001c0148001901180011018b00
+1601df001b0149001901180011018a001701df001c01470019011900110189001701e100
+1b01460019011b00110188001701e1001b01450019011c00110188001601e2001b014500
+17011e00110187001701e2001b01440018011e00120185001701e3001c01420018012000
+110185001701e4001a01430017012100120183001801e4001b0141001701230011018300
+1701e5001b01400017012400110182001801e5001b01400016012500120181001701e600
+1b013f0016012700110180001801e6001b013e001701270012017f001701e8001b013d00
+1601280012017e001801e8001b013c0016012a0012017d001801e8001b013b0016012b00
+12017c001801e9001b013b0015012c0012017b001901e9001b013a0016012d0012017a00
+1801eb001a013a0015012e00130179001801eb001a01390015013000120178001801ec00
+1b01370016013000120177001901ec001b01370015013200120176001901ec001b013600
+15013300130174001901ed001b01360014013500120174001901ee001b01340015013500
+130172001901ef001a01350014013600130171001a01ef001b0133001401380013017000
+1901f0001b01330014013800130170001901f0001b01320014013a0013016e001901f200
+1a01310015013a0014016c001a01f2001a01310014013c0013016c001a01f2001b013000
+13013e0013016a001a01f3001b012f0014013e0013016a001a01f4001a012f0013014000
+130168001a01f5001a012e0013014100140167001a01f5001a012e001301420014016500
+1a01f6001b012c0013014300140165001a01f6001b012c0013014400140163001b01f600
+1b012b0013014500140163001a01f8001a012b0013014600140161001b01f8001a012a00
+13014800140160001a01f9001b0129001201490015015e001b01f9001b01280013014a00
+14015d001c01f9001b01280013014a0015015c001b01fb001a01270013014c0015015b00
+1a01fc001a01270012014e00150159001b01fc001b01260012014e00160158001b01fc00
+1b01250013014f00150157001b01fe001a01250012015100150155001c01fe001a012400
+12015200160154001c01fe001b01230012015300160152001c01ff001b01230011015500
+150152001c01ff0000001a01220012015600150151001b01ff0001001a01220011015700
+16014f001c01ff0001001b0120001201580016014d001c01ff0002001b01200012015900
+16014c001c01ff0003001a01200011015b0016014a001d01ff0003001a011f0012015b00
+170149001c01ff0004001b011e0011015d00170148001c01ff0004001b011d0012015e00
+170146001c01ff0006001a011d0011016000160146001c01ff0006001a011c0012016000
+180143001d01ff0006001b011b0011016200170143001c01ff0007001b011b0011016300
+180140001d01ff0008001a011b001101640017013f001e01ff0008001a011a0011016600
+17013f001c01ff0009001b0119001101670017013d001d01ff0009001b01180011016800
+18013b001d01ff000b001a01180011016900190139001d01ff000b001b01160012016a00
+180138001e01ff000b001b01160011016c00190136001d01ff000c001b01160011016d00
+180136001d01ff000d001a01160010016f00190133001d01ff000e001b01140011017000
+180133001d01ff000e001b011400110170001a0130001e01ff000e001b01130011017200
+1a012f001d01ff0010001a011300110173001a012e001d01ff0010001b01120010017500
+1a012c001e01ff0010001b011200100176001a012b001d01ff0011001b01110011017700
+1a0129001e01ff0012001b011000100179001a0128001e01ff0012001b010f0011017a00
+1b0126001d01ff0013001b010f0010017c001a0125001e01ff0013001b010f0010017d00
+1b0123001e01ff0014001b010d0011017e001b0121001e01ff0015001b010d0010018000
+1b0120001e01ff0015001b010d00100181001b011f001e01ff0015001c010b0011018200
+1c011c001e01ff0017001b010b00100184001c011b001e01ff0017001b010b0010018500
+1c011a001e01ff0017001b010a00110186001c0118001e01ff0019001b01090010018800
+1c0117001e01ff0019001b01090010018a001c0115001e01ff0019001a01090010018b00
+1d0113001e01ff001b0019010a000f018d001c0112001f01ff001a0018010a0010018e00
+1d010f001f01ff001b0018010a000f0190001d010e001f01ff001c0016010a0010019100
+1d010d001e01ff001d0016010a00100192001d010b001f01ff001d0015010b000f019400
+1e0109001f01ff001d0014010b00100195001e0108001e01ff001f0013010b0010019700
+1d0107001e01ff001f0013010b00100198001e0104001f01ff001f0012010b0010019a00
+1e0103001f01ff00200010010c0010019b001e0102001e01ff00210010010c000f019d00
+1f0100001e01ff0021000f010c0010019e003e01ff0022000e010c001001a0003c01ff00
+22000d010d000f01a1003b01ff0023000d010d000f01a3003901ff0023000c010d001001
+a4003801ff0024000b010d001c01000000010000000195003701ff0024000a010d002f01
+0000000186003501ff0025000a010d003901000000017e003301ff00260008010e004201
+0000000176003201ff00260008010e004b0170003101ff00270006010e0053016a002f01
+ff00280006010e005a0164002e01ff00280005010f0062015e002c01ff00280004010f00
+6a0158002b01ff00290003010f00710152002901ff002a000201100079014b002801ff00
+2a0002010f00820145002601ff002b00000110008b013d002501ff003d00940100000001
+33002301ff003d00a1010000000128002201ff003d00b101000000011a002001ff003d00
+b80116001f01ff003d00b90116001e01ff003c00bb0116001c01ff003d00bd0116001a01
+ff003c00bf0116001901ff003c00c00116001801ff003c00c10116001701ff003c00c201
+17001401ff003c00c40117001301ff003c00c60116001201ff003b00c70117001101ff00
+3b00c90117000e01ff003c00ca0117000e01ff003b000a01000001010000000101000001
+1d00000100000001000000010000940117000c01ff00840000010000820117000b01ff00
+920000010000750118000901ff009f0000010000690118000801ff00ab00610117000601
+ff00b800560117000501ff00c40000010000490118000301ff00d200000100003c011800
+0201ff00e300000100002c0118000001ff00ff0005000001010000010000000100000001
+0000000100000001ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff003500
+restore grestore
+%
+% End Imported PIC File: device6-2.gif
+%%EndDocument
+%
+% Polyline
+%
+% Begin Imported GIF File: device6-5.gif
+n gs
+5850 4050 tr
+2.419355 -2.419355 sc
+0 -558 tr
+0 0 tr
+sa
+/showpage {} def
+% GIF image follows:
+558 558 sc
+%***********************************************************************
+%*                                                                     *
+%* Object: Image decoding PS-routine                    Date: 01.02.93 *
+%* Author: Evgeni CHERNYAEV (chernaev@vxcern.cern.ch)                  *
+%*                                                                     *
+%* Function: Display a run-length encoded color image.                 *
+%*           The image is displayed in color on viewers and printers   *
+%*           that support color Postscript, otherwise it is displayed  *
+%*           as grayscale.                                             *
+%*                                                                     *
+%***********************************************************************
+/byte 1 string def
+/color 3 string def
+systemdict /colorimage known { /cnt 3 def } { /cnt 1 def } ifelse
+/String 256 cnt mul string def
+%***********************************************************************
+/DecodePacket            % Decode color packet                         *
+%***********************************************************************
+{
+  currentfile byte readhexstring pop 0 get
+  /Nbyte exch 1 add cnt mul def
+  /color ColorMap currentfile byte readhexstring pop 0 get get def
+  String dup
+  0 cnt Nbyte 1 sub { color putinterval dup } for
+  pop 0 Nbyte getinterval
+} bind def
+%***********************************************************************
+/DisplayImage            % Display run-length encoded color image      *
+%***********************************************************************
+{
+  gsave
+  currentfile String readline pop
+  token { /columns exch def } { } ifelse
+  token { /rows exch def pop } { } ifelse
+  currentfile String readline pop
+  token { /Ncol exch def pop } { } ifelse
+  /ColorMap Ncol array def
+  systemdict /colorimage known {
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      currentfile 3 string readhexstring pop put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } false 3 colorimage
+  }{
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      1 string dup 0
+      currentfile color readhexstring pop pop
+      color 0 get 0.299 mul
+      color 1 get 0.587 mul add
+      color 2 get 0.114 mul add
+      cvi put put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } image
+  } ifelse
+  grestore
+} bind def
+%***********************************************************************
+%*                          Image decoding                             *
+%***********************************************************************
+DisplayImage
+558 558
+2
+000000 ffffff
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+69000101ff00ff002c000101ff00ff002b000301ff00ff0029000401ff00ff0028000501
+ff00ff0028000501ff00ff001d00000108000701ff00ff001900030107000801ff00ff00
+1700040107000901ff00ff001500050108000901ff00ff001200070108000b01ff00ff00
+0f00090107000c01ff00ff000d000a0107000d01ff00ff000a000c0107000e01ff00ff00
+08000d0108000f01ff00ff000400100107001001ff00ff000200110107001101ff00ff00
+130107001201ff00fd00140108001201ff00fa00160108001301ff00f800180107001501
+ff00f4001a0107001601ff00f2001b0107001701ff00ef001d0108001701ff00ec001f01
+08001801ff00ea00210107001901ff00e700230107001a01ff00e400250107001c01ff00
+e000270108001b01ff00de002a0107001d01ff00db002b0107001e01ff00d8002d010700
+1f01ff00d5002f0107002001ff00d200310108002001ff00cf00330108002101ff00cc00
+360107002201ff00c900380107002301ff00c6003a0107002401ff00c3003c0107002501
+ff00c0003e0108002501ff00bd00410107002601ff00ba00430107002701ff00b6004601
+07002801ff00b300480107002901ff00b0004a0107002a01ff00ad004c0108002a01ff00
+aa004f0107002b01ff00a700510107002c01ff00a300540107002d01ff00a00056010700
+2f01ff009c00580107002f01ff009a005a0107003001ff0097005c0108003001ff009400
+5e0108003101ff009100610107003201ff008e00630107003301ff008a00660107003401
+ff008700680107003501ff0084006a0107003601ff0081006c0107003701ff007e006e01
+07003801ff007b00700108003801ff007800720108003901ff007500750107003a01ff00
+7200770107003b01ff006f00790107003b01ff006d007b0107003d01ff0069007d010700
+3d01ff0067007f0107003e01ff006500800107003f01ff006200820107004001ff005f00
+840107004101ff005c00860107004201ff005900880107004301ff0056008a0108004301
+ff0053008c0107004501ff0051008d0107004601ff004e008f0108004601ff004b009101
+07004801ff004900920108004701ff004700940108004901ff004300960107004a01ff00
+4200970108004b01ff003e00990108004b01ff003c009b0107004d01ff003a009c010800
+4d01ff0037009e0107004f01ff003400a00108004f01ff003200a10107005101ff002f00
+a30108005101ff002d00a40107005301ff002a00a60107005401ff002800a70107005501
+ff002500a90107005601ff002300aa0107005701ff002000ac0107005801ff001e00ad01
+07005901ff001c00ae0107005a01ff001900b00107005b01ff001700b00108005c01ff00
+1400b20108005d01ff001200b30108005e01ff000f00b50108005f01ff000d00b6010700
+6101ff000b00b70107006201ff000800b90107006301ff000600ba0107006401ff000400
+ba0108006501ff000100bc0108006601ff00bd0108006701fd00be0107006901fa00c001
+07006b01f700400100000001160001010000640107006b01f60034010000000130005901
+08006d01f3002c01000000014000520108006e01f00028014e004c0108006f01ee002201
+5a00470107007101ec001d016100460107007201e9001a016500460108007401e6001501
+6b00460108007401e50011017000460108007601e2000e017300470107007801e0000a01
+7800460108007901dd0007017c00470108007b01da0004014c0000010000100100000001
+000000011c00470108007c01d80000014400000100002c011000480107007e01ff001400
+000100003c010900470108007f01ff000c004b010300470108008101ff0004009d010800
+8201fd00a20108008501f600a70108008601f000ac0108008701ea00b00108008a01e400
+b40108008b01de00b90108008c01d900bc0108008f01d2004a0100000001000000010b00
+0001000000010000620108009001cd0041012a0000010000550109009201c8003b013b00
+4f0108009501c600340146004b0108009601c6002d014c004a0108009801c50028015100
+4a0108009a01c300220156004a0109009c01c1001d015b004a0108009e01c10018015e00
+4a0109009f01c000130163004a0108009d01c3000f014200000100000001000000010000
+0001000000010000000118004a0109009901c8000a0136000001000025010b004a010800
+9701ca0007013200370102004a0109009301cf00010130008c0108009001ff0000009101
+09008c01ff0095010900890122000301d7009a010900840123000901d0009e0109008101
+23000e01ca00a30109007c0125001101c600a6010900780126001501c200a9010a007301
+27001801be00ae0109006e0129001c01ba00b10109006701000000012b002001b6004e01
+00000101000061010a005e010000000130002301b6003e01000000012100000100004f01
+0a004d0140002701b60035013400490109004d013d002b01b6002f01390049010a004d01
+39002e01b70029013f0048010a004e0134003301b8002201450047010a004e0130003801
+b8001d01490047010b004e012b003c01b90019014d0047010a004f0126004101b9001401
+510047010a0050011f004801b9001001550046010a00500118004f01bb000b0158004601
+0a005101090000010000000100005a01bb00070134002001060045010b00ba01bb000301
+2f0075010b00ba01e9007b010b00bb01e30080010b00bb01df0084010b00bc01da008801
+0b00bd01d5008c010b00bd01d2008f010b00be01ce0093010a00bf01c90097010a00bf01
+c6009a010a00c001c2009d010b00c001c1009e010a00c001c3009c010a00c101c3009b01
+0a00c201c3009b010900c201c4009a010a00c201c40099010a00c201c60098010900c301
+c60097010900c401c60096010a00c301c70096010900c401c70095010900c401c8009501
+0900c401c90093010900c501c90093010900c401ca0092010900c501ca0092010800c601
+cb0090010900c501cb0091010800c601cc008f010900c501cd008f010800c601cd008e01
+0900c601cd008e010800c601cf008d010800c601cf008c010900c501d0008c010800c601
+d0008b010900c601d0008b010800c601d1008b010800c601d20089010900c501d3008901
+0800c601d30089010800c501d40088010800c601d50087010800c601d50087010800c501
+d50087010800c601d60086010800c201da0086010800be01de0086010700bb01e3008401
+0800b601e80084010800b101ed0084010800ac01f20084010700a801f70083010800a201
+fe00820108009c01ff000400820108009501ff000b00820107008f01ff00120081010800
+840100000001ff001b00810108005e010b00000100000001000000010000000100000001
+01000001ff002c00800108005d01ff004500800107005e0161000301df00800107005e01
+5c000701e0007f0108005d0158000c01e0007f0108005d0153001001e2007e0108005d01
+4d001601e2007e0108005c0148001c01e2007e0107005d014100000100002001e3007e01
+07005d013a00000100002701e3007e0107005d0133002f01e5007c0108005d0127000101
+00003801e5007d010700c001e6007c010800c001e6007c010800c001e7007b010800bf01
+e8007b010700c001e8007b010700bf01e9007b010700bf01e9007b010700be01eb007a01
+0700be01eb007a010700bd01ec0079010800bd01ec007a010700bd01ec0079010800bc01
+ee0078010800bc01ee0078010800bb01ef0078010800bb01ef0078010800bb01f0007701
+0800ba01f10077010800ba01f10077010700ba01f20077010800b901f30076010700b901
+f40076010800b801f40076010800b701f50076010800b701f60075010700b801f6007501
+0800b601f70075010800b601f70075010800b501f90075010700b501f90074010800b501
+f90075010700b401fa0076010600b401fb0078010300b301fc00ff013001fc00ff012f01
+fe00ff012e01fe00ff012e01fe00ff012d01ff00ff012d01ff000000ff012c01ff000000
+ff012b01ff000100ff012b01ff000100ff012a01ff000300ff012901ff000300ff012901
+ff000300ff012801ff000500ff01220100000001ff000800ff011a01ff001200ff010f01
+ff001d00d20103000001000026010000000100000001ff002a00d001ff005c00d101ff00
+5b00d101ff005c00d001ff005c00d001ff005c00d001ff005c00d001ff005d00cf014600
+0901ff000c00cf0139001501ff000d00d801000000011b0000010000000100002401ff00
+0e00ff011e01ff000e00ff011d01ff000f00ff011d01ff001000ff011c01ff001000ff01
+1b01ff001100ff011b01ff001100ff011b01ff001200ff011901ff001300ff011901ff00
+1300ff011901ff001400ff011701ff001500ff011701ff001600ff011601ff001600ff01
+1501ff001700ff011501ff001800ff011401ff001800ff011301ff001900ff011301ff00
+1a00ff011201ff001a00ff011101ff001b00ff011101ff001c00ff011001ff001c00ff01
+0f01ff001d00ff010f01ff001d00ff010f01ff001e00ff010e01ff001e00ff010d01ff00
+2000ff010c01ff002000ff010c01ff002000ff010b01ff002200ff010a01ff002200ff01
+0a01ff002300ff010901ff002300ff010801ff002400ff010801ff002400ff010801ff00
+2500ff010601ff002600ff010601ff002700ff010501ff002700ff010501ff002700ff01
+0401ff002900ff010301ff002900ff010301ff002a00ff010201ff002a00ff010101ff00
+2b00ff010101ff002c00ff010001ff002c00ff010001ff002c00ff01ff002e00fe01ff00
+2e00fe01ff002e00fe01ff002f00fc01ff003000fc01ff003100fb01ff003100fa01ff00
+3200fb01ff003200f901ff003300f901ff003400f801ff003400f701ff003500f701ff00
+3600f601ff003600f601ff003700f401ff003800f401ff003800f401ff003900f301ff00
+3900f201ff003b0000010000000100000001000000013000000100000001000000010000
+b301ff008b0000010000000100009d01ff009c0000010000000100008c01ff00ad000001
+0000010100007901ff00bf0000010000000100006a01ff00d30000010000000100000001
+00004c010000010100000001ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00e800
+restore grestore
+%
+% End Imported PIC File: device6-5.gif
+%%EndDocument
+%
+% Polyline
+%
+% Begin Imported GIF File: device6-13.gif
+n gs
+2250 4050 tr
+2.419355 -2.419355 sc
+0 -558 tr
+0 0 tr
+sa
+/showpage {} def
+% GIF image follows:
+558 558 sc
+%***********************************************************************
+%*                                                                     *
+%* Object: Image decoding PS-routine                    Date: 01.02.93 *
+%* Author: Evgeni CHERNYAEV (chernaev@vxcern.cern.ch)                  *
+%*                                                                     *
+%* Function: Display a run-length encoded color image.                 *
+%*           The image is displayed in color on viewers and printers   *
+%*           that support color Postscript, otherwise it is displayed  *
+%*           as grayscale.                                             *
+%*                                                                     *
+%***********************************************************************
+/byte 1 string def
+/color 3 string def
+systemdict /colorimage known { /cnt 3 def } { /cnt 1 def } ifelse
+/String 256 cnt mul string def
+%***********************************************************************
+/DecodePacket            % Decode color packet                         *
+%***********************************************************************
+{
+  currentfile byte readhexstring pop 0 get
+  /Nbyte exch 1 add cnt mul def
+  /color ColorMap currentfile byte readhexstring pop 0 get get def
+  String dup
+  0 cnt Nbyte 1 sub { color putinterval dup } for
+  pop 0 Nbyte getinterval
+} bind def
+%***********************************************************************
+/DisplayImage            % Display run-length encoded color image      *
+%***********************************************************************
+{
+  gsave
+  currentfile String readline pop
+  token { /columns exch def } { } ifelse
+  token { /rows exch def pop } { } ifelse
+  currentfile String readline pop
+  token { /Ncol exch def pop } { } ifelse
+  /ColorMap Ncol array def
+  systemdict /colorimage known {
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      currentfile 3 string readhexstring pop put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } false 3 colorimage
+  }{
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      1 string dup 0
+      currentfile color readhexstring pop pop
+      color 0 get 0.299 mul
+      color 1 get 0.587 mul add
+      color 2 get 0.114 mul add
+      cvi put put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } image
+  } ifelse
+  grestore
+} bind def
+%***********************************************************************
+%*                          Image decoding                             *
+%***********************************************************************
+DisplayImage
+558 558
+2
+000000 ffffff
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff006f000101ff00ff002a000301ff00ff0027000601ff00ff0025000901ff00ff002100
+0c01ff00ff001f000e01ff00ff001d001101ff00ff0019001401ff00ff0017001701ff00
+ff0014001901ff00ff0011001c01ff00ff000f001f01ff00ff000c002101ff00ff000c00
+2101ff00ff000c002201ff00ff000b002201ff00ff000c002101ff00ff000c002201ff00
+ff000b002201ff00ff000c002101ff00ff000c002201ff00ff000b002201ff00ff000c00
+2201ff00ee0000011b002201ff00eb0004011b002101ff00e90006011b002201ff00e600
+08011b002201ff00e3000c011b002101ff00e1000e011b002201ff00de0010011b002201
+ff00db0013011c002101ff00d90016011b002201ff00d50019011b002201ff00d3001b01
+1c002101ff00d1001e011b002201ff00cd0021011b002201ff00cb0023011c002101ff00
+c90026011b002201ff00c50029011b002201ff00c3002b011c002201ff00c0002e011b00
+2201ff00bd0031011c002101ff00bb0033011c002201ff00b80035011c002201ff00b500
+39011c002101ff00b3003b011c002201ff00b0003d011c002201ff00ad0041011c002101
+ff00ab0043011c002201ff00a80045011c002201ff00a50049011c002101ff00a3004b01
+1c002201ff009f004e011c002201ff009d0050011d002201ff009a0053011c002201ff00
+970056011c002201ff00950058011d002201ff0092005b011c002201ff008f005e011d00
+2101ff008d0060011d002201ff008a0062011d002201ff0087003001010033011d002101
+ff0085003001020034011d002201ff0082002f01050034011d002201ff007f0030010700
+35011d002101ff007d003001080036011d002201ff007a002f010b0036011d002201ff00
+770030010d0037011d002201ff00740030010e0038011d002201ff0072002f0111003801
+1d002201ff006f003001130038011e002201ff006c00300114003a011d002201ff006900
+300117003a011d002201ff006700300119003a011e002201ff00640030011a003c011d00
+2201ff00610030011d003c011e002101ff005f0030011f003c011e002201ff005c003001
+20003e011d002201ff005900310122003e011e002101ff005700300124003f011e002201
+ff0054003001230042011e002201ff0051003101230045011e002201ff004e0030012400
+47011e002201ff004c00300123004a011e002201ff004900310123004d011e002201ff00
+4600300124004f011e002201ff0044003001230052011e002201ff004100310123005501
+1e002201ff003e003001240057011e002201ff003c00300123005a011f002101ff003900
+310123005c011f002201ff003600310123005f011e002201ff0033003101230062011f00
+2101ff0031003101230064011f002201ff002e003101230067011e002201ff002b003101
+23006a011f002201ff002800310123006c011f002201ff002600310123006f011e002201
+ff0023003101230072011f002201ff0020003101230074011f002201ff001e0031012300
+76011f002201ff001b00310123007a011f002201ff001800310123007c011f002201ff00
+1600310123007e011f002201ff0013003101230082011f002201ff001000310123008401
+1f002201ff000e0031012300860120002101ff000b00320122008a011f002201ff000800
+310123008c011f002201ff000600310123008e0120002101ff0003003201220091012000
+2201ff0000003101230094011f002201fd0032012300960120002201fa00320122009901
+20002201f800310123009c011f002201f500320123009e0120002201f20032012200a101
+20002201f00031012300a30120002201ed0032012300a60120002201ea0032012200a901
+20002101e90032012200ab0120002001e70032012300ae0120001e01e60032012200b101
+20001d01e50032012200b30121001a01e40032012300b60120001901e30032012200b901
+20001801e20032012200bb0121001501e10032012300bd0120001501e00032012200c101
+1c001701df0032012200c3011a001701de0032012300c50117001901dd0032012200c901
+14001a0111000101c70033012200cb0111001b0112000301c40032012300cd010f001c01
+12000401c20032012200d1010b001e0111000601bf0033012200d30109001e0112000801
+bc0033012200d50107001f0112000901ba0032012200d8010400210112000a01b7003301
+2200db010100210112000d01b40033012200ff01000112000e01b20032012200ff010201
+12000f01af0033012200ff01020112001201ac0033012200ff01030112001301aa003201
+2200ff01050112001401a90031012200ff01050112001501a90030012200ff0106011200
+1501aa002d012200ff01070113001401ab002c012200ff01080112001501ab002b012200
+ff01090112001501ac0029012100ff010a0113001401ad0027012200ff010b0112001501
+ad0026012200ff010c0112001501ae0024012100ff010d0113001401af0022012200ff01
+0e0112001501af0021012200ff010f0112001501b0001f012100ff01100113001401b100
+1d012200ff01110112001501b1001c012200ff01120112001501b2001a012100ff011301
+13001401b30018012200ff01140113001401b30017012200ff01150112001501b4001501
+2100ff01160113001401b50014012100ff01170112001501b50012012200ff0118011200
+1501b60010012100ff01190113001401b7000f012100ff011a0113001401b7000d012200
+ff011b0112001501b7000c012100ff011c0113001501b8000a012100ff011d0113001401
+b90008012200ff011e0112001501b90007012100ff011f0113001501ba0005012100ff01
+200113001401bb0003012200ff01210112001501bb0002012100ff01220113001501df00
+ff01230113001401df00ff01240112001501dd00ff01250113001501dc00ff0126011300
+1401dc00ff01270112001501da00ff01280113001501d900ff01290113001401d900ff01
+2a0112001501d800ff012a0113001501d600ff012c0113001401d600ff012d0112001501
+d500ff012d0113001501d300ff012f0113001401d300ff012f0114001401d2001b010000
+ff01130113001501d0001c010200ff01120113001401d0001b010400ff01110113001501
+cf001a010600ff01110113001501cd001a010900ff01100113001501cc0019010b00ff01
+0f0114001401cc0018010d00ff010f0113001501ca0018011000ff010e0113001501ca00
+16011200ff010d0114001401cb0014011400ff010d0113001501cb0013011500ff010d01
+13001501cc0012011600ff010b0114001401cd0013011500ff010b0113001501cd001301
+1500ff010b0113001501cd0013011600ff01090114001401cf0012011600ff0109011300
+1501cf0013011500ff01090113001501cf0013011600ff01070114001401d10013011500
+ff01070113001501d10013011500ff01070113001501d10013011500ff01060114001401
+d30012011600ff01050113001501d30013011500ff01050113001501d30013011500ff01
+040114001401d50012011600ff01030113001501d50013011500ff01030113001501d500
+13011500ff01020114001401d70012011600ff01010114001401d70013011500ff010101
+13001501d70013011500ff01000114001501d80012011500ff01000113001501d9001301
+1500ff0113001501d90013011500fe0114001501d90013011500fe0114001401db001301
+1500fd0113001501db0013011500fc0114001501dc0012011500fc0114001401dd001301
+1500fb0113001501dd0013011500fa0114001501dd0013011500fa0114001401df001301
+1400f90114001501df0013011500f80114001501df0013011500f80114001401e1001301
+1400f70114001501e10013011500f60114001501e10013011500f60114001401e3001301
+1400f50114001501e30013011500f40114001501e30013011500f40114001401e5001301
+1400f30114001501e50013011400f30114001501e50013011500f20114001501e6001301
+1400f10114001501e70013011400f10114001501e70013011500f00114001501e7001301
+1500ef0115001401e90013011400ef0114001501e90013011500ee0114001501ea001301
+1400ed0114001501eb0013011400ed0114001501eb0013011400ed0114001501eb001301
+1500eb0115001401ed0013011400eb0114001501ed0013011400eb0114001501ed001301
+1500e90115001401ef0013011400e90114001501ef0013011400e90114001501ef001301
+1500e70115001401f10013011400e70114001501f10013011400e70114001501f1001301
+1400e60115001401f30013011400e50114001501f30013011400e50114001501f3001301
+1400e40115001401f50013011400e30114001501f50013011400e30114001501f5001301
+1400e20115001501f50014011400e10114001501f70013011400e10114001501f7001301
+1400e00115001501f80013011300e00114001501f90013011400de0115001501f9001301
+1400de0115001501f90014011300de0114001501fb0013011400dc0115001501fb001301
+1400dc0115001501fb0014011300dc0115001401fd0013011400da0115001501fd001301
+1400da0115001501fd0014011300da0114001501ff0013011300d90115001501ff001301
+1400d80115001501ff0014011300d80115001401ff00010013011300d70115001501ff00
+010013011400d60115001501ff00010013011400d60115001401ff00030013011300d501
+15001501ff00030013011400d40115001501ff00030014011300d40115001401ff000400
+14011300d30115001501ff00050013011300d30115001501ff00050013011400d2011500
+1501ff00060013011300d10115001501ff00070013011300d10115001501ff0007001301
+1400d00115001501ff00070014011300cf0115001501ff00090013011300cf0115001501
+ff00090013011300cf0115001501ff00090014011300cd0115001501ff000b0013011300
+cd0115001501ff000b0013011300cd0115001501ff000b0014011300cb0115001501ff00
+0d0013011300cb0115001501ff000d0013011300cb0115001501ff000d0014011300c901
+15001501ff000f0013011300c90115001501ff000f0013011300c90115001501ff000f00
+14011200c80116001401ff00110013011300c70115001501ff00110013011300c7011500
+1501ff00110014011200c60116001401ff00120014011300c50115001501ff0013001301
+1300c40116001501ff00130014011200c40116001401ff00150013011300c30115001501
+ff00150013011300c20116001501ff00150014011200c20116001501ff00150014011200
+c20115001501ff00170013011300c00116001501ff00170014011200c00116001501ff00
+170014011200c00115001501ff00190013011300be0116001501ff00190014011200be01
+16001501ff00190014011200be0115001501ff001b0013011300bd0115001501ff001b00
+13011300c20110001501ff001b0014011200c90108001501ff001d0013011200cf010200
+1501ff001d0014011200e701ff001d0014011200e601ff001f0013011200e601ff001f00
+13011300e501ff001f0014011200e401ff00200014011200e401ff00210013011300e301
+ff00210014011200e201ff00230013011200e201ff00230013011200e201ff0023001401
+1200e001ff00240014011200e001ff00250013011200e001ff00250014011200df01ff00
+250014011200de01ff002700130112001001ff00f500140112001001ff00f40014011200
+1001ff00f500130112001001ff00f500140111001001ff00f500140112000f01ff00f600
+130112000f01ff00f600140111000f01ff00f600140112000f01ff00f600130112000e01
+ff00f700140111000f01ff00f600140112000e01ff00f600140112000e01ff00f7001401
+11000e01ff00f700140111000e01ff00f800130112000d01ff00f800140111000e01ff00
+f70014011100d301ff00320014011200d201ff00330014011100d201ff00330014011100
+d101ff00340014011200d001ff00350013011200d001ff00350014011100cf01ff003600
+14011100cf01ff00370014011100ce01ff00370014011100cd01ff00380014011100cd01
+ff00390013011200cc01ff00390014011100cc01ff00390014011100cb01ff003b001301
+1200ca01ff003b0014011100ca01ff003b0014011100c901ff003c0014011200c801ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00f800
+restore grestore
+%
+% End Imported PIC File: device6-13.gif
+%%EndDocument
+%
+% Polyline
+%
+% Begin Imported GIF File: device6-1.gif
+n gs
+450 4050 tr
+2.419355 -2.419355 sc
+0 -558 tr
+0 0 tr
+sa
+/showpage {} def
+% GIF image follows:
+558 558 sc
+%***********************************************************************
+%*                                                                     *
+%* Object: Image decoding PS-routine                    Date: 01.02.93 *
+%* Author: Evgeni CHERNYAEV (chernaev@vxcern.cern.ch)                  *
+%*                                                                     *
+%* Function: Display a run-length encoded color image.                 *
+%*           The image is displayed in color on viewers and printers   *
+%*           that support color Postscript, otherwise it is displayed  *
+%*           as grayscale.                                             *
+%*                                                                     *
+%***********************************************************************
+/byte 1 string def
+/color 3 string def
+systemdict /colorimage known { /cnt 3 def } { /cnt 1 def } ifelse
+/String 256 cnt mul string def
+%***********************************************************************
+/DecodePacket            % Decode color packet                         *
+%***********************************************************************
+{
+  currentfile byte readhexstring pop 0 get
+  /Nbyte exch 1 add cnt mul def
+  /color ColorMap currentfile byte readhexstring pop 0 get get def
+  String dup
+  0 cnt Nbyte 1 sub { color putinterval dup } for
+  pop 0 Nbyte getinterval
+} bind def
+%***********************************************************************
+/DisplayImage            % Display run-length encoded color image      *
+%***********************************************************************
+{
+  gsave
+  currentfile String readline pop
+  token { /columns exch def } { } ifelse
+  token { /rows exch def pop } { } ifelse
+  currentfile String readline pop
+  token { /Ncol exch def pop } { } ifelse
+  /ColorMap Ncol array def
+  systemdict /colorimage known {
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      currentfile 3 string readhexstring pop put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } false 3 colorimage
+  }{
+    0 1 Ncol 1 sub {
+      ColorMap exch
+      1 string dup 0
+      currentfile color readhexstring pop pop
+      color 0 get 0.299 mul
+      color 1 get 0.587 mul add
+      color 2 get 0.114 mul add
+      cvi put put
+    } for
+    columns rows 8
+    [ columns 0 0 rows neg 0 rows ]
+    { DecodePacket } image
+  } ifelse
+  grestore
+} bind def
+%***********************************************************************
+%*                          Image decoding                             *
+%***********************************************************************
+DisplayImage
+558 558
+2
+000000 ffffff
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00fa000001ff00ff002c00
+0101ff00ff002b000301ff00ff0029000401ff00ff0028000601ff00ff0026000701ff00
+ff0025000801ff00ff001a00000108000a01ff00ff001700010108000b01ff00ff001400
+030108000c01ff00ff001200040108000e01ff00ff000f00050108000f01ff00ff000c00
+070108001001ff00ff000a00080108001201ff00ff000700090108001301ff00ff000400
+0b0108001501ff00ff0001000c0108001601ff00fe000e0108001701ff00fc000f010800
+1901ff00f900100108001a01ff00f600120108001b01ff00f400130108001d01ff00f100
+140108001e01ff00ee00160108001f01ff00ec00170108002101ff00e900180108002201
+ff00e6001a0108002301ff00e4001b0108002501ff00e1001c0108002601ff00de001e01
+08002701ff00dc001f0108002901ff00d900200108002a01ff00d600220108002b01ff00
+d400230108002d01ff00d100240108002e01ff00ce00260108003001ff00cb0027010800
+3101ff00c900280108003201ff00c6002a0108003401ff00c3002b0108003501ff00c000
+2d0108003601ff00be002e0108003801ff00bb002f0108003901ff00b800310108003a01
+ff00b600320108003c01ff00b300330108003d01ff00b000350108003e01ff00ae003601
+08004001ff00ab00370108004101ff00a800390108004201ff00a6003a0108004401ff00
+a3003b0108004501ff00a0003d0108004701ff009d003e0108004801ff009b003f010800
+4901ff009800410108004b01ff009500420108004c01ff009300430108004d01ff009000
+450108004f01ff008d00460108005001ff008b00470108005101ff008800490108005301
+ff0085004a0108005401ff0082004c0108005501ff0080004d0108005701ff007d004e01
+08005801ff007a00500108005901ff007800510108005b01ff007500520108005c01ff00
+7200540108005e01ff006f00550108005f01ff006d00560108006001ff006a0058010800
+6201ff006700590108006301ff0065005a0108006401ff0062005c0108006601ff005f00
+5d0108006701ff005d005e0108006801ff005a00600108006a01ff005700610108006b01
+ff005500620108006c01ff005200640108006e01ff004f00650108006f01ff004d006601
+08007101ff004900680108007201ff004700690108007301ff0044006b0108007501ff00
+41006c0108007601ff003f006d0108007701ff003c006f0108007901ff00390070010800
+7a01ff003700710108007b01ff003400730108007d01ff003100740108007e01ff002f00
+750108007f01ff002c00770108008101ff002900780108008201ff002700790108008301
+ff0024007b0108008501ff0021007c0108008601ff001f007d0108008801ff001b007f01
+08008901ff001900800108008a01ff001700810108008c01ff001300830108008d01ff00
+1100840108008e01ff000f00850108009001ff000b00870108009101ff00090088010800
+9201ff000700890108009401ff0003008b0108009501ff0001008c0108009601fe008e01
+08009801fb008f0108009901f900900108009a01f600920108009c01f300930108009d01
+f100940108009f01ed0096010800a001eb0097010800a101e90098010800a301e5009a01
+0800a401e3009b010800a501e1009c010800a701dd009e010800a801db009f010800a901
+d900a0010800ab01d500a2010800ac01d300a3010800ad01d100a4010800af01cd00a601
+0800b001cb00a70108004e01ff002c00a80108004e01ff002a00aa0108004e01ff002900
+ab0108004e01ff002700ad0108004e01ff002600ae0108004e01ff002500af0108004e01
+ff002300b10108004e01ff002200b20108004e01ff002100b3010800be01af00b5010800
+bf01ad00b6010800c001ff0026003c010800c101ff0025003c010800c201ff0024003c01
+0800c101ff0025003c010800c101ff0025003c010800c101ff0025003c010800c001ff00
+26003c010800c001ff0026003c010800c001ff0026003c010800bf01ff0027003c010800
+bf01ff0027003c010800bf01ff0027003c010800be01ff0028003c010800be01ff002800
+3c010800be01b100b3010800bd01b200b3010800bd01b300b2010800bd01b300b2010800
+bc01b400b2010800bc01b400b2010800bc01b500b1010800bb01b600b1010800bb01b600
+b1010800bb01b700b0010800ba01b800b0010800ba01b800b0010800ba01b900af010800
+b901ff002c003d010800b901ff002c003d010800b901ff002c003d010800b901ff002c00
+3d010800b801ff002d003d010800b801ff002d003d010800b801ff002d003d010800b701
+ff002e003d010800b701ff002e003d010800b701ff002e003d010800b601ff002f003d01
+0800b601c000ac010800b601c100ab010800b501c200ab010800b501c200ab010800b501
+c300aa010800b401c400aa010800b401c400aa010800b401c500a9010800b301c600a901
+0800b301c600a9010800b301c700a8010800b201c800a8010800b201c800a8010800b201
+ff0032003e010800b201ff0032003e010800b101ff0033003e010800b101ff0033003e01
+0800b101ff0033003e010800b001ff0034003e010800b001ff0034003e010800b001ff00
+34003e010800af01ff0035003e0108005001ff0094003e0108005001ff002e00a4010800
+5001ff002e00a40108005001ff002e00a40108005001ff002f00a30108005001ff002f00
+a30108005001ff002f00a30108005001ff003000a20108005001ff003000a20108005001
+ff003000a20108005001ff003100a10108005001ff003100a10108005001ff003100a101
+08005001ff003200a0010800ab01d700a0010800aa01d800a0010800aa01d9009f010800
+aa01d9009f010800a901da009f010800a901da009f010800a901db009e010800a801dc00
+9e010800a801dc009e010800a801dd009d010800a701de009d010800a701de009d010800
+a701df009c010800a601e0009c010800a601e0009c010800a601e1009b010800a501e200
+9b010800a501e2009b010800a501e3009a010800a401e4009a010800a401e4009a010800
+a401e4009a010800a301e60099010800a301e60099010800a301e70098010800a301e700
+98010800a201e80098010800a201e80098010800a201e90097010800a101ea0097010800
+a101ea0097010800a101eb0096010800a001ec0096010800a001ec0096010800a001ed00
+950108009f01ee00950108009f01ee00950108009f01ef00940108009e01f00094010800
+9e01f000940108009e01f100930108009d01f200930108009d01f200930108009d01f200
+930108009c01f400920108009c01f400920108009c01f400920108009c01f50091010800
+9b01f600910108009b01f600910108009b01f700900108009a01f800900108009a01f800
+900108009a01f9008f0108009901fa008f0108009901fa008f0108009901fb008e010800
+9801fc008e0108009801fc008e0108009801fd008d0108009701fe008d0108005001ff00
+45008d0108005001ff0045008d0108005001ff0046008c0108005001ff004600e601ff00
+4700e501ff004700e501ff004700e501ff004700e501ff004800e401ff004800e401ff00
+4800e401ff004900ff012601ff000600ff012601ff000600ff012601ff000700ff012401
+ff000800ff012401ff000800ff012401ff000900ff012201ff000a00ff012201ff000a00
+ff012201ff000a00ff012101ff000c00ff012001ff000c00ff012001ff000d00ff011e01
+ff000e00ff011e01ff000e00ff011e01ff000e00ff011d01ff001000ff011c01ff001000
+ff011c01ff001000ff011b01ff001200ff011a01ff001200ff011a01ff001200ff011a01
+ff001300ff011801ff001400ff011801ff001400ff011801ff001500ff011601ff001600
+ff011601ff001600ff011601ff001700ff011401ff001800ff011401ff001800ff011401
+ff001800ff011301ff001a00ff011201ff001a00ff011201ff001a00ff011101ff001c00
+ff011001ff001c00ff011001ff001c00ff010f01ff001e00ff010e01ff001e00ff010e01
+ff001e00ff010d01ff002000ff010c01ff002000ff010c01ff002000ff010c01ff002100
+ff010a01ff002200ff010a01ff002200ff010a01ff002300ff010801ff002400ff010801
+ff002400ff010801ff002400ff010701ff002600ff010601ff002600ff010601ff002700
+ff010401ff002800ff010401ff002800ff010401ff002800ff010301ff002a00ff010201
+ff002a00ff010201ff002a00ff010101ff002c00ff010001ff002c00ff010001ff002c00
+ff01ff002e00fe01ff002e00fe01ff002e00fd01ff003000fc01ff003000fc01ff003000
+fc01ff003100fa01ff003200fa01ff003200fa01ff003200f901ff003400f801ff003400
+f801ff003400f701ff003600f601ff003600f601ff003600f501ff003800f401ff003800
+f401ff003800f301ff003a00f201ff003a00f201ff003a00f101ff003c00f001ff003c00
+f001ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00
+ff00ff00ff00ff00ff00ff00ff006d00
+restore grestore
+%
+% End Imported PIC File: device6-1.gif
+%%EndDocument
+%
+$F2psEnd
+rs
