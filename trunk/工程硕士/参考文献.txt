@@ -1,0 +1,112 @@
+参考文献 
+[1]  王克鸿，高飞，高俊平．基于视觉的机器人智能化焊接技术现状与发展．机械制造与自动
+化，2010，39(5)：1-6 
+[2]  毕胜．国内外工业机器人的发展现状．机械工程师，2008，(7)：5-7 
+[3]  宋金虎．我国焊接机器人的应用与研究现状．电焊机，2009，39(4)：18-20 
+[4]  P. Drews， G. St a rk e．Welding in the Century of Information Technology．Welding in the 
+World．1994，34：5-20 
+[5]  Trailer ． Manufacturer Depends on Robotic Welding to Boast Production ． Welding 
+Journal．1995．74(7)：50-51 
+[6]  J. D. Lane．Robotic Welding State of the Art．Robotic Welding International Trends in 
+Manufacturing Technology．IFS(Publications)Ltd. UK，1987：110 
+[7]  B. H. You，J. W. Kim．A Study on an Automatic Seam Tracking System by Using an 
+Electromagnetic Sensor for Sheet Metal arc Welding of Butt Joints ． Engineering 
+Manufacture．2002，216(B6)：911-920 
+[8]  饶政华．熔化极气体保护焊传热和传质过程的数值研究，[博士学位论文]．中南大学，2010 
+[9]  陈华斌．运载火箭动力系统五通连接器机器人 GTAW 质量控制系统，[博士学位论文]．上
+海交通大学，2009 
+[10] 黄鹏飞，高文宁，卢振洋等．基于 CAN总线的 GMAW 焊机网络监控系统．电焊机，2009，
+39(8)：45-48 
+[11] 黄峰，倪纯珍，陈立功．分布式多焊机参数远程监控系统研究．第九次全国焊接会议论文
+集(第 2 册) ，黑龙江，1999：431-437 
+[12] 王鑫．钻杆对焊自动找正及焊区热处理监控系统研究，[硕士学位论文]．合肥工业大学，
+2003 
+[13] 叶彦斐，李训铭．管塔焊接自动化监控系统设计与实现．自动化仪表，2006，27(5)：49-51 
+[14] Sukhomay Pal，Surjya K. Pal，Arun K. Samantaray．Artificial neural network modeling of weld 
+joint strength prediction of a pulsed metal inert gas welding process using arc signal．Journal of 
+Materials Processing Technology，2007，202(3)：464-474 
+[15] Kovacevic R，ZHANG Y M，LI L．Monitoring of weld joint penetration based on weld pool 
+geometrical appearance．Welding Journal，1996，75(10)：317-320. 
+[16] Haibo Fan， Nanda K. Ravala， H C. Wikle， et al． Low-cost Infrared sensing system for Monitoring 
+the Welding Process in the Presence of Plate Inclination Angle．Journal of Materials Processing 
+Technology，2003(140)：668-675 
+[17] Y. Ba e，T. H. Lee，K. C. Ahn．An Optical Sensing System for Seam Tracking and Weld Pool 
+Control in Gas Metal Arc Welding of Steel Pipe．Journal of Materials Processing Technology，
+2002(120)：458-465 
+[18] Wei Lu，YuMing Zhang．A Robust sensing and control of the weld pool surface．Journal of 
+Measurement Science and Technology，2006，17(9)：2437-2446 
+[19] 赵冬斌，陈善本，吴林等．填丝脉冲 GTAW 熔池形状定义和图像处理．焊接学报， 2001，
+22(2)：5-8 
+[20] 陈善本，曹建明，徐晨明等．脉冲熔化极气体保护焊熔池的视觉传感与实时控制．焊接学
+报，2002，23(4)：17-20 
+[21] 吴迪．不锈钢薄板 TIG焊熔池图像处理及视觉特征计算，[硕士学位论文]．上海交通大学，
+2010 
+[22] 高进强， 武传松， 刘熙章等． GMAW 根部间隙及焊枪对中信息的视觉检测． 焊接学报， 2005，
+26(9)：23-26  
+[23] 游秋榕．基于熔池视觉的 MAG焊焊接缺陷特征识别[硕士学位论文]．南京理工大学，2006 
+[24] 郑军，潘际銮．基于视觉检测的焊缝跟踪技术．金属加工(热加工)，2008，(24)：37-38 
+[25] Mike Wilson． Vision systems in the automotive industry． Industrial Robot． 1999， 26(5)： 354-357 
+[26] 钱伟方，姚舜，项峰等．基于 PC 控制的窄间隙 GMAW 焊缝跟踪系统．焊接技术，2002，
+31(6)：32-33 
+[27] 尹力．旋转电弧脉冲 GMAW 焊焊缝跟踪系统的研究，[硕士学位论文]．湘潭大学，2007 
+[28] 钱晨， 王钦若， 谢晨阳． 模糊控制在焊缝跟踪系统中的应用研究． 广东工业大学学报， 2005，
+22(2)：41-44 
+[29] 叶建雄，张华，杨武强．焊缝跟踪的变论域自适应模糊控制．焊接学报，2005，26(12)：
+32-34 
+[30] 贾剑平，徐坤刚，李志刚．基于模糊自适应整定 PID的水下焊缝跟踪．上海交通大学学报，
+2008，42(S1)：69-72 
+[31] Masao USHIO，Wenj ie Mao．Sensors for arc welding: advantages and limitations．Transaction 
+of JWRI，1994，23(2)：135-141 
+[32] Wellington S. J.  ，Crowder R. M．A non-tactile sensor for seam tracking and vision 
+applications．Proceedings of the IEEE International Conference on Control(Control’94) ，1994，
+1：822-826 
+[33] A. Bzymek， A. Czuprynski， M. FidaliAnalysis， et al． Analysis of image recorded during welding
+processes ． Proceedings of 9
+th
+ International Conference on Quantitative InfraRed
+Thermography(QIRT’2008)，2006，28(1)：25-29 
+[34] Paul Drews．A Intelligent systems for welding process automation．Journal of the Braz. Soc. of
+Mech. Sci.& Eng.，2006，28(1)：25-29 
+[35] 蒋先刚．数字图像模式识别工程软件设计．北京：中国水利水电出版社，2008：19-42 
+[36] Ostu N．A Threshold Selection Method from Gray level Histogram．IEEE Trans actions on
+SMC，1979，(9)  ：62-67 
+[37] 范立南，韩晓微，张广渊．图像处理与模式识别．北京：科学出版社，2007：56~62 
+[38] HUA Yanping，YU Xiangjun，LU Zhenzhong．Skeleton extraction of boiler flame images based
+on mathematical morphology．Journal of Southeast University(English Edition)，2003，19(4)：
+352～354 
+[39] Soile P．Morphological image analysis applied to cropfield mapping．Image and Vision
+Computing，2000，18(13)：1025-1032 
+[40] Kass M，Witkin A，Terzopoulos D．Snakes: active contour models．International Journal of 
+computer vision．1987，1(4)：321-331 
+[41] Roman G，Ron K，Ehud R，et al．Fast geodesic active contours．IEEE Transaction on Image 
+Processing，2001，10(10)：1467-1474 
+[42] Luminita A V，Tony F C．A multiphase level set framework for image segmentation using the 
+Mumford and Shah mode．International Journal of Computer Vision，2002，50(3)：271-293 
+[43] V. Ca s e l l e s，F. Catte，T. Col l，et al．A geometric model for active contours in image 
+processing．Numerische Mathematic，1993，66(1)：1-31 
+[44] Chan T， Ve se L A． Active contours without edges． IEEE Transaction on Image Processing， 2001，
+10(2)：266-277 
+[45] 范芳蕾， 李亮玉， 岳建峰等． GMAW 焊熔池图像处理算法． 机械科学与技术， 2008， 27(10)：
+1199-1201 
+[46] GAO X. D.，NA S. J.  ．Detection of Weld Position and Seam Tracking Based on Kalman 
+Filtering of Weld Pool Images．Journal of manufacturing system，2005，24(1) ：1-12 
+[47] 高向东，赵传敏，白天翔等．傅立叶变换在熔池图像特征提取中的应用．焊接学报，2008，
+29(08)：13-16 
+[48] 薛家祥，刘晓，张丽玲等．基于小波变换的 MAG焊焊缝跟踪．焊接学报，2006，27(06)：
+13-16 
+[49] Lei Zhang， Yongkang Xu． Features Extraction for Structured Light Stripe Image Based on OSTU 
+Threshold．Proceedings of 2010 International Colloquium on Computing, Communication, 
+Control and Management(CCCM2010)，2010，Yangzhou, China 
+[50] 林俊，徐杜，蒋永平等．基于梯度的动态分块迭代阈值图像二值化方法．光学与光电技术，
+2006，4(05)：98-100 
+[51] 张华军，蔡春波，张广军等．背面 CCD 视觉传感焊缝成形参数的自动提取．焊接学报，
+2008，29(09)：101-104 
+[52] 刘晓，薛家祥，许策明．基于分形和数学形态学的 MAG焊熔池图像分析．电焊机，2009，
+39(07)：81-84 
+[53] Serra J．Image analysis and mathematical morphology．Academic Press．London，1982 
+[54] LIU J，FAN Z，OLSEN S．Using active contour models for feature extraction in camera-based 
+seam tracking of arc welding．Proceedings of the IEEE/RSJ  International Conference on 
+Intelligent Robots and Systems(IROS’09)  ，2009，5948-5955 
+[55] 李寿涛，陈浩，朱瑞辉等．CV主动轮廓模型在管道焊缝缺陷检测中的应用．CT 理论与应
+用研究，2008，17(04)：55-61 
+ 
