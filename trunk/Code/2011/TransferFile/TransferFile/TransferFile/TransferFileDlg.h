@@ -38,4 +38,8 @@ public:
 	afx_msg void OnBnClickedButtonSelPath();
 	afx_msg void OnBnClickedButtonTransPath();
 	void TransFileandPath(CString _strPath,std::list<std::pair<CString,CString>> &_lstTransFileAndPath);
+	afx_msg void OnBnClickedButtonTxtFileEnter();
+private:
+	void SplitStringBySign(CString _str,std::list<CString> &_lstSplitString);
+	std::list<CString> m_lstSplitSign;
 };
