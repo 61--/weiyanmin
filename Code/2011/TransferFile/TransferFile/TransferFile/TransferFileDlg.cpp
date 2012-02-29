@@ -74,6 +74,7 @@ BEGIN_MESSAGE_MAP(CTransferFileDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON_CODE2STR, &CTransferFileDlg::OnBnClickedButtonCode2str)
 	ON_BN_CLICKED(IDC_BUTTON_SEL_PATH, &CTransferFileDlg::OnBnClickedButtonSelPath)
 	ON_BN_CLICKED(IDC_BUTTON_TRANS_PATH, &CTransferFileDlg::OnBnClickedButtonTransPath)
+	ON_BN_CLICKED(IDC_BUTTON_TXT_FILE_ENTER, &CTransferFileDlg::OnBnClickedButtonTxtFileEnter)
 END_MESSAGE_MAP()
 
 
@@ -109,7 +110,15 @@ BOOL CTransferFileDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// Set small icon
 
 	// TODO: Add extra initialization here
-
+	
+	m_lstSplitSign.push_back(_T(","));
+	m_lstSplitSign.push_back(_T("."));
+	m_lstSplitSign.push_back(_T("?"));
+	m_lstSplitSign.push_back(_T("-"));
+	m_lstSplitSign.push_back(_T(" — "));
+	m_lstSplitSign.push_back(_T(":"));
+	
+		
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }
 
@@ -292,4 +301,87 @@ void CTransferFileDlg::TransFileandPath(CString _strPath,std::list<std::pair<CSt
 	{
 		finder.Close();
 	}
+}
+
+void CTransferFileDlg::OnBnClickedButtonTxtFileEnter()
+{
+	// TODO: Add your control notification handler code here
+	CFileDialog dlg(TRUE);
+	if(dlg.DoModal() != IDOK)
+	{
+		return;
+	}
+	CString strSrcFileName = dlg.GetPathName();
+	CString strDestFileName = strSrcFileName + _T("1");
+	try
+	{
+		CStdioFile fileSrc(strSrcFileName,CFile::modeRead);
+		CStdioFile fileDest(strDestFileName,CFile::modeCreate|CFile::modeWrite);
+		BOOL bHas = FALSE;
+		do 
+		{
+			CString strTxt;
+			bHas = fileSrc.ReadString(strTxt);
+			strTxt.TrimLeft();
+			strTxt.TrimRight();
+			std::list<CString> lstSplitStr;
+			SplitStringBySign(strTxt,lstSplitStr);
+			for(auto itr = lstSplitStr.begin();itr !=lstSplitStr.end();++itr)
+			{
+				fileDest.WriteString(*itr);
+				fileDest.WriteString(_T("\r\n"));
+			}
+		} while (bHas);
+
+		fileSrc.Close();
+		fileDest.Close();
+	}
+	catch (CFileException* /*e*/)
+	{
+		CString strMsg;
+		strMsg.Format(_T("读取文件%s发生错误！"),strSrcFileName);
+		AfxMessageBox(strMsg);
+
+		return ;
+	}
+	catch (...)
+	{
+		CString strMsg;
+		strMsg.Format(_T("读取文件%s发生错误！"),strSrcFileName);
+		AfxMessageBox(strMsg);
+
+		return ;
+	}
+	AfxMessageBox(_T("转换成功！"));
+}
+
+void CTransferFileDlg::SplitStringBySign(CString _str,std::list<CString> &_lstSplitString)
+{
+	int iFind = -1;
+	BOOL bFind = FALSE;
+	do 
+	{
+		bFind = FALSE;
+		iFind = _str.GetLength();
+		for(auto itr = m_lstSplitSign.begin();itr != m_lstSplitSign.end();++itr)
+		{
+			int iTempFind = _str.Find(*itr);
+			if(iTempFind != -1)
+			{
+				if(iTempFind < iFind)
+				{
+					iFind = iTempFind;
+				}
+				bFind = TRUE;
+			}
+			
+		}
+		if(bFind )
+		{
+			CString strLeft = _str.Left(iFind+1);
+			_lstSplitString.push_back(strLeft);
+			_str = _str.Right(_str.GetLength() - iFind -1 );
+		}
+	} while (bFind);
+	
 }
