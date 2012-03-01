@@ -7,6 +7,7 @@
 #include "TransferFileDlg.h"
 #include "afxdialogex.h"
 #include "StrTrans.h"
+#include "StdioFileEx.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -315,8 +316,8 @@ void CTransferFileDlg::OnBnClickedButtonTxtFileEnter()
 	CString strDestFileName = strSrcFileName + _T("1");
 	try
 	{
-		CStdioFile fileSrc(strSrcFileName,CFile::modeRead);
-		CStdioFile fileDest(strDestFileName,CFile::modeCreate|CFile::modeWrite);
+		CStdioFileEx fileSrc(strSrcFileName,CFile::modeRead);
+		CStdioFileEx fileDest(strDestFileName,CFile::modeCreate|CFile::modeWrite);
 		BOOL bHas = FALSE;
 		do 
 		{
