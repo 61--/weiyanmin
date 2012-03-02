@@ -1,0 +1,4756 @@
+1
+00:00:00,000 --> 00:00:00,000
+FourierTransformAndItsApplications-
+
+2
+00:00:00,000 --> 00:00:00,000
+Lecture01 Instructor (Brad Osgood):
+
+3
+00:00:33,335 --> 00:00:35,017
+We are on the air.
+
+4
+00:00:00,000 --> 00:00:28,583
+Okay.
+
+5
+00:00:00,000 --> 00:00:29,815
+Welcome,
+
+6
+00:00:00,000 --> 00:00:30,438
+ one and all.
+
+7
+00:00:00,000 --> 00:00:31,365
+And as it said on the TV when you were walking in,
+
+8
+00:00:00,000 --> 00:00:31,855
+ but just to make sure everybody knows,
+
+9
+00:00:00,000 --> 00:00:33,896
+ this is EE261,
+
+10
+00:00:00,000 --> 00:00:40,172
+ The Fourier Transform and its Applications,
+
+11
+00:00:00,000 --> 00:00:42,519
+ Fourier Transforms et al.
+
+12
+00:00:00,000 --> 00:00:42,841
+,
+
+13
+00:00:00,000 --> 00:00:46,964
+ Fourier.
+
+14
+00:00:00,000 --> 00:00:52,844
+And my name is Brad Osgood.
+
+15
+00:00:00,000 --> 00:00:52,770
+Circulating around are two documents that give you information about the class.
+
+16
+00:00:00,000 --> 00:01:00,905
+There's a general description of the class,
+
+17
+00:00:00,000 --> 00:01:04,842
+ course information,
+
+18
+00:00:00,000 --> 00:01:05,676
+ how we're gonna proceed,
+
+19
+00:00:00,000 --> 00:01:08,408
+ some basic bookkeeping items 
+
+20
+00:00:00,000 --> 00:01:11,948
+！ I'll tell you a little bit more about that in just a second 
+
+21
+00:00:00,000 --> 00:01:13,593
+！ and also a syllabus and a schedule,
+
+22
+00:00:00,000 --> 00:01:14,426
+ and I will also say a little bit more about that in just a second.
+
+23
+00:00:00,000 --> 00:01:15,633
+Let me introduce our partners in crime in this course.
+
+24
+00:00:00,000 --> 00:01:17,202
+We have three course assistants,
+
+25
+00:00:00,000 --> 00:01:17,843
+ Thomas John 
+
+26
+00:00:00,000 --> 00:01:22,557
+！ Thomas,
+
+27
+00:00:00,000 --> 00:01:23,706
+ wanna stand up?
+
+28
+00:00:00,000 --> 00:01:24,390
+ Where's Thomas?
+
+29
+00:00:00,000 --> 00:01:25,281
+ There we go.
+
+30
+00:00:00,000 --> 00:01:30,487
+Rajiv Agarwal.
+
+31
+00:00:00,000 --> 00:01:31,858
+Did I spell that right?
+
+32
+00:00:00,000 --> 00:01:33,234
+ Very good.
+
+33
+00:00:00,000 --> 00:01:33,681
+Rajiv,
+
+34
+00:00:00,000 --> 00:01:36,651
+ you wanna stand up?
+
+35
+00:00:00,000 --> 00:01:37,951
+ There's Rajiv.
+
+36
+00:00:00,000 --> 00:01:41,012
+And Nicomedus 
+
+37
+00:00:00,000 --> 00:01:41,559
+！ okay so far?
+
+38
+00:00:00,000 --> 00:01:43,833
+ 
+
+39
+00:00:00,000 --> 00:01:45,486
+！ M.
+
+40
+00:00:00,000 --> 00:01:46,693
+Wanna correct that?
+
+41
+00:00:00,000 --> 00:01:47,902
+ Okay.
+
+42
+00:00:00,000 --> 00:01:51,962
+That's Nicomedus,
+
+43
+00:00:00,000 --> 00:01:53,316
+ everybody.
+
+44
+00:00:00,000 --> 00:01:53,746
+Thank you.
+
+45
+00:00:00,000 --> 00:01:54,832
+All right.
+
+46
+00:00:00,000 --> 00:01:59,007
+And we will be setting up times for the review sessions and so on,
+
+47
+00:00:00,000 --> 00:02:00,016
+ all right?
+
+48
+00:00:00,000 --> 00:02:01,595
+ So that will be forthcoming.
+
+49
+00:00:00,000 --> 00:02:03,327
+We have a web page for the course.
+
+50
+00:00:00,000 --> 00:02:05,011
+Some of you may have already visited that,
+
+51
+00:00:00,000 --> 00:02:06,323
+ but let me give you the 
+
+52
+00:00:00,000 --> 00:02:08,511
+！ and the address is on one of the sheets that's being passed around,
+
+53
+00:00:00,000 --> 00:02:13,148
+ but let me write that up now so you can be sure to visit it 
+
+54
+00:00:00,000 --> 00:02:17,401
+and register for the class because it is on the web page that you will find course handouts,
+
+55
+00:00:00,000 --> 00:02:18,676
+ course information.
+
+56
+00:00:00,000 --> 00:02:22,385
+I will email people via the web page,
+
+57
+00:00:00,000 --> 00:02:23,570
+ all right?
+
+58
+00:00:00,000 --> 00:02:24,652
+ So you have to be registered.
+
+59
+00:00:00,000 --> 00:02:28,801
+If I have to send an announcement to the class,
+
+60
+00:00:00,000 --> 00:02:29,247
+ post an announcement and send out an email,
+
+61
+00:00:00,000 --> 00:02:29,996
+ then that'll be done through the web page,
+
+62
+00:00:00,000 --> 00:02:32,864
+ and you have to be registered on the web page in order to get those emails.
+
+63
+00:00:00,000 --> 00:02:34,164
+I won't be doing it through Axess,
+
+64
+00:00:00,000 --> 00:02:34,686
+ all right?
+
+65
+00:00:00,000 --> 00:02:35,745
+ So it is at,
+
+66
+00:00:00,000 --> 00:02:37,861
+ like many of the other E classes,
+
+67
+00:00:00,000 --> 00:02:38,718
+ http:
+
+68
+00:00:00,000 --> 00:02:39,058
+// 
+
+69
+00:00:00,000 --> 00:02:39,461
+！ however you do that,
+
+70
+00:00:00,000 --> 00:02:43,864
+ wherever the colons go 
+
+71
+00:00:00,000 --> 00:02:44,509
+！ where is it here?
+
+72
+00:00:00,000 --> 00:02:44,946
+ 
+
+73
+00:00:00,000 --> 00:02:46,136
+！ eeclass.
+
+74
+00:00:00,000 --> 00:02:46,656
+stanford.
+
+75
+00:00:00,000 --> 00:02:47,583
+edu 
+
+76
+00:00:00,000 --> 00:02:49,077
+！ you can find it very easily 
+
+77
+00:00:00,000 --> 00:02:50,855
+！ edu/ee261,
+
+78
+00:00:00,000 --> 00:02:56,030
+ okay?
+
+79
+00:00:00,000 --> 00:03:00,061
+ Go there if you have not already and register yourself for the class.
+
+80
+00:00:00,000 --> 00:03:02,413
+All right.
+
+81
+00:00:00,000 --> 00:03:03,052
+Now,
+
+82
+00:00:00,000 --> 00:03:04,713
+ let me say a little bit about the information that you have.
+
+83
+00:00:00,000 --> 00:03:07,153
+I wanna say a little bit more about the mechanics.
+
+84
+00:00:00,000 --> 00:03:08,821
+I'll talk more about the content in just a second.
+
+85
+00:00:00,000 --> 00:03:17,228
+Let me say a little bit about the syllabus and schedule and the course reader.
+
+86
+00:00:00,000 --> 00:03:18,676
+The syllabus is,
+
+87
+00:00:00,000 --> 00:03:20,669
+ as I said on the top,
+
+88
+00:00:00,000 --> 00:03:22,315
+ an outline of what we're gonna be doing,
+
+89
+00:00:00,000 --> 00:03:25,439
+ I hope a fairly accurate outline of what we're going to be doing,
+
+90
+00:00:00,000 --> 00:03:26,571
+ but it's not a contract,
+
+91
+00:00:00,000 --> 00:03:27,158
+ all right?
+
+92
+00:00:00,000 --> 00:03:30,385
+ So there will be a natural ebb and flow of the course as things go along,
+
+93
+00:00:00,000 --> 00:03:34,033
+ and when we get to particular material or what we cover in what order,
+
+94
+00:00:00,000 --> 00:03:36,694
+ this is more or less I say accurate,
+
+95
+00:00:00,000 --> 00:03:38,381
+ but it is not written in stone.
+
+96
+00:00:00,000 --> 00:03:40,060
+What you should use it for,
+
+97
+00:00:00,000 --> 00:03:41,476
+ however,
+
+98
+00:00:00,000 --> 00:03:42,887
+ is to plan your reading,
+
+99
+00:00:00,000 --> 00:03:50,541
+ so things will be much better for all of us if you read along with the material as the syllabus 
+
+100
+00:00:00,000 --> 00:03:52,986
+！ as the schedule basically outlines,
+
+101
+00:00:00,000 --> 00:03:54,250
+ all right,
+
+102
+00:00:00,000 --> 00:03:56,367
+ because there are times when I'm gonna wanna skip around a little bit.
+
+103
+00:00:00,000 --> 00:03:58,550
+There are times when I'm gonna derive things.
+
+104
+00:00:00,000 --> 00:04:00,506
+There are times when I'm not gonna derive things.
+
+105
+00:00:00,000 --> 00:04:01,867
+And you'll get much more out of the lectures,
+
+106
+00:00:00,000 --> 00:04:03,149
+ our time together,
+
+107
+00:00:00,000 --> 00:04:04,312
+ if you've read the material thoroughly before you come to class.
+
+108
+00:00:00,000 --> 00:04:05,583
+So that's one thing I ask you to do.
+
+109
+00:00:00,000 --> 00:04:08,823
+We have two exams scheduled.
+
+110
+00:00:00,000 --> 00:04:10,124
+We have a midterm exam and a final exam.
+
+111
+00:00:00,000 --> 00:04:12,477
+I'm gonna skip to the midterm exam.
+
+112
+00:00:00,000 --> 00:04:13,871
+Midterm exam is already actually on there,
+
+113
+00:00:00,000 --> 00:04:16,569
+ at least tentatively,
+
+114
+00:00:00,000 --> 00:04:18,996
+ sort of toward the end of October.
+
+115
+00:00:00,000 --> 00:04:21,406
+We'll have it outside of class.
+
+116
+00:00:00,000 --> 00:04:22,901
+That is,
+
+117
+00:00:00,000 --> 00:04:23,756
+ it'll be a sit-
+
+118
+00:00:00,000 --> 00:04:24,252
+ down,
+
+119
+00:00:00,000 --> 00:04:26,103
+ regular exam,
+
+120
+00:00:00,000 --> 00:04:27,461
+ but I wanna do it for 90 minutes rather than 50 minutes.
+
+121
+00:00:00,000 --> 00:04:31,864
+Fifty minutes is just too short a time for material like this,
+
+122
+00:00:00,000 --> 00:04:32,948
+ so it'll be a 90-
+
+123
+00:00:00,000 --> 00:04:34,339
+minute exam,
+
+124
+00:00:00,000 --> 00:04:36,105
+ and we'll schedule it several sessions outside of class.
+
+125
+00:00:00,000 --> 00:04:37,602
+This is the way I've usually done it,
+
+126
+00:00:00,000 --> 00:04:38,022
+ and it hasn't been any problem.
+
+127
+00:00:00,000 --> 00:04:40,497
+It's worked out all right for everybody.
+
+128
+00:00:00,000 --> 00:04:41,906
+So we'll have alternate times and so on.
+
+129
+00:00:00,000 --> 00:04:44,809
+And the final exam is scheduled by the registrar's office.
+
+130
+00:00:00,000 --> 00:04:47,378
+Do not come to me right before the final exam saying,
+
+131
+00:00:00,000 --> 00:04:48,707
+ "Oh,
+
+132
+00:00:00,000 --> 00:04:49,546
+ I scheduled a trip out of town.
+
+133
+00:00:00,000 --> 00:04:50,508
+I hope that's not a problem,
+
+134
+00:00:00,000 --> 00:04:51,744
+" all right?
+
+135
+00:00:00,000 --> 00:04:54,549
+ You know what the dates are ahead of time.
+
+136
+00:00:00,000 --> 00:04:55,988
+We'll also have regular problem sets.
+
+137
+00:00:00,000 --> 00:04:57,857
+None of these things that I'm saying should be new to you.
+
+138
+00:00:00,000 --> 00:04:59,310
+You've been through the drill many times.
+
+139
+00:00:00,000 --> 00:05:01,403
+The problem sets are gonna be 
+
+140
+00:00:00,000 --> 00:05:05,239
+！ I had a startling innovation last time I taught the course
+
+141
+00:00:00,000 --> 00:05:09,452
+ where I handed out the problem sets on Monday and had them due the following Wednesday.
+
+142
+00:00:00,000 --> 00:05:10,405
+So you actually had,
+
+143
+00:00:00,000 --> 00:05:10,982
+ like,
+
+144
+00:00:00,000 --> 00:05:13,327
+ a week and a half to do the problem sets,
+
+145
+00:00:00,000 --> 00:05:14,308
+ and there was overlap between the two.
+
+146
+00:00:00,000 --> 00:05:16,215
+And people thought that was just a brilliant idea.
+
+147
+00:00:00,000 --> 00:05:18,651
+So we're gonna do that again this year except for the first problem set,
+
+148
+00:00:00,000 --> 00:05:19,613
+ all right?
+
+149
+00:00:00,000 --> 00:05:23,979
+ I decided it was not such good policy to hand out the very first problem set on the very first day of class,
+
+150
+00:00:00,000 --> 00:05:26,045
+ so I'll hand that out on Wednesday and I'll post that also 
+
+151
+00:00:00,000 --> 00:05:27,136
+！ or at least I'll post it.
+
+152
+00:00:00,000 --> 00:05:29,463
+I'm not sure I'll hand it out.
+
+153
+00:00:00,000 --> 00:05:30,117
+It will be available on Wednesday,
+
+154
+00:00:00,000 --> 00:05:30,890
+ and it'll be due the following Wednesday.
+
+155
+00:00:00,000 --> 00:05:32,139
+And again,
+
+156
+00:00:00,000 --> 00:05:33,639
+ these sorts of things are pretty routine for you.
+
+157
+00:00:00,000 --> 00:05:34,754
+I'm sure you've been through them many times.
+
+158
+00:00:00,000 --> 00:05:36,756
+It will be practice,
+
+159
+00:00:00,000 --> 00:05:41,710
+ although again not necessarily every time without fail,
+
+160
+00:00:00,000 --> 00:05:44,560
+ to have MATLAB problems on the homework,
+
+161
+00:00:00,000 --> 00:05:46,861
+ one or two MATLAB problems on the homework.
+
+162
+00:00:00,000 --> 00:05:50,590
+So I'm going under the assumption that people have some experience with using MATLAB 
+
+163
+00:00:00,000 --> 00:05:53,181
+！ it doesn't have to be terribly advanced 
+
+164
+00:00:00,000 --> 00:05:54,912
+！ and also access to using MATLAB.
+
+165
+00:00:00,000 --> 00:05:58,223
+So if you do not have experience using MATLAB and you do not have access to MATLAB,
+
+166
+00:00:00,000 --> 00:06:00,298
+ get some experience and get some access.
+
+167
+00:00:00,000 --> 00:06:04,413
+Won't be hard.
+
+168
+00:00:00,000 --> 00:06:04,945
+Okay.
+
+169
+00:00:00,000 --> 00:06:05,635
+Now,
+
+170
+00:00:00,000 --> 00:06:08,226
+ let me say a little bit about some other things.
+
+171
+00:00:00,000 --> 00:06:09,915
+This is the course reader for the course.
+
+172
+00:00:00,000 --> 00:06:15,427
+It's available at the bookstore and also available on the course website,
+
+173
+00:00:00,000 --> 00:06:16,305
+ all right?
+
+174
+00:00:00,000 --> 00:06:17,329
+ It doesn't have the problems in it,
+
+175
+00:00:00,000 --> 00:06:20,031
+ but it has the material that we're gonna be covering in class.
+
+176
+00:00:00,000 --> 00:06:21,080
+Now,
+
+177
+00:00:00,000 --> 00:06:23,567
+ this is basically a stitched-
+
+178
+00:00:00,000 --> 00:06:26,557
+together set of lecture notes that I've been using for a number of years in the class,
+
+179
+00:00:00,000 --> 00:06:28,675
+ and I sort of tinker with it every time I teach the class.
+
+180
+00:00:00,000 --> 00:06:30,949
+But because it is a stitched-
+
+181
+00:00:00,000 --> 00:06:32,182
+together set of lecture notes,
+
+182
+00:00:00,000 --> 00:06:34,519
+ the organization is sometimes a little bit odd,
+
+183
+00:00:00,000 --> 00:06:36,160
+ like you have an appendix in the middle of the chapter.
+
+184
+00:00:00,000 --> 00:06:41,301
+And what that means is it used to be an appendix to a particular lecture that went on that particular day,
+
+185
+00:00:00,000 --> 00:06:43,350
+ and it never got moved to anywhere else,
+
+186
+00:00:00,000 --> 00:06:44,256
+ all right?
+
+187
+00:00:00,000 --> 00:06:45,310
+ So the organization can be a little bit funny.
+
+188
+00:00:00,000 --> 00:06:47,828
+You can help on this,
+
+189
+00:00:00,000 --> 00:06:49,322
+ all right?
+
+190
+00:00:00,000 --> 00:06:50,098
+ That is,
+
+191
+00:00:00,000 --> 00:06:50,605
+ if you find typos,
+
+192
+00:00:00,000 --> 00:06:51,576
+ if you find errors,
+
+193
+00:00:00,000 --> 00:06:55,889
+ if you find things that are less than clear in their wording,
+
+194
+00:00:00,000 --> 00:06:57,894
+ if you have some ideas for examples or other explanations,
+
+195
+00:00:00,000 --> 00:07:00,212
+ please tell me.
+
+196
+00:00:00,000 --> 00:07:01,784
+I am working on this.
+
+197
+00:00:00,000 --> 00:07:06,270
+I have to say that because these were written as a set of lecture notes,
+
+198
+00:00:00,000 --> 00:07:10,097
+ these are meant to be a good and I hope helpful companion for the class.
+
+199
+00:00:00,000 --> 00:07:10,958
+That is,
+
+200
+00:00:00,000 --> 00:07:11,656
+ they're meant to be read,
+
+201
+00:00:00,000 --> 00:07:13,304
+ and they're meant to be used.
+
+202
+00:00:00,000 --> 00:07:14,769
+So you can help,
+
+203
+00:00:00,000 --> 00:07:16,704
+ as generations of students in the past have helped,
+
+204
+00:00:00,000 --> 00:07:22,382
+ to try to refine these and turn them into something that's really a good accompaniment to the class as we go on,
+
+205
+00:00:00,000 --> 00:07:23,399
+ okay?
+
+206
+00:00:00,000 --> 00:07:29,429
+ One other thing that's special this quarter is the class is,
+
+207
+00:00:00,000 --> 00:07:30,359
+ as always,
+
+208
+00:00:00,000 --> 00:07:31,347
+ taped,
+
+209
+00:00:00,000 --> 00:07:33,609
+ and the lectures are gonna be available to everybody.
+
+210
+00:00:00,000 --> 00:07:35,411
+But this time for the first time,
+
+211
+00:00:00,000 --> 00:07:37,145
+ the lectures are gonna be available to the world,
+
+212
+00:00:00,000 --> 00:07:38,626
+ all right?
+
+213
+00:00:00,000 --> 00:07:40,376
+ Stanford has decided on an experimental basis 
+
+214
+00:00:00,000 --> 00:07:41,489
+！ we're sort of competing with MIT here,
+
+215
+00:00:00,000 --> 00:07:44,292
+ I think 
+
+216
+00:00:00,000 --> 00:07:47,396
+！ to try to make some of the materials for some classes available to the world,
+
+217
+00:00:00,000 --> 00:07:48,176
+ all right?
+
+218
+00:00:00,000 --> 00:07:48,869
+ So the lecture notes are gonna be 
+
+219
+00:00:00,000 --> 00:07:50,865
+！ everything's gonna be done through the website,
+
+220
+00:00:00,000 --> 00:07:54,606
+ but instead of needing a Stanford ID to view the taped lectures,
+
+221
+00:00:00,000 --> 00:07:57,247
+ I think anybody in the world can view these lectures.
+
+222
+00:00:00,000 --> 00:07:58,684
+It's a little bit daunting.
+
+223
+00:00:00,000 --> 00:08:00,201
+I have to watch my language,
+
+224
+00:00:00,000 --> 00:08:01,818
+ gotta dress well.
+
+225
+00:00:00,000 --> 00:08:03,760
+All right.
+
+226
+00:00:00,000 --> 00:08:04,807
+So we'll see what goes with that.
+
+227
+00:00:00,000 --> 00:08:05,272
+I will,
+
+228
+00:00:00,000 --> 00:08:06,086
+ however,
+
+229
+00:00:00,000 --> 00:08:07,769
+ issue a warning.
+
+230
+00:00:00,000 --> 00:08:09,728
+I will not answer the world's email,
+
+231
+00:00:00,000 --> 00:08:10,695
+ all right?
+
+232
+00:00:00,000 --> 00:08:12,531
+ I will answer email from the class,
+
+233
+00:00:00,000 --> 00:08:13,579
+ but I will not answer 
+
+234
+00:00:00,000 --> 00:08:15,253
+！ and I think I speak for the TAs here.
+
+235
+00:00:00,000 --> 00:08:18,805
+The TAs neither will answer the world's email on this,
+
+236
+00:00:00,000 --> 00:08:19,641
+ all right?
+
+237
+00:00:00,000 --> 00:08:21,474
+ How we're gonna keep the world out of our inboxes,
+
+238
+00:00:00,000 --> 00:08:24,587
+ I'm not sure exactly whether this is gonna be a problem or not,
+
+239
+00:00:00,000 --> 00:08:25,881
+ but at any rate,
+
+240
+00:00:00,000 --> 00:08:26,920
+ that's what's happening,
+
+241
+00:00:00,000 --> 00:08:27,761
+ okay?
+
+242
+00:00:00,000 --> 00:08:29,529
+ All right.
+
+243
+00:00:00,000 --> 00:08:31,788
+Any questions about that?
+
+244
+00:00:00,000 --> 00:08:34,271
+ Any questions about the mechanics of the course or what your expectations should be,
+
+245
+00:00:00,000 --> 00:08:36,054
+ what my expectations of you are?
+
+246
+00:00:00,000 --> 00:08:40,442
+ Okay.
+
+247
+00:00:00,000 --> 00:08:40,868
+All right.
+
+248
+00:00:00,000 --> 00:08:41,395
+Now,
+
+249
+00:00:00,000 --> 00:08:43,163
+ I always like to take an informal poll actually,
+
+250
+00:00:00,000 --> 00:08:45,428
+ when we start this class.
+
+251
+00:00:00,000 --> 00:08:46,121
+I've taught this a number of times now,
+
+252
+00:00:00,000 --> 00:08:46,866
+ and it's always been a mixed crowd.
+
+253
+00:00:00,000 --> 00:08:50,009
+And I think that's one of the things that's attractive about this class.
+
+254
+00:00:00,000 --> 00:08:52,622
+So let me ask who are the EEs in this class,
+
+255
+00:00:00,000 --> 00:08:54,960
+ who are in electrical engineering,
+
+256
+00:00:00,000 --> 00:08:56,479
+ either undergraduate or graduate?
+
+257
+00:00:00,000 --> 00:08:57,532
+ All right.
+
+258
+00:00:00,000 --> 00:08:58,400
+So that's a pretty strong show of hands.
+
+259
+00:00:00,000 --> 00:08:59,043
+But let me also ask,
+
+260
+00:00:00,000 --> 00:08:59,667
+ who are the non-
+
+261
+00:00:00,000 --> 00:09:00,882
+EEs in this class?
+
+262
+00:00:00,000 --> 00:09:02,038
+ All right.
+
+263
+00:00:00,000 --> 00:09:03,241
+That's also a pretty strong show of hands.
+
+264
+00:00:00,000 --> 00:09:04,535
+The EEs are,
+
+265
+00:00:00,000 --> 00:09:06,208
+ as is typical,
+
+266
+00:00:00,000 --> 00:09:07,655
+ the majority of the students in the class,
+
+267
+00:00:00,000 --> 00:09:13,022
+ but there's also a pretty strong group of students in this class who are not electrical engineers by training,
+
+268
+00:00:00,000 --> 00:09:13,638
+ by desire,
+
+269
+00:00:00,000 --> 00:09:14,128
+ by anything,
+
+270
+00:00:00,000 --> 00:09:15,126
+ all right?
+
+271
+00:00:00,000 --> 00:09:17,624
+ And they usually come from all over the place.
+
+272
+00:00:00,000 --> 00:09:19,206
+I was looking at the classes before I got to class,
+
+273
+00:00:00,000 --> 00:09:21,931
+ and I think there are some people from chemistry.
+
+274
+00:00:00,000 --> 00:09:23,244
+Is somebody from chemistry?
+
+275
+00:00:00,000 --> 00:09:25,974
+ I thought there was somebody 
+
+276
+00:00:00,000 --> 00:09:26,386
+！ yeah,
+
+277
+00:00:00,000 --> 00:09:26,923
+ I see back there.
+
+278
+00:00:00,000 --> 00:09:27,495
+All right.
+
+279
+00:00:00,000 --> 00:09:30,111
+And I know there were some people from earth sciences.
+
+280
+00:00:00,000 --> 00:09:31,661
+And somebody was talking to me actually from earth sciences this morning.
+
+281
+00:00:00,000 --> 00:09:32,857
+Somebody from earth science?
+
+282
+00:00:00,000 --> 00:09:33,377
+ Okay.
+
+283
+00:00:00,000 --> 00:09:33,887
+Where else?
+
+284
+00:00:00,000 --> 00:09:34,869
+ I think there was an ME,
+
+285
+00:00:00,000 --> 00:09:35,947
+ couple of MEs maybe.
+
+286
+00:00:00,000 --> 00:09:37,001
+Yeah,
+
+287
+00:00:00,000 --> 00:09:37,671
+ all right.
+
+288
+00:00:00,000 --> 00:09:38,138
+Now,
+
+289
+00:00:00,000 --> 00:09:39,472
+ that's important to know,
+
+290
+00:00:00,000 --> 00:09:40,516
+ I think.
+
+291
+00:00:00,000 --> 00:09:43,689
+The course is very rich in material,
+
+292
+00:00:00,000 --> 00:09:44,642
+ all right,
+
+293
+00:00:00,000 --> 00:09:45,585
+ rich in applications,
+
+294
+00:00:00,000 --> 00:09:46,505
+ rich in content,
+
+295
+00:00:00,000 --> 00:09:50,914
+ and it appeals to many people for many different reasons,
+
+296
+00:00:00,000 --> 00:09:52,554
+ okay?
+
+297
+00:00:00,000 --> 00:09:54,936
+ For the EEs who are taking the class,
+
+298
+00:00:00,000 --> 00:09:58,951
+ you have probably seen a certain amount of this material 
+
+299
+00:00:00,000 --> 00:10:00,304
+！ I don't wanna say most of the material,
+
+300
+00:00:00,000 --> 00:10:03,865
+ but you've probably seen a fair amount of this material scattered over many different classes.
+
+301
+00:00:00,000 --> 00:10:12,722
+But it's been my experience that one of the advantages of this class for electrical engineering students,
+
+302
+00:00:00,000 --> 00:10:15,619
+ either undergraduate or graduate students,
+
+303
+00:00:00,000 --> 00:10:16,604
+ is to see it all in one piece,
+
+304
+00:00:00,000 --> 00:10:17,297
+ all right,
+
+305
+00:00:00,000 --> 00:10:18,404
+ to put it all in your head at one time,
+
+306
+00:00:00,000 --> 00:10:19,224
+ at least once,
+
+307
+00:00:00,000 --> 00:10:19,835
+ all right,
+
+308
+00:00:00,000 --> 00:10:21,906
+ because the subject does have a great amount of coherence.
+
+309
+00:00:00,000 --> 00:10:25,243
+It really does hang together beautifully.
+
+310
+00:00:00,000 --> 00:10:27,502
+For all the different and varied applications,
+
+311
+00:00:00,000 --> 00:10:32,893
+ there are core ideas and core methods of the class that it is very helpful to see all at once,
+
+312
+00:00:00,000 --> 00:10:33,534
+ all right?
+
+313
+00:00:00,000 --> 00:10:35,208
+ So if you have seen the material before,
+
+314
+00:00:00,000 --> 00:10:37,753
+ that's fine.
+
+315
+00:00:00,000 --> 00:10:38,270
+I mean,
+
+316
+00:00:00,000 --> 00:10:41,623
+ you can draw on that and draw on your experience,
+
+317
+00:00:00,000 --> 00:10:46,061
+ but don't deny yourself the pleasure of trying to synthesize the ideas as we go along.
+
+318
+00:00:00,000 --> 00:10:46,909
+I mean,
+
+319
+00:00:00,000 --> 00:10:49,395
+ there's nothing so pleasurable as thinking about something you already know,
+
+320
+00:00:00,000 --> 00:10:51,695
+ trying to think about it from a new perspective,
+
+321
+00:00:00,000 --> 00:10:52,941
+ trying to think about it from a new point of view,
+
+322
+00:00:00,000 --> 00:10:56,561
+ trying to fold it into some of the newer things you'll be learning.
+
+323
+00:00:00,000 --> 00:11:00,409
+So I have heard this from electrical engineering students many times in the past
+
+324
+00:00:00,000 --> 00:11:04,890
+ that it's a pleasure for them to see the material all together at once.
+
+325
+00:00:00,000 --> 00:11:06,662
+It may seem like a fair amount of review,
+
+326
+00:00:00,000 --> 00:11:07,144
+ and in some cases,
+
+327
+00:00:00,000 --> 00:11:07,647
+ it will be,
+
+328
+00:00:00,000 --> 00:11:09,268
+ but not in all cases.
+
+329
+00:00:00,000 --> 00:11:10,738
+And even if it is a review,
+
+330
+00:00:00,000 --> 00:11:14,134
+ there are often slightly different twists or slightly new takes on things 
+
+331
+00:00:00,000 --> 00:11:17,367
+that you may not have seen before or may not have thought of in quite that way.
+
+332
+00:00:00,000 --> 00:11:20,231
+So that is my advice to the electrical engineering students.
+
+333
+00:00:00,000 --> 00:11:24,940
+For the students who have not seen this material before that are coming at it from a different field 
+
+334
+00:00:00,000 --> 00:11:31,471
+and maybe only heard secret tales of the Fourier transform and its uses,
+
+335
+00:00:00,000 --> 00:11:32,061
+ well,
+
+336
+00:00:00,000 --> 00:11:34,534
+ I hope you enjoy the ride because it's gonna be a hell of a ride 
+
+337
+00:00:00,000 --> 00:11:35,139
+！ oh,
+
+338
+00:00:00,000 --> 00:11:37,969
+ a heck of a ride as we go along.
+
+339
+00:00:00,000 --> 00:11:38,427
+All right.
+
+340
+00:00:00,000 --> 00:11:38,936
+Now,
+
+341
+00:00:00,000 --> 00:11:41,635
+ for everyone,
+
+342
+00:00:00,000 --> 00:11:42,604
+ I sort of feel like I have to issue 
+
+343
+00:00:00,000 --> 00:11:45,426
+！ I don't know if I'd call this a warning or just sort of a statement or principle or whatever.
+
+344
+00:00:00,000 --> 00:11:46,538
+This is a very mathematical class.
+
+345
+00:00:00,000 --> 00:11:51,682
+This is one of the sort of holy trinity of classes in the information systems lab and electrical engineering.
+
+346
+00:00:00,000 --> 00:11:53,185
+Electrical engineering is a very broad department.
+
+347
+00:00:00,000 --> 00:11:56,659
+It's split up into a number of laboratories along research lines.
+
+348
+00:00:00,000 --> 00:11:58,533
+I am in the information systems lab,
+
+349
+00:00:00,000 --> 00:12:00,748
+ which is sort of the mathematical part of the subject,
+
+350
+00:00:00,000 --> 00:12:01,857
+ has a lot of signal processing,
+
+351
+00:00:00,000 --> 00:12:02,737
+ coding theory,
+
+352
+00:00:00,000 --> 00:12:03,221
+ imaging,
+
+353
+00:00:00,000 --> 00:12:04,000
+ and so on.
+
+354
+00:00:00,000 --> 00:12:08,296
+And this course has been for a number of years taught by faculty,
+
+355
+00:00:00,000 --> 00:12:11,408
+ sort of thought of as a cornerstone in the signal processing,
+
+356
+00:00:00,000 --> 00:12:14,227
+ although it has a lot of different applications to a lot of different areas.
+
+357
+00:00:00,000 --> 00:12:18,923
+The other courses in that holy trinity are 263,
+
+358
+00:00:00,000 --> 00:12:19,794
+ linear dynamical systems,
+
+359
+00:00:00,000 --> 00:12:21,185
+ and 278,
+
+360
+00:00:00,000 --> 00:12:22,658
+ statistical signal processing.
+
+361
+00:00:00,000 --> 00:12:23,595
+Actually,
+
+362
+00:00:00,000 --> 00:12:25,506
+ let me ask here because this is also very common:
+
+363
+00:00:00,000 --> 00:12:27,824
+ Who's taking 263 in the class?
+
+364
+00:00:00,000 --> 00:12:30,155
+ Also a strong majority.
+
+365
+00:00:00,000 --> 00:12:31,886
+And who's taking 278?
+
+366
+00:00:00,000 --> 00:12:32,439
+ Yeah,
+
+367
+00:00:00,000 --> 00:12:33,077
+ okay.
+
+368
+00:00:00,000 --> 00:12:36,354
+So there's a little bit less but still a number of people.
+
+369
+00:00:00,000 --> 00:12:38,418
+We'll actually see,
+
+370
+00:00:00,000 --> 00:12:41,083
+ not so much with 278,
+
+371
+00:00:00,000 --> 00:12:41,500
+ well,
+
+372
+00:00:00,000 --> 00:12:42,159
+ actually with both classes,
+
+373
+00:00:00,000 --> 00:12:43,420
+ with 263 and 278,
+
+374
+00:00:00,000 --> 00:12:44,912
+ you'll actually see some overlap that I also hope you find interesting.
+
+375
+00:00:00,000 --> 00:12:48,035
+The language will be slightly different.
+
+376
+00:00:00,000 --> 00:12:49,607
+The perspective will be slightly different,
+
+377
+00:00:00,000 --> 00:12:56,092
+ but you see this material in this class melding over into the other classes and vice-
+
+378
+00:00:00,000 --> 00:12:56,754
+versa.
+
+379
+00:00:00,000 --> 00:12:57,309
+And again,
+
+380
+00:00:00,000 --> 00:12:59,974
+ I think it's something that you can really draw on and I hope you enjoy,
+
+381
+00:00:00,000 --> 00:13:02,526
+ all right?
+
+382
+00:00:00,000 --> 00:13:05,526
+ So those classes and the perspective that we take,
+
+383
+00:00:00,000 --> 00:13:07,644
+ the faculty who are teaching this class,
+
+384
+00:00:00,000 --> 00:13:08,846
+ is a pretty mathematical one,
+
+385
+00:00:00,000 --> 00:13:11,432
+ but it's not a class in theorems and proofs.
+
+386
+00:00:00,000 --> 00:13:13,450
+You can breathe a heavy sigh of relief now,
+
+387
+00:00:00,000 --> 00:13:14,316
+ all right?
+
+388
+00:00:00,000 --> 00:13:16,895
+ I can do that,
+
+389
+00:00:00,000 --> 00:13:17,890
+ but I won't,
+
+390
+00:00:00,000 --> 00:13:18,318
+ all right?
+
+391
+00:00:00,000 --> 00:13:21,226
+ I will derive things 
+
+392
+00:00:00,000 --> 00:13:23,468
+！ I'll derive a number of formulas 
+
+393
+00:00:00,000 --> 00:13:26,278
+！ I'll derive it and I'll go through those derivations,
+
+394
+00:00:00,000 --> 00:13:33,192
+ or I'll hope that you go through the derivations in the book when I hope and I think that they will be helpful,
+
+395
+00:00:00,000 --> 00:13:33,808
+ all right?
+
+396
+00:00:00,000 --> 00:13:34,199
+ And when,
+
+397
+00:00:00,000 --> 00:13:34,881
+ in some cases,
+
+398
+00:00:00,000 --> 00:13:35,422
+ that is,
+
+399
+00:00:00,000 --> 00:13:39,823
+ there's an important technique or there's an important idea that you'll see not only in the particular instance but overall,
+
+400
+00:00:00,000 --> 00:13:47,183
+ that you'll see the same sort of derivation or the same sort of ideas be applied not only for one formula but for other sorts of formulas.
+
+401
+00:00:00,000 --> 00:13:47,588
+And also,
+
+402
+00:00:00,000 --> 00:13:47,996
+ in some cases,
+
+403
+00:00:00,000 --> 00:13:48,752
+ to my mind,
+
+404
+00:00:00,000 --> 00:13:51,715
+ as twisted as that may be,
+
+405
+00:00:00,000 --> 00:13:55,598
+ I sometimes think of the derivation of a formula almost as identical with the formula.
+
+406
+00:00:00,000 --> 00:13:56,606
+I mean,
+
+407
+00:00:00,000 --> 00:13:58,845
+ to use the formula effectively almost is to know the derivation
+
+408
+00:00:00,000 --> 00:14:00,902
+ because it's to know where it applies and to know how it applies
+
+409
+00:00:00,000 --> 00:14:03,431
+ and where do we expect to use it,
+
+410
+00:00:00,000 --> 00:14:04,496
+ all right?
+
+411
+00:00:00,000 --> 00:14:09,900
+ So that's why I will go through those things for the purpose of teaching a certain amount of technique
+
+412
+00:00:00,000 --> 00:14:14,420
+ and for the purposes of sort of having those techniques really at your fingertips 
+
+413
+00:00:00,000 --> 00:14:18,595
+so that you can apply them again in a situation 
+
+414
+00:00:00,000 --> 00:14:23,963
+that may not be quite identical with what we did
+
+415
+00:00:00,000 --> 00:14:24,696
+ but will be similar enough so that the ideas may apply in that situation.
+
+416
+00:00:00,000 --> 00:14:25,414
+That's very important.
+
+417
+00:00:00,000 --> 00:14:26,748
+We will also do plenty of different sorts of applications.
+
+418
+00:00:00,000 --> 00:14:27,621
+And again,
+
+419
+00:00:00,000 --> 00:14:29,847
+ because the field,
+
+420
+00:00:00,000 --> 00:14:32,098
+ the subject is so varied and because the clientele,
+
+421
+00:00:00,000 --> 00:14:34,181
+ because the students in the class are also varied,
+
+422
+00:00:00,000 --> 00:14:36,622
+ we'll try to take applications from different areas.
+
+423
+00:00:00,000 --> 00:14:38,410
+We'll have applications from electrical engineering,
+
+424
+00:00:00,000 --> 00:14:42,475
+ but we'll also have applications from physics and from other areas.
+
+425
+00:00:00,000 --> 00:14:43,618
+I've also done in the past,
+
+426
+00:00:00,000 --> 00:14:45,159
+ and we'll see if I can get to this,
+
+427
+00:00:00,000 --> 00:14:45,944
+ some applications from earth sciences,
+
+428
+00:00:00,000 --> 00:14:46,840
+ for example.
+
+429
+00:00:00,000 --> 00:14:48,287
+And we'll just see how that goes.
+
+430
+00:00:00,000 --> 00:14:50,030
+So we all have to cut each other a little bit of slack,
+
+431
+00:00:00,000 --> 00:14:52,577
+ and if an application or particular area is not exactly to your liking,
+
+432
+00:00:00,000 --> 00:14:53,263
+ well,
+
+433
+00:00:00,000 --> 00:14:56,829
+ chances are it might be to somebody's liking to your right or left.
+
+434
+00:00:00,000 --> 00:14:57,600
+So,
+
+435
+00:00:00,000 --> 00:14:59,597
+ as I say,
+
+436
+00:00:00,000 --> 00:15:01,806
+ everybody should cut each other a little slack and just enjoy the ride.
+
+437
+00:00:00,000 --> 00:15:09,506
+I should also say that many of the more specialized applications are found in more specialized courses,
+
+438
+00:00:00,000 --> 00:15:10,327
+ all right?
+
+439
+00:00:00,000 --> 00:15:12,190
+ So we will touch on a lot of things,
+
+440
+00:00:00,000 --> 00:15:16,070
+ and I will use the words that are used in a lot of different courses and a lot of different subjects.
+
+441
+00:00:00,000 --> 00:15:19,993
+But we won't always do C in application to its bitter end,
+
+442
+00:00:00,000 --> 00:15:20,978
+ so to speak,
+
+443
+00:00:00,000 --> 00:15:21,534
+ or we won't do every 
+
+444
+00:00:00,000 --> 00:15:25,198
+！ we certainly won't do every possible application because there are just so many of them.
+
+445
+00:00:00,000 --> 00:15:28,961
+So you will find you will not run out of ways of using the Fourier transform 
+
+446
+00:00:00,000 --> 00:15:33,331
+and Fourier analysis techniques in any classes here.
+
+447
+00:00:00,000 --> 00:15:35,885
+It goes on and on and on.
+
+448
+00:00:00,000 --> 00:15:40,049
+But we'll only be able to see a certain amount of that,
+
+449
+00:00:00,000 --> 00:15:40,840
+ all right?
+
+450
+00:00:00,000 --> 00:15:41,490
+ And actually,
+
+451
+00:00:00,000 --> 00:15:44,119
+ that leads to a very important point,
+
+452
+00:00:00,000 --> 00:15:46,038
+ at least at the start of the class; that is,
+
+453
+00:00:00,000 --> 00:15:47,485
+ where do we start,
+
+454
+00:00:00,000 --> 00:15:48,264
+ all right?
+
+455
+00:00:00,000 --> 00:15:48,853
+ That is,
+
+456
+00:00:00,000 --> 00:15:49,439
+ this subject,
+
+457
+00:00:00,000 --> 00:15:50,910
+ which is so rich and so diverse,
+
+458
+00:00:00,000 --> 00:15:52,334
+ forces you,
+
+459
+00:00:00,000 --> 00:15:55,085
+ forces me,
+
+460
+00:00:00,000 --> 00:16:00,400
+ forces all of us to make hard choices in some ways about what we're gonna cover,
+
+461
+00:00:00,000 --> 00:16:01,123
+ where we're gonna start,
+
+462
+00:00:00,000 --> 00:16:01,926
+ what direction we're going to go.
+
+463
+00:00:00,000 --> 00:16:06,010
+And all the different choices are defensible.
+
+464
+00:00:00,000 --> 00:16:11,770
+You will find books out there that take very different tactics towards the subject.
+
+465
+00:00:00,000 --> 00:16:15,021
+They take different starting points; they have different emphasis; they go off in different directions.
+
+466
+00:00:00,000 --> 00:16:18,677
+And you can make a good argument for any one of those choices.
+
+467
+00:00:00,000 --> 00:16:21,432
+But you have to make a choice.
+
+468
+00:00:00,000 --> 00:16:27,580
+So for us,
+
+469
+00:00:00,000 --> 00:16:30,649
+ we are going to choose 
+
+470
+00:00:00,000 --> 00:16:31,325
+！ I have chosen,
+
+471
+00:00:00,000 --> 00:16:31,947
+ not we,
+
+472
+00:00:00,000 --> 00:16:32,530
+ me 
+
+473
+00:00:00,000 --> 00:16:38,346
+！ I have chosen to start the class with a brief discussion of Fourier series 
+
+474
+00:00:00,000 --> 00:16:42,335
+and go from there to the Fourier transform,
+
+475
+00:00:00,000 --> 00:16:43,230
+ all right,
+
+476
+00:00:00,000 --> 00:16:47,873
+ whereas it is also a very common choice to forget about Fourier series 
+
+477
+00:00:00,000 --> 00:16:52,833
+and maybe pick them up a little bit along the end or pick them up a little bit on the edges or,
+
+478
+00:00:00,000 --> 00:16:53,984
+ assuming that everybody's seen Fourier series,
+
+479
+00:00:00,000 --> 00:16:54,440
+ and then go right into the Fourier transform.
+
+480
+00:00:00,000 --> 00:16:58,120
+I don't wanna do that because I think the subject of Fourier series is interesting enough in it 
+
+481
+00:00:00,000 --> 00:16:59,520
+！ we're not gonna do very much with it,
+
+482
+00:00:00,000 --> 00:17:00,681
+ but it's interesting enough in itself.
+
+483
+00:00:00,000 --> 00:17:01,319
+Again,
+
+484
+00:00:00,000 --> 00:17:02,559
+ it's something you may have seen in different contexts,
+
+485
+00:00:00,000 --> 00:17:04,081
+ but it provides a natural transition to the study of the Fourier transform.
+
+486
+00:00:00,000 --> 00:17:12,189
+And it is historically actually the way the subject developed,
+
+487
+00:00:00,000 --> 00:17:12,706
+ okay?
+
+488
+00:00:00,000 --> 00:17:15,766
+ So that's how we're gonna do things.
+
+489
+00:00:00,000 --> 00:17:21,343
+We'll start with Fourier series and use them as a transition to Fourier transform.
+
+490
+00:00:00,000 --> 00:17:22,029
+Now,
+
+491
+00:00:00,000 --> 00:17:23,104
+ first of all,
+
+492
+00:00:00,000 --> 00:17:26,600
+ what is this concerned with overall?
+
+493
+00:00:00,000 --> 00:17:32,357
+ It may be a little bit too strong a statement,
+
+494
+00:00:00,000 --> 00:17:33,184
+ but for our purposes,
+
+495
+00:00:00,000 --> 00:17:41,149
+ I wanna identify the idea of Fourier series as almost identified with the study of periodic phenomena,
+
+496
+00:00:00,000 --> 00:17:42,780
+ all right?
+
+497
+00:00:00,000 --> 00:17:44,316
+ So for us,
+
+498
+00:00:00,000 --> 00:18:03,075
+ it's identified most strongly with a mathematical analysis of periodic phenomena.
+
+499
+00:00:00,000 --> 00:18:04,613
+Now,
+
+500
+00:00:00,000 --> 00:18:06,681
+ it certainly shouldn't be necessary for me to justify periodic phenomena
+
+501
+00:00:00,000 --> 00:18:08,423
+ as an important class of phenomena.
+
+502
+00:00:00,000 --> 00:18:12,388
+You have been studying these things for your entire life pretty much.
+
+503
+00:00:00,000 --> 00:18:15,807
+Ever since the first physics course you ever took where they do the harmonic oscillator,
+
+504
+00:00:00,000 --> 00:18:20,510
+ and then the second physics course you took where they did the harmonic oscillator,
+
+505
+00:00:00,000 --> 00:18:23,102
+ and then the third physics course you took where they did the harmonic oscillator,
+
+506
+00:00:00,000 --> 00:18:25,212
+ you have been studying periodic phenomena,
+
+507
+00:00:00,000 --> 00:18:26,208
+ all right?
+
+508
+00:00:00,000 --> 00:18:28,857
+ So that shouldn't be a controversial choice.
+
+509
+00:00:00,000 --> 00:18:30,363
+Fourier series goes much beyond that,
+
+510
+00:00:00,000 --> 00:18:33,685
+ but it is first and foremost for us associated with the study of periodic phenomena.
+
+511
+00:00:00,000 --> 00:18:36,332
+The Fourier transform,
+
+512
+00:00:00,000 --> 00:18:40,479
+ although again it maybe doesn't do it justice completely,
+
+513
+00:00:00,000 --> 00:18:45,001
+ can be viewed as a limiting case of Fourier series.
+
+514
+00:00:00,000 --> 00:18:50,739
+It has to do with a mathematical analysis on non-
+
+515
+00:00:00,000 --> 00:18:52,071
+periodic phenomena.
+
+516
+00:00:00,000 --> 00:18:54,642
+So if you wanna contrast Fourier series and Fourier transforms,
+
+517
+00:00:00,000 --> 00:18:57,202
+ then that's not a bad rough and ready way of doing it.
+
+518
+00:00:00,000 --> 00:18:58,032
+As I say,
+
+519
+00:00:00,000 --> 00:18:59,391
+ it doesn't capture everything,
+
+520
+00:00:00,000 --> 00:19:00,592
+ but it captures something.
+
+521
+00:00:00,000 --> 00:19:07,406
+So Fourier transform as a limiting case,
+
+522
+00:00:00,000 --> 00:19:09,175
+ in a meaning that I'll make more precise later 
+
+523
+00:00:00,000 --> 00:19:21,889
+！ as a limiting case of Fourier series or Fourier series techniques is identified with or has to do with 
+
+524
+00:00:00,000 --> 00:19:23,533
+！ is concerned with,
+
+525
+00:00:00,000 --> 00:19:25,855
+ how about that for a weaseling way out of it?
+
+526
+00:00:00,000 --> 00:19:26,792
+ 
+
+527
+00:00:00,000 --> 00:19:29,727
+！ is concerned with the analysis of non-
+
+528
+00:00:00,000 --> 00:19:39,184
+periodic phenomena.
+
+529
+00:00:00,000 --> 00:19:40,612
+So again,
+
+530
+00:00:00,000 --> 00:19:41,237
+ it doesn't say everything,
+
+531
+00:00:00,000 --> 00:19:44,982
+ but it says something.
+
+532
+00:00:00,000 --> 00:19:46,373
+And one of the things that I hope you get out of this course,
+
+533
+00:00:00,000 --> 00:19:47,622
+ especially for those of you who have had some of this material before,
+
+534
+00:00:00,000 --> 00:19:52,247
+ are these sort of broad categorizations that help you sort of organize your knowledge,
+
+535
+00:00:00,000 --> 00:19:52,762
+ all right?
+
+536
+00:00:00,000 --> 00:19:53,805
+ It's a very rich subject.
+
+537
+00:00:00,000 --> 00:19:54,985
+You gotta organize it somehow.
+
+538
+00:00:00,000 --> 00:19:55,735
+Otherwise,
+
+539
+00:00:00,000 --> 00:19:57,012
+ you'll get lost in the details,
+
+540
+00:00:00,000 --> 00:19:57,468
+ all right?
+
+541
+00:00:00,000 --> 00:20:00,968
+ You wanna have certain markers along the way that tell you how to think about it,
+
+542
+00:00:00,000 --> 00:20:01,752
+ how to organize it,
+
+543
+00:00:00,000 --> 00:20:03,708
+ what a particular formula,
+
+544
+00:00:00,000 --> 00:20:05,664
+ what general category it fits under,
+
+545
+00:00:00,000 --> 00:20:08,334
+ okay?
+
+546
+00:00:00,000 --> 00:20:10,215
+ Now,
+
+547
+00:00:00,000 --> 00:20:15,474
+ it's interesting that the ideas are sometimes similar and sometimes quite different.
+
+548
+00:00:00,000 --> 00:20:18,862
+And sometimes the situation is simpler for periodic phenomena; 
+
+549
+00:00:00,000 --> 00:20:21,126
+sometimes the situation's more complicated for periodic phenomena.
+
+550
+00:00:00,000 --> 00:20:23,608
+So it's not as though there's sort of a one-
+
+551
+00:00:00,000 --> 00:20:23,965
+to-
+
+552
+00:00:00,000 --> 00:20:25,342
+ one correspondence of ideas.
+
+553
+00:00:00,000 --> 00:20:28,268
+But that's one of the things that we'll see and one of the reasons
+
+554
+00:00:00,000 --> 00:20:33,703
+ why I'm starting with Fourier series is to see how the ideas carry over from one to the other,
+
+555
+00:00:00,000 --> 00:20:34,159
+ see where they work and see where they don't work,
+
+556
+00:00:00,000 --> 00:20:34,695
+ all right?
+
+557
+00:00:00,000 --> 00:20:43,318
+ Some ideas carry easily back and forth between the two,
+
+558
+00:00:00,000 --> 00:20:47,104
+ some phenomena,
+
+559
+00:00:00,000 --> 00:20:47,578
+ some ideas,
+
+560
+00:00:00,000 --> 00:20:52,393
+ some techniques; some don't.
+
+561
+00:00:00,000 --> 00:20:54,584
+And it's interesting to know when they do and when they don't.
+
+562
+00:00:00,000 --> 00:20:57,336
+Sometimes the things are similar,
+
+563
+00:00:00,000 --> 00:20:58,122
+ and sometimes they're not.
+
+564
+00:00:00,000 --> 00:20:59,045
+Now,
+
+565
+00:00:00,000 --> 00:21:01,539
+ in both cases,
+
+566
+00:00:00,000 --> 00:21:07,942
+ there are really two kind of inverse problems.
+
+567
+00:00:00,000 --> 00:21:09,096
+There's the question of analysis,
+
+568
+00:00:00,000 --> 00:21:15,780
+ and there's the question of synthesis,
+
+569
+00:00:00,000 --> 00:21:18,854
+ two words that you've used before,
+
+570
+00:00:00,000 --> 00:21:20,788
+ but it's worthwhile reminding you what they mean in this context.
+
+571
+00:00:00,000 --> 00:21:27,705
+The analysis part of Fourier analysis has to do with breaking a signal or a function 
+
+572
+00:00:00,000 --> 00:21:30,154
+！ I'll use the terms signal and function pretty much interchangeably,
+
+573
+00:00:00,000 --> 00:21:31,341
+ all right?
+
+574
+00:00:00,000 --> 00:21:32,014
+ I'm a mathematician by training,
+
+575
+00:00:00,000 --> 00:21:33,666
+ so I tend to think in terms of functions,
+
+576
+00:00:00,000 --> 00:21:35,653
+ but electrical engineers tend to think in terms of signals,
+
+577
+00:00:00,000 --> 00:21:37,307
+ and they mean the same thing,
+
+578
+00:00:00,000 --> 00:21:37,806
+ all right?
+
+579
+00:00:00,000 --> 00:21:43,280
+ So analysis has to do with taking a signal or a function and breaking it up into its constituent parts,
+
+580
+00:00:00,000 --> 00:21:48,081
+ and you hope the constituent parts are simpler somehow than the complicated signal as it comes to you.
+
+581
+00:00:00,000 --> 00:21:57,597
+So you wanna break up a signal into simpler constituent parts.
+
+582
+00:00:00,000 --> 00:22:04,421
+I mean,
+
+583
+00:00:00,000 --> 00:22:08,022
+ if you don't talk just in terms of signals here or you don't use exactly that language,
+
+584
+00:00:00,000 --> 00:22:09,507
+ that's the meaning of the word analysis,
+
+585
+00:00:00,000 --> 00:22:10,895
+ I think,
+
+586
+00:00:00,000 --> 00:22:11,814
+ close enough; whereas,
+
+587
+00:00:00,000 --> 00:22:17,649
+ synthesis has to do with reassembling a signal or reassembling a function from its constituent parts 
+
+588
+00:00:00,000 --> 00:22:28,599
+！ a signal from its constituent parts,
+
+589
+00:00:00,000 --> 00:22:35,803
+ all right?
+
+590
+00:00:00,000 --> 00:22:38,497
+ And the two things go together,
+
+591
+00:00:00,000 --> 00:22:38,949
+ all right?
+
+592
+00:00:00,000 --> 00:22:40,011
+ You don't want one without the other.
+
+593
+00:00:00,000 --> 00:22:44,127
+You don't wanna break something up into its constituent parts and then just let it sit there,
+
+594
+00:00:00,000 --> 00:22:47,483
+ all these little parts sitting on the table with nothing to do.
+
+595
+00:00:00,000 --> 00:22:49,431
+You wanna be able to take those parts and maybe modify those parts,
+
+596
+00:00:00,000 --> 00:22:51,290
+ maybe see which parts are more important than other parts,
+
+597
+00:00:00,000 --> 00:22:54,974
+ and then you wanna put them back together to get either the original signal or a new signal.
+
+598
+00:00:00,000 --> 00:23:00,523
+And the process of doing those things are the two aspects of Fourier analysis.
+
+599
+00:00:00,000 --> 00:23:02,713
+I use the word analysis there sort of in a more generic sense.
+
+600
+00:00:00,000 --> 00:23:07,812
+Now,
+
+601
+00:00:00,000 --> 00:23:10,802
+ the other thing to realize about both of these procedures,
+
+602
+00:00:00,000 --> 00:23:12,334
+ analysis and synthesis,
+
+603
+00:00:00,000 --> 00:23:17,416
+ is that they are accomplished by linear operations.
+
+604
+00:00:00,000 --> 00:23:19,317
+Series and integrals are always involved here.
+
+605
+00:00:00,000 --> 00:23:22,252
+Both analysis and synthesis,
+
+606
+00:00:00,000 --> 00:23:26,209
+ Fourier analysis and synthesis,
+
+607
+00:00:00,000 --> 00:23:37,524
+ are accomplished by linear operations.
+
+608
+00:00:00,000 --> 00:23:44,280
+This is one of the reasons why the subject is so 
+
+609
+00:00:00,000 --> 00:23:47,141
+！ I don't know 
+
+610
+00:00:00,000 --> 00:23:50,755
+！ powerful because there is such a body of knowledge,
+
+611
+00:00:00,000 --> 00:23:54,529
+ and there's such a deep and advanced understanding of linear operations,
+
+612
+00:00:00,000 --> 00:23:55,550
+ linearity.
+
+613
+00:00:00,000 --> 00:23:57,951
+We'll make this a little bit more explicit as we go along further,
+
+614
+00:00:00,000 --> 00:24:01,417
+ but I wanted to point it out now because I won't always point it out,
+
+615
+00:00:00,000 --> 00:24:01,930
+ all right,
+
+616
+00:00:00,000 --> 00:24:03,761
+ because when I say linear operations,
+
+617
+00:00:00,000 --> 00:24:05,078
+ what I'm thinking of here,
+
+618
+00:00:00,000 --> 00:24:06,201
+ integrals and series,
+
+619
+00:00:00,000 --> 00:24:06,654
+ all right,
+
+620
+00:00:00,000 --> 00:24:09,026
+ e.g.i.e.,
+
+621
+00:00:00,000 --> 00:24:16,477
+ integrals and series,
+
+622
+00:00:00,000 --> 00:24:17,717
+ both of which are linear operations.
+
+623
+00:00:00,000 --> 00:24:19,340
+The integral of a sum is the sum of the integrals.
+
+624
+00:00:00,000 --> 00:24:23,291
+The integral of a constant times a function is the constant times the interval of the function,
+
+625
+00:00:00,000 --> 00:24:25,377
+ and similarly with sums,
+
+626
+00:00:00,000 --> 00:24:25,878
+ all right?
+
+627
+00:00:00,000 --> 00:24:26,914
+ Because of this,
+
+628
+00:00:00,000 --> 00:24:33,239
+ one often says or one often thinks that Fourier analysis is part of the study of linear systems,
+
+629
+00:00:00,000 --> 00:24:33,961
+ all right?
+
+630
+00:00:00,000 --> 00:24:34,794
+ In engineering,
+
+631
+00:00:00,000 --> 00:24:36,710
+ there are courses called linear systems and so on,
+
+632
+00:00:00,000 --> 00:24:42,983
+ and sometimes Fourier analysis is thought to be a part of that because the operations involved in it are linear.
+
+633
+00:00:00,000 --> 00:24:44,206
+I don't think of it that way.
+
+634
+00:00:00,000 --> 00:24:44,904
+I mean,
+
+635
+00:00:00,000 --> 00:24:50,425
+ I think it's somehow important enough on its own not to think of it necessarily as subsumed in a larger subject.
+
+636
+00:00:00,000 --> 00:24:51,062
+But nevertheless,
+
+637
+00:00:00,000 --> 00:24:57,604
+ the fact that the operations are linear does put it in a certain context; in some ways,
+
+638
+00:00:00,000 --> 00:24:58,423
+ in some cases,
+
+639
+00:00:00,000 --> 00:25:01,043
+ a more general context that it turns out to be important for many ideas,
+
+640
+00:00:00,000 --> 00:25:02,137
+ all right?
+
+641
+00:00:00,000 --> 00:25:02,784
+ So you see 
+
+642
+00:00:00,000 --> 00:25:19,434
+！ you often hear that Fourier analysis is a part of the subject of linear systems,
+
+643
+00:00:00,000 --> 00:25:22,386
+ the study of linear systems.
+
+644
+00:00:00,000 --> 00:25:23,243
+See,
+
+645
+00:00:00,000 --> 00:25:34,635
+ I don't think that really does complete justice to Fourier analysis because of the particular special things that are involved in it,
+
+646
+00:00:00,000 --> 00:25:41,422
+ but nevertheless,
+
+647
+00:00:00,000 --> 00:25:42,024
+ you'll hear that.
+
+648
+00:00:00,000 --> 00:25:42,448
+Okay.
+
+649
+00:00:00,000 --> 00:25:42,923
+Now,
+
+650
+00:00:00,000 --> 00:25:43,764
+ let's get launched,
+
+651
+00:00:00,000 --> 00:25:44,223
+ all right?
+
+652
+00:00:00,000 --> 00:25:56,426
+ Let's start with the actual subject of Fourier series and the analysis of periodic phenomenon,
+
+653
+00:00:00,000 --> 00:26:04,987
+ so periodic phenomena and Fourier series.
+
+654
+00:00:00,000 --> 00:26:05,856
+As I said,
+
+655
+00:00:00,000 --> 00:26:14,783
+ it certainly shouldn't be necessary for me to sell the importance of periodic phenomena as something worth studying.
+
+656
+00:00:00,000 --> 00:26:15,309
+You see it everywhere,
+
+657
+00:00:00,000 --> 00:26:15,797
+ all right?
+
+658
+00:00:00,000 --> 00:26:18,858
+ The study of periodic phenomena is for us the mathematics 
+
+659
+00:00:00,000 --> 00:26:23,528
+and engineering or mathematics and science and engineering of regularly repeating phenomena.
+
+660
+00:00:00,000 --> 00:26:26,363
+That's what's always involved.
+
+661
+00:00:00,000 --> 00:26:26,887
+There's some pattern that repeats,
+
+662
+00:00:00,000 --> 00:26:28,984
+ and it repeats regularly,
+
+663
+00:00:00,000 --> 00:26:29,580
+ all right?
+
+664
+00:00:00,000 --> 00:26:34,170
+ So it's a mathematics and engineering 
+
+665
+00:00:00,000 --> 00:26:37,969
+！ since this is an engineering course,
+
+666
+00:00:00,000 --> 00:26:40,272
+ I'll put that before science,
+
+667
+00:00:00,000 --> 00:26:41,722
+ or maybe I won't even mention science 
+
+668
+00:00:00,000 --> 00:26:50,815
+！ mathematics and engineering of regularly repeating patterns.
+
+669
+00:00:00,000 --> 00:26:52,877
+I'm leaving a couple of terms here 
+
+670
+00:00:00,000 --> 00:26:57,242
+！ I'm leaving all these somewhat vague.
+
+671
+00:00:00,000 --> 00:26:58,008
+What does it mean to be regular?
+
+672
+00:00:00,000 --> 00:26:58,795
+ What does it mean to be repeating?
+
+673
+00:00:00,000 --> 00:27:00,754
+ What is a pattern in the first place?
+
+674
+00:00:00,000 --> 00:27:01,690
+ But you know what I mean.
+
+675
+00:00:00,000 --> 00:27:03,284
+You know it when you see it.
+
+676
+00:00:00,000 --> 00:27:09,426
+And the fact that you can mathematically analyze it is what makes the subject so useful.
+
+677
+00:00:00,000 --> 00:27:10,182
+Now,
+
+678
+00:00:00,000 --> 00:27:12,006
+ I think,
+
+679
+00:00:00,000 --> 00:27:14,733
+ although again,
+
+680
+00:00:00,000 --> 00:27:17,968
+ it's not ironclad 
+
+681
+00:00:00,000 --> 00:27:21,289
+！ the trouble is this subject is so rich that every time I make a statement,
+
+682
+00:00:00,000 --> 00:27:22,312
+ I feel like I have to qualify it.
+
+683
+00:00:00,000 --> 00:27:22,399
+Well,
+
+684
+00:00:00,000 --> 00:27:24,431
+ it's often true,
+
+685
+00:00:00,000 --> 00:27:25,828
+ but it's not completely true,
+
+686
+00:00:00,000 --> 00:27:29,079
+ and sometimes it's not really true at all,
+
+687
+00:00:00,000 --> 00:27:30,515
+ but most of the time it's true,
+
+688
+00:00:00,000 --> 00:27:30,976
+ that it's helpful,
+
+689
+00:00:00,000 --> 00:27:31,971
+ but not always helpful,
+
+690
+00:00:00,000 --> 00:27:32,917
+ but most of the time helpful,
+
+691
+00:00:00,000 --> 00:27:36,252
+ occasionally helpful to classify periodicity as either periodicity in time or periodicity in space,
+
+692
+00:00:00,000 --> 00:27:36,776
+ all right?
+
+693
+00:00:00,000 --> 00:27:39,809
+ You often see periodic phenomena as one type or the other type,
+
+694
+00:00:00,000 --> 00:27:42,587
+ although they can overlap.
+
+695
+00:00:00,000 --> 00:27:55,458
+So periodic phenomena often are either periodicity in time 
+
+696
+00:00:00,000 --> 00:28:02,864
+！ a pattern repeats in time over and over again.
+
+697
+00:00:00,000 --> 00:28:04,131
+You wait long enough,
+
+698
+00:00:00,000 --> 00:28:05,332
+ and it happens again.
+
+699
+00:00:00,000 --> 00:28:05,793
+So,
+
+700
+00:00:00,000 --> 00:28:06,319
+ for example,
+
+701
+00:00:00,000 --> 00:28:06,979
+ harmonic motion,
+
+702
+00:00:00,000 --> 00:28:07,490
+ so e.
+
+703
+00:00:00,000 --> 00:28:07,974
+g.
+
+704
+00:00:00,000 --> 00:28:08,324
+,
+
+705
+00:00:00,000 --> 00:28:10,365
+ harmonic motion,
+
+706
+00:00:00,000 --> 00:28:11,194
+ a pendulum,
+
+707
+00:00:00,000 --> 00:28:13,103
+ a thing bobbing on a string,
+
+708
+00:00:00,000 --> 00:28:17,182
+ [inaudible] harmonic motion,
+
+709
+00:00:00,000 --> 00:28:19,569
+ or periodicity in space 
+
+710
+00:00:00,000 --> 00:28:22,706
+！ I'll go over here 
+
+711
+00:00:00,000 --> 00:28:48,560
+！ periodicity in space.
+
+712
+00:00:00,000 --> 00:28:49,396
+All right.
+
+713
+00:00:00,000 --> 00:28:49,837
+Now,
+
+714
+00:00:00,000 --> 00:29:00,198
+ what I mean here is there is often a physical quantity that you are measuring that is living on some object in space,
+
+715
+00:00:00,000 --> 00:29:00,733
+ one dimension,
+
+716
+00:00:00,000 --> 00:29:01,175
+ two dimensions,
+
+717
+00:00:00,000 --> 00:29:01,696
+ whatever,
+
+718
+00:00:00,000 --> 00:29:02,778
+ that has a certain amount of symmetry,
+
+719
+00:00:00,000 --> 00:29:03,513
+ all right?
+
+720
+00:00:00,000 --> 00:29:08,427
+ And the periodicity of the phenomenon is a consequence of the symmetry of the object.
+
+721
+00:00:00,000 --> 00:29:10,605
+I'll give you an example in just a second.
+
+722
+00:00:00,000 --> 00:29:12,539
+So here you have,
+
+723
+00:00:00,000 --> 00:29:15,036
+ say,
+
+724
+00:00:00,000 --> 00:29:16,040
+ some physical quantity,
+
+725
+00:00:00,000 --> 00:29:17,757
+ physical 
+
+726
+00:00:00,000 --> 00:29:18,298
+！ not always,
+
+727
+00:00:00,000 --> 00:29:18,914
+ but often 
+
+728
+00:00:00,000 --> 00:29:34,614
+！ physical quantity distributed over a region with symmetry.
+
+729
+00:00:00,000 --> 00:29:36,810
+The region itself repeats,
+
+730
+00:00:00,000 --> 00:29:37,337
+ all right?
+
+731
+00:00:00,000 --> 00:29:39,135
+ The region itself has a repeating pattern,
+
+732
+00:00:00,000 --> 00:29:39,593
+ all right?
+
+733
+00:00:00,000 --> 00:29:41,894
+ So the periodicity of the phenomenon,
+
+734
+00:00:00,000 --> 00:29:43,213
+ the periodicity of the physical quantity 
+
+735
+00:00:00,000 --> 00:29:46,386
+that you're measuring is a consequence of the fact
+
+736
+00:00:00,000 --> 00:29:51,753
+ that it's distributed over some region that itself has some symmetry.
+
+737
+00:00:00,000 --> 00:29:58,075
+So periodicity arises from the symmetry.
+
+738
+00:00:00,000 --> 00:30:01,319
+Periodicity here of the physical quantity
+
+739
+00:00:00,000 --> 00:30:06,647
+ that you're measuring arises because the symmetry of the object where it's distributed,
+
+740
+00:00:00,000 --> 00:30:10,388
+ where it lives.
+
+741
+00:00:00,000 --> 00:30:10,812
+I'll give you an example [inaudible] from the symmetry.
+
+742
+00:00:00,000 --> 00:30:12,161
+Matter of fact,
+
+743
+00:00:00,000 --> 00:30:13,259
+ I'll give you the example.
+
+744
+00:00:00,000 --> 00:30:15,463
+The example that really started the subject,
+
+745
+00:00:00,000 --> 00:30:20,616
+ and we'll study this,
+
+746
+00:00:00,000 --> 00:30:28,794
+ is the distribution of heat on a circular ring,
+
+747
+00:00:00,000 --> 00:30:30,760
+ so, e.g.,
+
+748
+00:00:00,000 --> 00:30:37,739
+ the distribution of heat on a circular ring,
+
+749
+00:00:00,000 --> 00:30:42,272
+ all right?
+
+750
+00:00:00,000 --> 00:30:46,741
+ So the physical quantity that you're interested in is the temperature,
+
+751
+00:00:00,000 --> 00:30:48,846
+ but it's the temperature associated with a certain region,
+
+752
+00:00:00,000 --> 00:30:52,117
+ and the region is a ring,
+
+753
+00:00:00,000 --> 00:30:55,053
+ all right?
+
+754
+00:00:00,000 --> 00:30:56,330
+ The ring has circular symmetry.
+
+755
+00:00:00,000 --> 00:30:57,138
+It's round,
+
+756
+00:00:00,000 --> 00:30:57,960
+ okay?
+
+757
+00:00:00,000 --> 00:31:04,448
+ So you're measuring the temperature at points on the ring,
+
+758
+00:00:00,000 --> 00:31:06,262
+ and that's periodic because if you go once around,
+
+759
+00:00:00,000 --> 00:31:07,510
+ you're at the same place.
+
+760
+00:00:00,000 --> 00:31:13,904
+So the temperature is periodic as a function of the special variable that describes where you are on the ring.
+
+761
+00:00:00,000 --> 00:31:16,019
+Time is not involved here.
+
+762
+00:00:00,000 --> 00:31:16,612
+Position is involved,
+
+763
+00:00:00,000 --> 00:31:17,926
+ all right?
+
+764
+00:00:00,000 --> 00:31:19,000
+ It's periodic in space,
+
+765
+00:00:00,000 --> 00:31:19,898
+ not periodic in time,
+
+766
+00:00:00,000 --> 00:31:30,380
+ periodic in the spatial variable that gives you the position.
+
+767
+00:00:00,000 --> 00:31:36,456
+And the periodicity arises because the object itself is symmetric because the object repeats.
+
+768
+00:00:00,000 --> 00:31:40,007
+This sort of example is why one often sees 
+
+769
+00:00:00,000 --> 00:31:41,960
+！ and this actually turns out to be very far-
+
+770
+00:00:00,000 --> 00:31:43,728
+ reaching and quite deep 
+
+771
+00:00:00,000 --> 00:31:46,776
+！ that Fourier analysis is often associated with questions of symmetry.
+
+772
+00:00:00,000 --> 00:31:51,582
+In its sort of most mathematical form,
+
+773
+00:00:00,000 --> 00:31:56,979
+ you often find Fourier theories developed in this context 
+
+774
+00:00:00,000 --> 00:31:59,083
+and Fourier transforms developed in the context of symmetry.
+
+775
+00:00:00,000 --> 00:32:00,276
+So you often see 
+
+776
+00:00:00,000 --> 00:32:03,618
+！ so you see Fourier analysis,
+
+777
+00:00:00,000 --> 00:32:16,426
+ let me just say,
+
+778
+00:00:00,000 --> 00:32:18,213
+ Fourier analysis is often associated with problems 
+
+779
+00:00:00,000 --> 00:32:21,902
+！ with analysis of questions that have some sort of underlying symmetry,
+
+780
+00:00:00,000 --> 00:32:27,603
+ so let me say often associated with problems with symmetry.
+
+781
+00:00:00,000 --> 00:32:30,875
+I'll just leave it very general.
+
+782
+00:00:00,000 --> 00:32:31,539
+This is the very first problem.
+
+783
+00:00:00,000 --> 00:32:32,329
+The problem of distribution of heat on a ring,
+
+784
+00:00:00,000 --> 00:32:33,593
+ we're gonna solve that problem.
+
+785
+00:00:00,000 --> 00:32:35,883
+That was the problem that Fourier himself considered,
+
+786
+00:00:00,000 --> 00:32:36,577
+ all right,
+
+787
+00:00:00,000 --> 00:32:39,259
+ that introduced some of the methods into the whole subject that launched everything,
+
+788
+00:00:00,000 --> 00:32:39,694
+ all right?
+
+789
+00:00:00,000 --> 00:32:40,134
+ So again,
+
+790
+00:00:00,000 --> 00:32:42,311
+ it's not periodicity in time.
+
+791
+00:00:00,000 --> 00:32:46,678
+It's periodicity in space.
+
+792
+00:00:00,000 --> 00:32:48,416
+And for those of you who have had or may have courses in this,
+
+793
+00:00:00,000 --> 00:32:52,395
+ the mathematical framework for this very general way of looking at Fourier analysis is group theory 
+
+794
+00:00:00,000 --> 00:32:58,340
+because the theory of groups in mathematics is a way of mathematizing the idea of symmetry 
+
+795
+00:00:00,000 --> 00:33:03,562
+and then one extends the ideas of Fourier analysis to take into account of groups; that is to say,
+
+796
+00:00:00,000 --> 00:33:09,705
+ to take into account the symmetry of certain problems that you're studying.
+
+797
+00:00:00,000 --> 00:33:10,601
+And it really,
+
+798
+00:00:00,000 --> 00:33:11,177
+ as I say,
+
+799
+00:00:00,000 --> 00:33:11,736
+ it's quite far-
+
+800
+00:00:00,000 --> 00:33:12,418
+reaching.
+
+801
+00:00:00,000 --> 00:33:13,348
+We're not gonna do it.
+
+802
+00:00:00,000 --> 00:33:15,788
+We'll actually have a few occasions to go into this but with a light touch,
+
+803
+00:00:00,000 --> 00:33:16,646
+ okay?
+
+804
+00:00:00,000 --> 00:33:19,291
+ I'm just giving you some indication of where the subject goes.
+
+805
+00:00:00,000 --> 00:33:20,446
+All right.
+
+806
+00:00:00,000 --> 00:33:20,805
+Now,
+
+807
+00:00:00,000 --> 00:33:26,932
+ what are the mathematical descriptors of periodicity?
+
+808
+00:00:00,000 --> 00:33:29,909
+ Well,
+
+809
+00:00:00,000 --> 00:33:36,883
+ nothing I've said so far I'm sure is new to you at all.
+
+810
+00:00:00,000 --> 00:33:44,339
+You just have to trust me that at some point before you know it,
+
+811
+00:00:00,000 --> 00:33:46,155
+ some things I say to you will be new,
+
+812
+00:00:00,000 --> 00:33:48,095
+ I hope.
+
+813
+00:00:00,000 --> 00:33:49,946
+But one of the mathematical descriptors of periodicity,
+
+814
+00:00:00,000 --> 00:33:54,518
+ again in the two different categories,
+
+815
+00:00:00,000 --> 00:33:55,093
+ say,
+
+816
+00:00:00,000 --> 00:33:55,519
+ the numbers,
+
+817
+00:00:00,000 --> 00:34:06,042
+ the quantities that you associate with either a phenomenon
+
+818
+00:00:00,000 --> 00:34:09,324
+ that's periodic in time or a phenomenon that's periodic in space,
+
+819
+00:00:00,000 --> 00:34:10,463
+ but periodic in time 
+
+820
+00:00:00,000 --> 00:34:15,667
+！ for periodicity in time,
+
+821
+00:00:00,000 --> 00:34:16,996
+ you often use the frequency,
+
+822
+00:00:00,000 --> 00:34:18,208
+ all right?
+
+823
+00:00:00,000 --> 00:34:25,465
+ Frequency is the word that you hear most often associated with a phenomena that is periodic in time.
+
+824
+00:00:00,000 --> 00:34:30,058
+You use frequency,
+
+825
+00:00:00,000 --> 00:34:31,115
+ the number of repetitions,
+
+826
+00:00:00,000 --> 00:34:33,412
+ the number of cycles in a second,
+
+827
+00:00:00,000 --> 00:34:33,966
+ say.
+
+828
+00:00:00,000 --> 00:34:39,628
+If the pattern is repeating,
+
+829
+00:00:00,000 --> 00:34:41,650
+ whatever the pattern is,
+
+830
+00:00:00,000 --> 00:34:43,679
+ again if I leave that term sort of undefined or sort of vague,
+
+831
+00:00:00,000 --> 00:34:51,885
+ it's the number of repetitions of the pattern in one second or over time,
+
+832
+00:00:00,000 --> 00:34:58,127
+ all right?
+
+833
+00:00:00,000 --> 00:35:04,493
+ That's the most common mathematical descriptor of a phenomenon that's periodic in time.
+
+834
+00:00:00,000 --> 00:35:06,713
+For a phenomenon that's periodic in space,
+
+835
+00:00:00,000 --> 00:35:12,137
+ you actually use the period.
+
+836
+00:00:00,000 --> 00:35:17,949
+That's the only word that's really in use in general for the particular 
+
+837
+00:00:00,000 --> 00:35:18,945
+！ well,
+
+838
+00:00:00,000 --> 00:35:20,229
+ one thing at a time.
+
+839
+00:00:00,000 --> 00:35:26,141
+So for periodicity in space,
+
+840
+00:00:00,000 --> 00:35:33,382
+ you use the period,
+
+841
+00:00:00,000 --> 00:35:38,295
+ all right?
+
+842
+00:00:00,000 --> 00:35:44,389
+ That is sort of the physical measurement of how long the pattern is before it repeats somehow,
+
+843
+00:00:00,000 --> 00:35:45,720
+ all right,
+
+844
+00:00:00,000 --> 00:35:46,925
+ the measurement of how 
+
+845
+00:00:00,000 --> 00:35:49,203
+！ whether it's length or some other quantity 
+
+846
+00:00:00,000 --> 00:35:50,712
+！ measurement of 
+
+847
+00:00:00,000 --> 00:35:56,288
+！ let me just say how big the pattern is that repeats.
+
+848
+00:00:00,000 --> 00:35:59,667
+They're not the same,
+
+849
+00:00:00,000 --> 00:36:00,594
+ all right?
+
+850
+00:00:00,000 --> 00:36:04,222
+ They have a different feel.
+
+851
+00:00:00,000 --> 00:36:08,114
+They arise often from different sorts of problems.
+
+852
+00:00:00,000 --> 00:36:11,394
+This is probably too strong a statement,
+
+853
+00:00:00,000 --> 00:36:16,190
+ but I think it's fair to say that mathematicians tend to think in terms of mostly in periodic 
+
+854
+00:00:00,000 --> 00:36:18,769
+！ they tend to think in terms of the period of a function or the period 
+
+855
+00:00:00,000 --> 00:36:20,125
+as the description of periodic behavior,
+
+856
+00:00:00,000 --> 00:36:23,106
+ whereas engineers and scientists tend to think of systems evolving in time,
+
+857
+00:00:00,000 --> 00:36:25,198
+ so they tend to think in terms of frequency.
+
+858
+00:00:00,000 --> 00:36:29,055
+They tend to think of how often a pattern repeats over a certain period of time,
+
+859
+00:00:00,000 --> 00:36:29,813
+ all right?
+
+860
+00:00:00,000 --> 00:36:31,358
+ That's,
+
+861
+00:00:00,000 --> 00:36:32,261
+ like everything else,
+
+862
+00:00:00,000 --> 00:36:33,819
+ that statement has to be qualified,
+
+863
+00:00:00,000 --> 00:36:35,672
+ but I get tired of qualifying every statement,
+
+864
+00:00:00,000 --> 00:36:37,049
+ so I'll just leave it at that.
+
+865
+00:00:00,000 --> 00:36:38,245
+Now,
+
+866
+00:00:00,000 --> 00:36:39,195
+ of course,
+
+867
+00:00:00,000 --> 00:36:42,678
+ the two phenomena are not completely separate or not always completely separate.
+
+868
+00:00:00,000 --> 00:36:43,652
+They come together.
+
+869
+00:00:00,000 --> 00:36:45,337
+Periodicity in time and periodicity in space come together in,
+
+870
+00:00:00,000 --> 00:36:47,324
+ for example,
+
+871
+00:00:00,000 --> 00:36:48,019
+ wave motion,
+
+872
+00:00:00,000 --> 00:36:48,584
+ all right?
+
+873
+00:00:00,000 --> 00:36:50,927
+ That is a traveling disturbance,
+
+874
+00:00:00,000 --> 00:36:52,770
+ a traveling periodic disturbance.
+
+875
+00:00:00,000 --> 00:36:56,922
+So the two notions of periodicity come together.
+
+876
+00:00:00,000 --> 00:36:58,357
+Two notions here,
+
+877
+00:00:00,000 --> 00:36:58,955
+ periodicity in time,
+
+878
+00:00:00,000 --> 00:36:59,893
+ periodicity in space,
+
+879
+00:00:00,000 --> 00:37:03,657
+ come together in,
+
+880
+00:00:00,000 --> 00:37:04,179
+ e.g.,
+
+881
+00:00:00,000 --> 00:37:09,329
+ wave motion,
+
+882
+00:00:00,000 --> 00:37:12,772
+ understood very generally here as a periodic 
+
+883
+00:00:00,000 --> 00:37:15,957
+！ as a regularly repeating pattern that changes in time,
+
+884
+00:00:00,000 --> 00:37:19,939
+ that moves.
+
+885
+00:00:00,000 --> 00:37:24,855
+This board jumps up a little bit.
+
+886
+00:00:00,000 --> 00:37:35,311
+I think I'd better skip it.
+
+887
+00:00:00,000 --> 00:37:38,512
+So a regularly moving disturbance,
+
+888
+00:00:00,000 --> 00:37:51,476
+ like a group of freshmen through the quad,
+
+889
+00:00:00,000 --> 00:37:56,477
+ just they're everywhere,
+
+890
+00:00:00,000 --> 00:37:57,583
+ mostly regularly,
+
+891
+00:00:00,000 --> 00:37:58,410
+ mostly moving,
+
+892
+00:00:00,000 --> 00:37:59,074
+ all right?
+
+893
+00:00:00,000 --> 00:38:01,008
+ Now,
+
+894
+00:00:00,000 --> 00:38:01,988
+ there again,
+
+895
+00:00:00,000 --> 00:38:03,386
+ the two descriptors come in,
+
+896
+00:00:00,000 --> 00:38:04,729
+ the frequency and the wavelength.
+
+897
+00:00:00,000 --> 00:38:05,584
+So again,
+
+898
+00:00:00,000 --> 00:38:16,814
+ you have frequency and wavelength in a frequency nu and wavelength usually denoted by 
+
+899
+00:00:00,000 --> 00:38:24,053
+！ this is for periodicity in space and then for periodicity in time frequency nu for periodicity in time.
+
+900
+00:00:00,000 --> 00:38:42,269
+That's the number of times that it repeats in one second.
+
+901
+00:00:00,000 --> 00:38:58,124
+This is cycles per second,
+
+902
+00:00:00,000 --> 00:39:00,980
+ the number of times that the pattern repeats in one second.
+
+903
+00:00:00,000 --> 00:39:01,481
+So,
+
+904
+00:00:00,000 --> 00:39:01,876
+ for example,
+
+905
+00:00:00,000 --> 00:39:04,609
+ you fix your position in space.
+
+906
+00:00:00,000 --> 00:39:06,450
+Both time and space are involved.
+
+907
+00:00:00,000 --> 00:39:07,986
+So you fix yourself at a point in space,
+
+908
+00:00:00,000 --> 00:39:10,381
+ and the phenomenon washing over you like a water wave,
+
+909
+00:00:00,000 --> 00:39:10,910
+ all right?
+
+910
+00:00:00,000 --> 00:39:15,224
+ And you count the number of times you're hit by a wave in a second,
+
+911
+00:00:00,000 --> 00:39:16,994
+ and that's the frequency.
+
+912
+00:00:00,000 --> 00:39:18,643
+That's the number of times that the phenomenon comes to you.
+
+913
+00:00:00,000 --> 00:39:21,636
+For periodicity in time,
+
+914
+00:00:00,000 --> 00:39:23,136
+ the phenomenon comes to you.
+
+915
+00:00:00,000 --> 00:39:24,162
+For periodicity in space,
+
+916
+00:00:00,000 --> 00:39:25,336
+ you come to the phenomenon,
+
+917
+00:00:00,000 --> 00:39:26,057
+ so to speak,
+
+918
+00:00:00,000 --> 00:39:27,517
+ all right?
+
+919
+00:00:00,000 --> 00:39:29,281
+ So I've fixed myself at a point in time.
+
+920
+00:00:00,000 --> 00:39:31,554
+A wave washes over me at a certain characteristic frequency.
+
+921
+00:00:00,000 --> 00:39:32,676
+Over and over again,
+
+922
+00:00:00,000 --> 00:39:33,762
+ regularly repeating,
+
+923
+00:00:00,000 --> 00:39:35,996
+ it comes to me nu times per second.
+
+924
+00:00:00,000 --> 00:39:39,214
+The wavelength,
+
+925
+00:00:00,000 --> 00:39:40,808
+ you fix the time and allow 
+
+926
+00:00:00,000 --> 00:39:48,307
+！ and see what the phenomena looks like distributed over space.
+
+927
+00:00:00,000 --> 00:39:53,975
+So for periodicity in space,
+
+928
+00:00:00,000 --> 00:39:59,784
+ fix the time and see how the phenomena is distributed.
+
+929
+00:00:00,000 --> 00:40:08,017
+See the pattern distributed over space,
+
+930
+00:00:00,000 --> 00:40:08,753
+ distributed 
+
+931
+00:00:00,000 --> 00:40:13,074
+！ my writing is getting worse 
+
+932
+00:00:00,000 --> 00:40:13,791
+！ distributed.
+
+933
+00:00:00,000 --> 00:40:31,169
+Then the length of one of those complete [inaudible] is the period or the wavelength.
+
+934
+00:00:00,000 --> 00:40:35,918
+Wavelength is a term that's associated with a periodicity in space for a traveling phenomena,
+
+935
+00:00:00,000 --> 00:40:37,107
+ for wave motion.
+
+936
+00:00:00,000 --> 00:40:42,459
+So the length of the disturbance,
+
+937
+00:00:00,000 --> 00:40:44,632
+ say one complete disturbance,
+
+938
+00:00:00,000 --> 00:40:45,508
+ if I can say that,
+
+939
+00:00:00,000 --> 00:40:50,430
+ one complete pattern is the wavelength.
+
+940
+00:00:00,000 --> 00:40:51,520
+Now,
+
+941
+00:00:00,000 --> 00:40:53,358
+ like I say,
+
+942
+00:00:00,000 --> 00:40:54,871
+ ever since you were a kid,
+
+943
+00:00:00,000 --> 00:40:55,742
+ you've studied these things,
+
+944
+00:00:00,000 --> 00:40:59,374
+ and it's really denoted by Landen.
+
+945
+00:00:00,000 --> 00:41:04,549
+But I bring it up here because of the one important relationship between frequency and wavelength,
+
+946
+00:00:00,000 --> 00:41:08,009
+ which we are going to see in a myriad of forms throughout the quarter.
+
+947
+00:00:00,000 --> 00:41:10,413
+That is,
+
+948
+00:00:00,000 --> 00:41:12,563
+ in the case of wave motion,
+
+949
+00:00:00,000 --> 00:41:22,885
+ there is a relationship between the frequency and the wavelength determined by the velocity,
+
+950
+00:00:00,000 --> 00:41:24,714
+ and that can be two different phenomenon,
+
+951
+00:00:00,000 --> 00:41:25,762
+ all right?
+
+952
+00:00:00,000 --> 00:41:28,749
+ Periodicity in time and periodicity in space may not have anything to do with each other,
+
+953
+00:00:00,000 --> 00:41:31,281
+ but if you have a wave traveling,
+
+954
+00:00:00,000 --> 00:41:33,860
+ if you have a regularly repeating pattern over time,
+
+955
+00:00:00,000 --> 00:41:35,999
+ then they do have something to do with each other and they're governed by the formula,
+
+956
+00:00:00,000 --> 00:41:40,113
+ distance equals rate times time,
+
+957
+00:00:00,000 --> 00:41:42,094
+ which is the only formula that governs motion,
+
+958
+00:00:00,000 --> 00:41:42,914
+ all right?
+
+959
+00:00:00,000 --> 00:41:55,978
+ So the relationship between frequency and wavelength; that is,
+
+960
+00:00:00,000 --> 00:41:58,604
+ distance equals rate times time 
+
+961
+00:00:00,000 --> 00:42:04,890
+！ I love writing this in a graduate course 
+
+962
+00:00:00,000 --> 00:42:09,182
+because it's the only equation in calculus actually.
+
+963
+00:00:00,000 --> 00:42:13,287
+In all of calculus,
+
+964
+00:00:00,000 --> 00:42:14,570
+ I think this is pretty much the only equation,
+
+965
+00:00:00,000 --> 00:42:15,271
+ used in very clever ways,
+
+966
+00:00:00,000 --> 00:42:15,995
+ but the only equation.
+
+967
+00:00:00,000 --> 00:42:20,521
+And in our case,
+
+968
+00:00:00,000 --> 00:42:35,329
+ if the rate is the velocity of the wave,
+
+969
+00:00:00,000 --> 00:42:36,406
+ then this translates,
+
+970
+00:00:00,000 --> 00:42:39,663
+ if V is the velocity,
+
+971
+00:00:00,000 --> 00:42:43,979
+ the rate of the wave of the motion,
+
+972
+00:00:00,000 --> 00:42:45,250
+ then the equation becomes,
+
+973
+00:00:00,000 --> 00:42:46,995
+ as I'm sure you know many times,
+
+974
+00:00:00,000 --> 00:42:47,859
+ Lambda.
+
+975
+00:00:00,000 --> 00:42:51,948
+That's the distance that the wave travels in one cycle.
+
+976
+00:00:00,000 --> 00:42:53,728
+It's traveling at a speed,
+
+977
+00:00:00,000 --> 00:42:54,871
+ V.
+
+978
+00:00:00,000 --> 00:42:57,012
+If it goes nu cycles in one second,
+
+979
+00:00:00,000 --> 00:42:59,954
+ then it goes one cycle in one over nu seconds.
+
+980
+00:00:00,000 --> 00:43:01,047
+Let me say that again to make sure I got that right.
+
+981
+00:00:00,000 --> 00:43:03,809
+If it goes nu cycles in one second 
+
+982
+00:00:00,000 --> 00:43:06,338
+！ if it rushes past you nu times in one second,
+
+983
+00:00:00,000 --> 00:43:07,457
+ then in one over nu seconds,
+
+984
+00:00:00,000 --> 00:43:09,252
+ it rushes past you once.
+
+985
+00:00:00,000 --> 00:43:12,147
+Rushing past you once means you've got through one wavelength.
+
+986
+00:00:00,000 --> 00:43:15,036
+So distance equals rate times time.
+
+987
+00:00:00,000 --> 00:43:21,681
+The time it takes to go one wavelength is one over nu seconds.
+
+988
+00:00:00,000 --> 00:43:23,885
+So I have Lambda equals V times one over nu,
+
+989
+00:00:00,000 --> 00:43:27,243
+ or Lambda nu equals V,
+
+990
+00:00:00,000 --> 00:43:29,281
+ again a formula you have seen many times.
+
+991
+00:00:00,000 --> 00:43:29,780
+Now,
+
+992
+00:00:00,000 --> 00:43:34,006
+ why did I say this if you've seen it many times?
+
+993
+00:00:00,000 --> 00:43:37,065
+ Because I never have the confidence that I can talk my way through that formula,
+
+994
+00:00:00,000 --> 00:43:38,213
+ for one thing,
+
+995
+00:00:00,000 --> 00:43:39,722
+ so I always have to do it.
+
+996
+00:00:00,000 --> 00:43:40,955
+Secondly,
+
+997
+00:00:00,000 --> 00:43:44,367
+ it exhibits a reciprocal relationship between the two quantities,
+
+998
+00:00:00,000 --> 00:43:45,474
+ all right?
+
+999
+00:00:00,000 --> 00:43:46,593
+ There's a reciprocal relationship 
+
+1000
+00:00:00,000 --> 00:43:47,732
+！ you can see it more clearly over here
+
+1001
+00:00:00,000 --> 00:43:50,765
+ where the constant of proportionality or inverse proportionality is the velocity,
+
+1002
+00:00:00,000 --> 00:43:51,238
+ all right?
+
+1003
+00:00:00,000 --> 00:43:53,789
+ Lambda is proportional to the reciprocal of the frequency,
+
+1004
+00:00:00,000 --> 00:43:58,453
+ or the frequency is proportional to the reciprocal of the wavelength,
+
+1005
+00:00:00,000 --> 00:43:58,919
+ at any rate,
+
+1006
+00:00:00,000 --> 00:44:00,077
+ or expressed this way:
+
+1007
+00:00:00,000 --> 00:44:01,346
+ Lamba times nu is equal to V,
+
+1008
+00:00:00,000 --> 00:44:13,923
+ so there's a reciprocal relationship between the frequency and the wavelength,
+
+1009
+00:00:00,000 --> 00:44:19,191
+ all right?
+
+1010
+00:00:00,000 --> 00:44:26,142
+ This is the first instance when you talk about periodicity of such reciprocal relationships.
+
+1011
+00:00:00,000 --> 00:44:28,742
+We are gonna see this everywhere,
+
+1012
+00:00:00,000 --> 00:44:29,359
+ all right?
+
+1013
+00:00:00,000 --> 00:44:32,107
+ It's one of the characteristics of the subject,
+
+1014
+00:00:00,000 --> 00:44:33,539
+ hard to state as a general principle,
+
+1015
+00:00:00,000 --> 00:44:34,932
+ but there,
+
+1016
+00:00:00,000 --> 00:44:43,953
+ plain to see that in the analysis and the synthesis of signals 
+
+1017
+00:00:00,000 --> 00:44:46,994
+using methods from Fourier series or Fourier analysis,
+
+1018
+00:00:00,000 --> 00:44:48,985
+ there will be a reciprocal relationship between the two,
+
+1019
+00:00:00,000 --> 00:44:51,654
+ between the quantities involved,
+
+1020
+00:00:00,000 --> 00:44:52,212
+ all right?
+
+1021
+00:00:00,000 --> 00:44:55,859
+ I'm sorry for being so general,
+
+1022
+00:00:00,000 --> 00:44:59,140
+ but you'll see this play out in case after case after case,
+
+1023
+00:00:00,000 --> 00:45:01,464
+ and it is something you should be attuned to,
+
+1024
+00:00:00,000 --> 00:45:02,173
+ all right?
+
+1025
+00:00:00,000 --> 00:45:02,940
+ All right.
+
+1026
+00:00:00,000 --> 00:45:05,281
+So you may never have thought about this in these terms.
+
+1027
+00:00:00,000 --> 00:45:07,387
+It's a simple enough formula that you've used millions of times,
+
+1028
+00:00:00,000 --> 00:45:08,112
+ all right?
+
+1029
+00:00:00,000 --> 00:45:10,265
+ You may not have thought about it somehow in those terms,
+
+1030
+00:00:00,000 --> 00:45:14,454
+ but I'm asking you to think about stuff you once saw in very simple contexts 
+
+1031
+00:00:00,000 --> 00:45:22,230
+and how those simple ideas sort of cast a shadow into much more involved situations,
+
+1032
+00:00:00,000 --> 00:45:23,821
+ all right?
+
+1033
+00:00:00,000 --> 00:45:25,438
+ The reciprocal relationship between,
+
+1034
+00:00:00,000 --> 00:45:26,264
+ as we'll learn to call it,
+
+1035
+00:00:00,000 --> 00:45:29,385
+ the reciprocal relationship between the two domains of Fourier analysis,
+
+1036
+00:00:00,000 --> 00:45:30,744
+ the time domain and the frequency domain,
+
+1037
+00:00:00,000 --> 00:45:31,968
+ or the time domain and the spatial domain,
+
+1038
+00:00:00,000 --> 00:45:33,750
+ or the spatial domain and the frequency domain,
+
+1039
+00:00:00,000 --> 00:45:36,188
+ and so on,
+
+1040
+00:00:00,000 --> 00:45:38,350
+ is something that we will see constantly,
+
+1041
+00:00:00,000 --> 00:45:39,781
+ all right?
+
+1042
+00:00:00,000 --> 00:45:42,396
+ And I will point that out,
+
+1043
+00:00:00,000 --> 00:45:43,217
+ but if I don't point it out,
+
+1044
+00:00:00,000 --> 00:45:43,852
+ you should point it out to yourself,
+
+1045
+00:00:00,000 --> 00:45:44,800
+ all right?
+
+1046
+00:00:00,000 --> 00:45:47,875
+ You should be attuned to it because you will see it.
+
+1047
+00:00:00,000 --> 00:45:53,654
+And it's one of those things that helps you organize your understanding of the material
+
+1048
+00:00:00,000 --> 00:45:55,547
+ because sometimes when you're called upon to apply these ideas in some context that you haven't quite seen.
+
+1049
+00:00:00,000 --> 00:45:58,452
+You have to ask yourself 
+
+1050
+00:00:00,000 --> 00:45:59,272
+！ at least a good starting place is to ask yourself questions like,
+
+1051
+00:00:00,000 --> 00:46:01,697
+ "Well,
+
+1052
+00:00:00,000 --> 00:46:04,456
+ should I expect a reciprocal relationship here?
+
+1053
+00:00:00,000 --> 00:46:05,367
+" It might lead you to guess what the formula should be or guess what the relationship should be,
+
+1054
+00:00:00,000 --> 00:46:05,997
+ so you'll say,
+
+1055
+00:00:00,000 --> 00:46:07,482
+ "Well,
+
+1056
+00:00:00,000 --> 00:46:09,734
+ somehow I wanna use Fourier analysis to do this problem,
+
+1057
+00:00:00,000 --> 00:46:13,626
+ so I should be looking for some sort of reciprocal relationship.
+
+1058
+00:00:00,000 --> 00:46:18,395
+The quantities that I'm interested in somehow should be related in some kind of reciprocal way.
+
+1059
+00:00:00,000 --> 00:46:19,359
+" And what that might mean might be more or less involved depending on the particular kind of problem,
+
+1060
+00:00:00,000 --> 00:46:20,229
+ but you'll see it.
+
+1061
+00:00:00,000 --> 00:46:20,790
+Trust me,
+
+1062
+00:00:00,000 --> 00:46:21,751
+ you'll see it.
+
+1063
+00:00:00,000 --> 00:46:23,258
+Okay.
+
+1064
+00:00:00,000 --> 00:46:25,610
+All right.
+
+1065
+00:00:00,000 --> 00:46:31,840
+Now,
+
+1066
+00:00:00,000 --> 00:46:35,850
+ we're almost done for today.
+
+1067
+00:00:00,000 --> 00:46:36,598
+Why does mathematics come into this in the first place?
+
+1068
+00:00:00,000 --> 00:46:38,483
+ I mean,
+
+1069
+00:00:00,000 --> 00:46:39,810
+ periodicity is evidently sort of a very physical-
+
+1070
+00:00:00,000 --> 00:46:43,842
+type property.
+
+1071
+00:00:00,000 --> 00:46:45,627
+Why does it allow any kind of mathematical description?
+
+1072
+00:00:00,000 --> 00:46:49,610
+ Well,
+
+1073
+00:00:00,000 --> 00:46:50,824
+ it does because there are very simple 
+
+1074
+00:00:00,000 --> 00:46:54,221
+！ maybe not too simple 
+
+1075
+00:00:00,000 --> 00:47:00,066
+！ mathematical functions that exhibit periodic behavior and so can be used to model periodic phenomenon.
+
+1076
+00:00:00,000 --> 00:47:08,450
+So math comes in because there are simple mathematical functions that model 
+
+1077
+00:00:00,000 --> 00:47:20,977
+！ that are periodic that repeat and so can be used to model periodic phenomenon.
+
+1078
+00:00:00,000 --> 00:47:33,018
+I am speaking of course of our friends,
+
+1079
+00:00:00,000 --> 00:47:33,784
+ the sine and cosine.
+
+1080
+00:00:00,000 --> 00:47:34,240
+Now,
+
+1081
+00:00:00,000 --> 00:47:36,398
+ you may think,
+
+1082
+00:00:00,000 --> 00:47:39,236
+ again,
+
+1083
+00:00:00,000 --> 00:47:42,924
+ we've only talked about elementary things in a very elementary context.
+
+1084
+00:00:00,000 --> 00:47:43,386
+But,
+
+1085
+00:00:00,000 --> 00:47:44,026
+ you know,
+
+1086
+00:00:00,000 --> 00:47:45,477
+ I have a PhD in this subject,
+
+1087
+00:00:00,000 --> 00:47:47,337
+ and I get excited talking about sines and cosines.
+
+1088
+00:00:00,000 --> 00:47:47,980
+I mean,
+
+1089
+00:00:00,000 --> 00:47:50,242
+ and it's not just creeping old age.
+
+1090
+00:00:00,000 --> 00:47:53,091
+I mean,
+
+1091
+00:00:00,000 --> 00:47:57,817
+ I think there's a lot to reflect on here and sometimes the miraculous nature of these things.
+
+1092
+00:00:00,000 --> 00:47:59,122
+Cosine of 
+
+1093
+00:00:00,000 --> 00:48:02,312
+！ I'll use T as the variable.
+
+1094
+00:00:00,000 --> 00:48:04,103
+Cosine of T and sine of T are periodic of period 2 pi.
+
+1095
+00:00:00,000 --> 00:48:11,238
+That is,
+
+1096
+00:00:00,000 --> 00:48:22,819
+ cosine of T plus 2 pi is equal to cosine of T for all [inaudible] of T and sine of 2 pi plus T plus 2 pi is equal to sine of T.
+
+1097
+00:00:00,000 --> 00:48:33,166
+Why?
+
+1098
+00:00:00,000 --> 00:48:35,685
+ Dead silence.
+
+1099
+00:00:00,000 --> 00:48:38,076
+Because the sine and cosine are 
+
+1100
+00:00:00,000 --> 00:48:38,699
+！ don't tell me.
+
+1101
+00:00:00,000 --> 00:48:40,416
+I wanna do it.
+
+1102
+00:00:00,000 --> 00:48:42,669
+Because the 
+
+1103
+00:00:00,000 --> 00:48:43,440
+！ I'll do it over here 
+
+1104
+00:00:00,000 --> 00:48:45,845
+！ because the sine and the cosine are associated with periodicity in space 
+
+1105
+00:00:00,000 --> 00:48:53,561
+because the sine and the cosine are associated with an object that regularly repeats.
+
+1106
+00:00:00,000 --> 00:48:56,248
+The simplest object that regularly repeats,
+
+1107
+00:00:00,000 --> 00:48:59,160
+ the circle.
+
+1108
+00:00:00,000 --> 00:49:00,839
+You didn't meet sine and cosine that way first.
+
+1109
+00:00:00,000 --> 00:49:03,517
+You met sine and cosine in terms of ratios of size,
+
+1110
+00:00:00,000 --> 00:49:05,331
+ lengths of size in triangles.
+
+1111
+00:00:00,000 --> 00:49:06,733
+That's fine,
+
+1112
+00:00:00,000 --> 00:49:08,470
+ but that's an incomplete definition.
+
+1113
+00:00:00,000 --> 00:49:09,582
+The real way of 
+
+1114
+00:00:00,000 --> 00:49:10,145
+！ not the real way,
+
+1115
+00:00:00,000 --> 00:49:13,230
+ but the more sophisticated way,
+
+1116
+00:00:00,000 --> 00:49:14,435
+ the ultimately more far-
+
+1117
+00:00:00,000 --> 00:49:19,171
+ reaching way of understanding sine and cosine is as associated with the unit circle
+
+1118
+00:00:00,000 --> 00:49:24,091
+ where a cosine of T is the X coordinate,
+
+1119
+00:00:00,000 --> 00:49:28,151
+ and the sine of T is the Y coordinate,
+
+1120
+00:00:00,000 --> 00:49:31,825
+ and T is a radian measure.
+
+1121
+00:00:00,000 --> 00:49:32,504
+I'm not gonna go through this in too much detail,
+
+1122
+00:00:00,000 --> 00:49:37,614
+ but the point is that the sine and the cosine are each associated with the phenomenon of periodicity in space.
+
+1123
+00:00:00,000 --> 00:49:42,136
+They are periodic because if you go once around the circle; that is to say,
+
+1124
+00:00:00,000 --> 00:49:43,870
+ T goes from T to T plus 2 pi,
+
+1125
+00:00:00,000 --> 00:49:45,692
+ you're back where you started from,
+
+1126
+00:00:00,000 --> 00:49:46,891
+ all right?
+
+1127
+00:00:00,000 --> 00:49:47,471
+ That's why.
+
+1128
+00:00:00,000 --> 00:49:54,536
+It's periodicity in space,
+
+1129
+00:00:00,000 --> 00:49:54,996
+ all right?
+
+1130
+00:00:00,000 --> 00:49:59,280
+ That's the definition of sine and cosine that exhibits their periodic phenomenon,
+
+1131
+00:00:00,000 --> 00:50:00,522
+ not the definition in terms of right triangles.
+
+1132
+00:00:00,000 --> 00:50:05,360
+It's not that the definition in terms of right triangles is wrong; it just doesn't go far enough.
+
+1133
+00:00:00,000 --> 00:50:06,676
+It's incomplete,
+
+1134
+00:00:00,000 --> 00:50:07,497
+ all right?
+
+1135
+00:00:00,000 --> 00:50:12,108
+ It doesn't reveal that fundamental link between the trigonometric functions and periodicity,
+
+1136
+00:00:00,000 --> 00:50:13,974
+ and it is fundamental.
+
+1137
+00:00:00,000 --> 00:50:15,105
+If not for that,
+
+1138
+00:00:00,000 --> 00:50:18,337
+ mathematics could not be brought to bear on the study of periodic phenomena.
+
+1139
+00:00:00,000 --> 00:50:22,742
+And furthermore,
+
+1140
+00:00:00,000 --> 00:50:26,028
+ it's clear 
+
+1141
+00:00:00,000 --> 00:50:29,953
+！ and we'll quit in just a second 
+
+1142
+00:00:00,000 --> 00:50:32,553
+！ that it's not just 2 pi but any multiple of 2 pi,
+
+1143
+00:00:00,000 --> 00:50:33,552
+ positive or negative.
+
+1144
+00:00:00,000 --> 00:50:35,669
+I can go clockwise or I can go counter-
+
+1145
+00:00:00,000 --> 00:50:36,690
+ clockwise.
+
+1146
+00:00:00,000 --> 00:50:42,809
+I can say the cosine of T plus 2 pi N is the same thing a cosine of T.
+
+1147
+00:00:00,000 --> 00:50:45,698
+And the sine of 2 pi 
+
+1148
+00:00:00,000 --> 00:50:49,110
+！ T plus 2 pi N is the sine of T for N 
+
+1149
+00:00:00,000 --> 00:50:50,028
+！ any integer 
+
+1150
+00:00:00,000 --> 00:50:52,398
+！ and 0 plus or minus 1,
+
+1151
+00:00:00,000 --> 00:50:53,246
+ plus or minus 2,
+
+1152
+00:00:00,000 --> 00:50:54,126
+ and so on and so on.
+
+1153
+00:00:00,000 --> 00:50:55,858
+The interpretation is that when N is positive,
+
+1154
+00:00:00,000 --> 00:50:56,794
+ I'm going counter 
+
+1155
+00:00:00,000 --> 00:50:59,264
+！ and it is just an interpretation; it is just a convention 
+
+1156
+00:00:00,000 --> 00:51:00,018
+！ when N is positive,
+
+1157
+00:00:00,000 --> 00:51:00,655
+ I'm going counter-
+
+1158
+00:00:00,000 --> 00:51:02,117
+clockwise around the circle; when N is negative,
+
+1159
+00:00:00,000 --> 00:51:03,999
+ I'm going clockwise around the circle.
+
+1160
+00:00:00,000 --> 00:51:07,742
+But it's only when you make the connection between periodicity and space 
+
+1161
+00:00:00,000 --> 00:51:10,172
+and the sine and the cosine that you see this fundamental property,
+
+1162
+00:00:00,000 --> 00:51:11,547
+ all right?
+
+1163
+00:00:00,000 --> 00:51:13,980
+ Now,
+
+1164
+00:00:00,000 --> 00:51:14,643
+ all right,
+
+1165
+00:00:00,000 --> 00:51:16,037
+ I think we made it out of junior high today.
+
+1166
+00:00:00,000 --> 00:51:16,966
+That was my goal,
+
+1167
+00:00:00,000 --> 00:51:17,586
+ all right?
+
+1168
+00:00:00,000 --> 00:51:24,539
+ What is most amazing and what we'll see next time is that such simple functions 
+
+1169
+00:00:00,000 --> 00:51:26,895
+can be used to model the most complex periodic behavior,
+
+1170
+00:00:00,000 --> 00:51:28,838
+ all right?
+
+1171
+00:00:00,000 --> 00:51:30,316
+ From such simple things 
+
+1172
+00:00:00,000 --> 00:51:31,506
+！ from simple acorns,
+
+1173
+00:00:00,000 --> 00:51:32,392
+ mighty oaks grow,
+
+1174
+00:00:00,000 --> 00:51:33,784
+ or whatever bullshit 
+
+1175
+00:00:00,000 --> 00:51:34,433
+！ oh,
+
+1176
+00:00:00,000 --> 00:51:35,113
+ excuse me 
+
+1177
+00:00:00,000 --> 00:51:38,472
+！ whatever stuff you learn out there 
+
+1178
+00:00:00,000 --> 00:51:42,886
+！ that these simple functions that are associated with such a simple phenomena
+
+1179
+00:00:00,000 --> 00:51:45,220
+ can be used to model the most complex,
+
+1180
+00:00:00,000 --> 00:51:46,460
+ really,
+
+1181
+00:00:00,000 --> 00:51:48,239
+ the most complex periodic phenomena.
+
+1182
+00:00:00,000 --> 00:51:50,634
+And that is the fundamental discovery of Fourier series,
+
+1183
+00:00:00,000 --> 00:51:52,658
+ all right?
+
+1184
+00:00:00,000 --> 00:51:54,704
+ And it's the basis of Fourier analysis,
+
+1185
+00:00:00,000 --> 00:51:56,377
+ and we will pick that up next time.
+
+1186
+00:00:00,000 --> 00:51:57,022
+Thank you very much.
+
+1187
+00:00:00,000 --> 00:51:57,738
+See you then.
+
+1188
+00:00:00,000 --> 00:00:00,000
+[End of Audio] Duration:
+
+1189
+00:00:00,000 --> 00:00:00,000
+ 52 minutes .
+
