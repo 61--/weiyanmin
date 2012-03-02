@@ -1,0 +1,1199 @@
+TheFourierTransformAndItsApplications-
+Instructor (Brad Osgood):
+All right.
+announcements.
+ Thomas checked the 每 Thomas John,
+ our estimable,
+Bowl TA＊s for the course,
+who have signed up on the website,
+the course of access.
+get email messages and important announcements and post things on the bulletin board.
+So go do that.
+Student:
+Instructor (Brad Osgood):
+Pardon me?
+Student:
+[Inaudible] room number,
+Instructor (Brad Osgood):
+It should be now.
+ I think there was a problem yesterday,
+briefly.
+ It was not 每 there was a setting I had to change on the website,
+checked 每 if you haven＊t tried it since the first time you tried it,
+ try it again.
+ Okay?
+should be okay.
+review sessions and office hours are gonna be.
+ Do you need a microphone?
+Student:
+Okay.
+ So the review sessions have been set.
+Friday,
+ this coming Friday from 4:
+15 to 5:
+05,
+ in Skilling 191,
+ it＊s the room just on top.
+Now,
+ we are not expecting every one of you to show up.
+ And please,
+up because we can only accommodate 30 people or so.
+Now,
+ these review sessions will be available on the SCPD website.
+covering 每 well,
+homeworks.
+have been set.
+staff.
+ You＊ll see on the left-
+hand side there＊s a link to course staff,
+office hours have been set,
+ and they will start on Monday,
+ October 1st.
+Instructor (Brad Osgood):
+Thank you.
+Student:
+Sorry.
+Instructor (Brad Osgood):
+Sorry.
+Student:
+Student:
+Room number for the review sessions?
+ Skilling 191.
+Instructor (Brad Osgood):
+Skilling 190 每 191,
+ did you say for the review session?
+Student:
+No audible response.
+Instructor (Brad Osgood):
+Okay.
+ Also,
+homework set has also been posted up on the web and it is due next Wednesday.
+ Okay.
+Any questions about anything?
+ Anything on anybody＊s mind?
+yet,
+ so there shouldn＊t be that many questions.
+ All right.
+ So today,
+study and begin a real 每 serious mathematical study of the question of periodicity.
+每 with the mathematical study of periodicity.
+ And last time I went on,
+ at some length,
+about the virtues of periodicity,
+periodic phenomena in the physical world,
+ and also in the mathematical world.
+made a distinction,
+ perhaps a little bit artificial but sometimes helpful,
+periodicity in time and periodicity in space.
+ Those sort of two phenomena seem to be,
+often come to you in different forms,
+of ask yourself which kind of periodicity are you looking at?
+ But in all cases actually,
+periodicity is associated with the idea of symmetry.
+from time to time,
+ and if I don＊t mention it explicitly,
+course,
+yourself 每 see what aspects of symmetry are coming up in the problem,
+particular problem fit into a more general context because,
+say it again,
+and how it can be applied in so many different ways.
+ All right.
+general framework and put yourself 每 and orient yourself in a certain way,
+and the techniques of the class,
+ you＊ll really find how remarkably applicable they can be.
+Okay.
+ So I said 每 as I said last time 每 as we finished up last time,
+just crawling our way out of junior high,
+because there are very simple mathematical functions that exhibit periodic behavior,
+namely the sine and the cosine.
+can be very general and very complicated,
+ and the sine and the cosine are so simple.
+phenomena?
+ And that＊s really the question I want to address today.
+phenomena?
+ Now,
+ first,
+ the general remark is,
+ how high should we aim here?
+ I mean,
+how general can we expect this to be?
+ So how general?
+ All right.
+fundamental question here.
+ And in answering that question,
+mathematicians very far from the original area that they were investigating.
+well,
+ let me say right now,
+ pretty general,
+ all right.
+really 每 that will apply and allow us to get more careful statements.
+aiming quite high here,
+ all right?
+general circumstances.
+ Now,
+ not all phenomena are periodic.
+ All right.
+case of periodic phenomena,
+ it may not be a realistic assumption.
+to realize here what the limits may be,
+ or how far the limits can be pushed.
+phenomena,
+ naturally,
+ although many are,
+ and many interesting ones are periodic.
+even periodic phenomena,
+ in some sense,
+really physically realizable.
+periodic in time,
+rather than phenomena,
+ but phenomena sounds a little grander at this point.
+phenomena that are periodic in time 每 real phenomena,
+ they just die out eventually.
+only observe 每 or at least we only observe something over a finite period of time,
+whereas,
+ as mathematical functions,
+ the sine and the cosine go on forever.
+ All right.
+mathematical model,
+ sine and cosine go on forever.
+model to something that dies out?
+ But a periodic function,
+on forever,
+ repeating over and over again.
+ All right.
+it really dies out?
+ Well,
+ that＊ll take us awhile to sort all that out.
+answer to this,
+ and one indication of how general these ideas really are.
+homework problem that asks you actually to address this mathematically.
+ All right.
+you have a finite 每 you can still use 每 still apply ideas of periodicity,
+approximation or even if only as an extra assumption.
+ So what I mean by that is,
+follows.
+ So suppose a phenomena looks like this.
+something like this 每 let me write it over here.
+ So it dies out over a period of time.
+is time and there＊s only a finite interval of time 每 it might be very large,
+finite interval of time when the signal is non-
+zero.
+generic signal here.
+ Well,
+behavior.
+ But if it dies after a finite 每 outside of a finite interval,
+the pattern and make it periodic.
+ All right.
+ Force this 每 you can force periodicity.
+ That is,
+by repeating the pattern.
+ You can force extra symmetry.
+the problem that＊s not there in the beginning.
+ So,
+ I mean by this a very simple idea.
+Here＊s the original signal,
+ and I just repeat the pattern.
+ So this is the original signal,
+are maybe,
+ sort of,
+ you know,
+ extra copies of it that I＊m just inserting artificially,
+extend the function to be periodic and exist for all time.
+this part of it,
+ but for mathematical analysis,
+ if you make it periodic,
+whole thing.
+ All right.
+ This is sometimes called the periodization of a signal.
+be used 每 and it is used 每 to study signals which are non-
+methods of Fourier series,
+signals which are not periodic.
+of periodization,
+ and it＊s a technique that comes up in various applications.
+ All right.
+see the first problem set,
+ homework one.
+ Now,
+techniques for studying periodic phenomena are really pretty general.
+ All right.
+you don＊t have a periodic phenomenon,
+ you can make it periodic,
+apply the techniques to study the periodized version of it,
+special cases of actually where you＊re interested in the function.
+ All right.
+that＊s the point of this remark,
+so much by insisting that you＊re gonna use sines and cosines,
+periodic phenomena.
+can apply really quite generally.
+ Okay.
+ Now,
+ let＊s do it.
+program.
+ So,
+ first of all,
+ let＊s fix a period in the discussion.
+ All right.
+specialize and fix ideas,
+mathematically.
+ So for the discussion,
+ let＊s fix the period for the discussion.
+ All right.
+And there＊s a choice here.
+cosine are naturally periodic of period two pi,
+for a variety of reasons,
+ it is more convenient to fix the period to be one.
+ All right.
+we＊re gonna look 每 we＊re gonna consider function signals,
+one.
+ So we＊ll use period one.
+ That is,
+of time,
+ but again,
+ it＊s not only periodicity and time that I＊m considering.
+gonna say can apply to any sort of periodic phenomena,
+satisfying 每 f of t plus one is equal to f of t for all t.
+ All right.
+as the basic model functions,
+ we scale the sine and the cosine,
+ that is,
+at sine of t and cosine of t,
+ we look at sine of two pi t and cosine of two pi t.
+signals are sine of two pi t,
+ that has period one,
+ and cosine of two pi t,
+one.
+ All right.
+ Simple enough.
+ Now,
+before we launch into particulars,
+ is that periodicity is a strong assumption,
+analysis of periodicity has a lot of consequences.
+function 每 if you know it on an interval of length one,
+ and any interval of length one,
+know it everywhere because the pattern repeats.
+ If you just know a piece of the function,
+you know it everywhere.
+ So if we know 每 if we know,
+ and I say,
+analyze,
+ if we 每 whatever formulas we derive,
+ and so on,
+ this is an important maxim.
+I＊ll put it in quotes,
+ ※know.§ To be a sort of generic,
+ infinite, perfect, God-knowledge.
+ So if we know a periodic function,
+ say period one,
+ on an interval,
+a particular interval,
+ but any interval of length one,
+ then we know it everywhere.
+right.
+ These are all simple remarks.
+ Okay.
+before in various contexts,
+ but again,
+them in your head.
+appropriate time.
+of really quite complicated phenomena.
+ Now,take such simple functions of sine and cosine individually,
+periodic phenomena?
+be, are just the sine and the cosine.
+ But the fact is,
+yield quite general results.
+ We can modify and combine sine of two pi t,t,
+ to model very general periodic phenomena of period one.
+ Okay.periodic signals of,
+ again, period one.
+ All right.
+ Now, here is the first big idea,
+way of phrasing the first big idea.
+ When I talk about modifying and combining 每 well,
+let＊s first talk about modifying.
+what I have in mind is,
+ one period,
+ many frequencies.
+ As far as a big idea 每 one period,
+many frequencies.
+ I think you can actually find this in The Dead Sea Scrolls.
+ Okay.do I mean, one period,
+ many frequencies?
+ Well, let me just take a simple example.
+mean, for example, e.g.,
+ you have sine of two pi t,
+looks like.
+ I＊ll put the graphs over here.
+also has a frequency one that is 每 completes one cycle in one second.
+as the time axis,
+ say, although, again,
+ I＊m thinking in terms of time,
+mathematical statement.
+ It repeats exactly once on the interval from zero to one.
+right.
+two cycles.
+ So this is period one,
+ frequency.
+ Sine of four pi t is period one-
+half,frequency one 每 frequency two,
+ but period one-half also means period one.
+ All right.
+the picture looks like this,
+ it goes up and down twice 每 [inaudible] 每 it does,
+second.
+ All right.
+ Zero, one, it repeats.second,
+ it goes through two cycles in one second,
+ so that＊s frequency two.
+ All right.
+it also has period one because if you consider this as the basic pattern that repeats,
+also repeats on an interval of length one.
+ Okay.length one-half,
+ but the signals already contained in interval one-
+half,the signal also has a longer period.
+ All right.
+ It has a shorter period,
+longer period.
+ And let me do one more.
+ If, for instance,
+ I look at sine of six pi t,
+simple.
+ All my remarks are very simple.
+ This is period one-
+third,three,
+ but it also has period one.
+ You might think of this as,
+ I don＊t know,
+period,
+ or somehow 每 I don＊t know what exactly the best way of saying it because,
+ really,
+the best description is in terms of frequency not period.
+like? Well,
+goes up and down three times in one second.
+ Let＊s see if I can possibly do this.
+ One, two,three. Good enough.
+ One, zero,once in one-
+third of a second,
+ then the next third of a second it goes up and down again,
+the next third of a second it goes up and down a third time.
+because if you consider this has the pattern that repeats,
+of length one.
+ Although, in some sense,
+that. Now,
+ what about combining them?
+the same thing with cosine.
+ That＊s how you modify the function 每 one period,
+frequencies.
+ If we combine them together,
+ I actually have a picture of it here,
+I＊ll just try to sketch it 每 fool that I am.
+ What about the combination?
+combination,
+ I am thinking of a simple sum.
+excuse me 每 sine of four pi t plus sine of six pi t.
+ All right.
+look like?
+ Well, it looks like so.
+ And I＊m gonna sketch this,
+make 每 I wanna make another comment about this in just a second,
+Mathematica plot this for me.
+ It looks something like this,
+interval of length two.
+ All right.
+ I＊ve plotted it and it goes 每 it＊s kinda nice,
+then a little bit like this,
+ and then it goes up and then down a little bit farther,
+little bit like that,
+ and it goes down 每 that＊s the sound it makes 每 up,
+ down like that,
+then up 每 excuse me 每 and that＊s not two,
+ it will be two,
+ and down and up,
+we go.
+ Two. And then it repeats.
+ Here＊s one.
+ All right.
+ That＊s the sum.
+ Now,period of a sum?
+ The period of the sum is one.
+ All right.
+the terms of higher frequency are repeating more rapidly,
+it started until the slowest one gets caught up 每 goes to where 每 back to where it started.
+All right.
+ The period of the sum is one.
+ One period,
+ many frequencies.
+frequencies in the sum.
+ One, two, and three.
+ But added together,
+ there＊s only one period.
+So in a complicated 每 this is a very important point,
+ and again,
+you＊ve seen before.
+ That＊s why I say one period,
+ many frequency,
+complicated periodic phenomena,
+ it＊s really better,
+ more revealing,
+frequencies that might go into it,
+ rather than the period.
+ You are fixing the period.
+fixing the period to have length one.
+ All right.
+complicated phenomena.
+ That complicated phenomena,
+ as it turns out,
+up out of sines and cosines of varying frequency.
+ AS long as the sum has period one,
+we＊re okay.
+ One period,
+ many frequencies.
+that goes along with this.
+ Now, in fact,the frequency.
+ We can also modify the amplitudes separately,
+phases of each one of those 每 each one of those terms.
+ So to model complicated,
+ perhaps,how complicated?
+ We＊ll see.
+modify the amplitude,
+ the frequency,
+ and the phases of either sines or cosines,
+just stick with the sines 每 of sine of two pi t,
+ and add up the results.
+ That is,consider something like this.
+ Something of a form,
+ say, k going from one up to n,
+can consider how ever many of them we want.
+ A sub k,
+that＊s modifying the frequency 每 plus fe sub k 每 allowing myself to modify the phase.
+sub k.每 and I can do the same thing with cosines,
+about that in just a second.
+ All right. So again,
+ many frequencies,
+ one period.
+ All right.
+the lowest 每 the longest period in the sum is when k is equal to one,
+ period one.
+higher terms,
+ they＊re called harmonics,
+ because of the connection with music,
+discussed in the notes,
+musical phenomena as a repeating pattern 每 musical notes.
+ The higher harmonics,
+higher terms,
+ have higher frequencies,
+ have shorter periods,
+because the whole pattern can＊t repeat until the longest period repeats.
+ All right.
+longest pattern is completed.
+ Now,sums. All right.
+ That is,the a＊s,
+ the amplitudes,
+ you can choose the phases,
+ and it will plot what a sum looks like.
+All right.
+ It＊s called 每 so I have MATLAB program with a graphical user interface.
+wrote this myself,
+ actually,
+ a couple years ago.
+MATLAB,
+ it was pretty clunky,
+ let me tell ya.
+ But last year,
+ a student in the class,
+ in 261,
+took it upon herself to modify it,
+ which caused me to bump up her grade in the end,
+it＊s really quite a nice little program.
+ It＊s not complicated,
+complicated these sums can be.
+ All right.
+ So there＊s a MATLAB program,
+on the website,
+own version,
+ which is now on the ash heap of history.
+ All right.
+it＊s really quite 每 I mean it＊s 每 talk about fun,
+a pattern you can build up out of relatively simple building blocks like this,
+pretty good.
+assignment based on this 每 based on the program.
+allows you too actually to play the sound that＊s associated with this.
+ That is,pure musical note,
+ then a combination models a combination of musical notes,
+put a little button,
+ it plays sound,
+sound good.
+ But it＊s interesting to try.
+ Unfortunately,
+to work on the Mac,
+ it only seems to work on Windows.
+Player or something like that; Bill Gates＊ version of death 4.
+2 or something,
+know.
+ Anyway,
+ so we have to see if we can fix it to work on the Mac,
+works on the Mac fine except for playing the note.
+file,
+ and you should fool around with it a little bit.
+ Okay?
+sense of just how complicated these things can be.
+ All right.
+ Now,can they be?
+ That＊s the question that I really wanna address.
+ I mean,
+more complicated than just the sine and the cosine alone,
+the possibilities that we want to be able to deal with.
+ Let me say,discussion, actually,
+reasonable way,
+like this.because algebraically 每 for algebraic reasons,
+ primarily algebraic reasons,
+or less convenient ways to write this sum.
+ Okay.about it, just a little bit.
+t plus fe sub k.
+ All right.
+ Now,
+ you can lose the phase,
+ so to speak,
+in terms of sines and cosines,
+ if you use the addition formula for the sine function.
+the 每 the formula for the sine of the sum of two angles.
+times the sine of fe k,
+ just using the addition formula,
+terms of sines and cosines.
+coefficients,
+ say sum from k equals one to n,
+ little a k times the cosine of two pi k t,
+little b sub k times the sine of two pi k t.
+ All right.
+little ak＊s and the bk＊s are related to the capital A＊s in the phase just by working it out.
+All right.
+ So capital A sub k times this thing,
+phase 每 you haven＊t lost information about the phase in some sense,
+ it＊s still there,
+it＊s represented differently in terms of the coefficients out in the form of the sum.
+right.
+ This is a very common way of writing these sorts of trigonometric sums.
+matter of fact,
+ I＊d say it＊s more common in 每 if you look in the applications,
+look in the textbooks,
+this form.
+ But there equivalent,
+ all right?
+ You can go back and for the between the two.
+And you can also allow for a constant term,
+ you can shift the whole thing up.
+also usually done for purposes of generality.
+ All right.
+ You can add a constant term.
+it＊s usually written in the form a zero over two,
+is because of yet,
+ another form of writing it.
+ Let me just write out the rest of it:
+over two plus,
+ again,
+ sum from n equals 每 for k equals one to n to n of a sub k,
+two pi k t plus b sub k,
+ sine of two pi k t.
+ All right.
+this the dc component.
+ I hate that.
+ All right.
+ But they always do.
+ All right.
+learned to call this the dc component?
+ Yeah,
+ I hate that.
+ Not everybody,
+that.
+ That＊s because you think of a periodic phenomena,
+don＊t know what you think about.
+somehow is a periodic part,
+ but then there＊s a direct part that doesn＊t alternate.
+dc part 每 direct current part 每 that doesn＊t alternate,
+ and that＊s that term.
+nothing to do with current,
+ you know?
+ You＊re sometimes trapped by your language,
+the field again,
+ as I will say over and over again,
+want to trap yourself into thinking about it in only one way.
+ You know.
+modeling some very complicated phenomena,
+ and you say,
+ ＆What is a dc component?
+somebody gonna look at you,
+ like,
+ ＆What are you talking about?
+＊ You know?
+ All right.
+Now, so that＊s a very common way of writing the form of the sum,
+ but by far,
+convenient way algebraically,
+ and really in many ways,
+ conceptually,
+exponentials to write the sum,
+ not the real sines and cosines.
+ By far.
+much the last time I＊m gonna use sines and cosines.
+gonna write the expression like this,
+ so it＊s by far better.
+this. All right.
+ Primarily,
+ algebraically,
+ but also conceptually,
+represent sine and cosine via complex exponentials.
+ And write the sum that way.
+right.
+ so what do I mean by that?
+ Let me just remind you,
+ of course,
+n t,
+ [inaudible] formula is cosine of two pi n t plus or k 每 or I guess I＊m calling it k,
+of two pi k t.
+ Oh,
+ yes,
+ that＊s something else.
+ All right.
+of principle.
+ I is the square root of minus one,
+ in this class.
+ Not j.
+ Deal with it.
+ Get over it.
+All right.
+ For me,
+ for this class,
+ it＊s i.
+ You can use j if you want.
+ I will use i.
+ Now,
+in terms of the completive exponential ant it＊s conjugate,
+ that is,
+ very simple formula,
+cosine is the real part and the sine is the imaginary part.
+to the pi i is the real part.
+ Two pi i k t plus e to the minus two pi i k t over two.
+sine of two pi k t,
+ likewise,
+minus two pi i k t divided by two i.
+complex numbers,
+ so if you＊re at all rusty on that,
+ you should review that.
+ All right.
+Because you＊re gonna want to be able to manipulate complex numbers,
+imaginary parts.
+ You＊re gonna wanna be able to do that with confidence and gusto.
+right.
+exponentials,
+ look over the chapter.
+ All right?
+ Matter of fact,
+ on the first problem set,
+complex numbers.
+ All right.
+ Complex exponentials.
+ Now,I won＊t write it out in detail,
+ you can obviously then convert a sum which is not gone,
+which looks in terms of sines and cosines 每 in terms of complex exponentials.
+from k equals minus n to n,
+ so it includes the zeros term,
+ the constant term,
+the two pi i k t.
+ All right.
+ We are now 每 the C sub k＊s are complex numbers.
+in sight is complex.
+ So, All right.
+ The c k＊s are complex.
+ Now,
+on this,
+ but I decided not to.
+ You can do this just for fun.
+coefficients are related.
+ So start with the expression in terms of sines and cosines,
+coefficients.
+ All right.
+ You will find,
+ actually, a very important symmetry property.
+right. These are complex numbers,
+ but they＊re not just arbitrary complex numbers,
+satisfy symmetry property.
+ And it＊s because of the symmetry that the total sum is real.
+All right.
+things reflected actually,
+ when we talked about Fourier transforms.
+sum goes from minus n up to n 每 they satisfy the property,
+complex conjugate,
+ c k bar. All right.
+the coefficients for a real signal like that,
+ and it comes up often.
+ All right.
+things you have to keep in mind.
+ All right.
+conversion.
+ That is,
+ starting with a formula in terms of sines and cosines,
+the formula in terms of the complex numbers.
+ All right. Conversely, conversely,
+start with the sum of this form,
+ all right,property,
+ then the total some will be real.
+and a negative term,
+ and because of this relationship here,
+number plus its conjugate,
+ so you＊ll get a real 每 results out of that.
+ All right.
+coefficients satisfy this,
+ then the signal is real.
+ And conversely,
+you write it like that,
+ then the coefficients have to satisfy the symmetry property.
+ Yeah?
+Student:
+Instructor (Brad Osgood):
+What is that line?
+ That line is 每 indicates complex conjugate.
+All right.
+ So for a general 每 all right,
+ do I have to say anymore first?
+complex number a plus b i,
+ the conjugate is a minus b i.
+ Okay.
+notations for complex conjugates,
+use an asterisk,
+ a star,
+ some people even use a dagger.
+ All right.
+true,
+ I＊m not making that up.
+ But this is the most common notation.
+ All right.
+another notation I will use.
+Okay.
+ Now, now, now, now.
+ We are ready,
+ at last,
+at the heart of all of this.
+ How general can this be?
+ How general can this be?
+ I mean,
+in the form now,
+ algebraically 每 well,
+ I＊m in the form now where I can ask the question,
+and as we＊ll see algebraically,
+approach it.
+So we can now ask the fundamental question.
+nothing?
+ Let＊s kick that one around for awhile.
+ The fundamental question 每 so again,
+t is a periodic function of period one.
+ All right.
+ Can we write it,
+sum,
+ k going from minus n to n of c sub k e to the two pi i k t.
+ So again,
+ball here.
+The fundamental question is this.
+ You have a general periodic function,
+as a trigonometric sum?
+ Can you express it in terms of sines and cosines?
+express it in terms of the fundamental building blocks?
+ All right.
+ By the way,
+playing a role here,
+ although again,
+ I haven＊t said it explicitly until now,
+considering linear combinations of the basic building blocks.
+way of combining the basic trigonometric functions,
+ the basic periodic functions.
+right.
+ A linear way of doing that.
+So that＊s the fundamental question.
+ And the answer 每 I＊ll tell you next time.
+don＊t think I＊d make such a big deal out of it if the answer was no.
+to do.
+and far-
+reaching investigations.
+All right.
+ Now 每 but I want to get started on it.
+ All right.
+ Now,clue.
+Student:
+[Inaudible] earlier you were starting with one.
+Instructor (Brad Osgood):
+Pardon?
+ Why am I not starting with one?
+ Well,
+每 so the question is why does the sum go from minus n to n,
+from one to n?
+Well, for one thing,
+ if it went from one to n,
+ the signal wouldn＊t be real,
+ right?
+Remember there＊s this combination of the positive terms and the negative terms,
+right?
+of the coefficient,
+to give you a real part.
+and cosines,
+ and then you use complex exponentials to express it this way,
+that it＊s the symmetric sum.
+ It goes from minus n to n.
+ Okay.By the way,
+ I should have said something over here,
+ I suppose.
+ Note one thing,
+way,
+ that c sub-
+zero is equal to c sub-
+minus zero.
+ Zero being what it is.
+is equal to c sub-
+zero is equal to c zero bar.
+number is equal to its conjugate?
+Student:
+It is real.
+Instructor (Brad Osgood):
+It＊s real.
+ All right.
+sure is real,
+ others may be real,
+ it may just work out that way,
+you know is real for sure,
+ is the zero of coefficient.
+ All right.
+ so it must be real.
+is real.
+ That＊s just a little aside,
+ c zero is real.
+All right.
+ You have to be a little 每 you have to cut me a little slack here.
+ Like I said,
+all have to cut each other a little slack.
+ There＊s so many little bits,
+ you know,
+little pieces,
+ little comments and things like that.
+ I can＊t make all of them,
+ all right?
+hope I put all of them,
+ or most of them,
+ in the lecture notes,
+ all right,
+see these things.
+ But,
+ as I say,
+out,
+ that you can note,
+bigger picture.
+ All right.
+ But this is one thing that comes up often enough.
+ So there＊ll be,
+you know,
+try to make note of all those things.
+ And it＊s hard.
+ It＊s hard.
+ You know,
+facts.
+But you＊ll see when the whole thing 每 when you 每 if you keep the big picture in mind,
+many cases the details will take care of themselves.
+ Really.
+ Now,
+ where was I?
+Yes?
+ A secret of the universe.
+ All right.
+ Here＊s a pretty big secret of the universe,
+actually,
+ coming your way.
+mathematics works,
+ and when you try to apply mathematics to various problems,
+often have a question like this.
+ What if 每 how can 每 what 每 how can something happen?
+All right.
+ Is it possible to write something like this?
+ All right.
+ Now,
+approach 每 and I＊m serious about this.
+trying to look at a mathematical model of something,
+ you say,
+this?
+ Often the first step is to suppose that you can,
+ and see what the consequences are.
+All right.
+ Then later on,
+ you can say,
+ all right,
+seems to be what has to happen.
+ All right.
+ And then you go backwards.
+ All right.
+mathematicians will never tell you this because they like to sort of cover their tracks.
+They say,
+ ＆Well,
+ it obviously goes like this,
+＊ you know,
+ and,
+define this formula and that formula,
+ and life is going to work out so simply.
+they don＊t show you is often that first step of saying,
+ suppose the problem is solved,
+has to happen?
+ All right.
+ So suppose you can do this.
+from k equals minus n to n,
+ c sub-
+k e to the two pi i k t.
+ What has to happen?
+ All right.
+Now,
+ by that I mean,
+ if you can write this,
+ what are the coefficients?
+equation like this,
+ then what I＊m asking here is,
+terms of f?
+ Coefficient c sub-
+k in terms of f 每 f is given to you.
+ All right.
+unknowns in this expression are the coefficients.
+ And the question is,
+them?
+ All right.
+ Suppose you can write it like that.
+ Can you solve for the coefficients?
+Can we solve for the c k?
+ All right.
+ I＊m gonna take a very na.
+ve approach.
+ All right.
+gonna isolate it.
+ What do you?
+ It＊s like an algebraic equation.
+equation,
+ isolate the unknown.
+ So isolate,
+ like,
+ the,
+ I don＊t know,
+something like that.
+ All right.
+ So isolate c m out of this.
+ That is 每 it＊s a big old sum,
+right?
+ So f of t is,
+ you know,
+rest of the terms.
+ That is to say,
+ I can write c sub-
+m e to the two pi i m t,
+the terms that don＊t involve m,
+ so let me write it like this.
+ Say,
+m of c sub-
+k e to the two pi i k t.
+ All right.
+manipulated the equation to bring the one mystery term,
+side.
+ All right.
+ All I did here 每 so f of t is this big sum.
+sub m e to the two pi i m t 每 I wanna solve for the unknowns.
+ All right.
+unknowns one unknown at a time.
+ So this is the Mth term in the sum,
+the other side of the equation,
+terms that don＊t involve m.
+ Okay.
+ And then,
+ write that as 每 that＊s almost isolating c sub-
+m,
+ and not quite because it＊s got a complex exponential in front of it.
+sides 每 this board is not so great 每 multiply both sides by e to the minus two pi i m t.
+sub-
+of c sub-
+k e to the minus two pi i m t times e to the two pi i k t.
+ You with me?
+my sleeve.
+ All right.
+ All right.
+ Now,
+ that＊s brilliant.
+of all the other unknowns.
+ All right.
+ So,
+made progress here.
+ So we need another idea.
+ This is as far as algebra can take you.
+right.
+ Algebra says,
+ you wanna solve for the unknown,
+ fine.
+ Isolate,
+ you know,
+your eighth grade teacher tell you?
+ Put the one unknown on one side of the equation,
+everything else on the other side of the equation.
+ Hope and pray.
+ All right.
+one unknown on one side of the equation,
+equation.
+ Hope and pray.
+ Now,
+something to do.
+ Let me actually take this out one more algebraic step.
+combine those two exponentials there,
+ and write this as c sub-
+m t minus the sum over all terms different from m of c sub-
+minus m times t.
+ I＊m just combining the two complex exponentials there.
+ All right.
+ Great.
+Student:
+Instructor (Brad Osgood):
+What?
+Student:
+F of t.
+Instructor (Brad Osgood):
+F of t. Picky, picky. All right.
+ F of t minus.
+ All right.
+ Now,good. So now,
+ they say that we need another idea.
+this moment will think of one or two things 每 one of two things.
+differentiate or integrate.
+ I mean,
+ what＊s beyond algebra?
+ Calculus.
+ What＊s in calculus?
+Derivatives and intervals.
+ All right.
+ So, here＊s a clue.
+ Derivatives won＊t work,
+intervals will.
+All right.
+ We need another idea.
+ And that＊s a good idea,
+ it＊s an inspired idea.
+[inaudible] because it works,
+ and I＊ll show you way.
+from zero to one over one period.
+ All right.
+ All I have to worry about here is one period.
+Everything＊s periodic at period one,
+ so I integrate over 每 I integrate from zero to one.
+What if I do 每 what do I get?
+Well,
+ certainly,
+ if I integrate zero to one of c sub-
+m d t,
+ that just gives me c sub-
+m.
+right.
+ So what about the rest of it?
+ So I get 每 I get c sub-
+zero to one,
+ e to the minus two pi i m t,
+ f of t d t,
+of the interval 每 let me write this,
+每 and the constant comes out 每 c sub-
+k, the interval from zero to one,
+minus m 每 k minus m 每 t d t.
+ That＊s a t there.
+ T. Ouch.
+All right.
+ I＊ve integrated both sides from zero to one.
+ All right.
+ Now,
+ watch this.
+right.
+ Watch.
+ I can integrate that complex exponential,
+ that＊s a simple function.
+integrate that just like I integrated in calculus.
+ All right.
+ The interval from zero to one,
+to the two pi i k minus m t d t.
+ Now,
+ k is different from m.
+ All right.
+ If k is equal to m,
+I＊m just e to the zero here,
+ I just get one [inaudible] so the k is different from m.
+an ordinary function 每 two pi i,
+ as you did in calculus.
+One over two pi i k minus m e to the two pi i k minus m t,
+zero to one.
+ Straightforward integration.
+ Straightforward integration,
+we are almost done.
+ We are almost there.
+One over two pi i k minus m,
+ that makes sense,
+ right?
+ Because k is different from m,
+it＊s not a problem.
+m minus e to the zero.
+ All right.
+ But either the two pi i k minus m,
+times an integer.
+ That＊s like sine of two pi times an integer,
+integer 每 that＊s one.
+ And e to the zero is also better known as one.
+as one minus one,
+ which is better known as zero.
+Nothing.
+ All this crap integrates zero.
+ Excuse me.
+ All right.
+ Incredible.
+upshot?
+ It all goes away.
+ What is the upshot?
+ The upshot is,
+ that c sub-
+m 每 what＊s left?
+What＊s left is c sub-
+the sum here are gone 每 are gone.
+ They integrated out to zero.
+interval from zero to one of e to the minus two pi i m t f of t d t.
+All right.
+ Now,
+ in principle,
+ this is known because you start out by assuming you knew f.
+Suppose I know f,
+ what has to happen?
+ All right.
+ Well,
+ suppose I＊m given f,
+as this sum,
+ what has to happen?
+ Here is the answer.
+ All right.
+ Here is the answer.
+summarize.
+We have solved for the unknowns.
+ All right.
+suppose we can write f of t as the sum,
+ k equals minus n to n of c k e to the two pi i k t.
+What has to happen?
+formula.
+ Then you must have 每 I＊ll just write c sub-
+k instead of c sub-
+the k of coefficient is the interval from zero to one of e to the minus two pi i k t f of t d t.
+That＊s what has to happen.
+ All right.
+It＊s an important first step in applying mathematics to any given problem,
+mathematical problem or a non-
+mathematical problem.
+ Suppose the problem is solved,
+what has to happen?
+ If the problem is solved,
+ mean,
+then the coefficients have to be given by this formula.
+All right.
+ So next time,
+ I＊m gonna turn this around saying,
+coefficients by the formula,
+ do we have something like that,
+ and in what sense?
+will lead us to great things.
+All right.
+ So more on that next time.
+Duration:

@@ -1,0 +1,960 @@
+TheFourierTransformAndItsApplications-
+Instructor (Brad Osgood):
+We're on? Okay.
+ So today 每 first of all,
+ any questions?
+Anything on anybody's mind?
+ If you brought your problem sets with you,
+them in at the end of the period today; otherwise,
+my office across from my office by close of business today.
+ Okay. Nothing?
+issues?
+ No burning questions?
+ Is it the threat of rain that kept people away?
+out there now,
+ right? Blue skies.
+ Sunshine.All right.
+ Today, I want to continue down the path that we started last time,
+about general properties of the Fourier transform.
+ Remember,
+of times,
+techniques of using the Fourier transform.
+ One is to develop specific transforms,
+transforms of specific functions that you need to have at your fingertips,
+ so to speak,
+kind of things that come up often enough that you want to know what that answers are,
+what the formulas are.
+transform and different combinations of functions,
+ different combinations of signals that,
+again,
+ come up often.
+So that's what we're gonna do today,
+ we're going down more the second path,
+an extremely important operation.
+ So we're gonna have three big items today,
+which are important in themselves and come up all the time.
+ One is delays,
+with a Fourier transform when the signal is delayed.
+ One,the Fourier transform under a stretch,
+ and finally,
+ a very general operation,
+have now seen a couple times in different forms,
+the context of the Fourier transform in its full glory,
+ so to speak,
+ and that is convolution.
+So I want to take each one of these in turn,
+you.
+ The book has 每 the notes have examples of how they're used in practice,
+also have plenty of chance to practice some of these in problems.
+show you what the general formula looks like,
+ and how it comes about.
+So let's first look at the question of delay.
+ And there,
+ the question is:
+by 每 I'm not sure which term you prefer,
+ I'm not even sure what term I prefer,
+shifted 每 say shifted by an amount b,
+ what happens to the Fourier transform?
+words,
+ if the signal is F of t,
+ and that corresponds to a Fourier transform F of s,
+gonna use the capital notation here.
+ Then if the signal is delayed by an amount b,
+the purposes of this discussion,
+ that means I consider F of t minus b,
+ not F of t plus b.And, again,
+ it's always a question of what you mean by delay,
+minus,
+ but I think this is probably a fairly standard way of looking at it.
+question is what happens over here?
+ What happens to the Fourier transform?
+Now,
+ this is the sort of question that you have to be able to answer for yourself routinely.
+These are very simple cases,
+up, not too many, fortunately. And,
+ again,
+ we have no recourse here,
+with the definition of the Fourier transform.
+integral from -
+8 to 8,
+ e to the minus 2pi, st, F of t, dt.
+the signal F of t minus v is the integral from -
+8 to 8,
+ e to the minus 2pi, st, F of t minus dt.
+Now,
+ when you get enough experience,
+ and by now,
+ you probably have that experience,
+when you look at something like this,
+of variable.
+Fourier transform,
+anything.
+So what you do is,
+ the simplest thing is to make a change of variable.
+ So u = t - b,
+constant.
+ So du = vt,
+ and t = u + b then.
+ And if t goes from -8 to 8,
+subtracting off a fixed constant,
+ so does u. So in terms of the new variable,
+becomes the integral for -
+8 to 8,
+ e to the minus 2pis,
+ t becomes u + b,
+becomes F of u, du,
+ in terms of the new variable.
+And, now, the thing that's crying out here,
+ is to manipulate the complex exponential.
+write that as the interval -
+8 to 8, e to the minus 2pis,
+ u times e to the minus 2pis times b,
+F of u, du,
+ and realize that because I'm integrating with respect to u,
+exponential here,
+ either the minus 2pi, sb,
+ does depend on u,
+integral.
+ It's a constant,
+ as far as integration is concerned.
+So I can write that as,
+ e to the minus 2pi, sv,
+ integral from -8 to 8,
+ e to the minus 2pi, su,F of u, du,
+ and what remains is the complex exponential,
+ this complex exponential here,
+times the Fourier transform of F,
+ the Fourier transform from the original function F.is,
+ this is e to the minus 2pi,
+ sb, F of s, what I called F [inaudible].
+So where do we start?
+ Where do we finish?
+ We started by shifting F,
+what happened to the Fourier transform.
+ In other words,
+Fourier transform F of s,
+ then the Fourier transform of F of t -minus 2pi, sv, F of s.
+ With a similar derivation,
+ this is sometimes called the shift theorem,
+delay theorem,
+ people call it various things; it's very simple and it comes up all the time.
+And for me, actually,
+up here,
+ so that's my own personal burden.
+down in general F of t,
+ if I change the minus to a plus here,
+ I'd have a plus here.
+usually write down the formula that looks like this.
+or minus b corresponds to e to the plus or minus 2pi,
+ sb, F of s.
+ It's the same formula,
+haven't done anything different,
+ but sometimes I like to remember them sort of distinctly.
+But that's my own burden.
+ This is an example,
+ actually,
+bit of a problem.
+ That is,
+ in this case,
+helpful,
+ indicating how the signal is paired with this Fourier transform,
+the signal,
+ how does that change the Fourier transform.
+operator notation,
+ writing this down,
+ is kind of awkward,
+at t - b,
+ you take the Fourier transform that's supposed to be evaluated another variable.
+What,
+ do I write like this?
+ Do I write this evaluated at s?
+ That's okay,
+only a mother would love; it's just too complicated.
+ So we can all understand,
+ladies and gentlemen's agreement,
+transform of F of t - b.
+variables and how you write them; what you write,
+ what you don＊t write.
+don＊t believe me,
+ you'll have plenty of occasions to screw it up,
+ trust me,
+everybody does.
+ It's just the nature of the subject,
+like I said,
+problems.
+ So this is sort of a bad notation in that case,
+ although,
+it as probably a better notation.
+ So the formula itself is very simple.
+interpretation of the formula?
+ And the interpretation is also something to keep in mind,
+and that is a shift in time corresponds to a phase shift in frequency.
+ So here,
+the sentence.
+ Shift in time corresponds to a shift in frequency,
+you think is a phase shift,
+ corresponds to a phase shift in frequency.
+domain.
+ Phase shift in frequency.
+So why do I say this?
+ Well,
+ because what I have in mind,
+ with a statement like that is,
+that the Fourier transform is a complex number,
+ so it has a magnitude and it has a phase.
+So I write F of s,
+ the Fourier transform of the original signal as its magnitude,
+magnitude of F of s,
+ that's a real number,
+ times e to the 2pi, say,
+ theta of s.
+phase.
+your head,
+ not only the formula but any interpretation of the formula.
+to the minus 2pi,
+ sv,
+ times the Fourier transform of s is 每 the magnitude stays the same.
+And it's this complex exponential times that complex exponential.
+theta of s minus 2pi,
+ s, theta of s - b.
+ I have an s in both cases.
+ No, I don't,
+ 2pi theta of s -sb.
+ In general,
+ the phase can depend on s.
+ That's why I write a theta of s,
+vary with s as well; it usually will.
+ So there's the phase shift.
+ The magnitude is the same.
+The magnitude of the spectrum does not change.
+does not change.
+ What changes is the angle.
+however far you want,
+ that is if you want to think about other sorts of ways,
+basic interpretation of the shift theorem.
+frequency and the magnitude stays the same.
+ So, again,
+that makes sense on physical intuitive grounds,
+made up.
+ Next, I like these formulas,out.
+ This is not as exciting as some of the other things we've done,
+ I admit. But,
+nevertheless,
+be comfortable with.
+ And it's not only the formulas,
+ it's how the formulas are derived.
+One of the reasons why I'm going through this is just to show you,
+also show yourself,
+formulas.
+ Because if you can see them in these relatively simple circumstances,
+less simple circumstances.
+ It's a pedagogical kind of thing.
+ Now,theorem, or formula,
+ is what happens when you scale the time.
+ And here,
+ actually,
+is a very important interpretation that I'll talk about after we get the formula,
+I think reveals a deeper property of the Fourier transform.
+Scaling is scaled 每 when I say scaling,
+of scaling of the time.
+ If F of t, again,
+ corresponds to,
+ let me write it like this,
+transform F of s,
+ and then if I scale the time by a constant a,
+real number here,
+ but not necessarily positive,
+transform?
+ So, again, to answer this question,
+definition.
+ So the Fourier transform of a scale version of F is the integral from -
+to the minus 2pi,
+ st, F of at, vt. And,
+ again, the thing that is crying out to be done here,
+a change of variable.
+ But it's helpful,
+ I think,
+ to make a distinction here,
+positive or negative,
+the limits.
+ You know,
+ we have [inaudible] definite interval,
+have to change,
+ and it's helpful here to make a distinction.
+whether a is positive or negative.
+ So let's take the case when a is positive first.
+positive,
+ I'm gonna make,
+ in either case positive or negative,
+of variable to du = a times dt,
+ that's clear that I want to do that.
+ Then, of course,times dt.
+ Now, if a is positive,
+ and t goes from -
+8 to 8, then so does u; u also goes from -
+to 8 because a is just a fixed constant here.
+ So the integral becomes the integral from -
+8 of e to the minus 2pi,
+ s, u/a times F of u; dt becomes 1/a times du.
+can factor that out of the integral.
+ The integral is from -
+8 to 8 and this is minus 2pi.
+gonna put the 1/a with the s instead of the u.
+ And if I do that,
+to see, what remains is the Fourier transform of the original signal F,
+but at s/a.
+ So that is 1/a times the Fourier transform of the original function,
+s but evaluated s/a.
+ Fine. Done.Now,
+ what about if a is a negative,
+ let's take that case.
+ So, again,
+same change of variable,
+ du = a times dt,
+ du = a times dt.
+ Formally,
+ that's all the same.
+Now, what happens to the integral?
+ So here you have to be a little more careful.
+negative, and t goes from -8 to 8,
+ then a times t goes from +8 to -8.
+skittish when I write integrals.
+ They say,
+ "You can't do that,
+from a bigger number to a smaller number.
+" And I say,
+ "I just did.
+ Nothing happened.
+God did not strike me dead.
+" So you just have to be careful.-8,
+ and then the rest of the integral looks the same formally,
+ that is minus 2pi, s, u/a,u,
+ and then dt becomes 1/a times du.
+ So the 1/a comes out of the integral.
+two steps.
+ So it's 1/a,
+ the integral from +8 to -
+8 of e to the minus 2pi,
+ and, again,the 1/a to the s instead of u,
+ F of u, du. And now,transform,
+ I swap it with limits of integration,
+ instead of integrating from +8 to -
+integrate it from -
+8 to +8,
+ but then of course I have to change the sign.
+1/a times the integral from -
+8 to 8 of either the minus 2pi,
+ s/a, u, F of u to u,
+minus 1/a times the Fourier transform evaluated at s/a,
+Fourier transform of the original signal evaluated at s/a.
+ Now,two.
+ So that's how the two formulas look.
+ And they're different,
+ sort of,
+positive and when a is negative.
+ But, really,
+that if a is negative,
+ minus a is positive.
+ In other words,
+the absolute value of a times the Fourier transform of s of a,
+the original signal evaluated at s/a.
+ And, of course,
+formula because if a is positive taking the absolute value doesn't do anything to it,
+returns to the original value.
+ In other words,
+ the stretch theorem or the similarity theorem,
+whatever term you want to use,
+ can be written in one piece.
+ I had to the derivation, really,
+in two parts,
+ but there's only one formula.
+ And the formula is,
+F of s,transform of the original signal at s/a.
+but not on the inside.
+Now, suppose if you should say something like,
+ of course a is not zero,
+ but 每 you know,
+take triviality insurance out on all my statements.
+trivially false,
+ you can ignore them,
+ because I know I will.
+ Okay.
+the stretch theorem or the similarity theorem,
+or a similarity.
+be the same sort of operation,
+than 1.
+ And let's talk about that point.
+ What is the interpretation of this?
+actually has,
+ I think, a more fundamental interpretation than the stretch theorem.
+the interpretation?
+ Well, let's take the case,
+ first of all,
+ when say, a is bigger than 1.
+I'm gonna just consider a positive here.
+ So I'll take a to be positive,
+bigger than 1.
+ If a is equal to 1,
+ I'm not doing anything,
+ of course.
+ If a is bigger than 1,
+then how does,
+ say,the function F of at compare with the graph of the function F of t?
+compare with F of t?
+ Well, if a is bigger than 1 then 每 you saw this back in eighth grade,
+when you were first learning these things,
+argument for how these things look like.
+ So if the signal is sort of like this,t,
+ then F of at is the same signal except it's squashed; it is compressed.
+ Same shape,
+or less, but it's sort of a squashed version.t.
+ You convince yourself of that,
+ that if the variable is bigger,
+bigger than 1,
+ then I'm squeezing the function.
+ What about Fourier transform,
+happens on the Fourier transform side?
+ On the Fourier transform side,
+Fourier [inaudible],
+ and then I go to the Fourier 每 if I scale it,
+ I go to 1/a,
+ F of s/a.
+ Now,
+I'm gonna draw the graph,
+draw the graph of the Fourier transform because the Fourier transform is complex value.
+People make this slip all the time,
+Fourier transform,
+you'd be plotting complex numbers.
+ So what people actually plot,
+of the Fourier transform,
+ is its magnitude.
+realization.
+ So if this is the original Fourier transform,
+ if the signal is real,
+of the Fourier transform is gonna be symmetric,
+ so it's gonna look something like this.
+looks a lot that,
+ actually,
+my functions.
+ So if this is F of s,
+ or rather say the magnitude of F of s,
+what happens?
+ If a is bigger than 1,
+ 1/a is less than 1.
+than 1.
+ If I scale it by something less than 1,
+compressing it,
+ and I'm also multiplying by something less than 1 out front.
+actually a stretching in the horizontal direction,
+ and a shrinking in the vertical direction.
+And,
+ again,
+ this is not so easy for me to draw,
+signal,
+ and shrunk.
+So it's stretched out horizontally,
+ so this 1/a,
+because I'm assuming it's positive,
+ 1/a F of s/a,
+ magnitude.
+horizontally,
+ and it's also squeezed down vertically.
+ Is that right?
+ How do I say it,
+decreased vertically?
+ Squashed,
+ those are the technical terms,
+ squashed vertically.
+that's what happens if a is bigger than 1.
+ If a is less then 1,
+ the situation is reversed.
+less than 1,
+ then if this is F of t then F of at is stretched out.
+Fourier transform,
+ that is squeezed together.
+ Because,
+ again,
+scaled by something bigger than 1.
+ So,
+ again,
+over the absolute value of a,
+ a is positive,
+ 1/a,
+ F of s/a.
+ But,
+ again,
+ here if a is less than 1,
+1/a is bigger than 1,
+ so the Fourier transform is squeezed.
+transform,
+ so to speak,
+ absolute value of F of s,
+vertical direction,
+ because 1/a is bigger than 1 and it's gonna squeeze things down.
+maybe something like that.
+ So it's squeezed and stretched.
+ Now,
+cases here.
+ Think if a is getting bigger,
+ bigger,
+ greater,
+and less than 1,
+ what does it mean?
+ Let's take the case when a is bigger than 1,
+bigger than 1,
+ it's getting larger and larger.
+ If a is getting larger and larger,
+is getting more and more compressed,
+ it is getting more and more localized in time.
+the other hand,
+ what is happening to the Fourier transform?
+larger,
+ the Fourier transform is getting more and more stretched out,
+ and for that matter,
+also squeezed down in the vertical direction.
+This is an example,
+ an extremely important example,
+relationship.
+ And I use that term pretty broadly here.
+ I mean,in,
+ but sort of in words and in feeling you can't have a signal,
+time and localized in frequency.
+down.
+ Like, look at the scaling of this F of at for a very large a.
+consequence and frequency of stretching things out.
+signal in time,
+ the Fourier transform is gonna stretch out.
+holds.
+ If you take a signal and stretch it out in time,
+ by scaling by a number less than 1,
+you know,
+ scale by 1/10, by 1/100, by 1/1,000, whatever,
+time,
+ but you're concentrating it in frequency.
+ The Fourier transform is getting squeezed.
+That's a very important and a fundamental property of Fourier transform,
+and the signal,
+ of the signal in the time domain and in the frequency domain,
+comes up all the time.
+ It's a very important piece of intuition for you to have.
+ And to me,
+that's somehow the most important consequence of the stretch theorem.
+what it says about localizing the signal in time versus localizing the signal in frequency.
+A signal cannot be both localized in time and in frequency.
+ This is one instance of this.
+There are other instances,
+ actually,
+relationship,
+ of translating this sentence into more precise mathematical terminology.
+One of the most famous ways of translating this is the Heidenberg Uncertainty Principle,
+that you can't localize a particle both in space and in time.
+velocity and its position to arbitrary precision.
+be proved,
+ and there's a derivation in the notes,
+ actually,
+Fourier transform,
+ by using the Fourier transform.
+fact,
+ that a signal cannot be both localized in time and in frequency.
+out of one domain you're gonna squeeze in the other domain,
+ and vice versa.
+very important point of intuition for you.
+ Now,
+ one interesting thing,
+what we showed about the Gaussian,
+ we showed,
+ as a remarkable fact,
+transform of the Gaussian is itself.
+ So recall the situation with the Gaussian,
+the minus 2p t squared.
+ When it's normalized this way,
+thing, F of s = e to the minus p s squared,
+ same thing.
+ So from interpreting the Gaussian,
+or putting this interpretation onto the Gaussian,
+balanced somehow in both time and frequency.
+ It is what it is; it is perfectly balanced.
+just concentrated enough in time,
+spread out enough in time,
+ and just spread out enough in frequency.
+thing,
+ taking the Fourier transform doesn't change it.
+ So it's perfectly balanced.
+know how better to say this,
+ perfectly balanced in time and frequency.
+So these things are in general use now and everyday use.
+all the time.
+without any problem,
+ and they are quiet familiar with these interpretations.
+ Well,
+formula that I won't write down for you,
+ but is, again,
+ in the notes,
+examples of it,
+ and I think there's some problems of it,
+combine shifts and stretches?
+ The formulas get a little uglier,
+involved in that,
+ but it's just a question of combining the formulas in the right way.
+part of it,
+ actually,
+ is a question of the variables,
+everything else.
+ So I'm not gonna write down that formula,
+couple times,
+ I'll get it wrong.
+ideas that also comes in is,
+and delay,
+ so F of at + b, something like that.
+ So I'll let you struggle with that quietly.
+So one more,
+ go out with a bang today,
+ and that is to introduce the idea of convolution.
+Again,
+ something that you've probably seen in other classes,
+already seen in the context of the Fourier series.
+the context of Fourier transforms,
+transforms,
+ which is different,
+ most naturally different,
+coming up in the context of the Fourier series.
+differential equations,
+ and that same interpretation,
+ or that same use of convolution,
+again, comes up.
+ But that's not the way it's motivated,
+role it plays,
+ at least for the questions of signal processing.
+ So convolution is probably,
+think it's probably safe to say,
+processing.
+ I think that may be a little bit of an exaggeration,
+ but not too much.
+probably. Most frequently used,
+ most flexible important operation in signal processing.
+Now,
+ what is signal processing,
+ since I've used that phrase,
+question of signal processing?
+ Signal processing,
+ very broadly,
+might define it as saying,
+ how can you use one function to modify another?
+use one signal to modify another?
+ That's the basic question of all signal processing.
+lose sight of this,
+ is how to use one function to modify another or one signal?
+frequency domain.
+ And, again,
+the Fourier transform,
+ or the inverse Fourier transform.
+common to address this question in the frequency domain.
+ That is to say,
+about modifying a signal,
+ most often, not always,
+modifying the spectrum of the signal.
+of a signal. And then at the end of the day,
+ what it is you take the Fourier transform,
+screw around with the spectrum,
+ that's the technical term for it,
+inverse Fourier transform and you modify the original signal somehow.
+operations you perform are often conceived of and carried out in the frequency domain,
+and then you go back and forth between the two domains,
+ again,
+or the inverse Fourier transform.
+ Now, there's a very simple example of this.
+example, linearity actually gives you,
+ in some sense,
+processing,
+ or simplest operation of signal processing,
+ e.g.,
+ linearity or super position.
+transform of G.
+G as the one that's doing the modifying.
+ If you don't like the spectrum of F,
+ fine,
+something to it that takes away a little bit here,
+ it takes away little bit there,
+here,
+ adds a little there,
+ and then go back.
+ So you modify F, F,
+ the spectrum of F,
+adding the spectrum of G.
+ You don't know what G is,
+Fourier transform and find out the function that does the modifying for you.
+ Usually,the linear to the integral,
+ the integral to the sums,
+ the sums to the integrals,
+think it's really worth commenting on.
+ But in some sense,
+operation of signal processing; you don't like the spectrum,
+ add something to it.
+in that light 每 and of course I can also scale by a constant,
+some sense.
+ That's the other part of linearity is I can multiply by a constant here.
+ But,anyway,
+ viewed in this light,
+ a very natural question is:
+ What if I want to multiply?
+what about multiplying?
+ That is to say: On the frequency side,
+function F and I want to multiply it by this Fourier transform and other function G.
+I'm scaling each individual frequency,
+ so to speak,by some function G that I want to construct,
+ that does what I want it to do.
+question is: How does that come about?
+ That is,the time domain,
+ so that in the frequency domain,
+ so within the spectrum,
+multiply,
+ the spectrum of F is multiplied by the spectrum of G.
+transform of F are multiplied by the values of Fourier transform G.
+ Can I do that?
+F of some F combined in some unnatural way with G?
+ That's the mystery.
+way of combining F and G so that the sequence of the Fourier transform is multiplied?
+Not so unnatural. Not so unnatural.
+ So to answer this question,
+now familiar strategy.
+ You've heard me say many times,
+applied.
+ Suppose the problem,
+ solve, and sees what has to happen.
+problem is solved 每 now,
+ I want to be careful,
+to use the same variables that I use in my notes so I don't confuse the issue,
+back and forth between what I'm saying in class and what I say in the notes.
+said, suppose the problem's solved?
+Fourier transform of F at s.
+ And I just play with this.
+two spectrums?
+ Well, the Fourier transform of G is the integral from -8 to 8.
+recourse here but to go to the definition.
+ Then -8 to 8 either to the minus 2pi,
+ s of t, st,of t, dt.
+ And the Fourier transform of F at s is the integral from -
+8 to 8.
+write this 每 I already used t,
+respect to another variable,
+ and you'll see why in just a second,
+ e to the minus 2pisx,
+x, dx. All right,
+ I think I can take it from here.
+ That's all I wanted to check.
+Now, watch this.
+ This is the product of two single integrals,
+ they are decoupled,
+speak. So that is I can write this as one big double integral,
+ e to the minus 2pist,
+minus 2pisx,
+ G of t, F of x, dt, dx. Okay.
+ There should be no problem,
+to see that.
+ And if you're having trouble seeing it,
+ instead of going from here to here,
+imagine yourself going from here to here.
+ The variables are decoupled.
+variables are decoupled here,
+ I mean they're decoupled.
+ I don't know how else to say it.
+There's no relationship between the variables; everything happens independently.
+ Now,combine the complex exponentials.
+ That is, write this,
+ integral from -8 to 8,-8 to 8.
+ By the way,
+ there are issues here.
+ I mean,
+gonna swap limits of integration,
+ I'm gonna swap dtdx,
+ dxdt,stuff.
+ As I have said before,
+ the rigger police are still blessedly off duty.
+ All right.is,
+ e to the minus 2pi,
+ I have a common factor of s in both exponentials,
+ and I get a t + x.G of t, F of x, dtdx.
+exponentials.
+ Now,
+ I want to do something a little trickier,
+integral as integrated single integrals.
+ So now the variables are coupled,
+ really.
+gonna write this as the integral from -
+8 to 8, the inside integral,
+ integral from -
+8 to 8,the minus 2pis,
+ t + x, G of t, dt,
+ and then the result is integrated against F of x, dx.
+ Now,let's check to make sure that everything's okay here,
+end of the day.
+On the inside integral I have a function 每 this kernel here involves both,
+ well, st and x.
+I'm integrating with respect to t.
+ So what remains is a function of x,
+comes on sort of in the end,
+my variables of integration.
+ So I've integrated this with the respect to t,
+integral.
+ What remains is something that depends on x.
+ I multiply that by F of x.
+integrate with respect to x.
+ I'm done, everything's okay.
+here is the function of s,
+ and that's the product of the Fourier transform.
+you expect.
+ Now, once again,
+ what this calls for,
+ if you can only hear it calling,
+training your ears and your eyes,
+ is a change of variable.
+ So I'm gonna let u = t + x,
+= dt. See,
+ the inside integral is with respect to t,
+ so that's the variable here,
+ u = dt,then t = u - x.
+ So what happens to the inside integral?
+ And, again,
+ if t goes from -8 to 8,
+for any fixed x,
+ so does u go from -8 to 8.
+ So I get the integral from -
+from -8 to 8 of e to the minus 2pis,
+ t + x is u, G of t,
+ which is u - x,
+respect x,
+ F of x,
+ dx.
+ Cool.
+ It may seem pointless,
+ but it's not.
+ Now,order of integration.
+ Instead of integrating du,
+ dx, I'm gonna integrate dx, du.
+gonna write this as the integral from -
+8 to 8.from -8 to 8 of G of u - x,
+ F of x,
+ I'm skipping a step here a little bit,
+ but not much,
+e to the minus 2pisu, du.
+ Is everything okay there?
+ Let's check.
+ I skipped a step here,
+sort of put everything together.
+together,
+ and then pulled it apart,
+ so I have, again,
+ the two integrated single integrals.
+This integral with respect to x,
+ and then what remains 每 again,
+respect to x,
+ what remains is the function of u.
+ I integrate that against this kernel,
+complex exponential,
+ e to the minus 2pisu,of s.
+ Want me to say that again?
+ No. All right.
+ So I skipped a step there.
+integrated integral,
+ I could have written everything together,
+ grouped everything together,
+and then split it up again into to integrated integrals.
+ All right.
+ Now, look, say,eyes if only we but see.
+ This integral inside here is a combination of G and F,
+getting integrated against a complex exponential.
+ That is, if I now am so bright,
+farsighted, if I am so brilliant,
+ I will now realize that I have solved my problem.
+gonna define h of u to be the integral from -
+8 to 8 of G of u -
+ x, F of x, dx. Right?
+what happened to the inside integral,
+ u - x, yeah,
+ F of x, dx.
+integral from -
+8 to 8 of either the minus 2pisu,
+ h of u, du,
+of h evaluated at s.
+Now, once again,
+ where do we start?
+ Where do we finish?
+transform of G at s times the Fourier transform of F at s,
+ is the Fourier transform of h at s.
+The spectrums multiply if I define h by this formula.
+from -
+8 to 8 of du - x, F of x, dx.
+ I solved my problem.
+ Once again,
+problem?
+ I said is there a way of combining F and G in the time domain,
+frequency domain the spectrums multiply,
+ the Fourier transforms multiply?
+answer is, yes, there is,
+ by this complicated integral.
+ It's not so obvious.
+out of bed in the morning and write this down,
+that problem.
+ How do we get it? You said,
+ suppose the problem is solved,
+happen,
+ and then we'd have to recognize when it's time to declare victory.
+declare victory.
+Now, being an obnoxious mathematician,
+ you cover your tracks and say,
+ "Well,
+simply going to define the convolution of two functions by this formula.
+different variable here to write the definition down.
+ That's how mathematics works,
+turn the solution of a problem into a definition.
+ It irritates the hell out of some people,
+that's how it works.
+ So define the convolution of F and G by this formula,
+special notations use G * F.
+ Well, let me call the variable x here.
+-8 to 8, G of x - y, F of y, dy.
+ Define the convolution of that?
+mathematician,
+ you'd say,
+ "Well, sure,
+ I've defined that.
+ What can be more natural.
+then you've proved the theorem.
+ Then you proved separately,
+fact,
+transforms.
+ But what's missing in that derivation is,
+ the game is rigged.
+definition was come upon precisely so it would satisfy that property,
+transform multiplied the two signals,
+ so the Fourier transforms multiply.
+Then we have the Fourier transform of the convolution,
+G times the Fourier transform F.
+ Remarkable.
+ But as I said,
+ the game's rigged.
+ I mean,set out to solve that problem,
+ and I solved that problem,
+tracks by saying,
+ "Well, define the convolution by this,
+convolution theorem,
+Fourier transform.
+" But of course you do because you set it up that way.
+Now,
+ I don't want it to seem like we've done something insignificant here,
+something extremely significant.
+multiplying the Fourier transforms is a very powerful thing to be able to do.
+this says is,
+obvious thing.
+ It's a nice enough looking formula,
+ it's sort of an elegant looking formula,
+but it's not obvious that this would work.
+time domain,
+ in the frequency domain the Fourier transforms multiply.
+ How cool is that.
+All right.
+ And I think on that note of coolness,
+ we'll wrap it up for today,
+your everyday lives.
+ See you then.
+Duration:
