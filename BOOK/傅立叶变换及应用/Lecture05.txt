@@ -1,0 +1,921 @@
+TheFourierTransformAndItsApplications-
+Instructor (Brad Osgood):
+Okay, ready to rock and roll?
+ All right.lot of 每 as I understand it,
+where to turn in the homework.
+ You can certainly bring it to class,
+ and that＊s fine.
+But if you find yourself wanting to fill in those last minute comments,
+the policy is the homework should be due by 5:
+00 on Wednesday,
+to the magic filing cabinet.
+ Across from my office 每 my office is 271 Packard,
+a little hallway sort of across from there,
+ and there are several gray filing cabinets,
+which has my name and the course number on it.
+And if you open that drawer,
+says something like,
+ ※Turn in homework here.
+there, okay. So by 5:
+00 today the first problem assignment is due.
+ All right.questions?
+ Anything on anybody＊s mind?
+Okay, all right.
+ Anything else that came up that I should address?
+ No, okay. All right.Today,
+ I wanna finish off our discussion Fourier series.
+for some of the other things that we do.
+solve the heat equation.
+the Fourier transform,
+study of non-
+periodic phenomenon,
+concerned with,
+ by means of limiting process,
+ all right.up.
+But first,
+ let me go back to the discussion we started last time about the heat equation.
+this is the use of Fourier.
+ This a classic example,
+ the classic example one might say,
+Fourier series,
+ and also shows in a particular case,
+seeing constantly throughout the course.
+talk about it.
+So this is your Fourier series to solve the heat equation,
+equation.
+ And I＊ll remind you what the setup is.
+ We have a ring,
+like that with an initial temperature distribution of 每 we＊re calling F of X.
+temperature 每 so I＊m thinking of X here as a spacial variable.
+I wanted to mention a special variable,
+ although the ring is sitting in two dimensions.
+can think of the ring,
+ if I want,identified.
+At any rate,space,
+ since the ring goes round and round and round,
+function of the spacial variable,
+ the position on the ring.
+assume the period is one,
+ all right.
+ So that＊s how Fourier series comes into the picture.
+So we take F to be periodic of period one.
+ Then we let the U of XT 每 now,
+temperature is varying,
+ both in position and in time.
+in time,
+ and the temperature is different at different points along the ring.
+So I let U of XT be the temperature at a position X at time T.
+it＊s a periodic function in this spacial variable.
+ U is a periodic function of X.
+periodic in X.
+time.
+ When T is fixed,
+ this periodic is a function of X.
+And the physical situation is described by the heat equation,
+the defusion equation,
+something through something else [inaudible].
+a wire is governed by this sort of equation.
+ I mentioned these last time,
+semiconductor.
+ It really has quite a variety of applications.
+And some of the techniques that we＊re talking about here,
+this case,
+ can be applied in various forms to many different situations.
+heat equation [inaudible] equation,
+derivatives in X in space.
+So it says UT is equal to one-
+half UXX.
+constant on the right-hand side of the heat equation.
+constant is one-half just to simplify the calculations.
+respect to time,
+ and this is the second derivative with respect to X.
+All right,
+ now because the function is periodic in X,
+ we can expand it as a Fourier series.
+So the rigger police are off duty.
+no question about writing down the sums.
+gonna do can be justified under reasonable assumptions,
+ but that＊s not the point.
+point is just to see how the techniques can be used to solve the equation.
+So I can write the function as a Fourier series.
+ Now remember,X,
+ so the [inaudible] on T is on the coefficient.
+ K one from minus infinity to infinity,
+that＊s 每 I＊ll call it C＊s of K of T times the periodic term,
+ either the two pi IKX,
+assuming period one.
+ That＊s the basic assumption.
+ Or rather, that falls from periodicity.
+You can expand it as a Fourier series.
+ That＊s how Fourier series get into the picture.
+Then you plug into the equation 每 we did this last time.
+setup.
+differential equation for the C＊s.
+ The C＊s are the unknowns there.
+So the 每 you get this equation,
+ you get CK prime of T is equal to minus two pi squared,
+squared,
+ times CK of T.
+ That＊s a simple ordinary differential equation,
+to solve it.
+ That＊s a simple [inaudible].
+the minus two pi squared,
+ K squared T.
+ That＊s easy. That is easy.
+think we got to last time.
+Now, what is the initial condition?
+ I haven＊t brought in the initial temperature here,
+here＊s where it comes in.
+ So what is CK of zero?
+ All right,
+ CK depends on time.
+the initial condition?
+Well, we can see it,
+ actually. Remember,
+ UK 每 excuse me,
+equals minus infinity to infinity.
+ CK of T times E to the two pi I,
+ KX.
+T equals zero?
+ T equals zero,
+ this is the initial temperature distribution.
+ U at X,
+position on the ring,
+ at times zero is F of X.
+ You give it some initial distribution of heat.
+So that says that F of X is U of X zero.
+ That＊s the sum from 每 if I plug into the series,
+sum from minus infinity to infinity of CK of zero,
+ E to the two pi IKX.
+Now, we have eyes,
+ but if only we but see.
+ What does this say?
+ F is a periodic function.
+This is an expansion of F in terms of the harmonics,
+give you the two pi IKX.
+ What are the coefficients of C,
+T in terms of F?
+ What is CK in terms of F,
+ CK of zero in terms of F?
+Student:
+Instructor (Brad Osgood):
+Pardon me?
+ It＊s a Fourier coefficient of F.
+Fourier series of F.
+ That is to say,
+ i.
+e.
+ CK of zero is just the K Fourier coefficient of F,
+out of K.
+Now, as they say,
+ we have eyes, if only we but see.
+statement is you have to be able to go from the function to the series,
+be able to go from the series to the function.
+Here＊s the function,
+ here＊s the series.
+for a function,
+function.
+You＊re used to having problems like here＊s the function,
+coefficients.
+ All right. Well,here,
+ so relate them to the function.
+ Let＊s write that down.
+That is 每 when I say write that down,
+ what I mean is what does the solution look like.
+U of XT,
+ the temperature 每 this is already very impressive.
+at any position X on the circle is F out of K times E to the minus two pi squared,
+squared T,
+ times either the two pi IKX.
+and the dependence on X.
+It＊s very 每 it＊s a complicated expression,
+ but it＊s pretty impressive.
+given an initial temperature distribution,
+temperature at any point X on the ring at any time T.
+conclusions from this.
+ Namely,temperature?
+ It goes to zero.
+ As T tends to infinity,
+ this term is damping out.
+Now see,
+ there＊s a cute little thing to observe here.
+ This is an exponential,
+minus two pi square,
+ K square T. Now,
+ K is going from minus infinity to infinity,
+right.
+ K is both positive and negative here.
+ But K appears here squared,
+always positive.
+ So this,
+ multiply two pi 每 minus two pi square,
+ K square,
+always positive,
+ so minus it is always negative.
+tending to infinity,
+ all right.
+That＊s a little sort of check on consistency there.
+observation.
+ As T tends to infinity,
+ U of XT tends to zero for any value of X.
+is cooling off eventually.
+Now, this is perfectly fine.
+ Actually,
+for reasons which I will explain,
+course.
+ I wanna work with this a little bit more,
+different form.
+ This was exactly the sort of thing I had you do in homework.
+ Although,
+homework it turned out even a little bit simpler than this.
+ It may not have seemed it,
+did.
+I wanna write this sum differently.
+ I mean, again,T.
+ All I＊m saying is there＊s an alternate way of writing it that itself is very revealing,
+in fact,
+ has consequences that go beyond the particular problem that we＊re studying.
+So to do that,
+ I wanna bring back the formula for the actual 每 for the Fourier coefficient.
+On the right,
+ F hat of K.
+ I wanna use the explicit formula as an interval.
+here,
+ so the variable for integration I＊m gonna 每 I＊ll use something else,
+I＊ll just use Y.
+ It doesn＊t matter what I call it,
+ as long as I＊m consistent.
+So I＊ll write this as E to the minus two pi IKY,
+ F of YDY.
+ All right.
+for the K Fourier coefficient.
+ And plug that into the formula for the solution.
+So I get U of XT is the sum,
+ and from K 每 from minus infinity to infinity,
+the interval from zero to one,
+ E to the minus two pi IKY,
+ F of YDY.
+pi squared, K squared, T. E to the two pi IKX.
+blackboard with big chalk.
+And I＊m gonna combine terms and swap the interval and the sum.
+ Again,police are off duty,
+do with impunity.
+Mathematicians can do it with impunity also,
+courses before they really feel good about it.
+ We don＊t have the time for that.
+So this is 每 I＊m gonna swap the interval and the sum,
+one of the sum K,
+ going from minus infinity to infinity.
+together like this; E to the minus two pi IKY,
+ E to the two pi IKX,
+putting all the terms together that get summed.
+ E to the minus two pi squared,T.
+ Those terms all get summed,
+ and then what stays on the outside is F of YDY.
+done anything there,
+ I＊ve just rearranged things.
+summation.
+And I＊ll do one more step,
+ and that＊s the interval from zero to one,
+got I＊s in them.
+ E to the to pi IKX minus Y,
+ E to the minus two pi squared,
+ K squared T,
+F of YDY.
+Like I said,
+ I haven＊t done anything really,
+ except rearrange terms.
+this way because I know what＊s gonna happen,
+ or rather,finally.
+That is F sum deserves to be singled out for special attention,
+own special name.
+ So I＊m gonna write,
+ say, G of XT to be this sum.
+infinity to infinity,
+ E to the two pi IX,
+ E to the minus two pi squared,
+ K squared T.
+This is actually G of X minus Y,
+ T.
+ That is the interval.
+ The solution appears in this form.
+Pardon me?
+Student:
+Instructor (Brad Osgood):
+KX, thank you.
+ Two pi IKX.
+So the solution U appears in the following form.
+ I just use that as a shorthand notation.
+The solution looks like this; U of XT is the interval from zero to one,
+ G of X minus Y,
+ T,
+F of YDY.
+ And that＊s all I wanna 每 that＊s the 每 I＊m not gonna do anything else.
+you,
+ I won＊t do any more rearranging; I won＊t do anymore fiddling around.
+I＊m gonna write the solution.
+Now,
+ for those of you who＊ve seen this,
+sort of thing on the homework problem.
+that I＊m about to make.
+ Drum roll.
+ This expresses the solution,
+this kernel.
+This expresses UXT as the convolution of F of X,
+ F of Y, it doesn＊t matter,
+what＊s called the heat kernel G of XT.
+heard before,
+ although you may have heard in different context the term convolution,
+which we are gonna be hearing all the time.
+ And in this special case,
+heat kernel.
+heat equation.
+So I will just 每 without saying really anything more,
+terminology,
+ you call G of XT 每 has a variety of names.
+ That function that I wrote down,
+G of XT,
+ is called variously the heat kernel.
+ That is it＊s a kernel for the heat equation.
+convolution like this.
+Heat kernel is also called the fundamental solution of a heat equation,
+Green＊s function for the heat equation.
+Now, let me just ask,
+ just to take a survey out there.
+ First of all,
+problem before?
+series? All right,
+ so a couple people,
+ but not that many actually.context?
+ I＊m just curious.
+Student:
+Instructor (Brad Osgood):
+Oh,
+ is that right? Okay.
+ And they did it more or less like this?
+Student:
+Pretty similar.
+Instructor (Brad Osgood):
+Yeah.
+ They probably worried about certain things,
+convergence and things like that,
+ right, but screw them.
+And how about this terminology?
+ So have you heard this terminology,
+ the heat kernel,
+the fundamental solution or the Green＊s function?
+Green＊s function for differential equations and things like that.
+ You may have seen that.
+And we＊re not gonna 每 I＊m not gonna make a big deal out of it,
+ but again,see everywhere.
+For us,
+ the reason why I went through the solution,
+solution this way was to bring up this idea of convolution.
+operation.
+signals and systems.
+ We are gonna see it in all sorts of different context.
+terms of differential 每 not always associated with differential equations,
+associated with differential equations.
+ And it is the kind of thing that comes up.
+The fact that you could write a solution of the convolution of two functions,
+ in this case,
+the initial distribution of heat,
+ and the special functions associated with the equation.
+I＊m not gonna say anything more about it now.
+definition of convolution.
+very 每 in retrospect,
+ in a natural way.
+ It＊s the sort of thing you should expect to see.
+analysis,
+ it should not surprise you to see convolution coming into the picture somehow.
+This is an example of that.
+On the homework you had another example of it.
+celebrated problem in mathematical physics,
+ the so-
+called [inaudible] problem,
+again,
+ the solution ultimately could be written as convolutions.
+There,
+ the nice thing was that you actually got a closed-
+the Green＊s function,
+ or the fundamental solution for that problem.
+actually a closed-
+form expression.
+ There＊s no similar closed-
+form expression here,
+can＊t do anything more with this function.
+ It is what it is.
+ It＊s just this infinite sum.
+For the problem you had in homework,
+ again,
+ you get an infinite sum that comes in,
+collapses because it＊s a geometric series.
+ And you get a nice closed-
+the plus on kernel.
+But in principle,
+problems. And again,
+ you＊ll 每 it＊s sort of a fact that took a long time to sort out,
+when you have solution 每 when you have partial differential equations,
+many physical phenomenon,
+special solution, so-called fundamental solution,
+ with the initial conditions,
+initial data.
+ It＊s something you should expect to see.
+This is a pretty big major secret of the universe,
+ all right.
+ So take that to heart,
+this.
+ Be afraid, be very afraid.
+ No, no, show no fear.
+ It＊s what you should expect.
+And with that 每 pretty impressive.
+ And as I say,heritage, all right.
+ You should know this solution,
+ know this approach to the problem.
+a very famous problem.
+ It had all sorts of far reaching consequences.
+your soul.
+I believe with that we bid adieu to Fourier series,
+from time to time.
+ And actually,
+Fourier transforms.
+And that is the transition from periodic phenomenon to non-
+periodic phenomenon.
+wanna make a transition from Fourier series to Fourier transforms.
+transition from periodic phenomenon to non-
+periodic phenomenon.
+Now, I＊ve said before,
+ and you＊ll hear me say it again,
+choices in this classes,
+ and choices for how to cover the material.
+of doing it, all right.
+In many treatments of the Fourier transform,
+way.
+ That is,Fourier transforms.
+ It＊s just the Fourier transform is presented as sort of a [inaudible].
+God and the machine,
+ or whatever.
+ It＊s just there,
+its important applications.
+ That＊s fine, and that＊s quite justifiable.
+with periodicity.
+ It＊s an important enough topic,
+those things 每 I wanted to try to cultivate your intuition a little bit for those sorts of ideas.
+But you don＊t have to do it this way.
+If you＊ll look at Bracewell＊s book,
+used for this course 每 Ron Bracewell just passed away,
+ actually,
+electrical engineering department here for many,
+ many years.
+Fourier transform,
+ with no mention of Fourier series.
+ And then later on,
+recovers some of the ideas of Fourier series based on the Fourier transform.
+do that, but that＊s a choice,
+ and I have made a different choice.
+here.
+Now, the transition from periodic to non-
+accomplish that is to view a non-
+phenomenon as the period tends to infinity,
+ all right.
+So we＊ll do this by viewing non-
+periodic function,
+ and we＊ll say phenomena.
+ So non-the period tends to infinity,
+ period tends to infinity.
+It＊s a little tricky to do this, actually.
+automatically.
+ It takes a little work.
+ It＊s not a completely automatic process.
+Now,
+actually two aspects to this.
+ So once again,
+Fourier series case.
+ There are two aspects to the Fourier transform,
+ really.
+ Two aspects,
+there＊s analysis and synthesis.
+So the analysis is the Fourier series is forming 每 so again,
+ if F of T is periodic,
+have the Fourier coefficients,
+ the interval from zero to one,
+ E to the minus two pi IKX,
+of RKT, F of TDT.
+ That＊s analysis.
+ That＊s analyzing the function,
+constituent components.
+the whole by this much,
+ this amount.
+Then there＊s synthesis.
+ The synthesis is writing the series.
+from its constituent components.
+ Sum from minus infinity to infinity,
+ F out of K,
+two pi IKT.
+ So that＊s synthesis.
+transform.
+The Fourier transform is the generalization of the Fourier coefficient.
+transform is the generalization of the Fourier series.
+way.
+period tends to infinity case of the Fourier coefficient.
+a signal into its constituent parts.
+The inverse Fourier transform is a generalization,
+ or the limited case in the Fourier series.
+It is a limiting case of a Fourier series.
+ That＊s the synthesis part of the equation,
+part of the discussion.
+Now,
+ so how do I set this up in order to take a limit?
+limiting case is the period tends to infinity,
+Fourier series,
+ for Fourier coefficients and for Fourier series,
+ when the period is not one,
+but the period is some other number,
+ capital T,
+ that I can let tend to infinity.
+So we need a setup when say F of T is periodic of period T.
+to infinity.
+ I want to let T tend to infinity.
+ How do I do this?Well,
+ you read about this,
+ I hope, I expect.
+ Let me tell you what the formulas are.
+hard.
+ The building blocks for a signal of period T are complex exponentials of period T,
+so that＊s E to the two pi IKT over T.
+Or I＊m actually gonna write it a little bit differently.
+ITK over T.
+ It doesn＊t matter.
+ I just switched the parenthesis there.
+ Same thing.
+These are periodic of period capital T.
+series are the form CKK going from minus infinity to infinity,
+ C, sum K,IKX 每 KT 每 K 每 [inaudible] write like this.
+ K over TT,
+ or K little T over capital T.
+gonna write it like that for reasons you＊ll see in just a second.
+series looks like.
+What are the coefficients?
+ Well,
+ again,
+we were working with functions of period one,
+the period one case to derive a general result.
+At any rate,
+ what you find is C sub K is given by one over T,
+to T of either the minus two pi IK over T,
+ little T,
+ F of T,
+ DT.
+that F is little,
+ F is periodic of period T?
+ I guess I didn＊t say that,
+ so sorry,
+now.
+ F of T here is a given signal,
+ so I＊m assuming it is periodic of period capital T.
+of T,
+ periodic of period capital T.
+That＊s the formula the K Fourier coefficient when the function has period capital T.
+actually,
+ you use this again in the homework problem.
+Okay.
+ Now,
+ one other thing,
+tends to infinity.
+ I can also write this the function＊s periodic of period T,
+what interval you integrate over.
+If I know the function on an interval of length T I know it everywhere,
+this formula 每 and again,
+also write the formula as instead of integrating from zero to T,
+T over two,
+ to T over two as symmetric interval from negative to positive.
+ Same thing,
+either the minus two pi IK over capital T, T, F of TDT.
+ Okay, fine.
+Now,
+ this is really no different than what I＊ve done before,
+little bit more generally.
+ Instead of a function of period one,
+one,
+ I have a function of period capital T.
+But the formula for the Fourier coefficient is perfectly [inaudible] to what I had before,
+and the formula for the Fourier series is perfectly [inaudible] to what I had before.
+again, that＊s analysis,
+ that＊s synthesis.
+ You analysis the function into its constituent parts,
+and then you synthesis it by forming the corresponding sum.
+Now,
+ I wanna point something out here that＊s very interesting.
+picture of the spectrum of these cases?
+ What＊s a picture of these things?
+of the spectrum,
+ picture in the frequency side,
+ picture of the spectrum of frequencies?
+Well, in the case of period one 每 let＊s take period one.
+given by the usual formula we had before,
+ and you might draw the spectrum like this.
+There＊s a coefficient of zero,
+ that＊s the zero coefficient,
+ C zero.
+ Then there＊s the 每 well,
+let＊s see.
+Zero, one, two.
+ I have frequencies at all the integers.
+ Minus one, minus two,and so on.
+ Three, minus three.
+ And there＊s space,
+ so to speak,
+ the harmonics,
+frequencies of space are one apart.
+ Here is like absolute value of C zero.
+value of C one.
+ Here＊s 每 I say absolute value because they＊re actually complex numbers.
+The coefficients are complex numbers,
+ so I can＊t actually plot them.
+But I can plot 每 I can get a picture of the spectrum by plotting the absolute value.
+the absolute value of C two,
+ and here＊s the absolute value of C three,
+ whatever it is.
+And what will I get on the negative side,
+ what will I get on the negative side?
+negative side I get the same absolute values because of the symmetry relation,
+is equal to CK bar.
+is the magnitude of CK bar,
+same thing as the magnitude of the number.
+ So this is also the magnitude of CK.
+The picture＊s the same on the left,
+ so this is the magnitude of C minus one,
+of C minus two,
+ the magnitude of C three, whatever.
+ Magnitude of C minus three,
+whatever it looks like.
+ That＊s the picture.
+And in fact,
+ if you＊ve ever worked with a spectrum analyzer,
+gonna bring one into class,
+ you see pictures like this.
+bars that are at the different frequencies,
+ okay.Now,
+ the important thing here is 每 the reason I mentioned this is they＊re spaced one apart.
+Because a period one 每 the frequencies are also one apart,
+ one, two, three,so on.
+Now, what about for a function of period T?
+frequencies is one.
+ The spacing of the frequencies is one.
+gonna draw the pictures.
+Now, what about if you had period T?
+ What about if I had period T?
+ Well,picture there?
+ The picture is like this,
+for a function of period T looks like the sum from minus infinity to infinity,
+ C sub K,the two pi I,
+ K over T times T.
+So the harmonics,
+ they＊re indexed by K,
+ but they＊re periodic of period T,
+ so really,
+harmonic you＊re interested in is in some sense tagged by K over capital T.
+ So zero,
+over T, two over T, three over T,
+ minus one over T, minus two over T,T,
+ and so on.
+looked like this,
+a zero,
+ so this is now period 每 so this is for period one.
+For period T,
+ you would draw the first harmonic sort of at one over T,
+harmonic is two over T,
+ the third harmonic is three over T,
+ and so on and so on.
+Then this minus one over T,
+ minus two over T and so on,
+ the spacing is one over T apart.
+And here＊s the zero Fourier coefficient,
+ here＊s the first Fourier coefficient,
+second Fourier coefficient,
+ here＊s the third Fourier coefficient.
+每 corresponding the negative frequencies have the same 每 when I say here＊s the first,
+here＊s the second,
+ here＊s the third,
+ I mean the magnitude because again,
+complex numbers.
+ You＊re just plotting the magnitude.
+And on the left,
+ I have the same picture because it＊s symmetric.
+ So it＊s like this,
+ like this,
+like that and so on.
+ Minus three over T and so on.
+ They＊re spaced one over T apart.
+the spectrum has spacing one over T.
+Now,and wavelength,
+ and I talked about the inverse relationship,
+between frequency and wavelength,
+ very first day of class.
+long time ago.
+This is our second related example of an inverse or reciprocal relationship between,
+this case,
+ I＊m gonna say the two domains.
+ How the function appears in the time domain,
+and how the function appears in the frequency domain.
+ How this is a function of time,
+and how it is in terms of its constituent frequency parts.
+If the period is T,
+ then the spacing and the frequencies is one over T.
+relationship here between the period and the frequencies.
+often 每 and what＊s happening to the function in time,
+the time domain of the function,
+frequencies.
+Or viewing the function in the frequency domain,
+parts.over T. Frequency spaced one over T apart.
+All right.
+ I didn＊t say anything about the size of T here,
+relationship between the two domains.
+ And again,
+throughout this course.
+ So a reciprocal relationship between the two view of the function.
+And that reciprocity is exactly mediated by Fourier techniques,
+ Fourier series in this case,
+or very soon the Fourier transform.
+But again,
+ it＊s the kinda thing 每 this is the sort of intuition you have to start to develop.
+You＊re viewing the function one way,
+ you expect certain things.
+the other domain you expect the reciprocal phenomenon.
+Now,
+ if T is less than one,
+ and one over T is bigger than one,
+ so T less than one.
+spacing than one,
+ implies one over T is bigger than one,
+ so the spacing is larger.
+每 one over T is bigger than one,
+ spacing bigger than zero,
+ bigger than one.
+The spectrum is spread out.
+ If T is bigger than one,
+ if you have a long period,
+spectrum is compressed.
+ The spacing is one over T.
+ One over T is less than one,
+spacing in the spectrum is squeezed,
+ compressed.
+In particular,
+ as T is going 每 as capital T is going to infinity,
+I wanna deal with,
+smaller and smaller.
+ The frequencies are getting closer and closer together.
+ One over T,
+two over T,
+ three over T,
+ four over T.
+ They＊re getting closer and closer.
+getting smaller and smaller,
+ and they＊re getting closer together.
+ As T tends to infinity,
+spectrum becomes sort of continuous.
+I＊m gonna make this more precise,
+ or rather,
+more precise in just a minute.
+ But the idea is the spectrum＊s getting closer,
+T.
+ The spacing is one over T,
+ and if T is tending to infinity,
+ the spacing is tending to zero.
+That＊s what I mean by the fact that the spectrum is getting continuous,
+getting squeezed.
+ Now,
+ that＊s the formula here for the coefficient here once again.
+Now, let me just start now 每 no,
+ one thing at a time.
+ So let me 每 once again,
+down the formula for the coefficient.
+ CK is one over T.
+Fourier coefficient when the function has period T.
+T over two to T over two,
+ E to the minus two pi I,
+ K over T with a T,
+ F of TDT.
+Now, I wanna let T tend to infinity here,
+non-periodic phenomenon,
+ and use this to pass from periodic to non-
+periodic.
+But as I say,
+ it＊s not quite straightforward.
+ And let me tell you why.
+limit as T tends to infinity there and get 每 and the Fourier transform pop out of that.
+doesn＊t work.
+ You can＊t just let T tend to infinity and get the Fourier transform.
+have to tickle it a little bit.
+And actually,
+ let me leave this picture up on the board and show over here,
+ all right.
+me tell you what the setup is gonna be and what I wanna do.
+So imagine I have some function.
+ The picture＊s not periodic.
+ But suppose it＊s fine,
+extend.
+ So suppose F of T looks like this.
+ Sum [inaudible] sum,
+A to B,
+ and it＊s zero beyond 每 less than A and bigger than B,
+ all right.
+function.
+So I take some big number, T,
+ and I periodize this,
+two is less than A,
+ and plus T over two is bigger than B.
+ So here＊s my function; it＊s zero,
+less than A,
+ it＊s zero, bigger than B.
+ I take some 每 and I wanna approximate this thing,
+but I wanna imagine this is a periodic function.
+the function is zero,
+ and I periodize it to be period T,
+ all right.
+to have period T.
+Okay, fine. Now,
+ write down the formula for the Fourier coefficient.
+ So imagine,
+function here were fixed,
+ if that＊s all I worried about,
+ I let T go to infinity,
+of approximating that non-
+big period, all right.
+ That＊s gonna be my goal.
+But the problem is 每 and I wanna see what happens to the Fourier coefficient.
+down C sub K.
+ The Fourier coefficient looks like this,
+ C sub K is one over T,
+from minus T over two to T over two,
+ E to the minus two pi I,
+ K over T, little T, F of T,DT,
+ okay.
+ That＊s the K Fourier coefficient.
+But now,
+ F is zero,
+ less than A and bigger than B,
+ and those numbers are fixed.
+sort of given to us.
+ So this is equal to one over T times the interval from A to B.
+minus two pi I,
+ K over T, little T, F of T, BT.
+ Because the function F,
+ I＊m assuming,
+zero, less than A and bigger than B, okay.
+Now,
+ this interval in absolute value is gonna be bounded.
+ The interval from A to B,
+the minus 每 an absolute value 每 E to the minus two pi I,
+ K over T, little T, F of T, DT,
+absolute value is less than the interval and the absolute value.
+the interval from A to B,
+exponential,
+ which is one,
+ times the function DT.
+exponential is one.
+ I＊m almost there,
+ almost there.
+So this is just equal to the interval,
+ this absolute value.
+just a second,
+ really, really, really.
+ This is equal to the interval from A to B,
+ F of T,
+because the absolute value of the complex exponential is just one.
+ That＊s a fixed number.
+It＊s like M.
+Okay.
+ So what does that say about the Fourier coefficient?
+ Watch what I did here.
+wrote down the formula for the K Fourier coefficient.
+convince you there＊s a little bit of problem with directly letting T tend to infinity.
+directly let T tend to infinity,
+ everything is gonna die.
+Here＊s the K Fourier coefficient.
+ It＊s one over T times this interval.
+interval?
+ That interval is that interval,
+goodbye to this drawing now.
+So this says that in absolute value,
+all K, all right.
+ So as T tends to infinity,
+ C sub K tends to zero.
+die.
+So I had this wonderful idea.
+ I said I＊m gonna approximate a non-
+by a periodic phenomena,
+ a very large period,
+infinity.
+ Sounds great.
+ Sounds like a very natural thing to do.
+I write down the formula for the Fourier series,
+ great.
+Fourier series, great.
+ I＊m gonna let T tend to infinity, great.
+tend to zero, not great.
+infinity. Not great.
+I think I have to quit right now.
+ Tomorrow, on Friday,
+very nice, easy way that＊s gonna lead to everything.
+Duration:
