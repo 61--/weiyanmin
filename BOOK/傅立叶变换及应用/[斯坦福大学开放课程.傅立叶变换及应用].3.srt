@@ -1,0 +1,3273 @@
+1
+00:00:00,000 --> 00:00:05,224
+TheFourierTransformAndItsApplications-Lecture03All right?
+
+2
+00:00:05,224 --> 00:00:27,750
+ Okay.
+
+3
+00:00:27,750 --> 00:00:30,970
+ Let me remind youwhere we finished up last time.
+
+4
+00:00:30,970 --> 00:00:37,279
+ We took an important first step in understanding theanalysis 
+
+5
+00:00:37,279 --> 00:00:40,655
+and undertaking the analysis of periodic phenomena 
+
+6
+00:00:40,655 --> 00:00:43,724
+and trying to represent ageneral periodic phenomena 
+
+7
+00:00:43,724 --> 00:00:48,003
+by the sum of much simpler periodic phenomena under thisis complex exponential?
+
+8
+00:00:48,003 --> 00:00:51,128
+ So think in terms of sines and cosines, all right?
+
+9
+00:00:51,128 --> 00:00:55,593
+So last time,
+
+10
+00:00:55,593 --> 00:01:06,982
+ I say we took the first step in analyzing general periodic phenomena via thesum,
+
+11
+00:01:06,982 --> 00:01:14,045
+ so several combination,
+
+12
+00:01:14,045 --> 00:01:19,443
+ a linear combination of simple building blocks,
+
+13
+00:01:19,443 --> 00:01:24,939
+ simpleperiodic phenomena.
+
+14
+00:01:24,939 --> 00:01:28,194
+ So let me remind you what we did because it＊s very important that
+
+15
+00:01:28,194 --> 00:01:37,247
+you realize what we did and what we didn＊t do.
+
+16
+00:01:37,247 --> 00:01:43,139
+ We said suppose that you can write aperiodic signal in a certain form what has to happen.
+
+17
+00:01:43,139 --> 00:01:45,110
+ So we start off by saying F of T is agiven periodic function,
+
+18
+00:01:45,110 --> 00:01:47,638
+ periodic signal. Function, signal same thing.
+
+19
+00:01:47,638 --> 00:01:49,980
+ And just to bedefinite we took it to have period one,
+
+20
+00:01:49,980 --> 00:01:50,753
+ all right?
+
+21
+00:01:50,753 --> 00:01:54,119
+ And the question is can it be representedin terms of others 
+
+22
+00:01:54,119 --> 00:01:57,109
+and suppose it can be represented in terms of other simple signals ofperiod one,
+
+23
+00:01:57,109 --> 00:02:08,328
+ namely the complex exponential.So suppose we can write F of T as a sum,
+
+24
+00:02:08,328 --> 00:02:12,183
+ say something like this. Okay? K from minus Nto N,
+
+25
+00:02:12,183 --> 00:02:16,531
+ cease of K, E to the two pi I, KT. There was a question,
+
+26
+00:02:16,531 --> 00:02:18,188
+ by the way, somebody sentme an e-
+
+27
+00:02:18,188 --> 00:02:21,870
+mail about why the sum is symmetric and so why does it go from minus N to N
+
+28
+00:02:21,870 --> 00:02:23,774
+and we talked a little bit about this last time.
+
+29
+00:02:23,774 --> 00:02:25,117
+ This is also discussed a little bit more in thenotes.
+
+30
+00:02:25,117 --> 00:02:26,475
+ You can think in terms of sines and cosines,
+
+31
+00:02:26,475 --> 00:02:27,279
+ all right?
+
+32
+00:02:27,279 --> 00:02:32,646
+ And the idea is that if youhave a real signal the coefficient [inaudible],
+
+33
+00:02:32,646 --> 00:02:34,383
+ but it bears repeating.
+
+34
+00:02:34,383 --> 00:02:35,927
+ The coefficientsatisfying an important symmetry relationship.
+
+35
+00:02:35,927 --> 00:02:41,589
+ The complex numbers they cease ofminus K is equal to cease of K bar and 
+
+36
+00:02:41,589 --> 00:02:45,397
+because of that the positive frequencies combineswith the negative frequencies.
+
+37
+00:02:45,397 --> 00:02:47,570
+ The positive terms combine with the negative terms to giveyou a real part.
+
+38
+00:02:47,570 --> 00:02:49,379
+ So will give you essentially a sum of cosines.
+
+39
+00:02:49,379 --> 00:02:50,305
+ Okay?
+
+40
+00:02:50,305 --> 00:02:53,241
+Or sum of sines and cosines because the values are complex.
+
+41
+00:02:53,241 --> 00:02:54,623
+ And it＊s a symmetric sum.
+
+42
+00:02:54,623 --> 00:02:56,324
+Instead of going from one to N or zero to N,
+
+43
+00:02:56,324 --> 00:02:58,908
+ if you use complex exponentials it goes fromminus N to N.
+
+44
+00:02:58,908 --> 00:03:07,067
+ The proof of the helpfulness of this representation will just becomeapparent as we use it,
+
+45
+00:03:07,067 --> 00:03:08,650
+ all right? As I said before,
+
+46
+00:03:08,650 --> 00:03:13,499
+ the algebraic work in the analysis is justmade incomparably easier 
+
+47
+00:03:13,499 --> 00:03:16,213
+by using complex exponentials than real sines and cosine＊.
+
+48
+00:03:16,213 --> 00:03:18,560
+Just the calculations become that much easier.
+
+49
+00:03:18,560 --> 00:03:21,934
+ All right.So, once again, suppose we can do this.
+
+50
+00:03:21,934 --> 00:03:27,229
+ Then what we found is the coefficients had to begiven by a certain formula.
+
+51
+00:03:27,229 --> 00:03:34,509
+ So then the coefficients are given by C sub-
+
+52
+00:03:34,509 --> 00:03:38,781
+K is the intervalfrom zero to one, E to the minus two pi I,
+
+53
+00:03:38,781 --> 00:03:43,278
+ KT times F of T, DT, all right?
+
+54
+00:03:43,278 --> 00:03:45,823
+ It＊s an explicitformula for the coefficients.
+
+55
+00:03:45,823 --> 00:03:47,830
+ And in principle that＊s known, all right?
+
+56
+00:03:47,830 --> 00:03:55,919
+ If you know thefunction then you can carry out the integration in principle.
+
+57
+00:03:55,919 --> 00:04:00,303
+ And I want to remind youthat this formula 每
+
+58
+00:04:00,303 --> 00:04:02,697
+ there were two parts of deriving that formula.
+
+59
+00:04:02,697 --> 00:04:04,231
+ There was a sort ofalgebraic part,
+
+60
+00:04:04,231 --> 00:04:09,838
+ where we just try to isolate the K coefficient and that certain way,
+
+61
+00:04:09,838 --> 00:04:13,085
+ but thenthe analytic part invoked a little calculus 
+
+62
+00:04:13,085 --> 00:04:15,065
+where to solve for the coefficient I had tointegrate.
+
+63
+00:04:15,065 --> 00:04:21,575
+ This depended on a very important relationship of the complex exponentials.
+
+64
+00:04:21,575 --> 00:04:23,441
+This I＊ll write over here 每 oh, right here.
+
+65
+00:04:23,441 --> 00:04:26,415
+The interval from 每 I＊ll write it over here.
+
+66
+00:04:26,415 --> 00:04:29,303
+ The interval from zero to one, E to the,
+
+67
+00:04:29,303 --> 00:04:32,841
+ say,two pi I, NT, E to the two pi minus two pi I,
+
+68
+00:04:32,841 --> 00:04:34,359
+ MT, DT.
+
+69
+00:04:34,359 --> 00:04:45,472
+ So that＊s interval from zero to oneif I combine the two ended up two pi I and minus MT,
+
+70
+00:04:45,472 --> 00:04:48,872
+ DT. That＊s either one if M is equalto N.
+
+71
+00:04:48,872 --> 00:04:50,813
+ So in that case I＊m just integrating to the zero,
+
+72
+00:04:50,813 --> 00:04:52,224
+ I＊m just integrating one.
+
+73
+00:04:52,224 --> 00:04:56,893
+ Where it＊sequal to zero if M is different from N,
+
+74
+00:04:56,893 --> 00:04:59,828
+ all right? Fundamental relationship.
+
+75
+00:04:59,828 --> 00:05:04,148
+ We＊ll see thatmaking its triumphant return a little later on.
+
+76
+00:05:04,148 --> 00:05:04,983
+ All right.Now,
+
+77
+00:05:04,983 --> 00:05:11,007
+ that＊s fine and that was a very important first step,
+
+78
+00:05:11,007 --> 00:05:12,728
+ but it was only the first step.
+
+79
+00:05:12,728 --> 00:05:15,576
+ Thesecond step is to turn the question around,
+
+80
+00:05:15,576 --> 00:05:16,275
+ all right?
+
+81
+00:05:16,275 --> 00:05:19,447
+ The first step says suppose we canwrite the function in this form,
+
+82
+00:05:19,447 --> 00:05:22,860
+ then the coefficients have to be given by this formula.
+
+83
+00:05:22,860 --> 00:05:25,382
+ Thesecond step is to turn that around and ask the following:
+
+84
+00:05:25,382 --> 00:05:30,782
+ When is that really possible? SoI want to turn this around.
+
+85
+00:05:30,782 --> 00:05:33,558
+ So, again,
+
+86
+00:05:33,558 --> 00:05:40,399
+ you＊re given F of T periodic of period one,
+
+87
+00:05:40,399 --> 00:05:44,607
+ all right?I know what the answer has to be,
+
+88
+00:05:44,607 --> 00:05:48,278
+ all right? In a sense, I know what the coefficients haveto be.
+
+89
+00:05:48,278 --> 00:05:50,929
+ They have to be given by this, so I＊m gonna define them,
+
+90
+00:05:50,929 --> 00:05:54,576
+ all right?Define 每 and I want to use a different notation.
+
+91
+00:05:54,576 --> 00:05:57,877
+ I want to introduce a different notationthat＊s quite standard in this subject.
+
+92
+00:05:57,877 --> 00:06:01,625
+ Define F hat of K to be this interval.
+
+93
+00:06:01,625 --> 00:06:07,544
+ The intervalfrom zero to one of E to the minus two pi I,
+
+94
+00:06:07,544 --> 00:06:10,824
+ KT, F of T, DT. So, again, in principle youcan compute this,
+
+95
+00:06:10,824 --> 00:06:12,462
+ all right? You＊re given F.
+
+96
+00:06:12,462 --> 00:06:14,936
+ You can carry out the integration of F againstthis complex exponential.
+
+97
+00:06:14,936 --> 00:06:26,484
+ And it＊s often then by F hat K and this is called the K three Acoefficient of F.
+
+98
+00:06:26,484 --> 00:06:31,211
+ What did we say? K four A coefficient, all right?
+
+99
+00:06:31,211 --> 00:06:35,308
+ So it depends on F and,in fact, it can viewed as a transform of F,
+
+100
+00:06:35,308 --> 00:06:37,037
+ although we won＊t use that terminology 每
+
+101
+00:06:37,037 --> 00:06:38,240
+ well,
+
+102
+00:06:38,240 --> 00:06:40,271
+I won＊t stress that terminology quite so much now
+
+103
+00:06:40,271 --> 00:06:42,028
+ because it will become much moreuseful when we talk about the Fourier transform.
+
+104
+00:06:42,028 --> 00:06:45,773
+ It＊s not the Fourier transform. This isthe Fourier coefficient.
+
+105
+00:06:45,773 --> 00:06:48,516
+So it＊s a transform of F, but evaluated on the integers.
+
+106
+00:06:48,516 --> 00:06:50,057
+ For each K,
+
+107
+00:06:50,057 --> 00:06:53,109
+ I have a correspondingnumber F hat of K given by this interval.
+
+108
+00:06:53,109 --> 00:07:03,354
+ And the question is, do we have 每 can we writethe function?
+
+109
+00:07:03,354 --> 00:07:10,363
+ Can we sit beside the function in terms of its Fourier coefficients?
+
+110
+00:07:10,363 --> 00:07:18,308
+ Can wewrite F of T is the sum K equals minus N to N,
+
+111
+00:07:18,308 --> 00:07:22,498
+ F hat of K, E to the two pi I, KT for sumN?
+
+112
+00:07:22,498 --> 00:07:24,668
+ Is there some sum of these things 
+
+113
+00:07:24,668 --> 00:07:28,964
+that will allow us to express the given periodicfunction in terms of these simple building blocks?
+
+114
+00:07:28,964 --> 00:07:32,119
+ That＊s the question. I say,
+
+115
+00:07:32,119 --> 00:07:34,275
+ I know whatthe answer has to be if we can do it.
+
+116
+00:07:34,275 --> 00:07:37,447
+ The answer has to be given 每 such an expression hasto involve this.
+
+117
+00:07:37,447 --> 00:07:40,699
+ That＊s what I talked about last time. The question is does it really work?
+
+118
+00:07:40,699 --> 00:07:42,773
+If it does,
+
+119
+00:07:42,773 --> 00:07:48,214
+ if a statement like this is true you have to believe that it gives you incrediblepower because,
+
+120
+00:07:48,214 --> 00:07:49,474
+ again,
+
+121
+00:07:49,474 --> 00:07:53,467
+ a general periodic function can be decomposed in this way intovery simple terms.
+
+122
+00:07:53,467 --> 00:07:58,471
+ Analyzing a very complex system of periodic inputs,
+
+123
+00:07:58,471 --> 00:08:03,696
+ periodic outputsmight be possible to do by analyzing what the system does
+
+124
+00:08:03,696 --> 00:08:07,670
+ to the relatively simple inputsand outputs given by the complex exponentials,
+
+125
+00:08:07,670 --> 00:08:20,886
+ all right? So if so we can analyzecomplex systems,
+
+126
+00:08:20,886 --> 00:08:31,767
+ simple building blocks. Not a great sentence here,
+
+127
+00:08:31,767 --> 00:08:35,654
+ but you get what Imean. Simple components,
+
+128
+00:08:35,654 --> 00:08:40,007
+ simple building blocks. I＊d like another try at that sentence,
+
+129
+00:08:40,007 --> 00:08:42,163
+but I think I＊d just rather leave it there,
+
+130
+00:08:42,163 --> 00:08:47,931
+ all right? Okay.Now,
+
+131
+00:08:47,931 --> 00:08:53,455
+ this method is only gonna be really helpful if it＊s fairly general.
+
+132
+00:08:53,455 --> 00:08:55,673
+ And that＊s alwaysbeen the question I＊ve raised a couple times.
+
+133
+00:08:55,673 --> 00:08:58,135
+ How general really is this?
+
+134
+00:08:58,135 --> 00:09:09,821
+ How general canwe expect this to be if it works?
+
+135
+00:09:09,821 --> 00:09:10,594
+ All right.
+
+136
+00:09:10,594 --> 00:09:13,966
+ Is it worth putting the time and effort into evenaddressing this question 
+
+137
+00:09:13,966 --> 00:09:15,761
+if it＊s only gonna work in a few specialized cases 
+
+138
+00:09:15,761 --> 00:09:20,306
+that somehowwe can handle an ad hoc basis when they came up.
+
+139
+00:09:20,306 --> 00:09:23,607
+ Well, let me give you a little warninghere,
+
+140
+00:09:23,607 --> 00:09:25,361
+ all right? Let me show you the kind of things,
+
+141
+00:09:25,361 --> 00:09:26,996
+ not to be negative about it,
+
+142
+00:09:26,996 --> 00:09:29,719
+ but let meshow you how high the stakes are,
+
+143
+00:09:29,719 --> 00:09:32,540
+ all right? This is a very high stakes question.
+
+144
+00:09:32,540 --> 00:09:40,586
+ And letme do that by a couple of examples,
+
+145
+00:09:40,586 --> 00:09:41,497
+ all right?
+
+146
+00:09:41,497 --> 00:09:45,435
+Examples that are natural enough they can come up fairly easily in applications.
+
+147
+00:09:45,435 --> 00:09:54,763
+ Let＊slook at some examples of some of the kind of signals that could come up.
+
+148
+00:09:54,763 --> 00:09:56,897
+ For example,
+
+149
+00:09:56,897 --> 00:10:05,073
+you could take a signal that looks like this,
+
+150
+00:10:05,073 --> 00:10:15,171
+ all right? I＊ll draw it over here. I＊ll just drawthe graph.
+
+151
+00:10:15,171 --> 00:10:17,724
+ Something that looks like this.
+
+152
+00:10:17,724 --> 00:10:20,841
+ It could model a switch that＊s periodically on oroff,
+
+153
+00:10:20,841 --> 00:10:23,266
+ zero or one, current is flowing or it＊s not flowing.
+
+154
+00:10:23,266 --> 00:10:26,781
+ So something like it＊s one for halfa second and then zero for half a second,
+
+155
+00:10:26,781 --> 00:10:27,740
+ all right?
+
+156
+00:10:27,740 --> 00:10:29,215
+ That＊s the basic period and then itrepeats.
+
+157
+00:10:29,215 --> 00:10:33,431
+ So one down to zero. One-half and then it repeats and it goes up,
+
+158
+00:10:33,431 --> 00:10:36,672
+ then it＊s on,then it＊s off, then it＊s on,
+
+159
+00:10:36,672 --> 00:10:38,745
+ then it＊s off, and so on and so on. Okay?
+
+160
+00:10:38,745 --> 00:10:42,272
+ So one, three halves,two, and so on and so on,
+
+161
+00:10:42,272 --> 00:10:42,878
+ all right?
+
+162
+00:10:42,878 --> 00:10:47,010
+ That＊s a periodic function and it repeats also for thenegative numbers.
+
+163
+00:10:47,010 --> 00:10:50,513
+ That＊s a periodic function of period one,
+
+164
+00:10:50,513 --> 00:10:57,004
+ all right? So switch on forhalf a second,
+
+165
+00:10:57,004 --> 00:11:02,746
+ off for half a second and repeats. All right.
+
+166
+00:11:02,746 --> 00:11:09,903
+ Can we expect to write, let＊scall this F of T,
+
+167
+00:11:09,903 --> 00:11:12,629
+ all right? There＊s the graph,
+
+168
+00:11:12,629 --> 00:11:14,313
+ and I can write down the formula for it.
+
+169
+00:11:14,313 --> 00:11:23,776
+ Canwe write F in the form? I can compute the coefficients.
+
+170
+00:11:23,776 --> 00:11:25,152
+ I won＊t do it, but, in fact,
+
+171
+00:11:25,152 --> 00:11:28,151
+ thecoefficients are calculated in the notes,
+
+172
+00:11:28,151 --> 00:11:29,696
+ all right? You can carry out the integration.
+
+173
+00:11:29,696 --> 00:11:31,527
+ It＊snot a complicated interval to carry out.
+
+174
+00:11:31,527 --> 00:11:34,846
+ You＊re just integrating the function one over theinterval from zero to a half.
+
+175
+00:11:34,846 --> 00:11:37,843
+ That＊s all of the function times a complex exponential.
+
+176
+00:11:37,843 --> 00:11:44,620
+ Soyou can compute easily F hat of K. F hat of K would be,
+
+177
+00:11:44,620 --> 00:11:47,511
+ in this case, the interval fromzero to a half.
+
+178
+00:11:47,511 --> 00:11:50,725
+ Let＊s say, I won＊t carry it out. E to the minus two pi I,
+
+179
+00:11:50,725 --> 00:11:53,538
+ KT times one DT,all right?
+
+180
+00:11:53,538 --> 00:11:57,749
+ It＊s one on the interval from zero to a half and zero on the interval from one-
+
+181
+00:11:57,749 --> 00:12:00,738
+half to one.
+
+182
+00:12:00,738 --> 00:12:03,071
+ You only compute it on the interval on one period,
+
+183
+00:12:03,071 --> 00:12:05,212
+ on the interval from zeroto one-
+
+184
+00:12:05,212 --> 00:12:07,108
+half and that＊s an easy interval to figure out.
+
+185
+00:12:07,108 --> 00:12:20,559
+ And we write F of T is sum from Kequals N to N,
+
+186
+00:12:20,559 --> 00:12:22,639
+ F hat of K, E to the two pi I, KT. That＊s the question.
+
+187
+00:12:22,639 --> 00:12:27,626
+ And the answer is,no or at least not with a finite sum.
+
+188
+00:12:27,626 --> 00:12:43,389
+ But I hate to build up all this drama asking thisfundamental question only 
+
+189
+00:12:43,389 --> 00:12:49,457
+to answer it no for a relatively simple example.
+
+190
+00:12:49,457 --> 00:12:53,582
+ So the answeris no, not for a finite sum.
+
+191
+00:12:53,582 --> 00:12:58,094
+ Why?
+
+192
+00:12:58,094 --> 00:13:02,190
+ Because the complex exponentials thinking they＊re justsines and cosines,
+
+193
+00:13:02,190 --> 00:13:04,116
+ all right? They＊re continuous.
+
+194
+00:13:04,116 --> 00:13:07,858
+ And the sum of a finite number ofcontinuous functions is continuous.
+
+195
+00:13:07,858 --> 00:13:10,419
+ It can＊t possibly represent a discontinuousphenomenon.
+
+196
+00:13:10,419 --> 00:13:12,716
+ You can＊t represent a discontinuous phenomenon by a continuousphenomenon,
+
+197
+00:13:12,716 --> 00:13:17,538
+ all right?
+
+198
+00:13:17,538 --> 00:13:19,339
+ You learned that theorem back in calculus,
+
+199
+00:13:19,339 --> 00:13:20,257
+ you know.
+
+200
+00:13:20,257 --> 00:13:24,482
+ Some jerkof a math teacher probably said something like and the sum of two continuous functions,
+
+201
+00:13:24,482 --> 00:13:26,274
+of course, is continuous. And you said, yeah,
+
+202
+00:13:26,274 --> 00:13:29,495
+ right. Okay, fine. What＊s the point? Well,
+
+203
+00:13:29,495 --> 00:13:32,335
+here＊s the point right now for the first time.
+
+204
+00:13:32,335 --> 00:13:35,457
+ This limits what you can do. It limits whatyou might want to do.
+
+205
+00:13:35,457 --> 00:13:41,752
+ You can＊t represent a discontinuous function by the sum of a finitenumber of continuous functions.
+
+206
+00:13:41,752 --> 00:13:43,982
+ Bad luck, all right? Well,
+
+207
+00:13:43,982 --> 00:13:47,640
+ what if a function iscontinuous at least,
+
+208
+00:13:47,640 --> 00:13:50,790
+ all right? But maybe has a corner. So let＊s look at the secondexample.
+
+209
+00:13:50,790 --> 00:13:55,868
+ Let＊s say a triangle wave. Something that looks like this.
+
+210
+00:13:55,868 --> 00:14:02,164
+ Up, down, up, down,up, down, and so on. So on an interval from zero to one.
+
+211
+00:14:02,164 --> 00:14:03,853
+ So it＊s periodic of period oneand, again,
+
+212
+00:14:03,853 --> 00:14:05,389
+ the power of these,
+
+213
+00:14:05,389 --> 00:14:08,904
+ along the negative axis also are for negative values of T.
+
+214
+00:14:08,904 --> 00:14:09,719
+So, again,
+
+215
+00:14:09,719 --> 00:14:11,588
+ we can easily compute the Fourier coefficients.
+
+216
+00:14:11,588 --> 00:14:13,008
+ That＊s not a problem. Theyexist.
+
+217
+00:14:13,008 --> 00:14:16,040
+ It＊s not a problem to carry out the integration and,
+
+218
+00:14:16,040 --> 00:14:17,140
+ again, that＊s done.
+
+219
+00:14:17,140 --> 00:14:22,954
+ I think it＊sworked out in the notes explicitly and if not it＊s easy enough to do.
+
+220
+00:14:22,954 --> 00:14:25,624
+ I will not do it inpublic. Again,
+
+221
+00:14:25,624 --> 00:14:35,957
+ you can compute the Fourier coefficients.
+
+222
+00:14:35,957 --> 00:14:39,717
+ Has to be integrated in twopieces. Has to be integrated.
+
+223
+00:14:39,717 --> 00:14:47,058
+ The interval from zero to a half of the function T times thecomplex exponential plus the interval from one-
+
+224
+00:14:47,058 --> 00:14:52,504
+half to one of the function of whateverthis is on the corresponding interval times the other times the complex interval.
+
+225
+00:14:52,504 --> 00:14:53,658
+ But youcan do it, all right? It requires a little bit of work,
+
+226
+00:14:53,658 --> 00:14:54,571
+ but it＊s not hard. You can do it.Can we write,
+
+227
+00:14:54,571 --> 00:14:56,642
+ I＊ll call this F of T, again.
+
+228
+00:14:56,642 --> 00:15:03,825
+ My generic error function is always called F,
+
+229
+00:15:03,825 --> 00:15:04,826
+ Fof T. Can we write, again, the corresponding sum?
+
+230
+00:15:04,826 --> 00:15:07,549
+ Sum K equals minus N to N, E to theF head of K,
+
+231
+00:15:07,549 --> 00:15:14,938
+ E to the two pi I KAT. And, again, the answer is no.
+
+232
+00:15:14,938 --> 00:15:21,304
+ Not for a finite sum.Why? Well,
+
+233
+00:15:21,304 --> 00:15:34,942
+ because it＊s your jerk of a calculus teacher probably told you 
+
+234
+00:15:34,942 --> 00:15:41,040
+if your twofunctions are differentiable then the sum of two functions is differentiable.
+
+235
+00:15:41,040 --> 00:15:43,359
+ And you said,fine, fine, whatever.
+
+236
+00:15:43,359 --> 00:15:46,319
+ And it didn＊t seem to matter at the time,
+
+237
+00:15:46,319 --> 00:15:51,066
+ but now it matters becausethis function is not differentiable.
+
+238
+00:15:51,066 --> 00:15:52,558
+ It has a corner, all right?
+
+239
+00:15:52,558 --> 00:15:55,221
+ But the complex exponentialsare just sines and cosines.
+
+240
+00:15:55,221 --> 00:15:58,031
+ They are differentiable. Their sum is differentiable.
+
+241
+00:15:58,031 --> 00:16:00,274
+ You can＊trepresent a non-
+
+242
+00:16:00,274 --> 00:16:04,909
+differentiable function as a finite sum of differential functions.
+
+243
+00:16:04,909 --> 00:16:07,413
+ It won＊twork. You just can＊t do it. The right-
+
+244
+00:16:07,413 --> 00:16:11,123
+hand side is differentiable. The left-hand side is notdifferentiable.
+
+245
+00:16:11,123 --> 00:16:17,106
+ Okay? Now,
+
+246
+00:16:17,106 --> 00:16:23,077
+ we could go on like this with more and more bad news,
+
+247
+00:16:23,077 --> 00:16:28,881
+ allright? That is, if there is a discontinuity in 每
+
+248
+00:16:28,881 --> 00:16:32,421
+so here＊s the discontinuity in the firstderivative,
+
+249
+00:16:32,421 --> 00:16:34,224
+ all right? There＊s a corner here.
+
+250
+00:16:34,224 --> 00:16:37,497
+ We could draw examples that would looksmoother,
+
+251
+00:16:37,497 --> 00:16:39,902
+ but we could draw examples where there＊s this continuity in the second
+
+252
+00:16:39,902 --> 00:16:43,093
+derivative or maybe the first and second derivatives are fine,
+
+253
+00:16:43,093 --> 00:16:45,901
+ but there＊s discontinuity inthe third derivative and so on and so on.
+
+254
+00:16:45,901 --> 00:16:53,201
+ If there is any lack of smoothness, if there is anycorner,
+
+255
+00:16:53,201 --> 00:16:55,762
+ no matter how smooth that corner looks,
+
+256
+00:16:55,762 --> 00:16:59,056
+ if there is some discontinuity in somehigh derivative you＊re screwed,
+
+257
+00:16:59,056 --> 00:17:03,315
+ to use a technical term. All right?
+
+258
+00:17:03,315 --> 00:17:23,404
+Any discontinuity in any derivative includes writing F of T is this sum.
+
+259
+00:17:23,404 --> 00:17:33,324
+ Sum from Kequals minus N to N minus N to N of F hat A,
+
+260
+00:17:33,324 --> 00:17:34,442
+ E to the two pi I,
+
+261
+00:17:34,442 --> 00:17:35,987
+ KT for a finite sumbecause these functions are infinitely differentiable.
+
+262
+00:17:35,987 --> 00:17:37,461
+ These functions are as smooth asthey can be.
+
+263
+00:17:37,461 --> 00:17:38,774
+ They＊re sines and cosines.
+
+264
+00:17:38,774 --> 00:17:41,264
+ And you can＊t take the sum of those sines andcosines and put them together 
+
+265
+00:17:41,264 --> 00:17:44,197
+and get something that＊s not infinitely differentiable,
+
+266
+00:17:44,197 --> 00:17:47,962
+ allright? So this great idea 每
+
+267
+00:17:47,962 --> 00:17:51,925
+ we might as well quit now or take the rest of the quarter off.
+
+268
+00:17:51,925 --> 00:17:55,387
+Because it doesn＊t look very general at all.
+
+269
+00:17:55,387 --> 00:17:56,971
+ I mean,
+
+270
+00:17:56,971 --> 00:17:58,666
+ the kind of signals you come upagainst may have jumps,
+
+271
+00:17:58,666 --> 00:18:00,332
+ may have corners, may have discontinuities,
+
+272
+00:18:00,332 --> 00:18:03,668
+ whatever. All right.
+
+273
+00:18:03,668 --> 00:18:05,521
+Maybe we want to make an approximation that they＊re as smooth as can be and then wecan use this.
+
+274
+00:18:05,521 --> 00:18:09,988
+ And it＊s an argument,
+
+275
+00:18:09,988 --> 00:18:10,924
+ but it＊s getting away from what we really hope toaccomplish here.
+
+276
+00:18:10,924 --> 00:18:12,090
+Let me, before I go any further,
+
+277
+00:18:12,090 --> 00:18:14,381
+ say that there＊s a maxim lurking here that＊s important,
+
+278
+00:18:14,381 --> 00:18:17,984
+ allright? That is,
+
+279
+00:18:17,984 --> 00:18:21,963
+ if we can＊t represent it as a finite sum 
+
+280
+00:18:21,963 --> 00:18:25,711
+then we have to turn to infinite sumsor at least larger and larger finite sums.
+
+281
+00:18:25,711 --> 00:18:29,347
+ Sums of more and more terms. And the maximthat＊s lurking,
+
+282
+00:18:29,347 --> 00:18:35,974
+ and I＊ll say it now and then we＊ll go back to the general discussion,
+
+283
+00:18:35,974 --> 00:18:40,239
+ is thatit takes high frequencies to make sharp corners,
+
+284
+00:18:40,239 --> 00:18:41,585
+ or any corners for that matter.
+
+285
+00:18:41,585 --> 00:18:43,892
+ Maxim isit takes high frequencies to make sharp corners or really any kind of,
+
+286
+00:18:43,892 --> 00:19:02,961
+ it sounds better ifyou say it like this,
+
+287
+00:19:02,961 --> 00:19:04,043
+ but really any kind of corner, all right?
+
+288
+00:19:04,043 --> 00:19:05,672
+ Any time there＊s some kind ofdiscontinuity in some high derivative,
+
+289
+00:19:05,672 --> 00:19:09,179
+ that means that you＊re gonna have troublerepresenting that phenomenon as a finite sum.
+
+290
+00:19:09,179 --> 00:19:14,339
+ You＊re gonna have to take N larger andlarger to try to represent it more and more accurately.
+
+291
+00:19:14,339 --> 00:19:18,941
+ It takes more and more terms,
+
+292
+00:19:18,941 --> 00:19:21,422
+ takeshigher and higher frequencies to make that bend,
+
+293
+00:19:21,422 --> 00:19:24,812
+ all right?
+
+294
+00:19:24,812 --> 00:19:27,498
+ Even for a relatively highdegree of smoothness.
+
+295
+00:19:27,498 --> 00:19:35,546
+ All right? Now, by the way, you may think,
+
+296
+00:19:35,546 --> 00:19:40,872
+ again, that his is anartificial maxim that is,
+
+297
+00:19:40,872 --> 00:19:43,037
+ real signals don＊t have sharp corners, but that＊s not true.
+
+298
+00:19:43,037 --> 00:19:46,950
+ I mean,all the time when you, and later when we talk about filtering,
+
+299
+00:19:46,950 --> 00:19:52,345
+ producing sharp corners assharp as you can is actually an important part of signal processing.
+
+300
+00:19:52,345 --> 00:19:55,462
+ Sometimes you wantto take a signal and cut off after a certain point.
+
+301
+00:19:55,462 --> 00:19:57,595
+ Either cut it off in time or cut it off infrequency.
+
+302
+00:19:57,595 --> 00:19:59,131
+ Some of you, I＊m sure, have had some experience with this,
+
+303
+00:19:59,131 --> 00:19:59,955
+ all right?
+
+304
+00:19:59,955 --> 00:20:02,627
+Sometimes your signal starts out pretty smooth,
+
+305
+00:20:02,627 --> 00:20:05,277
+ but for other reasons you want to make itsomehow less smooth.
+
+306
+00:20:05,277 --> 00:20:07,377
+ You want to cut things off and cutting things off can introduce 
+
+307
+00:20:07,377 --> 00:20:11,636
+high frequencies in trying to represent the signal
+
+308
+00:20:11,636 --> 00:20:13,252
+ that is something else that has to be dealtwith,
+
+309
+00:20:13,252 --> 00:20:15,557
+ all right?
+
+310
+00:20:15,557 --> 00:20:16,178
+ So there are some very tricky and very practical questions that go alongwith this maxim.
+
+311
+00:20:16,178 --> 00:20:22,125
+ All right. Now, like I said,
+
+312
+00:20:22,125 --> 00:20:26,439
+ at this point you say well what＊s happened tothis grand general program that you＊ve been announcing?
+
+313
+00:20:26,439 --> 00:20:32,628
+ If it＊s not gonna work and if Ican＊t consider finite sums to represent all but the most specialized phenomena,
+
+314
+00:20:32,628 --> 00:20:38,239
+ if there＊sany sum slight discontinuity in there at any level of smoothness,
+
+315
+00:20:38,239 --> 00:20:43,348
+ then what good is any ofthis?
+
+316
+00:20:43,348 --> 00:20:46,943
+ And the come back to that is we have to consider infinite sums,
+
+317
+00:20:46,943 --> 00:20:52,516
+ all right?
+
+318
+00:20:52,516 --> 00:21:01,056
+To represent the general periodic phenomena,
+
+319
+00:21:01,056 --> 00:21:13,712
+ periodic signals we have to considerinfinite sums,
+
+320
+00:21:13,712 --> 00:21:19,770
+ all right? That＊s a mathematical point. As a practical matter,
+
+321
+00:21:19,770 --> 00:21:23,701
+ of course, youcan＊t sum up an infinite series.
+
+322
+00:21:23,701 --> 00:21:25,387
+ You can only sum up an approximation,
+
+323
+00:21:25,387 --> 00:21:29,379
+ but if you want tohave some confidence in what you＊re doing and 
+
+324
+00:21:29,379 --> 00:21:34,314
+if you want to know what errors youmight have to analyze,
+
+325
+00:21:34,314 --> 00:21:40,979
+ the first thing you have to do is realize that you have to expandyour purview from finite sums to infinite sums.
+
+326
+00:21:40,979 --> 00:21:50,741
+ So to represent a more general periodicphenomena we must consider infinite sums of the form,
+
+327
+00:21:50,741 --> 00:21:51,842
+ say,
+
+328
+00:21:51,842 --> 00:21:53,247
+ for minus infinity to infinityhalf hat of K,
+
+329
+00:21:53,247 --> 00:21:58,483
+ E to the two pi I, KT.
+
+330
+00:21:58,483 --> 00:22:01,284
+ It may and be that not all these coefficients are nonzero.
+
+331
+00:22:01,284 --> 00:22:03,898
+ Some of them may be zero and so on,
+
+332
+00:22:03,898 --> 00:22:08,725
+ but for sure if the function has any sort ofdiscontinuity at any level of derivatives 
+
+333
+00:22:08,725 --> 00:22:14,600
+then these coefficients are gonna go out andyou＊re gonna have non-
+
+334
+00:22:14,600 --> 00:22:17,335
+zero coefficients as far as you go out, all right?
+
+335
+00:22:17,335 --> 00:22:20,389
+Any non-
+
+336
+00:22:20,389 --> 00:22:30,389
+smooth phenomenon signal will generate infinitely many,
+
+337
+00:22:30,389 --> 00:22:32,301
+ not just a finitelymany,
+
+338
+00:22:32,301 --> 00:22:34,155
+ but infinitely many Fourier coefficients,
+
+339
+00:22:34,155 --> 00:22:39,896
+ all right?
+
+340
+00:22:39,896 --> 00:22:45,511
+ The only way you couldpossibly have a finite Fourier series is if the function you start out with were infinitelysmooth,
+
+341
+00:22:45,511 --> 00:22:50,451
+ all right? Now, that＊s a problem, all right?
+
+342
+00:22:50,451 --> 00:22:56,664
+ I just want to say the stakes are highhere because if you＊re gonna deal with an infinite sum mathematically,
+
+343
+00:22:56,664 --> 00:22:57,811
+ and even forapplications,
+
+344
+00:22:57,811 --> 00:23:00,060
+ you have to talk about issues of convergence,
+
+345
+00:23:00,060 --> 00:23:01,708
+ all right? How accurate is thisgonna be?
+
+346
+00:23:01,708 --> 00:23:03,796
+ If I cut it off after a finite number of terms,
+
+347
+00:23:03,796 --> 00:23:05,491
+ how accurate is it gonna be? Allright?
+
+348
+00:23:05,491 --> 00:23:10,776
+ If the series is converging and I cut it off after a finite number of terms maybe I
+
+349
+00:23:10,776 --> 00:23:14,956
+have a certain amount of confidence that I＊m getting a pretty good approximation to myfunction,
+
+350
+00:23:14,956 --> 00:23:15,593
+ all right?
+
+351
+00:23:15,593 --> 00:23:20,912
+But if the series is not converging and I still try to cut it off after a finite number of terms,
+
+352
+00:23:20,912 --> 00:23:25,594
+what confidence do I have that I＊m taking a reasonable approximation to the signal that Ireally want?
+
+353
+00:23:25,594 --> 00:23:36,589
+ So you have to deal with issues of convergence.
+
+354
+00:23:36,589 --> 00:23:46,132
+ You are forced to if youwant this theory to apply at all generally.
+
+355
+00:23:46,132 --> 00:23:48,645
+ Okay? And, again, not just for mathematicalreasons,
+
+356
+00:23:48,645 --> 00:23:54,527
+ but also for practical reasons. Now, that＊s hard,
+
+357
+00:23:54,527 --> 00:23:55,238
+ all right?
+
+358
+00:23:55,238 --> 00:24:01,004
+ There are a lot of veryhard questions here and we＊re not gonna go into the mathematical analysis of all of them.
+
+359
+00:24:01,004 --> 00:24:02,251
+I do want to give you a big picture.
+
+360
+00:24:02,251 --> 00:24:05,100
+ I want to give you some good news and some hardnews,
+
+361
+00:24:05,100 --> 00:24:06,853
+ but ultimately pretty good news,
+
+362
+00:24:06,853 --> 00:24:10,291
+ about how this is dealt with because it has all beensorted out.
+
+363
+00:24:10,291 --> 00:24:14,011
+ But it took generations of mathematicians and scientists and engineersworking 
+
+364
+00:24:14,011 --> 00:24:16,827
+on this to finally resolve all these issues.
+
+365
+00:24:16,827 --> 00:24:18,050
+Why is this so 每 I mean,
+
+366
+00:24:18,050 --> 00:24:19,547
+ talking about convergence of series is hard anyway.
+
+367
+00:24:19,547 --> 00:24:24,527
+ It＊sparticularly hard in cases like this because the terms are oscillating,
+
+368
+00:24:24,527 --> 00:24:27,093
+ all right? Thecomplex exponential, again,
+
+369
+00:24:27,093 --> 00:24:29,009
+ think in terms of sines and cosines, all right?
+
+370
+00:24:29,009 --> 00:24:31,629
+ If I split this upinto its real and imaginary parts,
+
+371
+00:24:31,629 --> 00:24:34,930
+ sometimes the cosine is positive, sometimes the cosineis negative,
+
+372
+00:24:34,930 --> 00:24:36,835
+ sometimes the sine is positive, sometimes the sine is negative.
+
+373
+00:24:36,835 --> 00:24:40,478
+ So you havepositive terms and negative terms and adding infinitely many of them up,
+
+374
+00:24:40,478 --> 00:24:41,175
+ all right?
+
+375
+00:24:41,175 --> 00:24:46,565
+ Soconvergence for infinite sines like this has to depend on some type of cancellations thatare going.
+
+376
+00:24:46,565 --> 00:24:51,144
+ There has to be some sort of conspiracy that＊s making this series converge fora given value of T,
+
+377
+00:24:51,144 --> 00:24:58,775
+ all right?You need a conspiracy of cancellations,
+
+378
+00:24:58,775 --> 00:25:01,348
+ how about that?
+
+379
+00:25:01,348 --> 00:25:10,841
+ To make such a series convergebecause of the oscillation,
+
+380
+00:25:10,841 --> 00:25:16,768
+ all right? And that＊s hard to study.
+
+381
+00:25:16,768 --> 00:25:20,689
+ That can be hard to study ina given case.
+
+382
+00:25:20,689 --> 00:25:27,388
+ I just want you to be aware of this that the stakes are high and the issues arereal.
+
+383
+00:25:27,388 --> 00:25:33,508
+ Now, here＊s what I want to do. I want to talk about the situation.
+
+384
+00:25:33,508 --> 00:25:36,468
+ I want to give youa number of statements,
+
+385
+00:25:36,468 --> 00:25:41,151
+ theorems that cover what the story is here.
+
+386
+00:25:41,151 --> 00:25:42,616
+ And, again,
+
+387
+00:25:42,616 --> 00:25:44,680
+ we＊re notgoing to go through the proofs of these things.
+
+388
+00:25:44,680 --> 00:25:47,786
+ It＊s not so crucial for us the mathematicaldetails.
+
+389
+00:25:47,786 --> 00:25:51,685
+ A lot of them are covered in the notes, not all of them,
+
+390
+00:25:51,685 --> 00:25:52,435
+ however,
+
+391
+00:25:52,435 --> 00:25:54,658
+ and I＊ll say alittle bit more about that as well.
+
+392
+00:25:54,658 --> 00:25:59,701
+ But I do want you aware of where the hard parts are andwhat the answers are,
+
+393
+00:25:59,701 --> 00:26:01,828
+ all right?So what I want to do is,
+
+394
+00:26:01,828 --> 00:26:10,085
+ I want to have a summary of the main results.
+
+395
+00:26:10,085 --> 00:26:15,968
+ That is theconvergence when the function is continuous,
+
+396
+00:26:15,968 --> 00:26:27,657
+ which happens often enough that you wantto know or,
+
+397
+00:26:27,657 --> 00:26:30,162
+ let me say, smooth.
+
+398
+00:26:30,162 --> 00:26:33,276
+ It has to be an infinite series if it＊s not infinitely smooth,
+
+399
+00:26:33,276 --> 00:26:39,106
+all right? The convergence, or what passes for convergence,
+
+400
+00:26:39,106 --> 00:26:48,182
+ when you have certaindiscontinuities and here there is a nice and helpful statement about
+
+401
+00:26:48,182 --> 00:26:50,473
+ when you have a jumpdiscontinuity,
+
+402
+00:26:50,473 --> 00:26:55,939
+ all right?
+
+403
+00:26:55,939 --> 00:26:59,218
+ These two cases are actually relatively straightforward.
+
+404
+00:26:59,218 --> 00:27:02,589
+ It＊s easyto remember and it＊s easy to have a certain amount of confidence in what the results are,
+
+405
+00:27:02,589 --> 00:27:06,171
+again. Although, I won＊t prove it. I won＊t go through the proofs.
+
+406
+00:27:06,171 --> 00:27:11,012
+And, finally,
+
+407
+00:27:11,012 --> 00:27:12,774
+ the convergence issues in general
+
+408
+00:27:12,774 --> 00:27:19,868
+ and they involve some very really quitedeep changes in the perspective
+
+409
+00:27:19,868 --> 00:27:31,019
+ that you have to adopt toward this circle of problems.
+
+410
+00:27:31,019 --> 00:27:34,183
+Convergence in general, all right?
+
+411
+00:27:34,183 --> 00:27:45,753
+ You actually do have quite a broad general statementthat covers pretty much all situations 
+
+412
+00:27:45,753 --> 00:27:47,665
+that come up reasonably in practice.
+
+413
+00:27:47,665 --> 00:27:48,976
+ But the notionof convergence is a little bit different
+
+414
+00:27:48,976 --> 00:27:53,217
+ and the mathematics involved in here it took a longtime to sort out,
+
+415
+00:27:53,217 --> 00:27:53,883
+ all right?
+
+416
+00:27:53,883 --> 00:28:07,311
+ So this involves a fundamental change of perspective.
+
+417
+00:28:07,311 --> 00:28:10,752
+As said, I＊m not gonna do the tails,
+
+418
+00:28:10,752 --> 00:28:19,020
+ but I at least want to say some of the words and I＊lltell you why.
+
+419
+00:28:19,020 --> 00:28:19,982
+ Because it has become so pervasive that is,
+
+420
+00:28:19,982 --> 00:28:20,729
+ it＊s become so 每
+
+421
+00:28:20,729 --> 00:28:21,663
+ the frameworkfor studying convergence in general,
+
+422
+00:28:21,663 --> 00:28:22,749
+ even as it applies maybe to these simple situations,
+
+423
+00:28:22,749 --> 00:28:24,611
+has become so standard that you will see this in all the literature,
+
+424
+00:28:24,611 --> 00:28:25,211
+ all right?
+
+425
+00:28:25,211 --> 00:28:27,348
+ You＊ll see inthe engineering literature,
+
+426
+00:28:27,348 --> 00:28:29,635
+ the terms that I＊m gonna use orthogonality,
+
+427
+00:28:29,635 --> 00:28:32,083
+ mean squareconvergence, L2, things like that.
+
+428
+00:28:32,083 --> 00:28:35,263
+ I＊ll say all those words and I＊ll tell you what they mean,
+
+429
+00:28:35,263 --> 00:28:37,879
+but it＊s become absolutely the way of talking about these things.
+
+430
+00:28:37,879 --> 00:28:40,838
+ And if you look atmodern treatments of signal processing,
+
+431
+00:28:40,838 --> 00:28:45,786
+ and I＊m thinking, in particular, here of wavelimit analysis,
+
+432
+00:28:45,786 --> 00:28:47,508
+ which has become very popular in recent years.
+
+433
+00:28:47,508 --> 00:28:49,015
+You＊ll hear about orthonormal basis for so and so 
+
+434
+00:28:49,015 --> 00:28:51,889
+and distinguish from the complexexponentials as orthonormal basis.
+
+435
+00:28:51,889 --> 00:28:55,335
+ You＊ll hear all the terminology that goes along withthis point of view.
+
+436
+00:28:55,335 --> 00:28:56,609
+ So I think, at least,
+
+437
+00:28:56,609 --> 00:29:00,489
+ I want you to come away from this with someunderstanding 
+
+438
+00:29:00,489 --> 00:29:02,714
+and familiarity with the terminology that goes along with it,
+
+439
+00:29:02,714 --> 00:29:06,250
+ all right?That＊s as far as I want to go with it.
+
+440
+00:29:06,250 --> 00:29:09,211
+ But even that I hope is gonna be helpful for you.
+
+441
+00:29:09,211 --> 00:29:10,846
+ Allright. So let me look at these cases,
+
+442
+00:29:10,846 --> 00:29:12,873
+ because these cases are pretty straightforward andthey＊re good to know.
+
+443
+00:29:12,873 --> 00:29:15,016
+ Convergence when the signal is continuous.
+
+444
+00:29:15,016 --> 00:29:17,800
+ Yes, good news. Itconverges, all right? So that is if 每
+
+445
+00:29:17,800 --> 00:29:25,438
+ so continuous case, all right?So, again,
+
+446
+00:29:25,438 --> 00:29:29,304
+ you can form the Fourier series, all right?
+
+447
+00:29:29,304 --> 00:29:37,613
+ You have that the series sum Kequals minus infinity to infinity,
+
+448
+00:29:37,613 --> 00:29:39,082
+ F hat of K, E to the two pi I,
+
+449
+00:29:39,082 --> 00:29:47,154
+ KT converges for each T tothe value F of T point Y.
+
+450
+00:29:47,154 --> 00:29:51,590
+ Is that means that you plug in a value of T into this sum and addit all up,
+
+451
+00:29:51,590 --> 00:29:53,801
+ then you have a series of constants, and what will it add up to?
+
+452
+00:29:53,801 --> 00:29:55,543
+ It will add up tothe value of the function F of T.
+
+453
+00:29:55,543 --> 00:29:56,438
+ So that＊s good, all right?
+
+454
+00:29:56,438 --> 00:30:00,734
+ If the function＊s continuousthen you know the series is gonna converge 
+
+455
+00:30:00,734 --> 00:30:02,839
+and it＊s gonna give you the right value,
+
+456
+00:30:02,839 --> 00:30:06,473
+ allright? Good. Not so easy to prove, all right?
+
+457
+00:30:06,473 --> 00:30:08,444
+ It takes a little work to prove that and,
+
+458
+00:30:08,444 --> 00:30:09,744
+ again,
+
+459
+00:30:09,744 --> 00:30:12,231
+that＊s sort of sketched out in the notes,
+
+460
+00:30:12,231 --> 00:30:14,019
+ all right? Not all the details, but a number of them.
+
+461
+00:30:14,019 --> 00:30:15,456
+You can at least see the broad outlines.
+
+462
+00:30:15,456 --> 00:30:18,086
+ And you will find this discussed in various levelsof abstraction 
+
+463
+00:30:18,086 --> 00:30:20,559
+in most mathematical books on Fourier analysis,
+
+464
+00:30:20,559 --> 00:30:23,387
+ Fourier series, all right?But that＊s what to keep in mind there.
+
+465
+00:30:23,387 --> 00:30:25,282
+ So the continuous case is good. We call this point-
+
+466
+00:30:25,282 --> 00:30:27,762
+wise convergence, again, because you plug in a value of T,
+
+467
+00:30:27,762 --> 00:30:30,999
+ a point in time, add up theseries,
+
+468
+00:30:30,999 --> 00:30:32,360
+ which is then a sum of constants 
+
+469
+00:30:32,360 --> 00:30:34,980
+and you＊re guaranteed that the sum will convergeto the function F of T.
+
+470
+00:30:34,980 --> 00:30:37,383
+ In the case the function is smooth actually,
+
+471
+00:30:37,383 --> 00:30:39,438
+ you get a little bitmore. If the function is differentiable,
+
+472
+00:30:39,438 --> 00:30:42,491
+ the smooth case.
+
+473
+00:30:42,491 --> 00:31:00,301
+ So that＊s if you have variousdegrees of differentiability.
+
+474
+00:31:00,301 --> 00:31:03,000
+ If it has one derivative, if it has two derivatives,
+
+475
+00:31:03,000 --> 00:31:05,284
+ and thenthere＊s the question about are the derivative＊s continuous and so on,
+
+476
+00:31:05,284 --> 00:31:07,210
+ so I don＊t want tosplit hairs on this. And,
+
+477
+00:31:07,210 --> 00:31:07,857
+ again,
+
+478
+00:31:07,857 --> 00:31:09,375
+ there＊s a fairly precise statement that＊s given in the notes,
+
+479
+00:31:09,375 --> 00:31:11,455
+but it says this.
+
+480
+00:31:11,455 --> 00:31:13,248
+ So if it＊s smooth and the particulars continuous,
+
+481
+00:31:13,248 --> 00:31:14,766
+ so you know the seriesconverges.So, again,
+
+482
+00:31:14,766 --> 00:31:25,814
+ the series converges, the Fourier series,
+
+483
+00:31:25,814 --> 00:31:27,462
+ K equals minus infinity to infinity Fhat of K,
+
+484
+00:31:27,462 --> 00:31:40,305
+ E to the two pi I, KT converges to F of T.
+
+485
+00:31:40,305 --> 00:31:42,058
+ That＊s the same as in the continuouscase,
+
+486
+00:31:42,058 --> 00:31:44,767
+ but there＊s actually more to it than this that,
+
+487
+00:31:44,767 --> 00:31:45,684
+ again,
+
+488
+00:31:45,684 --> 00:31:47,612
+ can be helpful sometimes ifyou＊re trying to estimate errors.
+
+489
+00:31:47,612 --> 00:31:57,096
+ You actually get what＊s called uniform convergence andwhat that means 每
+
+490
+00:31:57,096 --> 00:32:01,531
+ the way you should think about this is for different values of T 
+
+491
+00:32:01,531 --> 00:32:03,858
+you cancontrol the rate at which the series converges.
+
+492
+00:32:03,858 --> 00:32:06,701
+ Same rate for different values of T. So,
+
+493
+00:32:06,701 --> 00:32:09,128
+again, without trying to make it 每 I can make this precise,
+
+494
+00:32:09,128 --> 00:32:11,863
+ but I don＊t want to because itrequires too much notation.
+
+495
+00:32:11,863 --> 00:32:16,667
+ So you can i.e. think of it this way, you can control,
+
+496
+00:32:16,667 --> 00:32:21,071
+ or youcan estimate, the rate of convergence,
+
+497
+00:32:21,071 --> 00:32:28,807
+ how fast the series is converging.
+
+498
+00:32:28,807 --> 00:32:51,657
+Add different values of T depending on the degree of smoothness.
+
+499
+00:32:51,657 --> 00:33:01,629
+ What this often meansis you get estimates on the size of the coefficients,
+
+500
+00:33:01,629 --> 00:33:04,282
+ you get estimates on the differencebetween the function,
+
+501
+00:33:04,282 --> 00:33:07,231
+ and a finite approximation, a finite version of the series,
+
+502
+00:33:07,231 --> 00:33:08,692
+ dependingon the smoothness, all right?
+
+503
+00:33:08,692 --> 00:33:10,977
+ The smooth of the function is the faster it converges.
+
+504
+00:33:10,977 --> 00:33:12,447
+ That＊sone way of looking at it. And, again,
+
+505
+00:33:12,447 --> 00:33:15,447
+ without giving a technical definition of it.
+
+506
+00:33:15,447 --> 00:33:20,159
+ Yeah?Student:[Inaudible]Instructor (Brad Osgood):
+
+507
+00:33:20,159 --> 00:33:23,618
+Well,
+
+508
+00:33:23,618 --> 00:33:30,524
+ what the uniform convergence means roughly and,
+
+509
+00:33:30,524 --> 00:33:31,198
+again,
+
+510
+00:33:31,198 --> 00:33:36,828
+ what I don＊t want to write I don＊t want to write a lot of epsilon＊s and N＊s andthings like that,
+
+511
+00:33:36,828 --> 00:33:41,624
+ is if this is the function, all right? All right?
+
+512
+00:33:41,624 --> 00:33:44,120
+ It＊s periodics, or the pattern,repeats.
+
+513
+00:33:44,120 --> 00:33:50,429
+ Then what I mean by uniform convergence is that if you look at a finiteapproximation,
+
+514
+00:33:50,429 --> 00:33:53,568
+ so if you look at a finite version of the sum just going from minus N to N,
+
+515
+00:33:53,568 --> 00:33:58,155
+then that will track. So this is F of T, all right?
+
+516
+00:33:58,155 --> 00:33:59,582
+ That＊s the original function.
+
+517
+00:33:59,582 --> 00:34:01,074
+ And theapproximation does something like,
+
+518
+00:34:01,074 --> 00:34:06,042
+ you know, it tracks the function along the way.
+
+519
+00:34:06,042 --> 00:34:09,591
+ Thisis [inaudible] sum, all right?
+
+520
+00:34:09,591 --> 00:34:15,546
+ You can estimate uniformly over the interval how far theapproximation is from the function,
+
+521
+00:34:15,546 --> 00:34:16,568
+ all right?
+
+522
+00:34:16,568 --> 00:34:19,770
+So instead of just saying at a particular point the series is converging,
+
+523
+00:34:19,770 --> 00:34:20,433
+ all right? So, again,
+
+524
+00:34:20,433 --> 00:34:25,396
+if I pick a particular point here then the value of the approximation
+
+525
+00:34:25,396 --> 00:34:26,903
+ is approaching thevalue of the function.
+
+526
+00:34:26,903 --> 00:34:27,504
+ That＊s fine.
+
+527
+00:34:27,504 --> 00:34:28,718
+ That＊s what happens for the continuous case.
+
+528
+00:34:28,718 --> 00:34:30,784
+ For thesmooth case, you can say more than that.
+
+529
+00:34:30,784 --> 00:34:36,076
+ You can say uniformly how close theapproximation is to the function over the entire interval,
+
+530
+00:34:36,076 --> 00:34:39,686
+ over all from zero to one, allright? And you can give an estimate for that,
+
+531
+00:34:39,686 --> 00:34:40,506
+ all right?
+
+532
+00:34:40,506 --> 00:34:43,212
+ That＊s what the smoothness givesfor you,
+
+533
+00:34:43,212 --> 00:34:45,641
+ all right? And, again, you could write that down precisely,
+
+534
+00:34:45,641 --> 00:34:48,071
+ but I＊m not gonna dothat.
+
+535
+00:34:48,071 --> 00:34:49,858
+There is actually a statement of this theorem that＊s given in the notes,
+
+536
+00:34:49,858 --> 00:34:51,326
+ if you＊re interested.And it＊s interesting.
+
+537
+00:34:51,326 --> 00:34:52,842
+ I mean, and, again,
+
+538
+00:34:52,842 --> 00:34:57,298
+ it can have some practical implications becauseyou＊re never gonna work with an infinite series in practice.
+
+539
+00:34:57,298 --> 00:34:59,667
+ You＊re always gonna workwith a finite approximation.
+
+540
+00:34:59,667 --> 00:35:01,706
+ So the question is can you estimate the error?
+
+541
+00:35:01,706 --> 00:35:02,538
+ If you＊re calledupon,
+
+542
+00:35:02,538 --> 00:35:06,543
+ can you give some reasonable estimate for how far off you are?
+
+543
+00:35:06,543 --> 00:35:12,813
+ Not just at a point,
+
+544
+00:35:12,813 --> 00:35:13,660
+but uniformly over the interval where you＊re interested in making the approximation.
+
+545
+00:35:13,660 --> 00:35:14,336
+ Soit can come up.
+
+546
+00:35:14,336 --> 00:35:24,529
+ So you have uniform estimate of the closeness.
+
+547
+00:35:24,529 --> 00:35:26,229
+ Okay? All right.
+
+548
+00:35:26,229 --> 00:35:28,252
+So that＊s the continuous case and the smooth case.
+
+549
+00:35:28,252 --> 00:35:29,819
+ So that＊s good news, all right? That＊sgood news.
+
+550
+00:35:29,819 --> 00:35:30,579
+ That＊s nice.
+
+551
+00:35:30,579 --> 00:35:33,536
+ If the function is continuous the series are converging.
+
+552
+00:35:33,536 --> 00:35:35,266
+ If thefunction is smooth the series is converging and it actually,
+
+553
+00:35:35,266 --> 00:35:37,521
+ sort of,
+
+554
+00:35:37,521 --> 00:35:38,568
+ stays uniformly closeto the given function.
+
+555
+00:35:38,568 --> 00:35:39,480
+ Now, I want to jump back, actually,
+
+556
+00:35:39,480 --> 00:35:41,392
+ to the discontinuous casebecause there is one situation 
+
+557
+00:35:41,392 --> 00:35:45,476
+that comes up often enough in practice that it＊s useful toknow about and that＊s 
+
+558
+00:35:45,476 --> 00:35:47,299
+when you have a jump discontinuity.
+
+559
+00:35:47,299 --> 00:35:48,754
+ And, again, I＊m not gonnaprove this,
+
+560
+00:35:48,754 --> 00:36:01,335
+ but I think you should be aware of it and there＊s actually gonna be someproblems that use it,
+
+561
+00:36:01,335 --> 00:36:07,852
+ or a problem that uses it. So if you have a jump discontinuity,
+
+562
+00:36:07,852 --> 00:36:15,651
+functions can fail to be continuous in a lot of different ways.
+
+563
+00:36:15,651 --> 00:36:17,654
+ The simplest way a functioncan fail to be continuous 
+
+564
+00:36:17,654 --> 00:36:21,007
+if it has a jump discontinuity like the first example that Ishowed.
+
+565
+00:36:21,007 --> 00:36:25,355
+So the example of a switch where it＊s on,
+
+566
+00:36:25,355 --> 00:36:27,650
+ then off, all right? Something like this,
+
+567
+00:36:27,650 --> 00:36:31,137
+ allright? Where the signal jumps down or up.
+
+568
+00:36:31,137 --> 00:36:37,413
+ Okay? So EG. And there the theorem is,
+
+569
+00:36:37,413 --> 00:36:48,668
+ thatis if a T knot is a point of jump discontinuity,
+
+570
+00:36:48,668 --> 00:36:52,670
+ this is a really cool result actually. Thenthis converges,
+
+571
+00:36:52,670 --> 00:36:57,703
+ then the sum minus infinity to infinity 每
+
+572
+00:36:57,703 --> 00:37:00,939
+ well, yeah. I＊ll put it like this.Minus two pi I,
+
+573
+00:37:00,939 --> 00:37:07,750
+ KT, sorry, sorry, sorry. F hat of K, the Fourier series,
+
+574
+00:37:07,750 --> 00:37:16,991
+ F hat of K, E to thetwo pi I, KT does converge at T knot.
+
+575
+00:37:16,991 --> 00:37:18,639
+ It converges at the jump discontinuity,
+
+576
+00:37:18,639 --> 00:37:20,013
+ but thefunction doesn＊t really have a value of T knot,
+
+577
+00:37:20,013 --> 00:37:21,390
+ because it jumps. But it converges,actually,
+
+578
+00:37:21,390 --> 00:37:24,050
+ to the average value, all right?
+
+579
+00:37:24,050 --> 00:37:31,773
+ It converges to the point in the middle of thejump,
+
+580
+00:37:31,773 --> 00:37:40,022
+ to the average of the jump i.e. to one-half 每
+
+581
+00:37:40,022 --> 00:37:44,382
+ let me write it like this one-half F of Tknot.
+
+582
+00:37:44,382 --> 00:37:48,171
+ This is usually the way it＊s written. F of T knot plus F of T knot minus,
+
+583
+00:37:48,171 --> 00:37:48,769
+ all right?
+
+584
+00:37:48,769 --> 00:37:54,135
+So what I mean by that is you＊re approaching T knot from the left,
+
+585
+00:37:54,135 --> 00:37:56,137
+ that＊s F of T knotminus, it has this value.
+
+586
+00:37:56,137 --> 00:37:58,922
+ You approach F of T knot from the right it has this value,
+
+587
+00:37:58,922 --> 00:38:01,464
+ that＊s Fof T knot plus, all right?
+
+588
+00:38:01,464 --> 00:38:03,974
+ They＊re two different values of jumps and if you look at theaverage of the jump,
+
+589
+00:38:03,974 --> 00:38:06,621
+ right in the middle, that＊s what it converges to,
+
+590
+00:38:06,621 --> 00:38:09,957
+ all right? Kind ofcool. And this wasn＊t proved until,
+
+591
+00:38:09,957 --> 00:38:12,317
+ I think, the 1900＊s,
+
+592
+00:38:12,317 --> 00:38:14,978
+ sometime in the early part of the1900＊s.
+
+593
+00:38:14,978 --> 00:38:18,093
+ So this was way after Fourier had done his initial work 
+
+594
+00:38:18,093 --> 00:38:19,982
+and people werestruggling with a lot of these problems.
+
+595
+00:38:19,982 --> 00:38:22,649
+ And this is useful enough that it comes up inapplications.
+
+596
+00:38:22,649 --> 00:38:25,803
+ So, for example, for the saw tooth, or not the saw tooth,
+
+597
+00:38:25,803 --> 00:38:31,601
+ for the switchperiodic signal here,
+
+598
+00:38:31,601 --> 00:38:36,242
+ if it jumps from zero to one then at a value of discontinuityconverges to one-
+
+599
+00:38:36,242 --> 00:38:37,319
+half, all right?
+
+600
+00:38:37,319 --> 00:38:43,682
+So even sometimes people define this function to be one on the interval from zero to one-
+
+601
+00:38:43,682 --> 00:38:44,974
+half, leaving out one-half. One-
+
+602
+00:38:44,974 --> 00:38:48,551
+half at the discontinuity and zero from here to here,
+
+603
+00:38:48,551 --> 00:38:50,633
+ right?You sometimes see that definition given.
+
+604
+00:38:50,633 --> 00:38:54,261
+ And the reason why people sometimes give thatdefinition is because they want to anticipate this result.
+
+605
+00:38:54,261 --> 00:38:58,190
+ So if they want to use Fourier＊sseries, they say that that,
+
+606
+00:38:58,190 --> 00:38:59,795
+ you know, it＊s, sort of,
+
+607
+00:38:59,795 --> 00:39:02,316
+ consistent with the definition of thefunction in consistent 
+
+608
+00:39:02,316 --> 00:39:03,168
+with the property of the convergence of the Fourier series.
+
+609
+00:39:03,168 --> 00:39:04,812
+ This isnot so easy to prove, all right?
+
+610
+00:39:04,812 --> 00:39:06,171
+ None of these things are really easy to prove.
+
+611
+00:39:06,171 --> 00:39:07,983
+ It requires alot of work, all right?
+
+612
+00:39:07,983 --> 00:39:09,885
+ It requires a lot of estimates and careful analysis,
+
+613
+00:39:09,885 --> 00:39:11,019
+ but it＊s nice.
+
+614
+00:39:11,019 --> 00:39:13,196
+ It＊svery satisfying in some sense that it tells you 每
+
+615
+00:39:13,196 --> 00:39:14,823
+ at least you know what the situation is.
+
+616
+00:39:14,823 --> 00:39:16,592
+I＊m not saying it＊s easy to establish,
+
+617
+00:39:16,592 --> 00:39:18,303
+ but at least you know what the facts are,
+
+618
+00:39:18,303 --> 00:39:23,856
+ all right?That＊s good. That＊s good. Okay?
+
+619
+00:39:23,856 --> 00:39:27,643
+So any questions on that? This should be,
+
+620
+00:39:27,643 --> 00:39:31,798
+ sort of, part of your vocabulary. Yeah?Student:
+
+621
+00:39:31,798 --> 00:39:33,232
+[Inaudible] continuity?Instructor (Brad Osgood):
+
+622
+00:39:33,232 --> 00:39:34,305
+Then that＊s not a jump discontinuity, all right?
+
+623
+00:39:34,305 --> 00:39:35,413
+ What I meanby jump discontinuity,
+
+624
+00:39:35,413 --> 00:39:37,653
+ I mean it jumps between two finite values.
+
+625
+00:39:37,653 --> 00:39:43,684
+ Okay? Yeah. I＊mtrying to avoid 每 I mean,
+
+626
+00:39:43,684 --> 00:39:46,625
+ I＊m talking to you in a somewhat informal way.
+
+627
+00:39:46,625 --> 00:39:49,217
+ I＊m trying toavoid giving very precise definitions to all these things because you,
+
+628
+00:39:49,217 --> 00:39:52,180
+ sort of, know itwhen you see it, all right?
+
+629
+00:39:52,180 --> 00:39:53,498
+ You can do that, of course.
+
+630
+00:39:53,498 --> 00:39:56,437
+ You can give very precisestatements here about the uniformity of approximation,
+
+631
+00:39:56,437 --> 00:39:59,854
+ about how it converges, and soon, but that＊s not so crucial for us.
+
+632
+00:39:59,854 --> 00:40:02,592
+ It＊s just you should know in general what the bigpicture is.
+
+633
+00:40:02,592 --> 00:40:04,635
+ Yeah?Student:
+
+634
+00:40:04,635 --> 00:40:07,412
+[Inaudible] point that ever function with jumps,
+
+635
+00:40:07,412 --> 00:40:10,127
+ so what about points wherethere are no jumps?
+
+636
+00:40:10,127 --> 00:40:11,841
+Instructor (Brad Osgood):Sorry?Student:
+
+637
+00:40:11,841 --> 00:40:14,163
+What about point where there are no jumps?
+
+638
+00:40:14,163 --> 00:40:15,198
+Instructor (Brad Osgood):All right.
+
+639
+00:40:15,198 --> 00:40:16,153
+ What about points where there are no jumps?
+
+640
+00:40:16,153 --> 00:40:17,061
+ So,actually, perhaps,
+
+641
+00:40:17,061 --> 00:40:22,088
+ what I should have done is give a more careful statement of thecontinuous case.
+
+642
+00:40:22,088 --> 00:40:26,690
+ The more careful statement of the continuous case is the seriesconverges at any point of continuity,
+
+643
+00:40:26,690 --> 00:40:28,811
+ all right? So if a function 每 if it doesn＊t jump,
+
+644
+00:40:28,811 --> 00:40:32,284
+ if it＊scontinuous at that point then the series converges at that point.
+
+645
+00:40:32,284 --> 00:40:32,965
+ Okay?
+
+646
+00:40:32,965 --> 00:40:35,015
+ So that wouldactually be a more precise statement of it.
+
+647
+00:40:35,015 --> 00:40:35,710
+ Oh,
+
+648
+00:40:35,710 --> 00:40:37,618
+ I better not stop asking for questions here,
+
+649
+00:40:37,618 --> 00:40:38,684
+all right? As I say,
+
+650
+00:40:38,684 --> 00:40:44,290
+ I＊m trying to avoid the infinite regression of making the statements asprecise as I can.
+
+651
+00:40:44,290 --> 00:40:47,211
+ I can do that, but you don＊t want to see that.
+
+652
+00:40:47,211 --> 00:40:52,592
+ All right.And, again,
+
+653
+00:40:52,592 --> 00:40:56,012
+ don＊t underestimate the effort that it took to do this,
+
+654
+00:40:56,012 --> 00:40:57,019
+ all right?
+
+655
+00:40:57,019 --> 00:41:00,487
+ When Fourierfirst came out with his ideas and we＊ll see that his original application,
+
+656
+00:41:00,487 --> 00:41:04,706
+ actually, onMonday. He was very bold. He actually said any function,
+
+657
+00:41:04,706 --> 00:41:07,396
+ not just any periodic function,
+
+658
+00:41:07,396 --> 00:41:10,347
+because he was thinking of extending a function to be periodic by just repeating it,
+
+659
+00:41:10,347 --> 00:41:12,841
+ youknow. He was thinking of functions, which die ff and then repeating it.
+
+660
+00:41:12,841 --> 00:41:17,118
+ So he madestatements like any function can be represented by such an infinite series.
+
+661
+00:41:17,118 --> 00:41:19,409
+ And peoplewere scandalized by that,
+
+662
+00:41:19,409 --> 00:41:22,183
+ especially if they were French and the French are easilyscandalized.
+
+663
+00:41:22,183 --> 00:41:26,488
+ Bonjour, any function, you are a fool, monsieur.
+
+664
+00:41:26,488 --> 00:41:34,704
+So it caused a great deal of consternation 
+
+665
+00:41:34,704 --> 00:41:38,030
+and it caused a lot of work to get done to try tosort these things out.
+
+666
+00:41:38,030 --> 00:41:44,747
+ So don＊t underestimate the effort that went into getting even thismuch.
+
+667
+00:41:44,747 --> 00:41:48,601
+ But now,
+
+668
+00:41:48,601 --> 00:41:54,876
+ this was still ultimately not satisfying because Fourier really set hissights very high.
+
+669
+00:41:54,876 --> 00:41:57,547
+ But any periodic phenomena, never mind smoothness,
+
+670
+00:41:57,547 --> 00:41:59,188
+ whatever,
+
+671
+00:41:59,188 --> 00:42:03,299
+ couldbe represented in some sense by a Fourier series,
+
+672
+00:42:03,299 --> 00:42:07,815
+ by this sort of infinite sum.
+
+673
+00:42:07,815 --> 00:42:10,300
+ And to sortthat out and to get to the truth of 
+
+674
+00:42:10,300 --> 00:42:12,644
+that really required an entirely different perspective.
+
+675
+00:42:12,644 --> 00:42:13,922
+ So Iwanted to say a little bit about that.
+
+676
+00:42:13,922 --> 00:42:16,459
+ I＊ll only get to a little bit today and I＊ll finish it up onMonday,
+
+677
+00:42:16,459 --> 00:42:20,644
+ and then we＊ll see some applications of this,
+
+678
+00:42:20,644 --> 00:42:27,249
+ all right? All right.So general case. That is not talking about continuity,
+
+679
+00:42:27,249 --> 00:42:29,682
+ not talking about smoothness, andso on, all right?
+
+680
+00:42:29,682 --> 00:42:34,095
+ In here, what＊s really involved is you need,
+
+681
+00:42:34,095 --> 00:42:39,953
+ we learned after decades,centuries of bitter experience,
+
+682
+00:42:39,953 --> 00:42:51,266
+ you need a different notion of convergence of the infiniteseries.
+
+683
+00:42:51,266 --> 00:42:55,055
+ You learn not to talk about what you think would be the most natural thing,
+
+684
+00:42:55,055 --> 00:42:58,961
+ point-wise convergence, all right? You learned by hard lessons.
+
+685
+00:42:58,961 --> 00:43:03,075
+ You learned it because it didn＊twork. I mean,
+
+686
+00:43:03,075 --> 00:43:06,324
+ ultimately you couldn＊t get an answer that was very satisfying.
+
+687
+00:43:06,324 --> 00:43:07,333
+ In thesecases we＊re fine,
+
+688
+00:43:07,333 --> 00:43:09,611
+ but somehow under natural and fairly general situations,
+
+689
+00:43:09,611 --> 00:43:20,110
+ you learned notto ask for convergence of a sum like this,
+
+690
+00:43:20,110 --> 00:43:23,144
+ F hat 每
+
+691
+00:43:23,144 --> 00:43:25,104
+ let me just put general coefficients inthere.
+
+692
+00:43:25,104 --> 00:43:28,664
+ Cease of K, E to the two pi I, KTM. Even for general series,
+
+693
+00:43:28,664 --> 00:43:29,304
+ all right?
+
+694
+00:43:29,304 --> 00:43:33,813
+You learn not to ask for convergence of that at particular points.
+
+695
+00:43:33,813 --> 00:43:48,123
+ At values of T, all right?
+
+696
+00:43:48,123 --> 00:43:50,362
+You＊ve moved away from plugging in values of T 
+
+697
+00:43:50,362 --> 00:43:53,610
+and looking at the series of constantsand asking whether or not converged,
+
+698
+00:43:53,610 --> 00:43:55,701
+ all right? And that was a hard step to take.
+
+699
+00:43:55,701 --> 00:43:58,834
+ Rather,
+
+700
+00:43:58,834 --> 00:44:07,229
+what was ultimately learned was you get a satisfying answer if you asked forconvergence in the mean,
+
+701
+00:44:07,229 --> 00:44:13,049
+ convergence on average. I mean,
+
+702
+00:44:13,049 --> 00:44:16,038
+ the proof that it was a goodidea are the results 
+
+703
+00:44:16,038 --> 00:44:20,446
+that you can get if you take this point of view and it was a hard wonpoint of view.
+
+704
+00:44:20,446 --> 00:44:28,418
+ So you get a better picture, more satisfying picture,
+
+705
+00:44:28,418 --> 00:44:35,294
+ if you ask forconvergence in the average sense or also sometimes called convergence in the mean,
+
+706
+00:44:35,294 --> 00:44:45,813
+ andI will write that down, all right?
+
+707
+00:44:45,813 --> 00:44:50,739
+In engineering terms it＊s also sometimes called convergence in energy.
+
+708
+00:44:50,739 --> 00:45:00,602
+ You do see thisterm for reasons, which I＊ll explain,
+
+709
+00:45:00,602 --> 00:45:03,449
+ probably not today, but next time. Okay?
+
+710
+00:45:03,449 --> 00:45:07,522
+ Remindme. All right. Now, what does that mean?
+
+711
+00:45:07,522 --> 00:45:08,271
+ Well,
+
+712
+00:45:08,271 --> 00:45:09,919
+ you need to make some assumption onthe function,
+
+713
+00:45:09,919 --> 00:45:10,775
+ all right?
+
+714
+00:45:10,775 --> 00:45:13,408
+ It＊s not maybe completely general in a sense the function＊sarbitrary,
+
+715
+00:45:13,408 --> 00:45:17,787
+ but the assumption you make on the function is pretty minimal.
+
+716
+00:45:17,787 --> 00:45:20,914
+ So, again, I＊massuming the function＊s periodic.
+
+717
+00:45:20,914 --> 00:45:22,740
+ So really everything takes place on the interval zero toone.
+
+718
+00:45:22,740 --> 00:45:26,195
+ It＊s only the properties on the function on the interval from zero to one that mattersfor us
+
+719
+00:45:26,195 --> 00:45:29,969
+ because everything is just repeated after that,
+
+720
+00:45:29,969 --> 00:45:35,165
+ all right?So, I suppose, again, F of T is periodic period one,
+
+721
+00:45:35,165 --> 00:45:39,972
+ periodic period one,
+
+722
+00:45:39,972 --> 00:45:44,648
+ and you alsosuppose that it has the following property.
+
+723
+00:45:44,648 --> 00:45:48,526
+ That the interval 每 it＊s square interval.
+
+724
+00:45:48,526 --> 00:45:51,462
+ SquareDT is fine.
+
+725
+00:45:51,462 --> 00:45:53,986
+ If the interval of the square of F is finite on the interval 
+
+726
+00:45:53,986 --> 00:45:58,478
+and that＊s not too harda thing to insist on.
+
+727
+00:45:58,478 --> 00:45:59,769
+ It＊s not too restrictive a thing to insist on.
+
+728
+00:45:59,769 --> 00:46:01,332
+ There are functions thatdon＊t satisfy that.
+
+729
+00:46:01,332 --> 00:46:04,826
+ If a function goes off to infinity at a certain rate on the interval fromzero to one,
+
+730
+00:46:04,826 --> 00:46:06,855
+ if it＊s unbounded, then it may not satisfy this.
+
+731
+00:46:06,855 --> 00:46:09,135
+ But certainly the functions thatcome up most often in applications 
+
+732
+00:46:09,135 --> 00:46:10,943
+are gonna satisfy a condition like this and
+
+733
+00:46:10,943 --> 00:46:14,086
+ thisactually is sometimes the hypothesis of finite energy for reasons 
+
+734
+00:46:14,086 --> 00:46:16,677
+which we＊ll understanda little bit more later.
+
+735
+00:46:16,677 --> 00:46:18,919
+ Take this interval,
+
+736
+00:46:18,919 --> 00:46:21,951
+ it＊s often taken to be the total energy of thefunction depending on what the function represents.
+
+737
+00:46:21,951 --> 00:46:24,787
+ And so you＊re assuming thatsomehow the signal has finite energy,
+
+738
+00:46:24,787 --> 00:46:27,443
+ which is a reasonable physical assumption,
+
+739
+00:46:27,443 --> 00:46:34,803
+ allright?Finite energy. All right. Then as it turns out,
+
+740
+00:46:34,803 --> 00:46:38,207
+ then you conform 每 the Fourier coefficientsdo exist.
+
+741
+00:46:38,207 --> 00:46:41,563
+ That＊s something that actually has to be proved separately because it＊s aquestion of integrability,
+
+742
+00:46:41,563 --> 00:46:42,330
+ but it＊s true.
+
+743
+00:46:42,330 --> 00:46:46,493
+ You conform the coefficients F hat of K equals theintegral from zero to one,
+
+744
+00:46:46,493 --> 00:46:49,495
+ E to the minus two pi I, KT as before, F of T,
+
+745
+00:46:49,495 --> 00:46:51,201
+ DT, all right?Again,
+
+746
+00:46:51,201 --> 00:46:54,177
+ so that＊s actually now a separate issue that has to be verified
+
+747
+00:46:54,177 --> 00:46:57,183
+ because you＊re notassuming the function is continuous or anything else,
+
+748
+00:46:57,183 --> 00:47:02,873
+ but it can be done. And the punchline is,
+
+749
+00:47:02,873 --> 00:47:03,965
+ and it＊s quite a punch line,
+
+750
+00:47:03,965 --> 00:47:05,545
+ that you still get convergence of the series,
+
+751
+00:47:05,545 --> 00:47:12,367
+ of theinfinite Fourier series, but not 每
+
+752
+00:47:12,367 --> 00:47:19,668
+ and this board is floating up here. Let me do it over here.
+
+753
+00:47:19,668 --> 00:47:20,902
+But not by plugging in points,
+
+754
+00:47:20,902 --> 00:47:21,816
+ but rather in an average sense as follows.
+
+755
+00:47:21,816 --> 00:47:33,974
+So then I＊ll write it like this. The interval from zero to one.
+
+756
+00:47:33,974 --> 00:47:38,247
+ I want to look at how closethe function is to an approximating series,
+
+757
+00:47:38,247 --> 00:47:42,492
+ so that means a finite version of the sum.
+
+758
+00:47:42,492 --> 00:47:43,457
+ Sothe sum,
+
+759
+00:47:43,457 --> 00:47:46,668
+ the interval of the sum from K equals minus N to N of F hat of K,
+
+760
+00:47:46,668 --> 00:47:52,924
+ E to the twopi I, KT minus F of T squared,
+
+761
+00:47:52,924 --> 00:47:53,997
+ DT, all right?
+
+762
+00:47:53,997 --> 00:48:00,902
+ So I look at the average of the square of thedifference between a finite approximation of the sum,
+
+763
+00:48:00,902 --> 00:48:04,493
+ makes perfect sense to form that,and the function.
+
+764
+00:48:04,493 --> 00:48:14,187
+ And the statement is that this tends to zero as N tends to infinity,
+
+765
+00:48:14,187 --> 00:48:14,842
+ allright?
+
+766
+00:48:14,842 --> 00:48:17,254
+ The series converges of the function in the average sense.
+
+767
+00:48:17,254 --> 00:48:19,115
+ The series converges tothe function in the mean,
+
+768
+00:48:19,115 --> 00:48:21,563
+ all right?
+
+769
+00:48:21,563 --> 00:48:25,823
+The idea of integrating a function to get an average value is probably not so unfamiliar toyou 每
+
+770
+00:48:25,823 --> 00:48:27,801
+ one second. The idea of integrating the square,
+
+771
+00:48:27,801 --> 00:48:29,907
+ or the difference of the squares,
+
+772
+00:48:29,907 --> 00:48:32,141
+ isalso probably more or less more familiar to you and,
+
+773
+00:48:32,141 --> 00:48:33,399
+ as a matter of fact, this is exactly,again,
+
+774
+00:48:33,399 --> 00:48:35,503
+ for reasons I can＊t explain today,
+
+775
+00:48:35,503 --> 00:48:40,962
+ exactly related to the least squares approximationof a function by a combination of complex exponentials.
+
+776
+00:48:40,962 --> 00:48:43,019
+ Now, you had a question?Student:
+
+777
+00:48:43,019 --> 00:48:45,570
+[Inaudible] convergence in the mean square?
+
+778
+00:48:45,570 --> 00:48:46,552
+Instructor (Brad Osgood):Pardon me?Student:
+
+779
+00:48:46,552 --> 00:48:48,246
+Is this mean square convergence?Instructor (Brad Osgood):
+
+780
+00:48:48,246 --> 00:48:50,358
+Yeah. Mean square convergence, thank you.
+
+781
+00:48:50,358 --> 00:48:50,908
+ I sayconvergence to the mean,
+
+782
+00:48:50,908 --> 00:48:51,838
+ maybe I should even call it mean square convergence.
+
+783
+00:48:51,838 --> 00:48:52,585
+ If you＊refamiliar with that term by all means use it,
+
+784
+00:48:52,585 --> 00:48:54,010
+ all right? So it＊s mean square convergence.
+
+785
+00:48:54,010 --> 00:49:00,616
+ Allright. So the result is 每
+
+786
+00:49:00,616 --> 00:49:02,573
+ that I＊m afraid we＊ll have to quit for today.
+
+787
+00:49:02,573 --> 00:49:05,010
+ That the function 每 theseries converges to the function,
+
+788
+00:49:05,010 --> 00:49:08,294
+ right? That is, it makes sense to write,
+
+789
+00:49:08,294 --> 00:49:13,691
+ you write F of Tequals it＊s Fourier series,
+
+790
+00:49:13,691 --> 00:49:16,934
+ K equals minus infinity to infinity, F hat of K,
+
+791
+00:49:16,934 --> 00:49:20,320
+ E to the two pi I,KT,
+
+792
+00:49:20,320 --> 00:49:21,849
+ but you have to understand what this equal sign means,
+
+793
+00:49:21,849 --> 00:49:23,130
+ all right? In this context, allright?
+
+794
+00:49:23,130 --> 00:49:26,495
+In this context you have to be careful here what this equal sign means.
+
+795
+00:49:26,495 --> 00:49:31,913
+ It doesn＊t meanpluck value of T and watch the series converge to the value of the function.
+
+796
+00:49:31,913 --> 00:49:32,877
+ It does notmean that.
+
+797
+00:49:32,877 --> 00:49:40,398
+ It means that if you compute that interval for a finite sum and let the degree goto infinity here,
+
+798
+00:49:40,398 --> 00:49:43,230
+ then that interval will tend to zero.
+
+799
+00:49:43,230 --> 00:49:44,809
+ The mean square difference will tendto zero.
+
+800
+00:49:44,809 --> 00:49:46,820
+ That＊s what that equal sign means, all right?
+
+801
+00:49:46,820 --> 00:49:50,340
+ That the difference between this anda finite approximation tends to zero
+
+802
+00:49:50,340 --> 00:49:52,195
+ as the approximation gets better and better.
+
+803
+00:49:52,195 --> 00:49:58,737
+ Thesquare, interval to square.Now, that was a big change of view,
+
+804
+00:49:58,737 --> 00:49:59,509
+ all right?
+
+805
+00:49:59,509 --> 00:50:03,267
+ That was a big change in attitude to adoptthat notion of equality,
+
+806
+00:50:03,267 --> 00:50:04,494
+ that notion of convergence, and so on.
+
+807
+00:50:04,494 --> 00:50:07,700
+ And it had profound farreaching consequences,
+
+808
+00:50:07,700 --> 00:50:10,967
+ all right? And, again, it took a long time to sort out.
+
+809
+00:50:10,967 --> 00:50:14,136
+ And we＊reout of time for today, so I can＊ tell you that.
+
+810
+00:50:14,136 --> 00:50:19,704
+ So on Monday I want to wrap this up. Not inall the mathematical details,
+
+811
+00:50:19,704 --> 00:50:23,008
+ only so far as to give you what the general picture is
+
+812
+00:50:23,008 --> 00:50:24,947
+ becauseyou＊re gonna see it beyond this class.
+
+813
+00:50:24,947 --> 00:50:26,485
+ You＊re gonna see people use this terminology,
+
+814
+00:50:26,485 --> 00:50:30,441
+ usethese ideas well beyond what we do in here,
+
+815
+00:50:30,441 --> 00:50:34,064
+ and it＊s really quite satisfying.
+
+816
+00:50:34,064 --> 00:50:36,735
+ It＊s a reallyquite thorough and satisfying coherent picture,
+
+817
+00:50:36,735 --> 00:50:37,671
+ all right? So more on that on Monday.
+
+818
+00:50:37,671 --> 00:50:38,940
+[End of Audio]Duration:
+
+
