@@ -42,6 +42,9 @@
     <ClInclude Include="StrTrans.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="StdioFileEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TransferFile.cpp">
@@ -54,6 +57,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="StrTrans.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdioFileEx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

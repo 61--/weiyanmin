@@ -76,6 +76,8 @@ BEGIN_MESSAGE_MAP(CTransferFileDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON_SEL_PATH, &CTransferFileDlg::OnBnClickedButtonSelPath)
 	ON_BN_CLICKED(IDC_BUTTON_TRANS_PATH, &CTransferFileDlg::OnBnClickedButtonTransPath)
 	ON_BN_CLICKED(IDC_BUTTON_TXT_FILE_ENTER, &CTransferFileDlg::OnBnClickedButtonTxtFileEnter)
+	ON_BN_CLICKED(IDC_BUTTON_TXT_FILE_REMOVE_ENTER, &CTransferFileDlg::OnBnClickedButtonTxtFileRemoveEnter)
+	ON_BN_CLICKED(IDC_BUTTON_MODIFY_SRT, &CTransferFileDlg::OnBnClickedButtonModifySrt)
 END_MESSAGE_MAP()
 
 
@@ -118,6 +120,9 @@ BOOL CTransferFileDlg::OnInitDialog()
 	m_lstSplitSign.push_back(_T("-"));
 	m_lstSplitSign.push_back(_T(" — "));
 	m_lstSplitSign.push_back(_T(":"));
+	m_lstSplitSign.push_back(_T(";"));
+	m_lstSplitSign.push_back(_T("–"));
+	
 	
 		
 	return TRUE;  // return TRUE  unless you set the focus to a control
@@ -385,4 +390,151 @@ void CTransferFileDlg::SplitStringBySign(CString _str,std::list<CString> &_lstSp
 		}
 	} while (bFind);
 	
+}
+
+void CTransferFileDlg::OnBnClickedButtonTxtFileRemoveEnter()
+{
+	// TODO: Add your control notification handler code here
+	CFileDialog dlg(TRUE);
+	if(dlg.DoModal() != IDOK)
+	{
+		return;
+	}
+	CString strSrcFileName = dlg.GetPathName();
+	CString strContent;
+	CString strDestFileName = strSrcFileName + _T(".txt");
+	try
+	{
+		CStdioFileEx fileSrc(strSrcFileName,CFile::modeRead);
+		CStdioFileEx fileDest(strDestFileName,CFile::modeCreate|CFile::modeWrite);
+		BOOL bHas = FALSE;
+		do 
+		{
+			CString strTxt;
+			bHas = fileSrc.ReadString(strTxt);
+			CString strTmpTxt = strTxt;
+			strTmpTxt.TrimLeft();
+			strTmpTxt.TrimRight();
+			if(!strTxt.IsEmpty())
+			{
+				strContent += strTxt;
+			}
+		} while (bHas);
+		std::list<CString> lstStr;
+		SplitStringBySign(strContent,lstStr);
+		CString strWrite;
+		for(auto itr = lstStr.begin();itr != lstStr.end();++itr)
+		{
+			CString strTemp =(*itr);
+			strTemp.TrimLeft();
+			strTemp.TrimRight();
+			if(strTemp.IsEmpty())
+			{
+				continue;
+			}
+			if((*itr).GetLength() > 40)
+			{
+				if(!strWrite.IsEmpty())
+				{
+					fileDest.WriteString(strWrite);
+					fileDest.WriteString(_T("\r\n"));
+
+				}
+				strWrite = _T("");
+				fileDest.WriteString(*itr);
+				fileDest.WriteString(_T("\r\n"));
+
+			}
+			else
+			{
+				strWrite += *itr;
+				if(strWrite.GetLength() > 40)
+				{
+					fileDest.WriteString(strWrite);
+					fileDest.WriteString(_T("\r\n"));
+					strWrite = _T("");
+				}
+			}
+			
+			
+		}
+		
+		fileSrc.Close();
+		fileDest.Close();
+	}
+	catch (CFileException* /*e*/)
+	{
+		CString strMsg;
+		strMsg.Format(_T("读取文件%s发生错误！"),strSrcFileName);
+		AfxMessageBox(strMsg);
+
+		return ;
+	}
+	catch (...)
+	{
+		CString strMsg;
+		strMsg.Format(_T("读取文件%s发生错误！"),strSrcFileName);
+		AfxMessageBox(strMsg);
+
+		return ;
+	}
+	AfxMessageBox(_T("转换成功！"));
+
+}
+
+
+void CTransferFileDlg::OnBnClickedButtonModifySrt()
+{
+	// TODO: Add your control notification handler code here
+	CFileDialog dlg(TRUE);
+	if(dlg.DoModal() != IDOK)
+	{
+		return;
+	}
+	CString strSrcFileName = dlg.GetPathName();
+	CString strContent;
+	CString strDestFileName = strSrcFileName + _T(".txt");
+	CString strLastTime;
+	strLastTime = _T("00:00:00,000");
+	try
+	{
+		CStdioFileEx fileSrc(strSrcFileName,CFile::modeRead);
+		CStdioFileEx fileDest(strDestFileName,CFile::modeCreate|CFile::modeWrite);
+		BOOL bHas = FALSE;
+		do 
+		{
+			CString strTxt;
+			bHas = fileSrc.ReadString(strTxt);
+			int iFind = strTxt.Find(_T("00:00:00,000 --> "));
+			if( iFind != -1)
+			{ 
+				strTxt.Replace(_T("00:00:00,000"),strLastTime);
+				strLastTime = strTxt.Right(strTxt.GetLength() - iFind - 17);
+			}
+			fileDest.WriteString(strTxt);
+			fileDest.WriteString(_T("\r\n"));
+		} while (bHas);
+		
+		
+
+		fileSrc.Close();
+		fileDest.Close();
+	}
+	catch (CFileException* /*e*/)
+	{
+		CString strMsg;
+		strMsg.Format(_T("读取文件%s发生错误！"),strSrcFileName);
+		AfxMessageBox(strMsg);
+
+		return ;
+	}
+	catch (...)
+	{
+		CString strMsg;
+		strMsg.Format(_T("读取文件%s发生错误！"),strSrcFileName);
+		AfxMessageBox(strMsg);
+
+		return ;
+	}
+	AfxMessageBox(_T("转换成功！"));
 }
