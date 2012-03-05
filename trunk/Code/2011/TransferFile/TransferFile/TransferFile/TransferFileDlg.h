@@ -42,4 +42,7 @@ public:
 private:
 	void SplitStringBySign(CString _str,std::list<CString> &_lstSplitString);
 	std::list<CString> m_lstSplitSign;
+public:
+	afx_msg void OnBnClickedButtonTxtFileRemoveEnter();
+	afx_msg void OnBnClickedButtonModifySrt();
 };
