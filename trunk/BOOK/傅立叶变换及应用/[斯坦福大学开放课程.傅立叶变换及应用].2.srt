@@ -1,0 +1,3265 @@
+1
+00:00:00,000 --> 00:00:28,277
+All right. So today,
+
+2
+00:00:28,277 --> 00:00:29,687
+ I wanna continue our study and begin a real每
+
+3
+00:00:29,687 --> 00:00:36,799
+ serious mathematical study of the question of periodicity.
+
+4
+00:00:36,799 --> 00:00:42,997
+Remember that we are essentially identifying the subject of Fourier series with the study每
+
+5
+00:00:42,997 --> 00:00:44,838
+ with the mathematical study of periodicity.
+
+6
+00:00:44,838 --> 00:00:50,064
+And last time I went on, at some length,about the virtues of periodicity,
+
+7
+00:00:50,064 --> 00:00:52,408
+about the ubiquitous nature of periodic functions 每
+
+8
+00:00:52,408 --> 00:00:54,833
+periodic phenomena in the physical world,
+
+9
+00:00:54,833 --> 00:01:02,756
+and also in the mathematical world.And we made a distinction,
+
+10
+00:01:02,756 --> 00:01:03,608
+perhaps a little bit artificial but sometimes helpful,
+
+11
+00:01:03,608 --> 00:01:05,758
+between periodicity in time and periodicity in space.
+
+12
+00:01:05,758 --> 00:01:09,085
+Those sort of two phenomena seem to be,or often come to you in different forms,
+
+13
+00:01:09,085 --> 00:01:13,773
+and it＊s sometimes useful in your own headto sort of ask yourself which kind of periodicity are you looking at?
+
+14
+00:01:13,773 --> 00:01:15,811
+But in all cases actually,
+
+15
+00:01:15,811 --> 00:01:19,168
+periodicity is associated with the idea of symmetry.
+
+16
+00:01:19,168 --> 00:01:21,863
+That＊s the topic that will come up from time to time,
+
+17
+00:01:21,863 --> 00:01:24,022
+and if I don＊t mention it explicitly,
+
+18
+00:01:24,022 --> 00:01:25,549
+as with many other things in this course,
+
+19
+00:01:25,549 --> 00:01:29,502
+it＊s one of the things that you should learn to sort of react to or think about yourself每
+
+20
+00:01:29,502 --> 00:01:32,953
+ see what aspects of symmetry are coming up in the problem,
+
+21
+00:01:32,953 --> 00:01:36,819
+how does a particular problem fit into a more general context because,
+
+22
+00:01:36,819 --> 00:01:38,551
+as I＊ve said before and will say it again,
+
+23
+00:01:38,551 --> 00:01:41,060
+one of the wonderful things about this subject is the way it all hangs togetherand 
+
+24
+00:01:41,060 --> 00:01:44,963
+how it can be applied in so many different ways.
+
+25
+00:01:44,963 --> 00:01:46,440
+All right.
+
+26
+00:01:46,440 --> 00:01:50,771
+If you understand the general framework and put yourself每
+
+27
+00:01:50,771 --> 00:01:51,410
+ and orient yourself in a certain way,
+
+28
+00:01:51,410 --> 00:01:52,326
+using the ideas and the techniques of the class,
+
+29
+00:01:52,326 --> 00:01:54,339
+you＊ll really find how remarkably applicable they can be.
+
+30
+00:01:54,339 --> 00:02:02,908
+Okay. So I said 每 as I said last time 每as we finished up last time,
+
+31
+00:02:02,908 --> 00:02:06,586
+when we＊re sort of still just crawling our way out of junior high,
+
+32
+00:02:06,586 --> 00:02:09,449
+a mathematical course of periodicity is possiblebecause 
+
+33
+00:02:09,449 --> 00:02:12,551
+there are very simple mathematical functions that exhibit periodic behavior,
+
+34
+00:02:12,551 --> 00:02:14,477
+namely the sine and the cosine.
+
+35
+00:02:14,477 --> 00:02:18,629
+But that＊s also the problem because periodic phenomena can be very general and very complicated,
+
+36
+00:02:18,629 --> 00:02:22,109
+and the sine and the cosine are so simple.
+
+37
+00:02:22,109 --> 00:02:25,105
+So how can you really expect to use the sine and the cosine
+
+38
+00:02:25,105 --> 00:02:27,270
+ to model very general periodic phenomena?
+
+39
+00:02:27,270 --> 00:02:29,793
+And that＊s really the question I want to address today.
+
+40
+00:02:29,793 --> 00:02:35,451
+So how could we use such simple functions 每
+
+41
+00:02:35,451 --> 00:02:43,153
+sine of t and cosine of t每 to model complex periodic phenomena?
+
+42
+00:02:43,153 --> 00:02:58,599
+Now, first, the general remark is,how high should we aim here?
+
+43
+00:02:58,599 --> 00:03:01,600
+I mean, how general can we expect this to be?
+
+44
+00:03:01,600 --> 00:03:06,299
+So how general? All right.
+
+45
+00:03:06,299 --> 00:03:08,136
+That＊s really the fundamental question here.
+
+46
+00:03:08,136 --> 00:03:10,251
+And in answering that question,
+
+47
+00:03:10,251 --> 00:03:19,366
+led both scientists and mathematicians very far from the original areathat they were investigating.
+
+48
+00:03:19,366 --> 00:03:25,215
+Let me say 每 well, let me say right now, pretty general,
+
+49
+00:03:25,215 --> 00:03:28,526
+ all right.And we＊ll see exactly how general 每
+
+50
+00:03:28,526 --> 00:03:33,225
+I＊ll try to make that more precise as we develop a little bit more of the terminology thatreally 每
+
+51
+00:03:33,225 --> 00:03:35,625
+ that will apply and allow us to get more careful statements.
+
+52
+00:03:35,625 --> 00:03:37,797
+But we＊re really aiming quite high here,all right?
+
+53
+00:03:37,797 --> 00:03:43,356
+And we＊re really hoping to apply these ideas in quite general circumstances.
+
+54
+00:03:43,356 --> 00:03:46,631
+Now, not all phenomena are periodic.All right.
+
+55
+00:03:46,631 --> 00:03:51,016
+ And even in the case of periodic phenomena,
+
+56
+00:03:51,016 --> 00:03:53,065
+it may not be a realistic assumption.
+
+57
+00:03:53,065 --> 00:03:55,141
+ I think that＊s importantto realize here what the limits may be,
+
+58
+00:03:55,141 --> 00:03:59,924
+ or how far the limits can be pushed. So not allphenomena,
+
+59
+00:03:59,924 --> 00:04:05,612
+ naturally, although many are, and many interesting ones are periodic.
+
+60
+00:04:05,612 --> 00:04:09,119
+ Andeven periodic phenomena, in some sense,
+
+61
+00:04:09,119 --> 00:04:14,650
+ you＊re making an assumption there that is notreally physically realizable.
+
+62
+00:04:14,650 --> 00:04:19,688
+ So even for periodic phenomena or at least functions that areperiodic in time,
+
+63
+00:04:19,688 --> 00:04:23,307
+ even phenomena 每
+
+64
+00:04:23,307 --> 00:04:26,258
+ soon I think I＊ll start talking in terms of signalsrather than phenomena,
+
+65
+00:04:26,258 --> 00:04:28,516
+ but phenomena sounds a little grander at this point.
+
+66
+00:04:28,516 --> 00:04:36,868
+ Evenphenomena that are periodic in time 每
+
+67
+00:04:36,868 --> 00:04:43,390
+ real phenomena, they just die out eventually.
+
+68
+00:04:43,390 --> 00:04:44,087
+ Weonly observe 每
+
+69
+00:04:44,087 --> 00:04:46,399
+ or at least we only observe something over a finite period of time,
+
+70
+00:04:46,399 --> 00:04:49,940
+whereas, as mathematical functions, the sine and the cosine go on forever.
+
+71
+00:04:49,940 --> 00:04:54,807
+ All right. As amathematical model, sine and cosine go on forever.
+
+72
+00:04:54,807 --> 00:04:57,757
+ So how can they really be used tomodel to something that dies out?
+
+73
+00:04:57,757 --> 00:05:04,106
+ But a periodic function, sine and cosine 每
+
+74
+00:05:04,106 --> 00:05:15,107
+ all right 每 goon forever, repeating over and over again.
+
+75
+00:05:15,107 --> 00:05:15,628
+ All right.
+
+76
+00:05:15,628 --> 00:05:21,201
+ So in what sense can you really usesines and cosines to model periodic phenomena when a real periodic phenomena 每
+
+77
+00:05:21,201 --> 00:05:24,464
+ whenit really dies out? Well,
+
+78
+00:05:24,464 --> 00:05:26,794
+ that＊ll take us awhile to sort all that out.
+
+79
+00:05:26,794 --> 00:05:28,516
+ Let me just give you oneanswer to this,
+
+80
+00:05:28,516 --> 00:05:29,562
+ and one indication of how general these ideas really are.
+
+81
+00:05:29,562 --> 00:05:31,675
+ And you have ahomework problem that asks you actually to address this mathematically.
+
+82
+00:05:31,675 --> 00:05:37,052
+ All right. So ifyou have a finite 每 you can still use 每
+
+83
+00:05:37,052 --> 00:05:43,510
+ still apply ideas of periodicity,
+
+84
+00:05:43,510 --> 00:05:48,173
+ even if only as anapproximation or even if only as an extra assumption.
+
+85
+00:05:48,173 --> 00:05:53,840
+ So what I mean by that is, asfollows. So suppose a phenomena looks like this.
+
+86
+00:05:53,840 --> 00:06:02,763
+ Suppose the signal looks like 每something like this 每
+
+87
+00:06:02,763 --> 00:06:07,827
+ let me write it over here. So it dies out over a period of time.
+
+88
+00:06:07,827 --> 00:06:10,091
+ So thisis time and there＊s only a finite interval of time 每
+
+89
+00:06:10,091 --> 00:06:13,121
+ it might be very large,
+
+90
+00:06:13,121 --> 00:06:13,939
+ but there＊s only afinite interval of time when the signal is non-
+
+91
+00:06:13,939 --> 00:06:17,084
+zero. I＊m drawing just as a 每 somehowgeneric signal here.
+
+92
+00:06:17,084 --> 00:06:20,061
+ Well, that＊s not a periodic phenomena; it doesn＊t exhibit periodicbehavior.
+
+93
+00:06:20,061 --> 00:06:24,309
+ But if it dies after a finite 每 outside of a finite interval,
+
+94
+00:06:24,309 --> 00:06:29,188
+ then you can just repeatthe pattern and make it periodic.
+
+95
+00:06:29,188 --> 00:06:34,778
+ All right. Force this 每 you can force periodicity.
+
+96
+00:06:34,778 --> 00:06:47,453
+ That is,by repeating the pattern. You can force extra symmetry.
+
+97
+00:06:47,453 --> 00:06:50,144
+ You can force extra structure tothe problem that＊s not there in the beginning.
+
+98
+00:06:50,144 --> 00:06:54,743
+ So, I mean by this a very simple idea.Here＊s the original signal,
+
+99
+00:06:54,743 --> 00:06:59,316
+ and I just repeat the pattern. So this is the original signal,
+
+100
+00:06:59,316 --> 00:07:01,205
+ theseare maybe, sort of, you know,
+
+101
+00:07:01,205 --> 00:07:07,864
+ extra copies of it that I＊m just inserting artificially,
+
+102
+00:07:07,864 --> 00:07:10,606
+ andextend the function to be periodic and exist for all time.
+
+103
+00:07:10,606 --> 00:07:13,444
+ You may only be interested inthis part of it,
+
+104
+00:07:13,444 --> 00:07:15,735
+ but for mathematical analysis, if you make it periodic,
+
+105
+00:07:15,735 --> 00:07:17,840
+ that＊ll apply to thewhole thing. All right.
+
+106
+00:07:17,840 --> 00:07:26,853
+ This is sometimes called the periodization of a signal.
+
+107
+00:07:26,853 --> 00:07:31,109
+ And it canbe used 每 and it is used 每 to study signals which are non-
+
+108
+00:07:31,109 --> 00:07:33,883
+periodic to 每 excuse me 每 to usemethods of Fourier series,
+
+109
+00:07:33,883 --> 00:07:36,718
+ and pumpkins is another sort of Fourier analysis to studysignals which are not periodic.
+
+110
+00:07:36,718 --> 00:07:40,227
+ So there＊s actually a homework problem on different sortsof periodization,
+
+111
+00:07:40,227 --> 00:07:44,517
+ and it＊s a technique that comes up in various applications.
+
+112
+00:07:44,517 --> 00:07:48,905
+ All right. Sosee the first problem set, homework one.
+
+113
+00:07:48,905 --> 00:07:49,454
+ Now,
+
+114
+00:07:49,454 --> 00:07:57,733
+ the point is that periodicity and thetechniques for studying periodic phenomena are really pretty general.
+
+115
+00:07:57,733 --> 00:07:58,725
+ All right.
+
+116
+00:07:58,725 --> 00:08:00,344
+ Even ifyou don＊t have a periodic phenomenon,
+
+117
+00:08:00,344 --> 00:08:01,529
+ you can make it periodic,
+
+118
+00:08:01,529 --> 00:08:05,455
+ and perhaps you couldapply the techniques to study the periodized version of it,
+
+119
+00:08:05,455 --> 00:08:06,570
+ and then restrict 每
+
+120
+00:08:06,570 --> 00:08:09,874
+ study thespecial cases of actually where you＊re interested in the function.
+
+121
+00:08:09,874 --> 00:08:11,851
+ All right. So it＊s pretty 每that＊s the point of this remark,
+
+122
+00:08:11,851 --> 00:08:13,257
+ is that the phenomena 每
+
+123
+00:08:13,257 --> 00:08:19,387
+ that you＊re not restricting yourselfso much by insisting that you＊re gonna use sines and cosines,
+
+124
+00:08:19,387 --> 00:08:26,248
+ or you＊re gonna studyperiodic phenomena.
+
+125
+00:08:26,248 --> 00:08:35,161
+ So the study that we＊re gonna make here can be pretty general 每
+
+126
+00:08:35,161 --> 00:08:38,227
+ itcan apply really quite generally. Okay.
+
+127
+00:08:38,227 --> 00:08:43,139
+ Now, let＊s do it. Or let＊s get launched into theprogram.
+
+128
+00:08:43,139 --> 00:08:46,255
+ So, first of all, let＊s fix a period in the discussion.
+
+129
+00:08:46,255 --> 00:08:51,285
+ All right. So we just 每 just tospecialize and fix ideas,
+
+130
+00:08:51,285 --> 00:08:52,922
+ let＊s take 每
+
+131
+00:08:52,922 --> 00:08:56,742
+ let＊s consider periodic phenomena of a given fixedperiod and see what we can say about those;
+
+132
+00:08:56,742 --> 00:08:58,447
+ see how we can model thosemathematically.
+
+133
+00:08:58,447 --> 00:08:59,777
+ So for the discussion,
+
+134
+00:08:59,777 --> 00:09:06,929
+ let＊s fix the period for the discussion.
+
+135
+00:09:06,929 --> 00:09:08,657
+ All right.And there＊s a choice here.
+
+136
+00:09:08,657 --> 00:09:13,638
+ A natural choice would be too high because the sine and thecosine are naturally periodic of period two pi,
+
+137
+00:09:13,638 --> 00:09:17,926
+ but I think for many formulas and for 每 andfor a variety of reasons,
+
+138
+00:09:17,926 --> 00:09:20,228
+ it is more convenient to fix the period to be one.
+
+139
+00:09:20,228 --> 00:09:22,670
+ All right. Sowe＊re gonna look 每 we＊re gonna consider function signals,
+
+140
+00:09:22,670 --> 00:09:24,931
+ which are periodic of periodone. So we＊ll use period one.
+
+141
+00:09:24,931 --> 00:09:35,777
+ That is, we consider signals 每 I＊ll write things as a functionof time,
+
+142
+00:09:35,777 --> 00:09:36,352
+ but again,
+
+143
+00:09:36,352 --> 00:09:38,675
+ it＊s not only periodicity and time that I＊m considering.
+
+144
+00:09:38,675 --> 00:09:41,193
+ All that I＊mgonna say can apply to any sort of periodic phenomena,
+
+145
+00:09:41,193 --> 00:09:49,043
+ so we＊ll consider functions f of tsatisfying 每
+
+146
+00:09:49,043 --> 00:09:55,822
+ f of t plus one is equal to f of t for all t.
+
+147
+00:09:55,822 --> 00:09:56,395
+ All right.
+
+148
+00:09:56,395 --> 00:09:59,451
+ And as the building blocksas the basic model functions,
+
+149
+00:09:59,451 --> 00:10:02,151
+ we scale the sine and the cosine, that is,
+
+150
+00:10:02,151 --> 00:10:03,870
+ we don＊t just lookat sine of t and cosine of t,
+
+151
+00:10:03,870 --> 00:10:05,046
+ we look at sine of two pi t and cosine of two pi t.
+
+152
+00:10:05,046 --> 00:10:17,962
+ So the modelsignals are sine of two pi t,
+
+153
+00:10:17,962 --> 00:10:21,653
+ that has period one, and cosine of two pi t,
+
+154
+00:10:21,653 --> 00:10:26,676
+ that has periodone. All right. Simple enough.
+
+155
+00:10:26,676 --> 00:10:29,399
+ Now,
+
+156
+00:10:29,399 --> 00:10:30,846
+ one very important thing I wanna comment before 每
+
+157
+00:10:30,846 --> 00:10:34,493
+before we launch into particulars,
+
+158
+00:10:34,493 --> 00:10:36,484
+ is that periodicity is a strong assumption,
+
+159
+00:10:36,484 --> 00:10:42,547
+ and theanalysis of periodicity has a lot of consequences.
+
+160
+00:10:42,547 --> 00:10:44,444
+ If you know 每 if you have a periodicfunction 每
+
+161
+00:10:44,444 --> 00:10:47,251
+ if you know it on an interval of length one,
+
+162
+00:10:47,251 --> 00:10:49,037
+ and any interval of length one,
+
+163
+00:10:49,037 --> 00:10:49,936
+ youknow it everywhere because the pattern repeats.
+
+164
+00:10:49,936 --> 00:10:53,155
+ If you just know a piece of the function,
+
+165
+00:10:53,155 --> 00:10:56,826
+you know it everywhere. So if we know 每 if we know,
+
+166
+00:10:56,826 --> 00:10:58,803
+ and I say, if we know 每 if weanalyze, if we 每
+
+167
+00:10:58,803 --> 00:11:05,289
+ whatever formulas we derive, and so on, this is an important maxim.
+
+168
+00:11:05,289 --> 00:11:08,110
+ SoI＊ll put it in quotes, ※know.§ To be a sort of generic,
+
+169
+00:11:08,110 --> 00:11:16,701
+ infinite, perfect, God-likeknowledge. So if we know a periodic function,
+
+170
+00:11:16,701 --> 00:11:27,100
+ say period one, on an interval, and not justa particular interval,
+
+171
+00:11:27,100 --> 00:11:47,602
+ but any interval of length one, then we know it everywhere.
+
+172
+00:11:47,602 --> 00:11:51,661
+ Allright. These are all simple remarks. Okay.
+
+173
+00:11:51,661 --> 00:11:54,430
+ These are remarks that you all have seenbefore in various contexts,
+
+174
+00:11:54,430 --> 00:11:55,749
+ but again,
+
+175
+00:11:55,749 --> 00:11:58,130
+ I wanna lay them out because I want you to havethem in your head.
+
+176
+00:11:58,130 --> 00:12:01,766
+ And I want you to be able to pull out the appropriate remark atappropriate time.
+
+177
+00:12:01,766 --> 00:12:10,619
+ And you＊d be amazed how far simple remarks can lead in the analysisof really quite complicated phenomena.
+
+178
+00:12:10,619 --> 00:12:13,643
+ Now, how are we gonna 每
+
+179
+00:12:13,643 --> 00:12:17,109
+ how are we gonnatake such simple functions of sine and cosine individually,
+
+180
+00:12:17,109 --> 00:12:20,446
+ and model very complicatedperiodic phenomena?
+
+181
+00:12:20,446 --> 00:12:23,018
+ That is the sine and the cosine as endlessly fascinating as they maybe,
+
+182
+00:12:23,018 --> 00:12:31,229
+ are just the sine and the cosine. But the fact is,
+
+183
+00:12:31,229 --> 00:12:39,415
+ they can be modified and combined toyield quite general results.
+
+184
+00:12:39,415 --> 00:12:49,328
+ We can modify and combine sine of two pi t,
+
+185
+00:12:49,328 --> 00:12:53,751
+ cosine of two pit,
+
+186
+00:12:53,751 --> 00:12:59,191
+ to model very general periodic phenomena of period one.
+
+187
+00:12:59,191 --> 00:13:05,593
+ Okay. To model generalperiodic signals of,
+
+188
+00:13:05,593 --> 00:13:11,860
+ again, period one. All right. Now, here is the first big idea,
+
+189
+00:13:11,860 --> 00:13:14,734
+ or here＊s away of phrasing the first big idea.
+
+190
+00:13:14,734 --> 00:13:16,317
+ When I talk about modifying and combining 每
+
+191
+00:13:16,317 --> 00:13:19,411
+ well,let＊s first talk about modifying.
+
+192
+00:13:19,411 --> 00:13:22,625
+ And the maxim or the aphorism that goes on 每
+
+193
+00:13:22,625 --> 00:13:25,352
+ goes withwhat I have in mind is, one period,
+
+194
+00:13:25,352 --> 00:13:34,463
+ many frequencies. As far as a big idea 每
+
+195
+00:13:34,463 --> 00:13:44,234
+ one period,many frequencies.
+
+196
+00:13:44,234 --> 00:13:53,512
+ I think you can actually find this in The Dead Sea Scrolls.
+
+197
+00:13:53,512 --> 00:13:58,375
+ Okay. Whatdo I mean, one period, many frequencies?
+
+198
+00:13:58,375 --> 00:14:04,862
+ Well, let me just take a simple example.
+
+199
+00:14:04,862 --> 00:14:13,334
+ Imean, for example, e.g., you have sine of two pi t,
+
+200
+00:14:13,334 --> 00:14:17,755
+ and we know what the graph of thatlooks like.
+
+201
+00:14:17,755 --> 00:14:20,148
+ I＊ll put the graphs over here. It repeats once and it has 每
+
+202
+00:14:20,148 --> 00:14:23,523
+ it＊s a period one; italso has a frequency one that is 每
+
+203
+00:14:23,523 --> 00:14:26,554
+ completes one cycle in one second. So if I think of thisas the time axis,
+
+204
+00:14:26,554 --> 00:14:29,460
+ say, although, again, I＊m thinking in terms of time,
+
+205
+00:14:29,460 --> 00:14:31,490
+ it＊s a very generalmathematical statement.
+
+206
+00:14:31,490 --> 00:14:34,032
+ It repeats exactly once on the interval from zero to one.
+
+207
+00:14:34,032 --> 00:14:37,309
+ Allright.
+
+208
+00:14:37,309 --> 00:14:40,696
+ If I double the frequency and look at sine four pi t 每
+
+209
+00:14:40,696 --> 00:14:43,404
+ all right 每 then that completestwo cycles.
+
+210
+00:14:43,404 --> 00:14:52,310
+ So this is period one, frequency. Sine of four pi t is period one-
+
+211
+00:14:52,310 --> 00:14:57,753
+half,frequency one 每 frequency two, but period one-
+
+212
+00:14:57,753 --> 00:15:05,394
+half also means period one. All right. Andthe picture looks like this,
+
+213
+00:15:05,394 --> 00:15:08,971
+ it goes up and down twice 每 [inaudible] 每
+
+214
+00:15:08,971 --> 00:15:13,619
+ it does, in onesecond. All right. Zero, one,
+
+215
+00:15:13,619 --> 00:15:15,621
+ it repeats. One cycle 每
+
+216
+00:15:15,621 --> 00:15:17,910
+ it goes through one cycle in a half asecond,
+
+217
+00:15:17,910 --> 00:15:19,194
+ it goes through two cycles in one second,
+
+218
+00:15:19,194 --> 00:15:21,526
+ so that＊s frequency two. All right.
+
+219
+00:15:21,526 --> 00:15:27,353
+ Butit also has period one because if you consider this as the basic pattern that repeats,
+
+220
+00:15:27,353 --> 00:15:29,617
+ and italso repeats on an interval of length one.
+
+221
+00:15:29,617 --> 00:15:30,062
+ Okay.
+
+222
+00:15:30,062 --> 00:15:31,692
+ It＊s true that it repeats on an intervallength one-
+
+223
+00:15:31,692 --> 00:15:32,263
+half,
+
+224
+00:15:32,263 --> 00:15:34,022
+ but the signals already contained in interval one-
+
+225
+00:15:34,022 --> 00:15:38,552
+half, but the whole 每 butthe signal also has a longer period.
+
+226
+00:15:38,552 --> 00:15:40,914
+ All right. It has a shorter period, but it also has alonger period.
+
+227
+00:15:40,914 --> 00:15:43,658
+ And let me do one more. If, for instance,
+
+228
+00:15:43,658 --> 00:15:56,247
+ I look at sine of six pi t, verysimple. All my remarks are very simple.
+
+229
+00:15:56,247 --> 00:16:02,600
+ This is period one-third, this has frequencythree,
+
+230
+00:16:02,600 --> 00:16:08,035
+ but it also has period one. You might think of this as,
+
+231
+00:16:08,035 --> 00:16:10,446
+ I don＊t know, the secondaryperiod, or somehow 每
+
+232
+00:16:10,446 --> 00:16:12,397
+ I don＊t know what exactly the best way of saying it because,
+
+233
+00:16:12,397 --> 00:16:12,856
+ really,
+
+234
+00:16:12,856 --> 00:16:15,401
+the best description is in terms of frequency not period.
+
+235
+00:16:15,401 --> 00:16:17,464
+ And what does the picture looklike? Well,
+
+236
+00:16:17,464 --> 00:16:19,438
+ this time it has three cycles per second 每
+
+237
+00:16:19,438 --> 00:16:20,089
+ frequency three 每
+
+238
+00:16:20,089 --> 00:16:22,620
+ so that means itgoes up and down three times in one second.
+
+239
+00:16:22,620 --> 00:16:25,333
+ Let＊s see if I can possibly do this. One,
+
+240
+00:16:25,333 --> 00:16:33,654
+ two,three. Good enough. One, zero, and one cycle is in one 每
+
+241
+00:16:33,654 --> 00:16:36,548
+ goes up and down completelyonce in one-third of a second,
+
+242
+00:16:36,548 --> 00:16:38,226
+ then the next third of a second it goes up and down again,
+
+243
+00:16:38,226 --> 00:16:40,510
+the next third of a second it goes up and down a third time.
+
+244
+00:16:40,510 --> 00:16:45,479
+ But it also has period onebecause if you consider this has the pattern that repeats,
+
+245
+00:16:45,479 --> 00:16:48,654
+ that pattern repeats on an intervalof length one.
+
+246
+00:16:48,654 --> 00:16:52,797
+ Although, in some sense, the true repetition 每
+
+247
+00:16:52,797 --> 00:16:54,020
+ the true period is shorter thanthat. Now,
+
+248
+00:16:54,020 --> 00:16:56,170
+ what about combining them? So that＊s how you can modify 每
+
+249
+00:16:56,170 --> 00:16:58,146
+ and you can dothe same thing with cosine.
+
+250
+00:16:58,146 --> 00:16:59,357
+ That＊s how you modify the function 每 one period,
+
+251
+00:16:59,357 --> 00:17:04,618
+ manyfrequencies. If we combine them together,
+
+252
+00:17:04,618 --> 00:17:08,474
+ I actually have a picture of it here, but I thinkI＊ll just try to sketch it 每
+
+253
+00:17:08,474 --> 00:17:16,070
+ fool that I am. What about the combination?
+
+254
+00:17:16,070 --> 00:17:18,896
+ And when I saycombination, I am thinking of a simple sum.
+
+255
+00:17:18,896 --> 00:17:25,122
+ That is sine of two pi t plus sine of six pi t 每
+
+256
+00:17:25,122 --> 00:17:26,770
+excuse me 每
+
+257
+00:17:26,770 --> 00:17:29,825
+ sine of four pi t plus sine of six pi t.
+
+258
+00:17:29,825 --> 00:17:38,592
+ All right. What does the graph of thatlook like?
+
+259
+00:17:38,592 --> 00:17:48,827
+ Well, it looks like so. And I＊m gonna sketch this,
+
+260
+00:17:48,827 --> 00:17:50,444
+ and then I＊m gonna 每 I＊llmake 每
+
+261
+00:17:50,444 --> 00:17:51,662
+ I wanna make another comment about this in just a second,
+
+262
+00:17:51,662 --> 00:17:56,605
+ but I actually hadMathematica plot this for me.
+
+263
+00:17:56,605 --> 00:18:00,095
+ It looks something like this, it goes 每
+
+264
+00:18:00,095 --> 00:18:01,867
+ this is plotted on aninterval of length two.
+
+265
+00:18:01,867 --> 00:18:03,630
+ All right. I＊ve plotted it and it goes 每
+
+266
+00:18:03,630 --> 00:18:04,482
+ it＊s kinda nice,
+
+267
+00:18:04,482 --> 00:18:07,448
+ it goes up andthen a little bit like this,
+
+268
+00:18:07,448 --> 00:18:10,225
+ and then it goes up and then down a little bit farther,
+
+269
+00:18:10,225 --> 00:18:13,940
+ and up alittle bit like that, and it goes down 每
+
+270
+00:18:13,940 --> 00:18:19,272
+ that＊s the sound it makes 每 up, down like that,
+
+271
+00:18:19,272 --> 00:18:20,417
+ andthen up 每 excuse me 每 and that＊s not two,
+
+272
+00:18:20,417 --> 00:18:27,805
+ it will be two, and down and up, and then therewe go.
+
+273
+00:18:27,805 --> 00:18:30,029
+ Two. And then it repeats. Here＊s one. All right.
+
+274
+00:18:30,029 --> 00:18:32,960
+ That＊s the sum. Now, what is theperiod of a sum?
+
+275
+00:18:32,960 --> 00:18:36,521
+ The period of the sum is one. All right.
+
+276
+00:18:36,521 --> 00:18:40,828
+ Because although the things of 每
+
+277
+00:18:40,828 --> 00:18:44,051
+the terms of higher frequency are repeating more rapidly,
+
+278
+00:18:44,051 --> 00:18:49,169
+ the sum can＊t go back to whereit started until the slowest one gets caught up 每
+
+279
+00:18:49,169 --> 00:18:52,268
+ goes to where 每 back to where it started.
+
+280
+00:18:52,268 --> 00:19:01,292
+All right. The period of the sum is one. One period,
+
+281
+00:19:01,292 --> 00:19:04,220
+ many frequencies. There are threefrequencies in the sum.
+
+282
+00:19:04,220 --> 00:19:07,927
+ One, two, and three. But added together,
+
+283
+00:19:07,927 --> 00:19:10,887
+ there＊s only one period.So in a complicated 每
+
+284
+00:19:10,887 --> 00:19:13,090
+ this is a very important point, and again,
+
+285
+00:19:13,090 --> 00:19:20,491
+ I＊m sure it＊s a point thatyou＊ve seen before.
+
+286
+00:19:20,491 --> 00:19:24,930
+ That＊s why I say one period, many frequency,
+
+287
+00:19:24,930 --> 00:19:27,101
+ and that＊s why forcomplicated periodic phenomena,
+
+288
+00:19:27,101 --> 00:19:30,717
+ it＊s really better, more revealing,
+
+289
+00:19:30,717 --> 00:19:34,424
+ to talk in terms of thefrequencies that might go into it,
+
+290
+00:19:34,424 --> 00:19:35,500
+ rather than the period. You are fixing the period.
+
+291
+00:19:35,500 --> 00:19:37,496
+ You＊refixing the period to have length one.
+
+292
+00:19:37,496 --> 00:19:38,702
+ All right. But you want 每
+
+293
+00:19:38,702 --> 00:19:40,147
+ but you might have a verycomplicated phenomena.
+
+294
+00:19:40,147 --> 00:19:41,945
+ That complicated phenomena, as it turns out,
+
+295
+00:19:41,945 --> 00:19:47,625
+ is gonna be builtup out of sines and cosines of varying frequency.
+
+296
+00:19:47,625 --> 00:19:50,888
+ AS long as the sum has period one, thenwe＊re okay.
+
+297
+00:19:50,888 --> 00:19:52,501
+ One period, many frequencies.
+
+298
+00:19:52,501 --> 00:19:55,759
+ That＊s the aphorism that goes on with this 每
+
+299
+00:19:55,759 --> 00:20:00,774
+that goes along with this. Now, in fact, what is it 每
+
+300
+00:20:00,774 --> 00:20:05,070
+ what we can do more than just modifythe frequency.
+
+301
+00:20:05,070 --> 00:20:07,788
+ We can also modify the amplitudes separately,
+
+302
+00:20:07,788 --> 00:20:10,122
+ and we can modify thephases of each one of those 每
+
+303
+00:20:10,122 --> 00:20:29,381
+ each one of those terms. So to model complicated,
+
+304
+00:20:29,381 --> 00:20:32,493
+ perhaps,how complicated? We＊ll see.
+
+305
+00:20:32,493 --> 00:20:40,858
+ A complicated signal of period one we can sum 每
+
+306
+00:20:40,858 --> 00:20:50,291
+ we canmodify the amplitude, the frequency,
+
+307
+00:20:50,291 --> 00:20:54,954
+ and the phases of either sines or cosines,
+
+308
+00:20:54,954 --> 00:20:58,483
+ but let mejust stick with the sines 每 of sine of two pi t,
+
+309
+00:20:58,483 --> 00:21:05,058
+ and add up the results. That is, we canconsider something like this.
+
+310
+00:21:05,058 --> 00:21:17,427
+ Something of a form, say, k going from one up to n,
+
+311
+00:21:17,427 --> 00:21:20,107
+ and wecan consider how ever many of them we want.
+
+312
+00:21:20,107 --> 00:21:24,921
+ A sub k, sine of two pi k times t plus 每
+
+313
+00:21:24,921 --> 00:21:31,443
+that＊s modifying the frequency 每 plus fe sub k 每
+
+314
+00:21:31,443 --> 00:21:36,768
+ allowing myself to modify the phase. Fesub k.
+
+315
+00:21:36,768 --> 00:21:41,362
+ That＊s about the most general kind of sum that we can form out of just the sines or每
+
+316
+00:21:41,362 --> 00:21:42,902
+ and I can do the same thing with cosines,
+
+317
+00:21:42,902 --> 00:21:45,139
+ or I can combine the two and I＊ll say moreabout that in just a second.
+
+318
+00:21:45,139 --> 00:21:49,198
+ All right. So again, many frequencies, one period.
+
+319
+00:21:49,198 --> 00:21:51,152
+ All right.the lowest 每
+
+320
+00:21:51,152 --> 00:21:54,135
+ the longest period in the sum is when k is equal to one,
+
+321
+00:21:54,135 --> 00:21:56,979
+ period one. Thehigher terms, they＊re called harmonics,
+
+322
+00:21:56,979 --> 00:22:00,392
+ because of the connection with music, and it＊sdiscussed in the notes,
+
+323
+00:22:00,392 --> 00:22:01,203
+ because they model 每
+
+324
+00:22:01,203 --> 00:22:05,161
+ because simple sines and cosine modelmusical phenomena as a repeating pattern 每
+
+325
+00:22:05,161 --> 00:22:08,486
+ musical notes. The higher harmonics, thehigher terms,
+
+326
+00:22:08,486 --> 00:22:11,351
+ have higher frequencies, have shorter periods,
+
+327
+00:22:11,351 --> 00:22:17,731
+ but the sum has period onebecause the whole pattern can＊t repeat until the longest period repeats.
+
+328
+00:22:17,731 --> 00:22:19,848
+ All right. Until thelongest pattern is completed.
+
+329
+00:22:19,848 --> 00:22:24,944
+ Now,
+
+330
+00:22:24,944 --> 00:22:26,248
+ I＊m actually gonna post on the website 每
+
+331
+00:22:26,248 --> 00:22:31,673
+ I＊m going togive you a little MATLAB program that allows you to experiment with just these sorts ofsums.
+
+332
+00:22:31,673 --> 00:22:35,053
+ All right. That is, you choose n 每 it forms sums exactly like this 每
+
+333
+00:22:35,053 --> 00:22:37,836
+ you can choosethe a＊s, the amplitudes, you can choose the phases,
+
+334
+00:22:37,836 --> 00:22:40,415
+ and it will plot what a sum looks like.All right.
+
+335
+00:22:40,415 --> 00:22:41,219
+ It＊s called 每
+
+336
+00:22:41,219 --> 00:22:45,272
+ so I have MATLAB program with a graphical user interface.
+
+337
+00:22:45,272 --> 00:22:47,378
+ Iwrote this myself, actually, a couple years ago.
+
+338
+00:22:47,378 --> 00:22:52,309
+ I was very 每 it was the first I ever did inMATLAB,
+
+339
+00:22:52,309 --> 00:22:53,141
+ it was pretty clunky, let me tell ya. But last year,
+
+340
+00:22:53,141 --> 00:22:57,916
+ a student in the class, in 261,took it upon herself to modify it,
+
+341
+00:22:57,916 --> 00:23:00,846
+ which caused me to bump up her grade in the end,
+
+342
+00:23:00,846 --> 00:23:02,785
+ andit＊s really quite a nice little program.
+
+343
+00:23:02,785 --> 00:23:03,614
+ It＊s not complicated,
+
+344
+00:23:03,614 --> 00:23:08,810
+ but it＊ll show you howcomplicated these sums can be.
+
+345
+00:23:08,810 --> 00:23:12,740
+ All right. So there＊s a MATLAB program, which I＊ll poston the website,
+
+346
+00:23:12,740 --> 00:23:16,144
+ sine sum 每
+
+347
+00:23:16,144 --> 00:23:19,688
+ actually it＊s called sine sum two because sine sum one was myown version,
+
+348
+00:23:19,688 --> 00:23:22,620
+ which is now on the ash heap of history.
+
+349
+00:23:22,620 --> 00:23:30,697
+ All right. To plot these sums 每 andit＊s really quite 每
+
+350
+00:23:30,697 --> 00:23:33,374
+ I mean it＊s 每 talk about fun, you know 每
+
+351
+00:23:33,374 --> 00:23:38,353
+ I mean to see how complicateda pattern you can build up out of relatively simple building blocks like this,
+
+352
+00:23:38,353 --> 00:23:40,315
+ it＊s reallypretty good. So we may even 每
+
+353
+00:23:40,315 --> 00:23:44,751
+ we＊re actually trying to see if we can do a homeworkassignment based on this 每
+
+354
+00:23:44,751 --> 00:23:46,338
+ based on the program.
+
+355
+00:23:46,338 --> 00:23:50,627
+ There＊s a feature in the program thatallows you too actually to play the sound that＊s associated with this.
+
+356
+00:23:50,627 --> 00:23:51,265
+ That is,
+
+357
+00:23:51,265 --> 00:23:52,160
+ if youconsider these things as modeling 每
+
+358
+00:23:52,160 --> 00:23:57,108
+ if you consider the simple sinusoids as modeling apure musical note,
+
+359
+00:23:57,108 --> 00:23:59,490
+ then a combination models a combination of musical notes,
+
+360
+00:23:59,490 --> 00:24:01,109
+ and if youput a little button, it plays sound,
+
+361
+00:24:01,109 --> 00:24:03,408
+ you＊ll get something that may sound good or may notsound good.
+
+362
+00:24:03,408 --> 00:24:05,378
+ But it＊s interesting to try. Unfortunately,
+
+363
+00:24:05,378 --> 00:24:07,874
+ the play sound feature doesn＊t seemto work on the Mac,
+
+364
+00:24:07,874 --> 00:24:08,864
+ it only seems to work on Windows.
+
+365
+00:24:08,864 --> 00:24:12,291
+ It requires Windows MediaPlayer or something like that;
+
+366
+00:24:12,291 --> 00:24:15,031
+ Bill Gates＊ version of death 4.2 or something,
+
+367
+00:24:15,031 --> 00:24:16,831
+ I don＊tknow. Anyway,
+
+368
+00:24:16,831 --> 00:24:19,973
+ so we have to see if we can fix it to work on the Mac,
+
+369
+00:24:19,973 --> 00:24:21,453
+ but 每
+
+370
+00:24:21,453 --> 00:24:23,625
+ everythingworks on the Mac fine except for playing the note.
+
+371
+00:24:23,625 --> 00:24:26,266
+ So I＊ll put that up on the web in a zipfile,
+
+372
+00:24:26,266 --> 00:24:31,022
+ and you should fool around with it a little bit.
+
+373
+00:24:31,022 --> 00:24:31,413
+ Okay?
+
+374
+00:24:31,413 --> 00:24:37,838
+ Because it＊ll give you a goodsense of just how complicated these things can be.
+
+375
+00:24:37,838 --> 00:24:41,970
+ All right. Now, so how complicatedcan they be?
+
+376
+00:24:41,970 --> 00:24:44,573
+ That＊s the question that I really wanna address.
+
+377
+00:24:44,573 --> 00:24:47,980
+ I mean,
+
+378
+00:24:47,980 --> 00:24:51,744
+ this sum is alreadymore complicated than just the sine and the cosine alone,
+
+379
+00:24:51,744 --> 00:24:57,423
+ but it doesn＊t begin to exhaustthe possibilities that we want to be able to deal with.
+
+380
+00:24:57,423 --> 00:25:00,831
+ Let me say, to advance thediscussion, actually,
+
+381
+00:25:00,831 --> 00:25:05,669
+ and to really get to the point where I can ask the question in areasonable way,
+
+382
+00:25:05,669 --> 00:25:10,682
+ how general a periodic phenomena can we expect to model with sumslike this.
+
+383
+00:25:10,682 --> 00:25:14,326
+ Let me say a little bit about the different forms that you can write the sum inbecause algebraically 每
+
+384
+00:25:14,326 --> 00:25:17,215
+ for algebraic reasons, primarily algebraic reasons,
+
+385
+00:25:17,215 --> 00:25:20,173
+ there are moreor less convenient ways to write this sum.
+
+386
+00:25:20,173 --> 00:25:20,968
+ Okay.
+
+387
+00:25:20,968 --> 00:25:24,018
+ And I think it＊s worth commentingabout it,
+
+388
+00:25:24,018 --> 00:25:35,386
+ just a little bit. So different ways of writing the sum 每
+
+389
+00:25:35,386 --> 00:25:40,549
+this sort of sum 每 k equalsone to n of a sub 每
+
+390
+00:25:40,549 --> 00:25:43,111
+ I＊m gonna use a capital in here 每 [inaudible] 每
+
+391
+00:25:43,111 --> 00:25:49,282
+ a sub k sine of two pi kt plus fe sub k.
+
+392
+00:25:49,282 --> 00:25:57,123
+ All right. Now, you can lose the phase, so to speak,
+
+393
+00:25:57,123 --> 00:26:00,955
+ and bring in 每 write itin terms of sines and cosines,
+
+394
+00:26:00,955 --> 00:26:03,695
+ if you use the addition formula for the sine function.
+
+395
+00:26:03,695 --> 00:26:05,064
+ That isthe 每
+
+396
+00:26:05,064 --> 00:26:09,889
+ the formula for the sine of the sum of two angles.
+
+397
+00:26:09,889 --> 00:26:26,504
+ So if you write sine of two pi k tplus fe k as the sine of two pi k t times the cosine of fe k plus the cosine of two pi k ttimes the sine of fe k,
+
+398
+00:26:26,504 --> 00:26:28,255
+ just using the addition formula,
+
+399
+00:26:28,255 --> 00:26:35,979
+ than that sum can be written interms of sines and cosines.
+
+400
+00:26:35,979 --> 00:26:39,566
+ You can write the sum in the form 每 let me use 每
+
+401
+00:26:39,566 --> 00:26:43,878
+ for differentcoefficients, say sum from k equals one to n,
+
+402
+00:26:43,878 --> 00:26:45,929
+ little a k times the cosine of two pi k t,
+
+403
+00:26:45,929 --> 00:26:50,835
+ pluslittle b sub k times the sine of two pi k t.
+
+404
+00:26:50,835 --> 00:26:52,963
+ All right. And you know where the 每
+
+405
+00:26:52,963 --> 00:26:57,965
+ how thelittle ak＊s and the bk＊s are related to the capital A＊s in the phase just by working it out.
+
+406
+00:26:57,965 --> 00:27:00,603
+All right. So capital A sub k times this thing,
+
+407
+00:27:00,603 --> 00:27:02,296
+ and then there＊s a term coming from thephase 每
+
+408
+00:27:02,296 --> 00:27:03,592
+ you haven＊t lost information about the phase in some sense,
+
+409
+00:27:03,592 --> 00:27:04,426
+ it＊s still there,
+
+410
+00:27:04,426 --> 00:27:09,049
+ butit＊s represented differently in terms of the coefficients out in the form of the sum.
+
+411
+00:27:09,049 --> 00:27:09,595
+ Allright.
+
+412
+00:27:09,595 --> 00:27:09,490
+ This is a very common way of writing these sorts of trigonometric sums.
+
+413
+00:27:09,490 --> 00:27:13,638
+ As amatter of fact, I＊d say it＊s more common in 每
+
+414
+00:27:13,638 --> 00:27:17,065
+ if you look in the applications, even if youlook in the textbooks,
+
+415
+00:27:17,065 --> 00:27:20,759
+ it＊s more common to write the sum this form than it is to write it inthis form.
+
+416
+00:27:20,759 --> 00:27:24,305
+ But there equivalent, all right?
+
+417
+00:27:24,305 --> 00:27:24,652
+ You can go back and for the between the two.
+
+418
+00:27:24,652 --> 00:27:28,451
+And you can also allow for a constant term,
+
+419
+00:27:28,451 --> 00:27:30,814
+ you can shift the whole thing up.
+
+420
+00:27:30,814 --> 00:27:33,224
+ And that＊salso usually done for purposes of generality.
+
+421
+00:27:33,224 --> 00:27:52,695
+ All right. You can add a constant term.
+
+422
+00:27:52,695 --> 00:27:55,044
+ Andit＊s usually written in the form a zero over two,
+
+423
+00:27:55,044 --> 00:27:57,153
+ the reason why a zero over two is in thereis because of yet,
+
+424
+00:27:57,153 --> 00:27:59,722
+ another form of writing it. Let me just write out the rest of it:
+
+425
+00:27:59,722 --> 00:28:02,863
+ a zeroover two plus, again, sum from n equals 每
+
+426
+00:28:02,863 --> 00:28:13,771
+ for k equals one to n to n of a sub k, cosine oftwo pi k t plus b sub k,
+
+427
+00:28:13,771 --> 00:28:17,726
+ sine of two pi k t. All right.
+
+428
+00:28:17,726 --> 00:28:22,701
+ And electrical engineers always callthis the dc component.
+
+429
+00:28:22,701 --> 00:28:25,385
+ I hate that. All right. But they always do.
+
+430
+00:28:25,385 --> 00:28:25,869
+ All right.
+
+431
+00:28:25,869 --> 00:28:29,064
+ Who alllearned to call this the dc component?
+
+432
+00:28:29,064 --> 00:28:31,638
+ Yeah, I hate that. Not everybody, I＊m glad to seethat.
+
+433
+00:28:31,638 --> 00:28:34,687
+ That＊s because you think of a periodic phenomena,
+
+434
+00:28:34,687 --> 00:28:36,441
+ you think about alternative 每 Idon＊t know what you think about.
+
+435
+00:28:36,441 --> 00:28:39,896
+ You think about alternating current or voltagesomehow is a periodic part,
+
+436
+00:28:39,896 --> 00:28:41,696
+ but then there＊s a direct part that doesn＊t alternate.
+
+437
+00:28:41,696 --> 00:28:43,948
+ There＊s adc part 每 direct current part 每
+
+438
+00:28:43,948 --> 00:28:45,403
+ that doesn＊t alternate, and that＊s that term.
+
+439
+00:28:45,403 --> 00:28:51,302
+ The reason whyI don＊t like calling this the dc component is because what if a problem had absolutelynothing to do with current,
+
+440
+00:28:51,302 --> 00:28:52,631
+ you know?
+
+441
+00:28:52,631 --> 00:28:55,771
+ You＊re sometimes trapped by your language,
+
+442
+00:28:55,771 --> 00:28:58,751
+ andthe field again, as I will say over and over again,
+
+443
+00:28:58,751 --> 00:29:04,105
+ is so broad and so diverse that you don＊twant to trap yourself into thinking about it in only one way.
+
+444
+00:29:04,105 --> 00:29:05,610
+ You know.
+
+445
+00:29:05,610 --> 00:29:07,830
+ You may bemodeling some very complicated phenomena,
+
+446
+00:29:07,830 --> 00:29:10,456
+ and you say, ＆What is a dc component?＊ Issomebody gonna look at you,
+
+447
+00:29:10,456 --> 00:29:16,315
+ like, ＆What are you talking about?＊ You know?
+
+448
+00:29:16,315 --> 00:29:17,262
+ All right.Now,
+
+449
+00:29:17,262 --> 00:29:21,390
+ so that＊s a very common way of writing the form of the sum,
+
+450
+00:29:21,390 --> 00:29:27,155
+ but by far, the mostconvenient way algebraically,
+
+451
+00:29:27,155 --> 00:29:30,333
+ and really in many ways, conceptually,
+
+452
+00:29:30,333 --> 00:29:33,089
+ is to use complexexponentials to write the sum,
+
+453
+00:29:33,089 --> 00:29:36,251
+ not the real sines and cosines. By far.
+
+454
+00:29:36,251 --> 00:29:40,838
+ And this is prettymuch the last time I＊m gonna use sines and cosines.
+
+455
+00:29:40,838 --> 00:29:43,516
+ Or pretty much the last time I＊mgonna write the expression like this,
+
+456
+00:29:43,516 --> 00:29:49,844
+ so it＊s by far better. And I＊ll have to convince you ofthis.
+
+457
+00:29:49,844 --> 00:29:53,302
+ All right. Primarily, algebraically, but also conceptually,
+
+458
+00:29:53,302 --> 00:30:05,999
+ is by far better to use torepresent sine and cosine via complex exponentials.
+
+459
+00:30:05,999 --> 00:30:12,930
+ And write the sum that way. Allright. so what do I mean by that?
+
+460
+00:30:12,930 --> 00:30:18,098
+ Let me just remind you, of course, in either the two pi in t,
+
+461
+00:30:18,098 --> 00:30:22,490
+ [inaudible] formula is cosine of two pi n t plus or k 每
+
+462
+00:30:22,490 --> 00:30:23,437
+ or I guess I＊m calling it k,
+
+463
+00:30:23,437 --> 00:30:25,811
+ letme stick with the terminology there 每
+
+464
+00:30:25,811 --> 00:30:31,253
+ two pi k t plus sine of two pi k plus i times the sineof two pi k t.
+
+465
+00:30:31,253 --> 00:30:32,942
+ Oh, yes, that＊s something else. All right.
+
+466
+00:30:32,942 --> 00:30:42,087
+ I＊m gonna announce a declarationof principle.
+
+467
+00:30:42,087 --> 00:30:45,177
+ I is the square root of minus one, in this class.
+
+468
+00:30:45,177 --> 00:30:52,194
+ Not j. Deal with it. Get over it.All right.
+
+469
+00:30:52,194 --> 00:30:59,491
+ For me, for this class, it＊s i. You can use j if you want.
+
+470
+00:30:59,491 --> 00:31:14,779
+ I will use i. Now,because of Oiler＊s formula 每
+
+471
+00:31:14,779 --> 00:31:16,942
+ Oiler＊s famous formula 每
+
+472
+00:31:16,942 --> 00:31:22,142
+ you can express sines and cosinesin terms of the completive exponential ant it＊s conjugate,
+
+473
+00:31:22,142 --> 00:31:23,519
+ that is, very simple formula,
+
+474
+00:31:23,519 --> 00:31:26,058
+ thecosine is the real part and the sine is the imaginary part.
+
+475
+00:31:26,058 --> 00:31:32,679
+ So cosine of two pi k t is then eto the pi i is the real part.
+
+476
+00:31:32,679 --> 00:31:38,572
+ Two pi i k t plus e to the minus two pi i k t over two.
+
+477
+00:31:38,572 --> 00:31:43,837
+ And thesine of two pi k t, likewise,
+
+478
+00:31:43,837 --> 00:31:52,951
+ is the imaginary part that＊s e to the two pi i k t minus e to theminus two pi i k t divided by two i.
+
+479
+00:31:52,951 --> 00:31:56,705
+ There is an appendix in the notes on the algebra ofcomplex numbers,
+
+480
+00:31:56,705 --> 00:31:59,025
+ so if you＊re at all rusty on that, you should review that.
+
+481
+00:31:59,025 --> 00:31:59,895
+ All right.
+
+482
+00:31:59,895 --> 00:32:03,193
+Because you＊re gonna want to be able to manipulate complex numbers,
+
+483
+00:32:03,193 --> 00:32:03,265
+ and I＊m thinkingprimarily here in terms of working with complex conjugates with real parts andimaginary parts.
+
+484
+00:32:03,265 --> 00:32:11,050
+ You＊re gonna wanna be able to do that with confidence and gusto.
+
+485
+00:32:11,050 --> 00:32:11,889
+ Allright.
+
+486
+00:32:11,889 --> 00:32:14,812
+ So if you＊re at all rusty in manipulating complex number 每
+
+487
+00:32:14,812 --> 00:32:17,093
+ and complexexponentials, look over the chapter.
+
+488
+00:32:17,093 --> 00:32:18,915
+ All right? Matter of fact, on the first problem set,
+
+489
+00:32:18,915 --> 00:32:24,242
+there are several problems that you give you practice in exactly this and manipulatingcomplex numbers.
+
+490
+00:32:24,242 --> 00:32:26,760
+ All right. Complex exponentials. Now, because of this 每
+
+491
+00:32:26,760 --> 00:32:29,062
+ and I won＊t 每I won＊t write it out in detail,
+
+492
+00:32:29,062 --> 00:32:34,111
+ you can obviously then convert a sum which is not gone,
+
+493
+00:32:34,111 --> 00:32:35,705
+which looks in terms of sines and cosines 每
+
+494
+00:32:35,705 --> 00:32:39,045
+ in terms of complex exponentials.
+
+495
+00:32:39,045 --> 00:32:53,489
+ So you canconvert a trigonometric sum as before to the form sum 每
+
+496
+00:32:53,489 --> 00:32:59,138
+ and I＊ll write it like this 每 sumfrom k equals minus n to n,
+
+497
+00:32:59,138 --> 00:33:00,381
+ so it includes the zeros term, the constant term,
+
+498
+00:33:00,381 --> 00:33:05,467
+ c sub k 每 e tothe two pi i k t. All right.
+
+499
+00:33:05,467 --> 00:33:09,307
+ We are now 每 the C sub k＊s are complex numbers.
+
+500
+00:33:09,307 --> 00:33:29,877
+ Everythingin sight is complex. So, All right.
+
+501
+00:33:29,877 --> 00:33:37,974
+ The c k＊s are complex. Now, they can be 每
+
+502
+00:33:37,974 --> 00:33:43,073
+ all right 每they can be expressed 每 I won＊t do this and 每
+
+503
+00:33:43,073 --> 00:33:44,882
+ I was gonna give you a homework problemon this,
+
+504
+00:33:44,882 --> 00:33:49,485
+ but I decided not to. You can do this just for fun.
+
+505
+00:33:49,485 --> 00:33:50,720
+ You can see how the differentcoefficients are related.
+
+506
+00:33:50,720 --> 00:33:53,114
+ So start with the expression in terms of sines and cosines,
+
+507
+00:33:53,114 --> 00:33:56,475
+ makethe substitution in terms of the complex exponential and see what happens to thecoefficients.
+
+508
+00:33:56,475 --> 00:34:00,068
+ All right. You will find, actually, a very important symmetry property.
+
+509
+00:34:00,068 --> 00:34:01,604
+ Allright. These are complex numbers,
+
+510
+00:34:01,604 --> 00:34:03,378
+ but they＊re not just arbitrary complex numbers,
+
+511
+00:34:03,378 --> 00:34:07,854
+ theysatisfy symmetry property.
+
+512
+00:34:07,854 --> 00:34:12,234
+ And it＊s because of the symmetry that the total sum is real.
+
+513
+00:34:12,234 --> 00:34:15,877
+All right. The symmetry property 每 this comes up a lot 每
+
+514
+00:34:15,877 --> 00:34:18,207
+ and we＊ll see similar sort ofthings reflected actually,
+
+515
+00:34:18,207 --> 00:34:19,899
+ when we talked about Fourier transforms.
+
+516
+00:34:19,899 --> 00:34:25,518
+ That is c sub 每 thesum goes from minus n up to n 每
+
+517
+00:34:25,518 --> 00:34:26,816
+ they satisfy the property,
+
+518
+00:34:26,816 --> 00:34:27,696
+ the c sub minus k is c sub kcomplex conjugate,
+
+519
+00:34:27,696 --> 00:34:30,601
+ c k bar. All right.
+
+520
+00:34:30,601 --> 00:34:36,028
+ That＊s a very important identity that＊s satisfied bythe coefficients for a real signal like that,
+
+521
+00:34:36,028 --> 00:34:38,265
+ and it comes up often. All right.
+
+522
+00:34:38,265 --> 00:34:43,187
+ it＊s one of thethings you have to keep in mind.
+
+523
+00:34:43,187 --> 00:34:43,807
+ All right.
+
+524
+00:34:43,807 --> 00:34:47,093
+ That＊s a consequence of actually making theconversion.
+
+525
+00:34:47,093 --> 00:34:47,987
+ That is,
+
+526
+00:34:47,987 --> 00:34:49,417
+ starting with a formula in terms of sines and cosines,
+
+527
+00:34:49,417 --> 00:34:52,903
+ and then gettingthe formula in terms of the complex numbers.
+
+528
+00:34:52,903 --> 00:34:57,963
+ All right. Conversely, conversely, if youstart with the sum of this form,
+
+529
+00:34:57,963 --> 00:34:59,313
+ all right,
+
+530
+00:34:59,313 --> 00:35:01,723
+ where the coefficient satisfies the symmetryproperty,
+
+531
+00:35:01,723 --> 00:35:03,923
+ then the total some will be real.
+
+532
+00:35:03,923 --> 00:35:07,211
+ That＊s because you can group a positive termand a negative term,
+
+533
+00:35:07,211 --> 00:35:10,419
+ and because of this relationship here,
+
+534
+00:35:10,419 --> 00:35:13,325
+ you＊ll be adding a complexnumber plus its conjugate,
+
+535
+00:35:13,325 --> 00:35:15,009
+ so you＊ll get a real 每 results out of that.
+
+536
+00:35:15,009 --> 00:35:16,763
+ All right. So if thecoefficients satisfy this,
+
+537
+00:35:16,763 --> 00:35:19,220
+ then the signal is real. And conversely,
+
+538
+00:35:19,220 --> 00:35:21,295
+ if the signal is real andyou write it like that,
+
+539
+00:35:21,295 --> 00:35:25,467
+ then the coefficients have to satisfy the symmetry property.
+
+540
+00:35:25,467 --> 00:35:28,070
+ Yeah?Student:What is that 每 [inaudible] 每
+
+541
+00:35:28,070 --> 00:35:30,977
+Instructor (Brad Osgood):What is that line?
+
+542
+00:35:30,977 --> 00:35:32,473
+ That line is 每 indicates complex conjugate.
+
+543
+00:35:32,473 --> 00:35:36,067
+All right. So for a general 每 all right, do I have to say anymore first?
+
+544
+00:35:36,067 --> 00:35:37,699
+ So for generalcomplex number a plus b i,
+
+545
+00:35:37,699 --> 00:35:39,941
+ the conjugate is a minus b i. Okay.
+
+546
+00:35:39,941 --> 00:35:42,157
+ There are differentnotations for complex conjugates,
+
+547
+00:35:42,157 --> 00:35:43,987
+ sometimes some people use different 每 some peopleuse an asterisk,
+
+548
+00:35:43,987 --> 00:35:49,236
+ a star, some people even use a dagger. All right.
+
+549
+00:35:49,236 --> 00:35:51,102
+ But I think by far 每 it＊strue, I＊m not making that up.
+
+550
+00:35:51,102 --> 00:35:54,489
+ But this is the most common notation. All right.
+
+551
+00:35:54,489 --> 00:35:58,354
+ And that isanother notation I will use.Okay.
+
+552
+00:35:58,354 --> 00:36:08,822
+ Now, now, now, now. We are ready, at last,
+
+553
+00:36:08,822 --> 00:36:15,537
+ to at least ask the question that＊s reallyat the heart of all of this.
+
+554
+00:36:15,537 --> 00:36:23,197
+ How general can this be? How general can this be?
+
+555
+00:36:23,197 --> 00:36:24,840
+ I mean, I＊min the form now, algebraically 每
+
+556
+00:36:24,840 --> 00:36:25,800
+ well,
+
+557
+00:36:25,800 --> 00:36:27,812
+ I＊m in the form now where I can ask the question,
+
+558
+00:36:27,812 --> 00:36:29,725
+and as we＊ll see algebraically,
+
+559
+00:36:29,725 --> 00:36:45,946
+ writing sums of this form is by far the easiest way toapproach it.
+
+560
+00:36:45,946 --> 00:36:52,316
+So we can now ask the fundamental question.
+
+561
+00:36:52,316 --> 00:36:56,287
+ Why is there something rather thannothing?
+
+562
+00:36:56,287 --> 00:36:59,065
+ Let＊s kick that one around for awhile. The fundamental question 每
+
+563
+00:36:59,065 --> 00:37:00,003
+ so again,
+
+564
+00:37:00,003 --> 00:37:08,204
+ f oft is a periodic function of period one.
+
+565
+00:37:08,204 --> 00:37:20,408
+ All right. Can we write it, f of t and that sort ofsum,
+
+566
+00:37:20,408 --> 00:37:26,521
+ k going from minus n to n of c sub k e to the two pi i k t.
+
+567
+00:37:26,521 --> 00:37:27,616
+ So again,
+
+568
+00:37:27,616 --> 00:37:30,595
+ I＊m assuming thesignal is real here so the coefficient satisfies symmetry relation;
+
+569
+00:37:30,595 --> 00:37:33,316
+ just keep your eye on theball here.The fundamental question is this.
+
+570
+00:37:33,316 --> 00:37:36,721
+ You have a general periodic function, can you write itas a trigonometric sum?
+
+571
+00:37:36,721 --> 00:37:38,768
+ Can you express it in terms of sines and cosines?
+
+572
+00:37:38,768 --> 00:37:41,108
+ Can youexpress it in terms of the fundamental building blocks?
+
+573
+00:37:41,108 --> 00:37:44,116
+ All right. By the way, linearity isplaying a role here,
+
+574
+00:37:44,116 --> 00:37:46,714
+ although again, I haven＊t said it explicitly until now,
+
+575
+00:37:46,714 --> 00:37:50,290
+ we＊reconsidering linear combinations of the basic building blocks.
+
+576
+00:37:50,290 --> 00:37:55,543
+ We＊re considering a linearway of combining the basic trigonometric functions,
+
+577
+00:37:55,543 --> 00:37:58,910
+ the basic periodic functions. Allright. A linear way of doing that.
+
+578
+00:37:58,910 --> 00:38:08,850
+So that＊s the fundamental question. And the answer 每
+
+579
+00:38:08,850 --> 00:38:09,544
+ I＊ll tell you next time.
+
+580
+00:38:09,544 --> 00:38:18,784
+ But youdon＊t think I＊d make such a big deal out of it if the answer was no.
+
+581
+00:38:18,784 --> 00:38:25,919
+ So 每 but there＊s a lotto do. And answering this question 每
+
+582
+00:38:25,919 --> 00:38:28,879
+ answering this question led to a lot of very profoundand far-
+
+583
+00:38:28,879 --> 00:38:38,682
+reaching investigations.All right. Now 每 but I want to get started on it.
+
+584
+00:38:38,682 --> 00:38:41,626
+ All right. Now, let me give you a littleclue.
+
+585
+00:38:41,626 --> 00:38:42,957
+ Yeah 每Student:
+
+586
+00:38:42,957 --> 00:38:47,042
+[Inaudible] earlier you were starting with one.
+
+587
+00:38:47,042 --> 00:38:48,158
+Instructor (Brad Osgood):Pardon? Why am I not starting with one?
+
+588
+00:38:48,158 --> 00:38:49,647
+ Well, for one thing每
+
+589
+00:38:49,647 --> 00:38:53,474
+ so the question is why does the sum go from minus n to n,
+
+590
+00:38:53,474 --> 00:38:53,961
+ and why doesn＊t it just gofrom one to n?
+
+591
+00:38:53,961 --> 00:38:56,063
+Well, for one thing, if it went from one to n,
+
+592
+00:38:56,063 --> 00:38:56,880
+ the signal wouldn＊t be real, right?
+
+593
+00:38:56,880 --> 00:39:00,213
+Remember there＊s this combination of the positive terms and the negative terms,
+
+594
+00:39:00,213 --> 00:39:00,703
+ allright?
+
+595
+00:39:00,703 --> 00:39:02,622
+ And the positive terms and the negative terms 每
+
+596
+00:39:02,622 --> 00:39:04,108
+ because of the symmetry relationof the coefficient,
+
+597
+00:39:04,108 --> 00:39:07,019
+ the positive and the negative terms combine to give you a real signal 每
+
+598
+00:39:07,019 --> 00:39:08,216
+to give you a real part.
+
+599
+00:39:08,216 --> 00:39:11,659
+ And it＊s a fact that if you start with a real signal in terms of sinesand cosines,
+
+600
+00:39:11,659 --> 00:39:14,484
+ and then you use complex exponentials to express it this way,
+
+601
+00:39:14,484 --> 00:39:16,183
+ you will findthat it＊s the symmetric sum.
+
+602
+00:39:16,183 --> 00:39:18,615
+ It goes from minus n to n. Okay.By the way,
+
+603
+00:39:18,615 --> 00:39:20,495
+ I should have said something over here, I suppose.
+
+604
+00:39:20,495 --> 00:39:25,936
+ Note one thing, by theway, that c sub-zero is equal to c sub-
+
+605
+00:39:25,936 --> 00:39:32,540
+minus zero. Zero being what it is. C sub minus zerois equal to c sub-
+
+606
+00:39:32,540 --> 00:39:36,037
+zero is equal to c zero bar.
+
+607
+00:39:36,037 --> 00:39:42,489
+ What does it mean to say that a complexnumber is equal to its conjugate?
+
+608
+00:39:42,489 --> 00:39:44,652
+Student:It is real.Instructor (Brad Osgood):
+
+609
+00:39:44,652 --> 00:39:45,714
+It＊s real. All right.
+
+610
+00:39:45,714 --> 00:39:47,623
+ So the one coefficient that you know forsure is real,
+
+611
+00:39:47,623 --> 00:39:48,349
+ others may be real, it may just work out that way,
+
+612
+00:39:48,349 --> 00:39:51,712
+ but the one coefficient thatyou know is real for sure,
+
+613
+00:39:51,712 --> 00:39:55,073
+ is the zero of coefficient. All right. so it must be real.
+
+614
+00:39:55,073 --> 00:39:57,327
+ So c zerois real. That＊s just a little aside,
+
+615
+00:39:57,327 --> 00:40:01,425
+ c zero is real.All right. You have to be a little 每
+
+616
+00:40:01,425 --> 00:40:03,792
+ you have to cut me a little slack here. Like I said,
+
+617
+00:40:03,792 --> 00:40:06,152
+ weall have to cut each other a little slack.
+
+618
+00:40:06,152 --> 00:40:08,930
+ There＊s so many little bits, you know, to observe 每
+
+619
+00:40:08,930 --> 00:40:10,656
+little pieces, little comments and things like that.
+
+620
+00:40:10,656 --> 00:40:14,105
+ I can＊t make all of them, all right? Ihope I put all of them,
+
+621
+00:40:14,105 --> 00:40:16,155
+ or most of them, in the lecture notes, all right,
+
+622
+00:40:16,155 --> 00:40:18,129
+ in the notes so yousee these things. But,
+
+623
+00:40:18,129 --> 00:40:19,591
+ as I say,
+
+624
+00:40:19,591 --> 00:40:22,628
+ there＊s so many things along the way that you could pointout,
+
+625
+00:40:22,628 --> 00:40:23,662
+ that you can note,
+
+626
+00:40:23,662 --> 00:40:25,385
+ that we just can＊t do it all because I want to keep my eye on thebigger picture.
+
+627
+00:40:25,385 --> 00:40:28,378
+ All right.
+
+628
+00:40:28,378 --> 00:40:30,044
+ But this is one thing that comes up often enough.
+
+629
+00:40:30,044 --> 00:40:30,890
+ So there＊ll be,you know,
+
+630
+00:40:30,890 --> 00:40:33,058
+ there＊ll be instances where you have to read the 每
+
+631
+00:40:33,058 --> 00:40:34,911
+ read the notes carefully andtry to make note of all those things.
+
+632
+00:40:34,911 --> 00:40:37,427
+ And it＊s hard. It＊s hard. You know,
+
+633
+00:40:37,427 --> 00:40:42,524
+ it＊s hard to knowwhen you＊re gonna need this little fact or that little fact because there＊s so many littlefacts.
+
+634
+00:40:42,524 --> 00:40:43,737
+But you＊ll see when the whole thing 每 when you 每
+
+635
+00:40:43,737 --> 00:40:45,190
+ if you keep the big picture in mind,
+
+636
+00:40:45,190 --> 00:40:47,574
+ inmany cases the details will take care of themselves.
+
+637
+00:40:47,574 --> 00:40:50,716
+ Really. Now, where was I?Yes? A secret of the universe.
+
+638
+00:40:50,716 --> 00:40:54,799
+ All right.
+
+639
+00:40:54,799 --> 00:40:57,203
+ Here＊s a pretty big secret of the universe,
+
+640
+00:40:57,203 --> 00:40:59,499
+actually, coming your way. When you try to apply 每
+
+641
+00:40:59,499 --> 00:41:01,676
+ when you＊re trying to see howmathematics works,
+
+642
+00:41:01,676 --> 00:41:05,125
+ and when you try to apply mathematics to various problems,
+
+643
+00:41:05,125 --> 00:41:06,613
+ youoften have a question like this. What if 每
+
+644
+00:41:06,613 --> 00:41:10,607
+ how can 每 what 每 how can something happen?
+
+645
+00:41:10,607 --> 00:41:11,169
+All right.
+
+646
+00:41:11,169 --> 00:41:13,642
+ Is it possible to write something like this?
+
+647
+00:41:13,642 --> 00:41:16,530
+ All right. Now, a very good firstapproach 每
+
+648
+00:41:16,530 --> 00:41:17,564
+ and I＊m serious about this.
+
+649
+00:41:17,564 --> 00:41:21,312
+ When you＊re doing your own work and you＊retrying to look at a mathematical model of something,
+
+650
+00:41:21,312 --> 00:41:22,427
+ you say, can I do something likethis?
+
+651
+00:41:22,427 --> 00:41:26,122
+ Often the first step is to suppose that you can,
+
+652
+00:41:26,122 --> 00:41:28,996
+ and see what the consequences are.All right.
+
+653
+00:41:28,996 --> 00:41:31,964
+ Then later on, you can say, all right,
+
+654
+00:41:31,964 --> 00:41:35,970
+ then maybe I should try this because thatseems to be what has to happen.
+
+655
+00:41:35,970 --> 00:41:39,056
+ All right. And then you go backwards. All right.
+
+656
+00:41:39,056 --> 00:41:41,900
+ Andmathematicians will never tell you this because they like to sort of cover their tracks.
+
+657
+00:41:41,900 --> 00:41:43,831
+They say, ＆Well, it obviously goes like this,
+
+658
+00:41:43,831 --> 00:41:45,245
+＊ you know, and,
+
+659
+00:41:45,245 --> 00:41:48,100
+ ＆We＊re obviously going todefine this formula and that formula,
+
+660
+00:41:48,100 --> 00:41:49,040
+ and life is going to work out so simply.
+
+661
+00:41:49,040 --> 00:41:51,495
+＊ But whatthey don＊t show you is often that first step of saying,
+
+662
+00:41:51,495 --> 00:41:55,607
+ suppose the problem is solved, whathas to happen?
+
+663
+00:41:55,607 --> 00:42:02,025
+ All right. So suppose you can do this.
+
+664
+00:42:02,025 --> 00:42:09,118
+ We can write f of t equals the sumfrom k equals minus n to n,
+
+665
+00:42:09,118 --> 00:42:14,517
+ c sub-k e to the two pi i k t. What has to happen?
+
+666
+00:42:14,517 --> 00:42:22,683
+ All right.Now, by that I mean, if you can write this,
+
+667
+00:42:22,683 --> 00:42:27,687
+ what are the coefficients? If you can write anequation like this,
+
+668
+00:42:27,687 --> 00:42:29,957
+ then what I＊m asking here is,
+
+669
+00:42:29,957 --> 00:42:39,901
+ what are the mystery coefficients interms of f?
+
+670
+00:42:39,901 --> 00:42:46,216
+ Coefficient c sub-k in terms of f 每 f is given to you.
+
+671
+00:42:46,216 --> 00:42:47,612
+ All right.
+
+672
+00:42:47,612 --> 00:42:50,209
+ So theunknowns in this expression are the coefficients.
+
+673
+00:42:50,209 --> 00:42:52,755
+ And the question is, can you solve forthem?
+
+674
+00:42:52,755 --> 00:42:54,154
+ All right. Suppose you can write it like that.
+
+675
+00:42:54,154 --> 00:43:00,275
+ Can you solve for the coefficients?Can we solve for the c k?
+
+676
+00:43:00,275 --> 00:43:04,583
+ All right. I＊m gonna take a very na.ve approach.
+
+677
+00:43:04,583 --> 00:43:06,272
+ All right. I＊mgonna isolate it. What do you?
+
+678
+00:43:06,272 --> 00:43:09,968
+ It＊s like an algebraic equation. To start with an algebraicequation,
+
+679
+00:43:09,968 --> 00:43:12,079
+ isolate the unknown. So isolate, like, the,
+
+680
+00:43:12,079 --> 00:43:14,303
+ I don＊t know, Mth coefficient orsomething like that.
+
+681
+00:43:14,303 --> 00:43:19,369
+ All right. So isolate c m out of this. That is 每
+
+682
+00:43:19,369 --> 00:43:36,362
+ it＊s a big old sum,right? So f of t is, you know,
+
+683
+00:43:36,362 --> 00:43:41,826
+ all these terms plus c sub m e to the two pi i m t plus all therest of the terms.
+
+684
+00:43:41,826 --> 00:43:46,981
+ That is to say, I can write c sub-m e to the two pi i m t,
+
+685
+00:43:46,981 --> 00:43:51,765
+ is f of t minus allthe terms that don＊t involve m,
+
+686
+00:43:51,765 --> 00:43:57,146
+ so let me write it like this. Say, sum over k different fromm of c sub-
+
+687
+00:43:57,146 --> 00:44:00,200
+k e to the two pi i k t. All right.
+
+688
+00:44:00,200 --> 00:44:04,996
+ I haven＊t done anything except algebraicallymanipulated the equation to bring the one mystery term,
+
+689
+00:44:04,996 --> 00:44:08,660
+ or one fixed term on the otherside. All right.
+
+690
+00:44:08,660 --> 00:44:10,648
+ All I did here 每 so f of t is this big sum.
+
+691
+00:44:10,648 --> 00:44:13,983
+ One of those terms in the sum is csub m e to the two pi i m t 每
+
+692
+00:44:13,983 --> 00:44:15,710
+ I wanna solve for the unknowns. All right.
+
+693
+00:44:15,710 --> 00:44:18,597
+ So solve for theunknowns one unknown at a time.
+
+694
+00:44:18,597 --> 00:44:20,996
+ So this is the Mth term in the sum,
+
+695
+00:44:20,996 --> 00:44:22,357
+ bring that over tothe other side of the equation,
+
+696
+00:44:22,357 --> 00:44:28,240
+ write c sub m e to the two pi i m t is f of t minus all theterms that don＊t involve m.
+
+697
+00:44:28,240 --> 00:44:35,043
+ Okay. And then, write that as 每 that＊s almost isolating c sub-
+
+698
+00:44:35,043 --> 00:44:35,866
+m,
+
+699
+00:44:35,866 --> 00:44:38,561
+ and not quite because it＊s got a complex exponential in front of it.
+
+700
+00:44:38,561 --> 00:44:41,574
+ So multiply bothsides 每 this board is not so great 每
+
+701
+00:44:41,574 --> 00:44:49,399
+ multiply both sides by e to the minus two pi i m t.
+
+702
+00:44:49,399 --> 00:44:49,948
+ So csub-
+
+703
+00:44:49,948 --> 00:45:04,454
+m is e to the minus two pi i m t times f of t minus the sum over all k different from mof c sub-
+
+704
+00:45:04,454 --> 00:45:10,935
+k e to the minus two pi i m t times e to the two pi i k t.
+
+705
+00:45:10,935 --> 00:45:17,470
+ You with me? Nothing onmy sleeve. All right.
+
+706
+00:45:17,470 --> 00:45:19,450
+ All right. Now, that＊s brilliant.
+
+707
+00:45:19,450 --> 00:45:23,061
+ I have isolated one unknown in termsof all the other unknowns.
+
+708
+00:45:23,061 --> 00:45:24,153
+ All right. So,
+
+709
+00:45:24,153 --> 00:45:27,270
+ I don＊t know if one can say that we have reallymade progress here.
+
+710
+00:45:27,270 --> 00:45:28,609
+ So we need another idea. This is as far as algebra can take you.
+
+711
+00:45:28,609 --> 00:45:31,767
+ Allright. Algebra says, you wanna solve for the unknown,
+
+712
+00:45:31,767 --> 00:45:34,017
+ fine. Isolate, you know,
+
+713
+00:45:34,017 --> 00:45:35,552
+ what didyour eighth grade teacher tell you?
+
+714
+00:45:35,552 --> 00:45:37,080
+ Put the one unknown on one side of the equation,
+
+715
+00:45:37,080 --> 00:45:38,710
+ puteverything else on the other side of the equation.
+
+716
+00:45:38,710 --> 00:45:41,764
+ Hope and pray. All right.
+
+717
+00:45:41,764 --> 00:45:45,621
+ So we put theone unknown on one side of the equation,
+
+718
+00:45:45,621 --> 00:45:47,319
+ everything else is on the other side of theequation.
+
+719
+00:45:47,319 --> 00:45:48,718
+ Hope and pray. Now,
+
+720
+00:45:48,718 --> 00:45:54,045
+ the desperate mathematician at this point looking forsomething to do.
+
+721
+00:45:54,045 --> 00:45:57,047
+ Let me actually take this out one more algebraic step.
+
+722
+00:45:57,047 --> 00:46:00,382
+ Let me justcombine those two exponentials there,
+
+723
+00:46:00,382 --> 00:46:02,701
+ and write this as c sub-
+
+724
+00:46:02,701 --> 00:46:12,739
+m is e to the minus two pi im t minus the sum over all terms different from m of c sub-
+
+725
+00:46:12,739 --> 00:46:20,195
+k e to the two pi i 每 two pi i kminus m times t.
+
+726
+00:46:20,195 --> 00:46:22,432
+ I＊m just combining the two complex exponentials there.
+
+727
+00:46:22,432 --> 00:46:26,049
+ All right. Great.Student:[Inaudible]Instructor (Brad Osgood):
+
+728
+00:46:26,049 --> 00:46:30,887
+What?Student:F of t.Instructor (Brad Osgood):
+
+729
+00:46:30,887 --> 00:46:33,280
+F of t. Picky, picky. All right. F of t minus.
+
+730
+00:46:33,280 --> 00:46:36,235
+ All right. Now,good. So now, they say that we need another idea.
+
+731
+00:46:36,235 --> 00:46:41,884
+ And the desperate mathematician atthis moment will think of one or two things 每
+
+732
+00:46:41,884 --> 00:46:42,803
+ one of two things.
+
+733
+00:46:42,803 --> 00:46:44,157
+ [Inaudible] theydifferentiate or integrate.
+
+734
+00:46:44,157 --> 00:46:46,542
+ I mean, what＊s beyond algebra? Calculus.
+
+735
+00:46:46,542 --> 00:46:48,179
+ What＊s in calculus?Derivatives and intervals.
+
+736
+00:46:48,179 --> 00:46:51,017
+ All right. So, here＊s a clue. Derivatives won＊t work,
+
+737
+00:46:51,017 --> 00:46:54,654
+ butintervals will.All right. We need another idea.
+
+738
+00:46:54,654 --> 00:46:57,266
+ And that＊s a good idea, it＊s an inspired idea.
+
+739
+00:46:57,266 --> 00:47:00,338
+ But[inaudible] because it works, and I＊ll show you way.
+
+740
+00:47:00,338 --> 00:47:10,631
+ So I＊m gonna integrate both sidesfrom zero to one over one period.
+
+741
+00:47:10,631 --> 00:47:11,086
+ All right.
+
+742
+00:47:11,086 --> 00:47:12,764
+ All I have to worry about here is one period.
+
+743
+00:47:12,764 --> 00:47:15,514
+Everything＊s periodic at period one, so I integrate over 每
+
+744
+00:47:15,514 --> 00:47:25,410
+ I integrate from zero to one.What if I do 每
+
+745
+00:47:25,410 --> 00:47:29,695
+ what do I get?Well, certainly, if I integrate zero to one of c sub-
+
+746
+00:47:29,695 --> 00:47:33,168
+m d t, that just gives me c sub-m. Allright.
+
+747
+00:47:33,168 --> 00:47:39,325
+ So what about the rest of it? So I get 每
+
+748
+00:47:39,325 --> 00:47:46,119
+ I get c sub-
+
+749
+00:47:46,119 --> 00:47:50,705
+m is equal to the interval fromzero to one,
+
+750
+00:47:50,705 --> 00:47:55,488
+ e to the minus two pi i m t, f of t d t,
+
+751
+00:47:55,488 --> 00:48:00,011
+ minus the interval of the sum is the sumof the interval 每
+
+752
+00:48:00,011 --> 00:48:03,266
+ let me write this, sum from all the different 每
+
+753
+00:48:03,266 --> 00:48:08,590
+ all the terms k different m每 and the constant comes out 每
+
+754
+00:48:08,590 --> 00:48:13,404
+ c sub-k, the interval from zero to one, e to the two pi i kminus m 每
+
+755
+00:48:13,404 --> 00:48:21,300
+ k minus m 每 t d t. That＊s a t there. T. Ouch.
+
+756
+00:48:21,300 --> 00:48:23,164
+All right.
+
+757
+00:48:23,164 --> 00:48:25,440
+ I＊ve integrated both sides from zero to one.
+
+758
+00:48:25,440 --> 00:48:38,009
+ All right. Now, watch this. Allright. Watch.
+
+759
+00:48:38,009 --> 00:48:42,198
+ I can integrate that complex exponential,
+
+760
+00:48:42,198 --> 00:48:43,233
+ that＊s a simple function.
+
+761
+00:48:43,233 --> 00:48:46,021
+ I canintegrate that just like I integrated in calculus.
+
+762
+00:48:46,021 --> 00:48:48,623
+ All right. The interval from zero to one,
+
+763
+00:48:48,623 --> 00:48:55,047
+ eto the two pi i k minus m t d t. Now, k is different from m.
+
+764
+00:48:55,047 --> 00:49:00,008
+ All right. If k is equal to m,I＊m just e to the zero here,
+
+765
+00:49:00,008 --> 00:49:02,293
+ I just get one [inaudible] so the k is different from m.
+
+766
+00:49:02,293 --> 00:49:05,923
+ So theinterval of this is one over two pi i 每
+
+767
+00:49:05,923 --> 00:49:06,617
+ trust me 每
+
+768
+00:49:06,617 --> 00:49:09,551
+ integrating this is the same as integratingan ordinary function 每
+
+769
+00:49:09,551 --> 00:49:12,086
+ two pi i, as you did in calculus.
+
+770
+00:49:12,086 --> 00:49:17,937
+One over two pi i k minus m e to the two pi i k minus m t,
+
+771
+00:49:17,937 --> 00:49:23,584
+ evaluated from t going fromzero to one. Straightforward integration.
+
+772
+00:49:23,584 --> 00:49:30,220
+ Straightforward integration, which is equal to 每
+
+773
+00:49:30,220 --> 00:49:42,670
+we are almost done. We are almost there.One over two pi i k minus m,
+
+774
+00:49:42,670 --> 00:49:46,352
+ that makes sense, right? Because k is different from m,
+
+775
+00:49:46,352 --> 00:49:50,634
+ soit＊s not a problem. E to the two pi i k minus m times one 每
+
+776
+00:49:50,634 --> 00:49:53,707
+ so that＊s e to the pi i k minusm minus e to the zero.
+
+777
+00:49:53,707 --> 00:49:56,620
+ All right. But either the two pi i k minus m,
+
+778
+00:49:56,620 --> 00:49:58,861
+ that＊s e to the two pi itimes an integer.
+
+779
+00:49:58,861 --> 00:50:00,794
+ That＊s like sine of two pi times an integer,
+
+780
+00:50:00,794 --> 00:50:03,270
+ cosine of two pi times aninteger 每 that＊s one.
+
+781
+00:50:03,270 --> 00:50:08,119
+ And e to the zero is also better known as one.
+
+782
+00:50:08,119 --> 00:50:11,363
+ So this is better knownas one minus one,
+
+783
+00:50:11,363 --> 00:50:23,100
+ which is better known as zero.Nothing. All this crap integrates zero.
+
+784
+00:50:23,100 --> 00:50:33,273
+ Excuse me. All right. Incredible. What is theupshot?
+
+785
+00:50:33,273 --> 00:50:36,957
+ It all goes away. What is the upshot? The upshot is,
+
+786
+00:50:36,957 --> 00:50:41,614
+ that c sub-m 每 what＊s left?What＊s left is c sub-
+
+787
+00:50:41,614 --> 00:50:43,719
+m is the interval from zero to one 每 that 每
+
+788
+00:50:43,719 --> 00:50:47,032
+ all that 每 all the terms ofthe sum here are gone 每
+
+789
+00:50:47,032 --> 00:50:49,404
+ are gone. They integrated out to zero.
+
+790
+00:50:49,404 --> 00:50:58,144
+ What remains is theinterval from zero to one of e to the minus two pi i m t f of t d t.
+
+791
+00:50:58,144 --> 00:51:00,929
+All right. Now, in principle,
+
+792
+00:51:00,929 --> 00:51:05,070
+ this is known because you start out by assuming you knew f.
+
+793
+00:51:05,070 --> 00:51:08,197
+Suppose I know f, what has to happen? All right.
+
+794
+00:51:08,197 --> 00:51:10,925
+ Well, suppose I＊m given f, and I write fas this sum,
+
+795
+00:51:10,925 --> 00:51:14,940
+ what has to happen? Here is the answer. All right.
+
+796
+00:51:14,940 --> 00:51:26,202
+ Here is the answer. Let mesummarize.We have solved for the unknowns.
+
+797
+00:51:26,202 --> 00:51:31,597
+ All right. So given f of t 每 periodic of period one 每
+
+798
+00:51:31,597 --> 00:51:39,190
+suppose we can write f of t as the sum,
+
+799
+00:51:39,190 --> 00:51:46,203
+ k equals minus n to n of c k e to the two pi i k t.
+
+800
+00:51:46,203 --> 00:51:47,646
+What has to happen?
+
+801
+00:51:47,646 --> 00:51:58,198
+ What has to happen is the coefficients have to be given by thisformula.
+
+802
+00:51:58,198 --> 00:51:59,757
+ Then you must have 每 I＊ll just write c sub-
+
+803
+00:51:59,757 --> 00:52:01,178
+k instead of c sub-m 每
+
+804
+00:52:01,178 --> 00:52:07,931
+ [inaudible] ofthe k of coefficient is the interval from zero to one of e to the minus two pi i k t f of t d t.
+
+805
+00:52:07,931 --> 00:52:10,396
+That＊s what has to happen. All right.
+
+806
+00:52:10,396 --> 00:52:15,598
+It＊s an important first step in applying mathematics to any given problem,
+
+807
+00:52:15,598 --> 00:52:19,203
+ whether it＊s amathematical problem or a non-
+
+808
+00:52:19,203 --> 00:52:21,984
+mathematical problem. Suppose the problem is solved,
+
+809
+00:52:21,984 --> 00:52:24,139
+what has to happen? If the problem is solved,
+
+810
+00:52:24,139 --> 00:52:24,614
+ mean,
+
+811
+00:52:24,614 --> 00:52:28,559
+ suppose you have this representationthen the coefficients have to be given by this formula.
+
+812
+00:52:28,559 --> 00:52:30,078
+All right. So next time, I＊m gonna turn this around saying,
+
+813
+00:52:30,078 --> 00:52:31,714
+ suppose we give thesecoefficients by the formula,
+
+814
+00:52:31,714 --> 00:52:37,188
+ do we have something like that, and in what sense?
+
+815
+00:52:37,188 --> 00:52:41,176
+ And thatwill lead us to great things.All right.
+
+816
+00:52:41,176 --> 00:52:41,176
+ So more on that next time.[End of Audio]Duration:
+
+
