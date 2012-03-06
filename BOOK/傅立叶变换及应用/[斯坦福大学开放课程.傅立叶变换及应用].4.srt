@@ -1,0 +1,3121 @@
+1
+00:00:00,000 --> 00:00:20,097
+TheFourierTransformAndItsApplications-Lecture04 Instructor (Brad Osgood):
+
+2
+00:00:20,097 --> 00:00:23,066
+ All right,
+
+3
+00:00:23,066 --> 00:00:24,419
+ so today I have two things in mind today.
+
+4
+00:00:24,419 --> 00:00:29,734
+ I want to wrap up our discussion of some of the theoretical aspects of Fourier series.
+
+5
+00:00:29,734 --> 00:00:31,669
+ We＊re skimming the surface on this a little bit,
+
+6
+00:00:31,669 --> 00:00:32,620
+ and it really, you know,
+
+7
+00:00:32,620 --> 00:00:37,106
+ kind of kills me because it＊s such wonderful material and it really is important in its own way.
+
+8
+00:00:37,106 --> 00:00:39,532
+ But as I＊ve said before and now you＊ll hear me say again,
+
+9
+00:00:39,532 --> 00:00:44,399
+ the subject is so rich and so diverse that sometimes you just have to,
+
+10
+00:00:44,399 --> 00:00:46,728
+ you can＊t go into any 每 if you went into any one topic,
+
+11
+00:00:46,728 --> 00:00:50,864
+ you could easily spend most of the quarter on it and it would be worthwhile,
+
+12
+00:00:50,864 --> 00:00:53,609
+ but that would mean we wouldn＊t do other things which are equally worthwhile.
+
+13
+00:00:53,609 --> 00:00:55,417
+ And so it＊s always a constant trade-off.
+
+14
+00:00:55,417 --> 00:00:57,365
+ It＊s always a question of which choices to make.
+
+15
+00:00:57,365 --> 00:00:58,019
+ So again,
+
+16
+00:00:58,019 --> 00:01:01,203
+ there are more details in the notes than I＊ve been able to do in class,
+
+17
+00:01:01,203 --> 00:01:02,680
+ and will be able to do in class,
+
+18
+00:01:02,680 --> 00:01:04,641
+ but I do want to say a few more things about it today.
+
+19
+00:01:04,641 --> 00:01:05,857
+ That＊s one thing.
+
+20
+00:01:05,857 --> 00:01:10,605
+ And the second thing is I want to talk about an application to heat flow 
+
+21
+00:01:10,605 --> 00:01:15,170
+that＊s a very important application historically,
+
+22
+00:01:15,170 --> 00:01:17,348
+ certainly and it also points the way to other things 
+
+23
+00:01:17,348 --> 00:01:19,162
+that we will be talking about quite a bit as the course progresses.
+
+24
+00:01:19,162 --> 00:01:21,650
+ All right, so let me wrap up and again,
+
+25
+00:01:21,650 --> 00:01:30,338
+ some of the sort of the theoretical size of things.
+
+26
+00:01:30,338 --> 00:01:31,588
+ And I＊ll remind what the issue is that we＊re studying,
+
+27
+00:01:31,588 --> 00:01:33,113
+ and so this is our Fourier series fine, all right?
+
+28
+00:01:33,113 --> 00:01:47,124
+ Last time we talked about the problem in trying to make sense out of infinite sums,
+
+29
+00:01:47,124 --> 00:01:50,689
+ infinite Fourier series,
+
+30
+00:01:50,689 --> 00:01:53,682
+ and the important thing to realize is that that＊s not by no means the exception,
+
+31
+00:01:53,682 --> 00:01:54,364
+ all right?
+
+32
+00:01:54,364 --> 00:02:10,622
+ We want to make sense of infinite sums of complex exponentials sum from K equals Minus Infinity,
+
+33
+00:02:10,622 --> 00:02:13,484
+ Infinity, cK, either the 2 pi, KT.
+
+34
+00:02:13,484 --> 00:02:15,867
+ I'm thinking of these things as Fourier coefficients,
+
+35
+00:02:15,867 --> 00:02:17,177
+ but the problem is general.
+
+36
+00:02:17,177 --> 00:02:19,019
+ How do you make sense of such an infinite sum?
+
+37
+00:02:19,019 --> 00:02:23,960
+ And the tricky thing about it is that if you think in terms of sines and cosines,
+
+38
+00:02:23,960 --> 00:02:25,365
+ these functions are oscillating. All right,
+
+39
+00:02:25,365 --> 00:02:28,541
+ everything here in sight is a complex number and complex functions,
+
+40
+00:02:28,541 --> 00:02:30,417
+ but think in terms of the real functions,
+
+41
+00:02:30,417 --> 00:02:33,210
+ sines and cosines where they＊ oscillating between positive and negative,
+
+42
+00:02:33,210 --> 00:02:35,374
+ so for this thing to converge,
+
+43
+00:02:35,374 --> 00:02:37,987
+ there＊s got to be some sort of conspiracy of cancellations that making it work.
+
+44
+00:02:37,987 --> 00:02:38,676
+ Of course,
+
+45
+00:02:38,676 --> 00:02:41,808
+ the size of the coefficients is going to play a role as it always does 
+
+46
+00:02:41,808 --> 00:02:43,129
+when you study issues of convergents.
+
+47
+00:02:43,129 --> 00:02:47,157
+ But it＊s more than that because the function is bopping around from positive to negative,
+
+48
+00:02:47,157 --> 00:02:48,104
+ see,
+
+49
+00:02:48,104 --> 00:02:50,150
+ all right and that makes it trickier to do.
+
+50
+00:02:50,150 --> 00:02:53,768
+ That makes it trickier to study. And again,
+
+51
+00:02:53,768 --> 00:02:57,047
+ realize that this is by no means the exception,
+
+52
+00:02:57,047 --> 00:03:01,545
+ and so in particular if F of T again is periodic,
+
+53
+00:03:01,545 --> 00:03:03,019
+ period 1,
+
+54
+00:03:03,019 --> 00:03:15,975
+ we want to write with some confidence that it＊s equal to its Fourier series.
+
+55
+00:03:15,975 --> 00:03:20,272
+ We want to write with some confidence,
+
+56
+00:03:20,272 --> 00:03:25,190
+ at least we want to know what we＊re talking about,
+
+57
+00:03:25,190 --> 00:03:27,497
+ that F of T,
+
+58
+00:03:27,497 --> 00:03:35,519
+ say is equal to its Fourier series going from minus [inaudible] 2 p i KT,
+
+59
+00:03:35,519 --> 00:03:37,369
+ and again,
+
+60
+00:03:37,369 --> 00:03:44,936
+ it＊s really if you want to deal with any degree of generality,
+
+61
+00:03:44,936 --> 00:03:47,903
+ it＊s going to be the rule rather than the exception 
+
+62
+00:03:47,903 --> 00:03:52,283
+that you＊ll have an infinite sum because any small lack of smoothness in the function
+
+63
+00:03:52,283 --> 00:03:55,718
+ or in any of its derivatives is gonna force an infinite number of terms.
+
+64
+00:03:55,718 --> 00:03:56,935
+ A finite number of terms,
+
+65
+00:03:56,935 --> 00:04:01,811
+ a finite of trigometric sum will be infinitely smooth.
+
+66
+00:04:01,811 --> 00:04:03,538
+ The function and all its derivatives will be infinitely differentiatable,
+
+67
+00:04:03,538 --> 00:04:07,076
+ so if there＊s any discontinuity in any derivative you can＊t have a finite sum.
+
+68
+00:04:07,076 --> 00:04:19,029
+ So any lack of smoothness forces an infinite sum,
+
+69
+00:04:19,029 --> 00:04:19,743
+ again,
+
+70
+00:04:19,743 --> 00:04:24,635
+ so it＊s not because the method is trumpeted as being so general,
+
+71
+00:04:24,635 --> 00:04:28,952
+ you have to face the fact that you＊re dealing with an infinite number of terms here,
+
+72
+00:04:28,952 --> 00:04:31,431
+ all right? Now, by the way,
+
+73
+00:04:31,431 --> 00:04:34,691
+ I don＊t mean to say that all the terms are necessarily non-
+
+74
+00:04:34,691 --> 00:04:35,213
+zero,
+
+75
+00:04:35,213 --> 00:04:36,711
+ that all the coefficients are necessarily non-
+
+76
+00:04:36,711 --> 00:04:39,201
+zero. That＊s not true. Some of the terms may be zero.
+
+77
+00:04:39,201 --> 00:04:42,421
+ For example, when you have certain symmetries,
+
+78
+00:04:42,421 --> 00:04:45,779
+ the even coefficients may be zero or the odd coefficients may be zero and in special cases,
+
+79
+00:04:45,779 --> 00:04:48,443
+ or a finite number may be zero or a block of them may be zero.
+
+80
+00:04:48,443 --> 00:04:49,950
+ You don＊t know exactly what＊s gonna happen.
+
+81
+00:04:49,950 --> 00:04:56,015
+ But all I'm saying is you can＊t resort to only a finite sum if there＊s any lack of smoothness in there.
+
+82
+00:04:56,015 --> 00:04:57,290
+ All right, so again, that＊s the issue. Yeah.
+
+83
+00:04:57,290 --> 00:05:01,176
+ Student:[Inaudible]. Instructor (Brad Osgood):
+
+84
+00:05:01,176 --> 00:05:01,938
+Does [inaudible] of K,
+
+85
+00:05:01,938 --> 00:05:04,509
+ that actually is a K although it looks like a T,
+
+86
+00:05:04,509 --> 00:05:07,112
+ it＊s [inaudible]. All right, the K Fourier coefficient.
+
+87
+00:05:07,112 --> 00:05:09,541
+ I＊ll remind you what the definition is since we＊re gonna use that.
+
+88
+00:05:09,541 --> 00:05:16,773
+ So [inaudible] of K is the integral as a K,
+
+89
+00:05:16,773 --> 00:05:21,329
+ integral from 0 to 1 of either the minus 2 pi KT,
+
+90
+00:05:21,329 --> 00:05:26,909
+ F of T DT. Is somebody＊s phone ringing? All right,
+
+91
+00:05:26,909 --> 00:05:33,010
+ now, so last time we dealt with, at least in statement,
+
+92
+00:05:33,010 --> 00:05:35,397
+ the cases where that function was smooth or is smooth and 
+
+93
+00:05:35,397 --> 00:05:37,733
+you get all that nice sort of convergents that you want.
+
+94
+00:05:37,733 --> 00:05:41,174
+ All right, so F of T is continuous,
+
+95
+00:05:41,174 --> 00:05:51,261
+ smooth or even if you have a jump continuity,
+
+96
+00:05:51,261 --> 00:05:53,125
+ then you get the sort of kind of convergents that you want.
+
+97
+00:05:53,125 --> 00:05:56,820
+ You get satisfactory convergents.
+
+98
+00:05:56,820 --> 00:05:59,346
+ I＊ll just leave it at that because the precise statement we talked about last time,
+
+99
+00:05:59,346 --> 00:06:00,233
+ and it＊s also in the notes,
+
+100
+00:06:00,233 --> 00:06:06,774
+ you get satisfactory convergents results.
+
+101
+00:06:06,774 --> 00:06:07,596
+ So that＊s fine, so again,
+
+102
+00:06:07,596 --> 00:06:09,567
+ that gives you a certain amount of confidence that you write the series down,
+
+103
+00:06:09,567 --> 00:06:15,287
+ you can manipulate it and plug into it and things like that and nothing terrible is gonna happen.
+
+104
+00:06:15,287 --> 00:06:18,654
+ But to deal with a more general functions,
+
+105
+00:06:18,654 --> 00:06:19,689
+ the more general signals that arise,
+
+106
+00:06:19,689 --> 00:06:23,167
+ it really requires a different point of view,
+
+107
+00:06:23,167 --> 00:06:23,922
+ all right,
+
+108
+00:06:23,922 --> 00:06:25,333
+ greater generality requires a different point of view,
+
+109
+00:06:25,333 --> 00:06:28,291
+ and that＊s where we finished up last time.
+
+110
+00:06:28,291 --> 00:06:32,226
+ Now, it＊s not just for fun, even for mathematical fun.
+
+111
+00:06:32,226 --> 00:06:33,438
+ That is,
+
+112
+00:06:33,438 --> 00:06:35,171
+ this point of view turns out to have far-
+
+113
+00:06:35,171 --> 00:06:39,052
+reaching consequences and really does frame a lot of the understanding and discussion,
+
+114
+00:06:39,052 --> 00:06:40,309
+ not only for Fourier series,
+
+115
+00:06:40,309 --> 00:06:46,908
+ but other subjects that are very similar and also in sort of everyday use in a lot of fields of signal processing.
+
+116
+00:06:46,908 --> 00:06:56,912
+ So very generality requires a different point of view,
+
+117
+00:06:56,912 --> 00:06:58,032
+ different terminology,
+
+118
+00:06:58,032 --> 00:06:59,785
+ different language and a whole sort of re-
+
+119
+00:06:59,785 --> 00:07:06,044
+orientation. All right, and again, I set that up last time,
+
+120
+00:07:06,044 --> 00:07:08,015
+ and I'm gonna remind you where we finished up and 
+
+121
+00:07:08,015 --> 00:07:13,486
+I wanna put in one more important aspect of it today and that＊s all we＊re gonna do,
+
+122
+00:07:13,486 --> 00:07:16,219
+ sad to say, all right? So again,
+
+123
+00:07:16,219 --> 00:07:18,489
+ the condition is the integrability of all things.
+
+124
+00:07:18,489 --> 00:07:21,272
+ Instead of smoothness, instead of differentiability,
+
+125
+00:07:21,272 --> 00:07:25,291
+ the condition that turns out to be important is integrability to function.
+
+126
+00:07:25,291 --> 00:07:37,326
+ All right, the important condition, and a relatively easy one to verify,
+
+127
+00:07:37,326 --> 00:07:41,184
+ integrability, all right? So you say that a function,
+
+128
+00:07:41,184 --> 00:07:48,896
+ say that F of T is squared integrable or briefly,
+
+129
+00:07:48,896 --> 00:07:53,022
+ you say that F is in L2 of the integral from 0 to 1.
+
+130
+00:07:53,022 --> 00:07:55,080
+ I'm only working on an integral from 0 to 1 here.
+
+131
+00:07:55,080 --> 00:07:56,046
+ And L2 stands for square,
+
+132
+00:07:56,046 --> 00:07:58,722
+ well the 2 stands for square and the L stands for Lebeg,
+
+133
+00:07:58,722 --> 00:08:00,981
+ and I＊ll say a little bit more about that in a second if the integral is finite,
+
+134
+00:08:00,981 --> 00:08:06,725
+ integral of the square is finite, F of T DT is less than 每
+
+135
+00:08:06,725 --> 00:08:08,788
+ I want to allow complex value functions here,
+
+136
+00:08:08,788 --> 00:08:10,310
+ although many of the applications are real,
+
+137
+00:08:10,310 --> 00:08:11,742
+ but I want to allow complex value functions,
+
+138
+00:08:11,742 --> 00:08:14,226
+ so I put the absolute value of F of T squared there,
+
+139
+00:08:14,226 --> 00:08:15,872
+ all right? That＊s an easy condition to satisfy.
+
+140
+00:08:15,872 --> 00:08:22,419
+ Physically one encounters this condition in the context of this integral representing energy and 
+
+141
+00:08:22,419 --> 00:08:25,814
+so one also says that this signal has finite energy.
+
+142
+00:08:25,814 --> 00:08:31,392
+ That＊s another way of saying it, and you see that terminology.
+
+143
+00:08:31,392 --> 00:08:40,583
+ All right? So if you have a periodic function,
+
+144
+00:08:40,583 --> 00:08:45,316
+ which is integrable, like so, all right,
+
+145
+00:08:45,316 --> 00:08:56,040
+ so again if F of T is periodic and square integrable,
+
+146
+00:08:56,040 --> 00:09:03,726
+ then you form the Fourier coefficients and they exist actually the square integrability is enough to imply that the Fourier coefficients exist.
+
+147
+00:09:03,726 --> 00:09:10,870
+ Then your form, [inaudible], as before, either the minus 2 pi I,
+
+148
+00:09:10,870 --> 00:09:20,249
+ KT F of T DT and the sum converges the infinite Fourier series is equal to the function in the sense of mean square convergents.
+
+149
+00:09:20,249 --> 00:09:24,253
+ And you have, and this is the fundamental result,
+
+150
+00:09:24,253 --> 00:09:29,695
+ that the integral from 0 to 1 of the difference between the function and 
+
+151
+00:09:29,695 --> 00:09:38,182
+the finite approximation between the function,
+
+152
+00:09:38,182 --> 00:09:39,291
+ the square of the difference,
+
+153
+00:09:39,291 --> 00:09:42,207
+ the integral of the square of the difference,
+
+154
+00:09:42,207 --> 00:09:44,054
+ this tends to 0 as N tends to infinity.
+
+155
+00:09:44,054 --> 00:09:46,680
+ Takes up the entire board and it deserves to.
+
+156
+00:09:46,680 --> 00:09:48,948
+ All right, it＊s an important result, okay?
+
+157
+00:09:48,948 --> 00:09:53,320
+ Okay,
+
+158
+00:09:53,320 --> 00:09:56,941
+ now I really feel like have to say a little bit more here,
+
+159
+00:09:56,941 --> 00:09:59,126
+ but only a little bit more.
+
+160
+00:09:59,126 --> 00:10:04,174
+ The fact is you only get these wonderful convergents results
+
+161
+00:10:04,174 --> 00:10:06,383
+ if you not only generalize your point of view towards convergents,
+
+162
+00:10:06,383 --> 00:10:08,181
+ but you also have to generalize the integral.
+
+163
+00:10:08,181 --> 00:10:10,212
+ All right, this actually only holds for 每
+
+164
+00:10:10,212 --> 00:10:15,455
+ the whole circle of ideas really only holds for a generalization of the [Inaudible] integral.
+
+165
+00:10:15,455 --> 00:10:18,312
+ Do you have to worry about this? No. All right.
+
+166
+00:10:18,312 --> 00:10:29,559
+ But the fact is, you only get these convergence results,
+
+167
+00:10:29,559 --> 00:10:31,413
+ such convergence results.
+
+168
+00:10:31,413 --> 00:10:36,653
+ You can only really prove them in the slightly more general context of integration.
+
+169
+00:10:36,653 --> 00:10:40,299
+ Convergence results,
+
+170
+00:10:40,299 --> 00:10:52,390
+ if you use a generalization of the integral even,
+
+171
+00:10:52,390 --> 00:10:55,562
+ which is a whole other subject due to Lebeg,
+
+172
+00:10:55,562 --> 00:11:00,470
+ and that＊s what the L stands for in L2, due to Lebeg.
+
+173
+00:11:00,470 --> 00:11:04,871
+ It＊s a French mathematician in the turn of the 20th Century,
+
+174
+00:11:04,871 --> 00:11:09,855
+ who actually in the context of these sorts of applications,
+
+175
+00:11:09,855 --> 00:11:14,027
+ trying to extend integration,
+
+176
+00:11:14,027 --> 00:11:19,494
+ trying to extend limiting processes to more general circumstances where they couldn＊t prove the results classically,
+
+177
+00:11:19,494 --> 00:11:20,442
+ mathematicians were worried about this,
+
+178
+00:11:20,442 --> 00:11:22,086
+ he had a more general definition of the integral.
+
+179
+00:11:22,086 --> 00:11:23,684
+ And with that more general,
+
+180
+00:11:23,684 --> 00:11:24,865
+ more flexible definition of the integral,
+
+181
+00:11:24,865 --> 00:11:26,525
+ the limiting processes are easier to handle.
+
+182
+00:11:26,525 --> 00:11:28,348
+ You can do more than you＊d like to do,
+
+183
+00:11:28,348 --> 00:11:29,884
+ but somehow don＊t feel justified in doing,
+
+184
+00:11:29,884 --> 00:11:31,798
+ and in that context,
+
+185
+00:11:31,798 --> 00:11:33,586
+ this is something you don＊t have to know about,
+
+186
+00:11:33,586 --> 00:11:40,191
+ all right. But he generalized the integral only,
+
+187
+00:11:40,191 --> 00:11:42,388
+ and by doing so,
+
+188
+00:11:42,388 --> 00:11:44,137
+ it was perfectly suited to solving these sorts of problems.
+
+189
+00:11:44,137 --> 00:11:47,452
+ It was really a quite compelling case. It was really a beautiful theory,
+
+190
+00:11:47,452 --> 00:11:48,744
+ but, you know, it＊s a famous quote.
+
+191
+00:11:48,744 --> 00:11:53,434
+ The usual integral that you studied when you studied integrals in Calculus is called the [inaudible] integral.
+
+192
+00:11:53,434 --> 00:11:55,005
+ All right,
+
+193
+00:11:55,005 --> 00:11:56,012
+ and that suffices for just about every application,
+
+194
+00:11:56,012 --> 00:12:00,279
+ but there are more general integrals. On the other hand,
+
+195
+00:12:00,279 --> 00:12:03,806
+ John Tukey who was a famous applied mathematician was quoted as saying,
+
+196
+00:12:03,806 --> 00:12:09,654
+ ※I certainly don＊t want to fly in an airplane whose design depended on whether to function as a remount integral or a Lebeg integrable.
+
+197
+00:12:09,654 --> 00:12:13,529
+ That＊s not the point.§ All right, the point really is a theoretical one,
+
+198
+00:12:13,529 --> 00:12:15,849
+ not a practical one. But nevertheless,
+
+199
+00:12:15,849 --> 00:12:21,676
+ somehow honesty compels me to say what＊s involved here.
+
+200
+00:12:21,676 --> 00:12:22,206
+ All right,
+
+201
+00:12:22,206 --> 00:12:25,635
+ so it＊s in that sense that you had to talk about convergents,
+
+202
+00:12:25,635 --> 00:12:29,697
+ and it＊s not an unreasonable condition, all right,
+
+203
+00:12:29,697 --> 00:12:32,021
+ that is also called, as I said last time,
+
+204
+00:12:32,021 --> 00:12:33,771
+ convergents in energy,
+
+205
+00:12:33,771 --> 00:12:35,436
+ convergents in the mean or mean squared convergents.
+
+206
+00:12:35,436 --> 00:12:40,618
+ And what that means is on average this sum is converging to the functional and average in the sense
+
+207
+00:12:40,618 --> 00:12:44,137
+ that if you look at the difference between the function and finite approximation,
+
+208
+00:12:44,137 --> 00:12:45,190
+ square that,
+
+209
+00:12:45,190 --> 00:12:50,509
+ integrate it and integrating is sort of taking an average and then that tends to zero as [inaudible] infinity.
+
+210
+00:12:50,509 --> 00:12:53,641
+ It＊s approximating over the entire interval on average 
+
+211
+00:12:53,641 --> 00:13:04,394
+rather than concentrating its efforts instead of approximating it at a single point.
+
+212
+00:13:04,394 --> 00:13:06,464
+ And again, you will,
+
+213
+00:13:06,464 --> 00:13:10,511
+ if you look at the literature and I'm talking about the engineering literature,
+
+214
+00:13:10,511 --> 00:13:13,740
+ you＊ll see these terms all the time. You＊ll see L2 all the time.
+
+215
+00:13:13,740 --> 00:13:17,082
+ As a matter of fact, actually, if you take,
+
+216
+00:13:17,082 --> 00:13:19,106
+ some of you have probably had courses in quantum mechanics and 
+
+217
+00:13:19,106 --> 00:13:21,947
+if you take it all sort of an advanced course in quantum mechanics,
+
+218
+00:13:21,947 --> 00:13:25,753
+ not that I ever have, but if you do,
+
+219
+00:13:25,753 --> 00:13:30,947
+ it＊s also framed very much in the context of L2 [inaudible] spaces and things like that,
+
+220
+00:13:30,947 --> 00:13:32,740
+ [inaudible] spaces and L2 spaces and so on.
+
+221
+00:13:32,740 --> 00:13:34,508
+ It＊s not, I'm not making this up. It really is 每
+
+222
+00:13:34,508 --> 00:13:41,269
+ it has become the sort of framework for a lot of the discussion.
+
+223
+00:13:41,269 --> 00:13:46,443
+ If you want to be sure that you have some certain amount of confidence in applying mathematical formulas,
+
+224
+00:13:46,443 --> 00:13:53,221
+ you need the right kind of general framework to put them in and this is for many problems,
+
+225
+00:13:53,221 --> 00:13:56,594
+ exactly that. Now, there is one further aspect of it,
+
+226
+00:13:56,594 --> 00:14:00,049
+ and that＊s as far as I'm gonna go,
+
+227
+00:14:00,049 --> 00:14:03,122
+ that brings back that fundamental property of the complex exponentials
+
+228
+00:14:03,122 --> 00:14:06,127
+ that we used to solve the Fourier coefficients.
+
+229
+00:14:06,127 --> 00:14:08,211
+ So I want to highlight that now.
+
+230
+00:14:08,211 --> 00:14:17,334
+ So remember in solving for the Fourier coefficients way back when,
+
+231
+00:14:17,334 --> 00:14:24,575
+ I mentioned this last time and I wanted to bring it back now in a more general context again,
+
+232
+00:14:24,575 --> 00:14:32,185
+ in solving for the Fourier coefficients we used a simple integration fact that it was actually everything.
+
+233
+00:14:32,185 --> 00:14:36,352
+ It was essential that either the 2 pi,
+
+234
+00:14:36,352 --> 00:14:40,613
+ NT times the [inaudible] minus 2 pi MT DT so that we can combine those complex exponentials,
+
+235
+00:14:40,613 --> 00:14:48,977
+ that＊s either the 2 pi and minus MT was equal to zero if M is different from N.
+
+236
+00:14:48,977 --> 00:14:52,731
+ If M is equal to N, then it＊s equal to 1,
+
+237
+00:14:52,731 --> 00:14:59,626
+ all right? That simple fact, that simple calculus fact emerges 每
+
+238
+00:14:59,626 --> 00:15:06,959
+ turns out to be the cornerstone for understanding these spaces of square integral function 每
+
+239
+00:15:06,959 --> 00:15:16,015
+ if we＊re introducing geometry into those spaces.
+
+240
+00:15:16,015 --> 00:15:21,184
+ So this simple observation, simple fact,
+
+241
+00:15:21,184 --> 00:15:28,269
+ is a cornerstone for introducing, if I can say it that way,
+
+242
+00:15:28,269 --> 00:15:31,990
+ introducing ※Geometry,
+
+243
+00:15:31,990 --> 00:15:36,276
+§ I put it in quotes because it＊s geometry like you don＊t even think of geometry,
+
+244
+00:15:36,276 --> 00:15:37,340
+ but the features are there by analogy.
+
+245
+00:15:37,340 --> 00:15:40,932
+ Geometry into the space into square integral functions,
+
+246
+00:15:40,932 --> 00:15:46,970
+ L2 01. And when I say introduce geometry,
+
+247
+00:15:46,970 --> 00:15:52,254
+ again I'm reasoning by analogy here, although it＊s a very powerful analogy.
+
+248
+00:15:52,254 --> 00:15:54,096
+ And the thing that makes geometry,
+
+249
+00:15:54,096 --> 00:15:57,535
+ geometry as far as Euclid is concerned is the notion of no perpendicularity.
+
+250
+00:15:57,535 --> 00:15:58,106
+ All right,
+
+251
+00:15:58,106 --> 00:16:03,795
+ that＊s one of the most important notions of geometry and that＊s exactly what gets carried over here.
+
+252
+00:16:03,795 --> 00:16:06,273
+ It allows you,
+
+253
+00:16:06,273 --> 00:16:11,888
+ it allows one to define orthogonality or perpendicularity,
+
+254
+00:16:11,888 --> 00:16:25,412
+ same word, same thing, all right, via inner product or dot product.
+
+255
+00:16:25,412 --> 00:16:26,866
+ All right, so let me give you the definition.
+
+256
+00:16:26,866 --> 00:16:29,739
+ I'm not gonna justify it because there＊s justification in the book actually,
+
+257
+00:16:29,739 --> 00:16:38,051
+ in the notes. But it looks like this,
+
+258
+00:16:38,051 --> 00:16:47,295
+ so again if F and G are square integrable functions and I'm gonna assume they＊re complex,
+
+259
+00:16:47,295 --> 00:16:49,646
+ there＊s a little distinction here between what happens in the real case and what happens in the complex case,
+
+260
+00:16:49,646 --> 00:16:54,472
+ square integrable on 01, as always, that＊s the basic assumption we make.
+
+261
+00:16:54,472 --> 00:16:59,953
+ Then you define they＊re inner product
+
+262
+00:16:59,953 --> 00:17:17,324
+ which is a generalization of the usual dot product for vectors a generalization of the dot product for vectors,
+
+263
+00:17:17,324 --> 00:17:33,381
+ by an integral formula, all right, it＊s defined by FG and you＊re right,
+
+264
+00:17:33,381 --> 00:17:35,758
+ there are various notations for it,
+
+265
+00:17:35,758 --> 00:17:37,459
+ but the common notation is just to put them in a pair,
+
+266
+00:17:37,459 --> 00:17:40,830
+ or sometimes people will write them with angled brackets or sometimes people do all sorts of things.
+
+267
+00:17:40,830 --> 00:17:42,850
+ Sometimes physicists call it, you know,
+
+268
+00:17:42,850 --> 00:17:47,215
+ [inaudible] vectors and [inaudible] vectors and all sorts of bizarre,
+
+269
+00:17:47,215 --> 00:17:52,795
+ unnatural things. But I＊ll take the simplest notation,
+
+270
+00:17:52,795 --> 00:17:53,790
+ so zero to one,
+
+271
+00:17:53,790 --> 00:17:58,623
+ F of T times G of T bar complex conjugate DT.
+
+272
+00:17:58,623 --> 00:18:00,538
+ That＊s because I'm allowing the complex value of functions.
+
+273
+00:18:00,538 --> 00:18:02,451
+ If G of T were a real value of function,
+
+274
+00:18:02,451 --> 00:18:04,119
+ then I would just have F times integral or F times G 
+
+275
+00:18:04,119 --> 00:18:07,477
+because it＊s complex for reasons which again are explained a little bit better in the notes.
+
+276
+00:18:07,477 --> 00:18:11,029
+ You put the complex conjugate in there. Now,
+
+277
+00:18:11,029 --> 00:18:12,949
+ what you have to believe is that
+
+278
+00:18:12,949 --> 00:18:17,780
+this is sort of a continuous infinite dimensional generalization of the [inaudible] of two vectors.
+
+279
+00:18:17,780 --> 00:18:19,451
+ How do you take the [inaudible] of two vectors?
+
+280
+00:18:19,451 --> 00:18:20,828
+ You multiply the components together,
+
+281
+00:18:20,828 --> 00:18:22,942
+ the corresponding components together and add,
+
+282
+00:18:22,942 --> 00:18:24,187
+ all right?
+
+283
+00:18:24,187 --> 00:18:27,500
+ So it＊s like you＊re multiplying the values together,
+
+284
+00:18:27,500 --> 00:18:29,726
+ although the function times the conjugate of the other function,
+
+285
+00:18:29,726 --> 00:18:31,610
+ those are the values, and you＊re adding,
+
+286
+00:18:31,610 --> 00:18:35,158
+ but continuously in the sense of taking the integral instead of the sum,
+
+287
+00:18:35,158 --> 00:18:37,798
+ all right? That＊s sort of where it comes from.
+
+288
+00:18:37,798 --> 00:18:40,994
+ Now, that＊s fine,
+
+289
+00:18:40,994 --> 00:18:43,553
+ but the real benefit is it allows you to define if you ever want to do that,
+
+290
+00:18:43,553 --> 00:18:45,871
+ when two vectors, when two functions are perpendicular.
+
+291
+00:18:45,871 --> 00:18:56,202
+ So you say that F and G are orthogonal, you could say they＊re perpendicular,
+
+292
+00:18:56,202 --> 00:18:58,875
+ but it sounds ever so more mathematical if you say they＊re orthogonal,
+
+293
+00:18:58,875 --> 00:19:05,244
+ all right. Orthogonal and if you write it neatly 每
+
+294
+00:19:05,244 --> 00:19:09,705
+ orthogonal, much neater. If they＊re in a product,
+
+295
+00:19:09,705 --> 00:19:15,029
+ it＊s 0, if FG is equal to 0 period 每 that＊s a definition,
+
+296
+00:19:15,029 --> 00:19:19,049
+ all right. That＊s a definition. Now, where does the definition come from,
+
+297
+00:19:19,049 --> 00:19:20,200
+ again, you know,
+
+298
+00:19:20,200 --> 00:19:21,961
+ because I can＊t say everything as much as I＊d like to,
+
+299
+00:19:21,961 --> 00:19:23,003
+ let me refer to the notes,
+
+300
+00:19:23,003 --> 00:19:26,174
+ because it＊s actually not so unreasonable.
+
+301
+00:19:26,174 --> 00:19:30,908
+ This definition comes from the exactly wanting to satisfy the Pythagorean theorem or inner products.
+
+302
+00:19:30,908 --> 00:19:32,001
+ Now,
+
+303
+00:19:32,001 --> 00:19:42,846
+ the calculation we do with the complex exponentials shows exactly the different complex exponentials are orthogonal.
+
+304
+00:19:42,846 --> 00:19:46,998
+ One more thing actually,
+
+305
+00:19:46,998 --> 00:19:53,342
+ let me introduce the length of a function or the norm of a function in terms of the inner product,
+
+306
+00:19:53,342 --> 00:20:00,078
+ or in terms of the integral, same thing.
+
+307
+00:20:00,078 --> 00:20:04,751
+ So the norm of F, norm of a function F,
+
+308
+00:20:04,751 --> 00:20:09,747
+ is defined by the square of a norm is just the inner product of the function of itself,
+
+309
+00:20:09,747 --> 00:20:12,845
+ just like the square of the length of a vector is the inner product of a vector with itself.
+
+310
+00:20:12,845 --> 00:20:19,224
+ So the inner product of F with itself is the norm of F squared and that＊s the notation you use,
+
+311
+00:20:19,224 --> 00:20:21,763
+ and so what is that; that＊s exactly 每
+
+312
+00:20:21,763 --> 00:20:31,069
+ so the norm of F squared is exactly the integral from 0 to 1 of F of T squared DT.
+
+313
+00:20:31,069 --> 00:20:33,996
+ And let me just tell you what the Pythagorean theorem is then.
+
+314
+00:20:33,996 --> 00:20:38,900
+ All right, the Pythagorean theorem is 每 I＊ll do it over here,
+
+315
+00:20:38,900 --> 00:20:42,177
+ because that＊s where this comes from.
+
+316
+00:20:42,177 --> 00:20:47,987
+ That＊s exactly where this definition comes from and that＊s exactly where the property comes from.
+
+317
+00:20:47,987 --> 00:20:54,550
+ The Pythagorean theorem is exactly this,
+
+318
+00:20:54,550 --> 00:21:13,724
+ that F is orthogonal to G if and only if the norm of F plus G squared is equal to the norm of F squared plus the norm of G squared and 
+
+319
+00:21:13,724 --> 00:21:24,783
+that is if and only if the inner product is 0.
+
+320
+00:21:24,783 --> 00:21:34,293
+ Why is that the Pythagorean theorem 每 because of vector addition,
+
+321
+00:21:34,293 --> 00:21:47,265
+ all right? If I wrote vectors, U and V, then this is the vector U plus V,
+
+322
+00:21:47,265 --> 00:21:47,872
+ all right,
+
+323
+00:21:47,872 --> 00:21:50,522
+ if I just write vectors and the Pythagorean theorem says,
+
+324
+00:21:50,522 --> 00:21:55,497
+ ※The square of the hypotenuse is the sum of the squares of the sides for right triangle and only for right triangle.
+
+325
+00:21:55,497 --> 00:21:56,923
+§ That characterizes the right triangle, all right.
+
+326
+00:21:56,923 --> 00:22:01,648
+ So that says the norm of U plus V squared,
+
+327
+00:22:01,648 --> 00:22:05,020
+ the square of the length of the hypotenuse is the sum of the squares of the other two sides,
+
+328
+00:22:05,020 --> 00:22:07,068
+ U squared plus V squared,
+
+329
+00:22:07,068 --> 00:22:10,838
+ and that holds only exactly when the two vectors are perpendicular and that＊s 
+
+330
+00:22:10,838 --> 00:22:15,683
+where the definition of the inner product comes from and everything else.
+
+331
+00:22:15,683 --> 00:22:19,777
+ Beautiful 每 it＊s beautiful, all right. So the trick is in extending that from,
+
+332
+00:22:19,777 --> 00:22:21,728
+ if you like this sort of thing,
+
+333
+00:22:21,728 --> 00:22:28,136
+ the trick is extending that from vectors to functions and reasoning by analogy,
+
+334
+00:22:28,136 --> 00:22:30,411
+ all right. It＊s not, you know,
+
+335
+00:22:30,411 --> 00:22:35,811
+ now let me say what you should think about and what you shouldn＊t think about,
+
+336
+00:22:35,811 --> 00:22:36,635
+ the analogy is very strong.
+
+337
+00:22:36,635 --> 00:22:42,018
+ In many ways your geometric intuition for what happens for vectors you can draw carries over
+
+338
+00:22:42,018 --> 00:22:46,677
+ at least algebraically to this more general situation;
+
+339
+00:22:46,677 --> 00:22:51,361
+ however, so let me say one more thing then.
+
+340
+00:22:51,361 --> 00:23:02,173
+ These complex exponentials are exactly functions or orthogonal functions of length one.
+
+341
+00:23:02,173 --> 00:23:06,849
+ That calculation that I＊ve just erased with complex exponentials says this,
+
+342
+00:23:06,849 --> 00:23:14,731
+ says either the 2 pi NT in a product with either 2 pi MT,
+
+343
+00:23:14,731 --> 00:23:15,375
+ all right,
+
+344
+00:23:15,375 --> 00:23:17,167
+ that＊s the integral of this times the conjugate of this.
+
+345
+00:23:17,167 --> 00:23:20,175
+ The conjugate of either the 2 p MT is either the minus 2 pi MT,
+
+346
+00:23:20,175 --> 00:23:21,628
+ that＊s where the minus sign comes from, all right.
+
+347
+00:23:21,628 --> 00:23:28,964
+ This is equal to zero if M is different from N and it＊s different to one if M is equal to N.
+
+348
+00:23:28,964 --> 00:23:31,660
+ All right, these are ortho-
+
+349
+00:23:31,660 --> 00:23:36,089
+normal vectors with respect to this inner product.
+
+350
+00:23:36,089 --> 00:23:37,730
+ They＊re orthogonal, their inner product is zero,
+
+351
+00:23:37,730 --> 00:23:40,160
+ when they＊re distinct, and they have Length One,
+
+352
+00:23:40,160 --> 00:23:45,100
+ their norm is equal to 1 when they＊re equal.
+
+353
+00:23:45,100 --> 00:23:46,006
+ Okay, now, as I said your reason by analogy,
+
+354
+00:23:46,006 --> 00:23:50,798
+ you can visualize what it means for vectors to be perpendicular.
+
+355
+00:23:50,798 --> 00:23:56,717
+ You can draw this picture, all right. So you might say to yourself,
+
+356
+00:23:56,717 --> 00:24:01,935
+ I should be able to visualize this.
+
+357
+00:24:01,935 --> 00:24:02,576
+ I should be able to sit in a quite room,
+
+358
+00:24:02,576 --> 00:24:07,290
+ turn the lights off and visualize what it means for complex exponentials to be orthogonal.
+
+359
+00:24:07,290 --> 00:24:12,443
+ Yes, yes, I see it. No, you don＊t. Let me relieve you of this burden.
+
+360
+00:24:12,443 --> 00:24:17,930
+ There is no reason in hell that you should be able to visualize when two functions,
+
+361
+00:24:17,930 --> 00:24:21,439
+ let alone complex exponentials are orthogonal.
+
+362
+00:24:21,439 --> 00:24:26,512
+ Don＊t beat yourself up trying to do that and don＊t say to yourself you＊re less of a person 
+
+363
+00:24:26,512 --> 00:24:30,392
+if you cannot visualize when two functions are perpendicular,
+
+364
+00:24:30,392 --> 00:24:33,625
+ not only complex exponentials, but sines and cosines,
+
+365
+00:24:33,625 --> 00:24:35,160
+ all sort of innocent-
+
+366
+00:24:35,160 --> 00:24:41,398
+looking functions out there that you have worked with for all of your life turn out to have this sort of orthogonality relationship.
+
+367
+00:24:41,398 --> 00:24:43,413
+ But you might say to yourself, like sines and cosines,
+
+368
+00:24:43,413 --> 00:24:48,370
+ so sine FT if orthogonal to cosine FT or sine of 2 p T is orthogonal to cosine 2 p T.
+
+369
+00:24:48,370 --> 00:24:50,031
+ All sorts of interesting results like that,
+
+370
+00:24:50,031 --> 00:24:52,663
+ but you might say to yourself, ※Gee if I look at the graph,
+
+371
+00:24:52,663 --> 00:24:54,316
+ I should be able to visualize this.§ Don＊t bother.
+
+372
+00:24:54,316 --> 00:24:59,346
+ All right, there＊s no point. There＊s no point.
+
+373
+00:24:59,346 --> 00:25:01,323
+ It＊s reasoning by analogy, all right.
+
+374
+00:25:01,323 --> 00:25:03,526
+ The fact is you establish thee formulas;
+
+375
+00:25:03,526 --> 00:25:07,998
+ you establish they＊re orthogonal and then you apply your intuition for orthogonal functions,
+
+376
+00:25:07,998 --> 00:25:12,510
+ for orthogonal vectors where you can visualize it to situations where you can＊t visualize it,
+
+377
+00:25:12,510 --> 00:25:16,892
+ all right and that＊s the real power of this line of reasoning,
+
+378
+00:25:16,892 --> 00:25:22,978
+ because you can apply your intuition to places where it should have no business applying somehow,
+
+379
+00:25:22,978 --> 00:25:31,915
+ all right. All right, now, almost, almost,
+
+380
+00:25:31,915 --> 00:25:36,056
+ almost, almost, almost, the final thing then,
+
+381
+00:25:36,056 --> 00:25:45,067
+ the final piece of this approach to Fourier series is to realize the Fourier coefficients 
+
+382
+00:25:45,067 --> 00:25:49,832
+are projections of the function on to these complex exponentials,
+
+383
+00:25:49,832 --> 00:25:50,688
+ all right. So again,
+
+384
+00:25:50,688 --> 00:25:55,171
+ I want to remind you of one of the ways you use inner product is to define projections,
+
+385
+00:25:55,171 --> 00:25:57,015
+ to define orthogonal projections in particular,
+
+386
+00:25:57,015 --> 00:26:11,948
+ so you use the inner product for vectors to define and compute projections.
+
+387
+00:26:11,948 --> 00:26:17,827
+ All right, if U and V are two vectors, univectors,
+
+388
+00:26:17,827 --> 00:26:20,156
+ say,
+
+389
+00:26:20,156 --> 00:26:22,596
+ norm of U equals 1 and norm of V equals 1,
+
+390
+00:26:22,596 --> 00:26:28,033
+ then what is the projection of V onto U,
+
+391
+00:26:28,033 --> 00:26:29,905
+ and the projection onto V onto U is just the inner product of V.
+
+392
+00:26:29,905 --> 00:26:31,927
+U. That＊s how much U knows V or V knows U,
+
+393
+00:26:31,927 --> 00:26:33,935
+ all right.
+
+394
+00:26:33,935 --> 00:26:40,439
+ The projection here is the inner product of V with U,
+
+395
+00:26:40,439 --> 00:26:42,427
+ okay.
+
+396
+00:26:42,427 --> 00:26:45,697
+ And how much does U know V is the inner product of U,
+
+397
+00:26:45,697 --> 00:26:47,113
+ same thing. All right,
+
+398
+00:26:47,113 --> 00:26:51,453
+ so the vector projection here is that＊s the length of the projection,
+
+399
+00:26:51,453 --> 00:26:53,294
+ all right,
+
+400
+00:26:53,294 --> 00:26:59,149
+ and then the vector that goes in the direction of U that has this length is this time,
+
+401
+00:26:59,149 --> 00:27:05,234
+ so the vector projection is inner product of V with U times U.
+
+402
+00:27:05,234 --> 00:27:07,327
+ All right, U is the univector,
+
+403
+00:27:07,327 --> 00:27:09,523
+ so you go in that direction this length and that＊s how you project,
+
+404
+00:27:09,523 --> 00:27:14,202
+ and it＊ shouldn＊t be shocking.
+
+405
+00:27:14,202 --> 00:27:17,408
+ It should be somewhere in your background to realize that you＊ve certainly had classes in linear algebra 
+
+406
+00:27:17,408 --> 00:27:22,662
+that decomposing a vector into its projections onto given vectors can be a very useful thing.
+
+407
+00:27:22,662 --> 00:27:26,518
+ It＊s breaking a vector down into its component parts,
+
+408
+00:27:26,518 --> 00:27:29,588
+ breaking a vector down into its component parts,
+
+409
+00:27:29,588 --> 00:27:35,654
+ all right. Now, what is the situation for functions,
+
+410
+00:27:35,654 --> 00:27:38,345
+ it＊s exactly analogous.
+
+411
+00:27:38,345 --> 00:27:41,869
+ I don＊t want to say it＊s exactly the same because you can＊t draw the picture,
+
+412
+00:27:41,869 --> 00:27:46,310
+ but you can write down the formulas and the formulas are a good guide.
+
+413
+00:27:46,310 --> 00:27:51,970
+ The formulas are a good guide. What is the Fourier coefficient?
+
+414
+00:27:51,970 --> 00:28:02,801
+ The Fourier coefficient is exactly a projection,
+
+415
+00:28:02,801 --> 00:28:04,465
+ all right.
+
+416
+00:28:04,465 --> 00:28:08,902
+ If I compute the inner product of the function F with the complex exponential,
+
+417
+00:28:08,902 --> 00:28:10,969
+ either the 2pi NT,
+
+418
+00:28:10,969 --> 00:28:18,859
+ then that＊s exactly the integral from zero to one of F of T times either the 2 pi NT bar DT.
+
+419
+00:28:18,859 --> 00:28:25,789
+ That is the integral from zero to one of F of T either the minus 2 pi NT DT,
+
+420
+00:28:25,789 --> 00:28:30,257
+ that is the nth Fourier coefficient.
+
+421
+00:28:30,257 --> 00:28:41,123
+ The nth Fourier coefficient is exactly the projection of the function onto the nth complex exponential.
+
+422
+00:28:41,123 --> 00:28:48,049
+ All right, cool. Way cool. Infinitely cool.
+
+423
+00:28:48,049 --> 00:28:57,978
+ So cool. And what is writing the Fourier series?
+
+424
+00:28:57,978 --> 00:29:00,579
+ What is writing the Fourier series 每
+
+425
+00:29:00,579 --> 00:29:08,673
+ to write F of T is equal to the sum from K going to a minus infinity to infinity,
+
+426
+00:29:08,673 --> 00:29:22,504
+ [inaudible] either the 2 pi KT is to write F of T is the sum from K going to a minus infinity
+
+427
+00:29:22,504 --> 00:29:31,625
+ to infinity of the inner product of F with the K complex exponential times the complex K complex exponential.
+
+428
+00:29:31,625 --> 00:29:33,651
+ This is a number, all right, that＊s the Fourier coefficient.
+
+429
+00:29:33,651 --> 00:29:38,702
+ That ＆s the length of the projection of F onto its K component,
+
+430
+00:29:38,702 --> 00:29:41,405
+ and there＊s the K component. All right, it＊s exactly what that is,
+
+431
+00:29:41,405 --> 00:29:42,367
+ and it＊s this point of view that is so ubiquitous,
+
+432
+00:29:42,367 --> 00:29:44,304
+ all right, so ubiquitous, not only in a Fourier series,
+
+433
+00:29:44,304 --> 00:29:50,655
+ but in other versions of essentially the same ideas.
+
+434
+00:29:50,655 --> 00:29:54,171
+ And you see this all the time in signal processing.
+
+435
+00:29:54,171 --> 00:29:55,554
+ I talk about wavelets time.
+
+436
+00:29:55,554 --> 00:29:58,843
+ I mentioned wavelets just very briefly because wavelets is such a hot topic.
+
+437
+00:29:58,843 --> 00:30:00,510
+ It＊s the same sort of thing.
+
+438
+00:30:00,510 --> 00:30:03,068
+ You＊re trying to decompose the function into its simpler components and
+
+439
+00:30:03,068 --> 00:30:07,010
+ in this case the simpler components are either the 2 p or the complex exponentials,
+
+440
+00:30:07,010 --> 00:30:07,752
+ all right.
+
+441
+00:30:07,752 --> 00:30:13,974
+ So to write an expression like this down to be able to say this in the appropriate notions of convergents is to say 每
+
+442
+00:30:13,974 --> 00:30:21,634
+ I＊ll do it over here 每
+
+443
+00:30:21,634 --> 00:30:23,755
+ is to say that the complex exponentials form an ortho-
+
+444
+00:30:23,755 --> 00:30:26,520
+normal basis for the square integrable functions,
+
+445
+00:30:26,520 --> 00:30:29,247
+ all right.
+
+446
+00:30:29,247 --> 00:30:32,426
+ To be able to write this statement and understand 
+
+447
+00:30:32,426 --> 00:30:41,125
+what it means in terms of convergents and all the rest of that jazz is to say,
+
+448
+00:30:41,125 --> 00:30:41,960
+ is to say,
+
+449
+00:30:41,960 --> 00:30:51,616
+ that the complex exponentials that is all of these,
+
+450
+00:30:51,616 --> 00:30:52,949
+ even the 2 pi KT,
+
+451
+00:30:52,949 --> 00:31:06,366
+ K going from minus infinity to infinity form an ortho-
+
+452
+00:31:06,366 --> 00:31:08,968
+normal basis for these periodic functions,
+
+453
+00:31:08,968 --> 00:31:13,167
+ squared integral periodic functions, all right.
+
+454
+00:31:13,167 --> 00:31:14,584
+ And then sometimes the game is to take different ortho-
+
+455
+00:31:14,584 --> 00:31:16,303
+normal basis. Wavelets are nothing but,
+
+456
+00:31:16,303 --> 00:31:18,353
+ I'm not going to say nothing but because they have their own fascination,
+
+457
+00:31:18,353 --> 00:31:19,986
+ they＊re another ortho-
+
+458
+00:31:19,986 --> 00:31:22,990
+normal basis for square integrable functions.
+
+459
+00:31:22,990 --> 00:31:24,603
+ The complex exponentials are not the only ortho-
+
+460
+00:31:24,603 --> 00:31:27,290
+normal basis just like any vector space just doesn＊t＊ have,
+
+461
+00:31:27,290 --> 00:31:28,881
+ has lots of different orthogonal-normal basis.
+
+462
+00:31:28,881 --> 00:31:30,552
+ These are particularly useful ones.
+
+463
+00:31:30,552 --> 00:31:36,434
+ So to write this synthesis formula is to express F in terms of its components,
+
+464
+00:31:36,434 --> 00:31:37,575
+ what components,
+
+465
+00:31:37,575 --> 00:31:40,748
+ the components in terms of these elementary building blocks,
+
+466
+00:31:40,748 --> 00:31:43,172
+ all right, and what are the coefficients,
+
+467
+00:31:43,172 --> 00:31:44,540
+ the coefficients, like they are for any ortho-
+
+468
+00:31:44,540 --> 00:31:48,785
+normal basis are the projection of the vector in those directions,
+
+469
+00:31:48,785 --> 00:31:49,255
+ all right.
+
+470
+00:31:49,255 --> 00:31:52,703
+ It＊s very satisfying and you should try to put this in your head,
+
+471
+00:31:52,703 --> 00:31:56,742
+ yeah. Student:
+
+472
+00:31:56,742 --> 00:31:58,605
+[Inaudible] in the sense that you can＊t get one from the other in the rotation [inaudible].
+
+473
+00:31:58,605 --> 00:32:01,015
+ Instructor (Brad Osgood):Well, it＊s more complicated,
+
+474
+00:32:01,015 --> 00:32:07,652
+ so the question is are the bases like in [inaudible] dimensional spaces the bases are related to each other
+
+475
+00:32:07,652 --> 00:32:10,906
+ by a essentially a rotation of unitary or orthogonal matrix and in space,
+
+476
+00:32:10,906 --> 00:32:11,647
+ yes,
+
+477
+00:32:11,647 --> 00:32:14,550
+ you have unitary transformations linear operators that are unitary,
+
+478
+00:32:14,550 --> 00:32:16,827
+ but the definitions are a little bit more complicated.
+
+479
+00:32:16,827 --> 00:32:18,693
+ But you have similar sets of things. All right,
+
+480
+00:32:18,693 --> 00:32:20,292
+ you can get to ortho-normal basis to another ortho-
+
+481
+00:32:20,292 --> 00:32:24,639
+normal basis. Okay. All right, this is, like I say,
+
+482
+00:32:24,639 --> 00:32:28,526
+ so what one can say, of course, I would say much more about this.
+
+483
+00:32:28,526 --> 00:32:29,921
+ I don＊t want to. All right, well, I do want to,
+
+484
+00:32:29,921 --> 00:32:32,096
+ but I can＊t, all right. All right,
+
+485
+00:32:32,096 --> 00:32:36,076
+ it＊s this point of view that is important for you to carry forward,
+
+486
+00:32:36,076 --> 00:32:37,131
+ all right.
+
+487
+00:32:37,131 --> 00:32:38,068
+ That＊s all I'm saying because you will see it,
+
+488
+00:32:38,068 --> 00:32:42,149
+ you will see it, all right. And again, the idea is you reason by analogy,
+
+489
+00:32:42,149 --> 00:32:46,599
+ all right. You gotta; it＊s hard to write down this formula,
+
+490
+00:32:46,599 --> 00:32:48,404
+ all right, that＊s something new. All right,
+
+491
+00:32:48,404 --> 00:32:49,505
+ writing down a formula,
+
+492
+00:32:49,505 --> 00:32:52,002
+ writing down an inner product in terms of an integral,
+
+493
+00:32:52,002 --> 00:32:54,263
+ all right, I gotta deal with that. That＊s something hard,
+
+494
+00:32:54,263 --> 00:32:56,884
+ and I can＊t visualize it, all right.
+
+495
+00:32:56,884 --> 00:33:00,250
+ But the words you use in the case where you can visualize things 
+
+496
+00:33:00,250 --> 00:33:04,968
+are almost identical to the words you use in the situation where you can＊t visualize things.
+
+497
+00:33:04,968 --> 00:33:05,523
+ All right,
+
+498
+00:33:05,523 --> 00:33:12,355
+ and you can carry that intuition over from the one case to the other case and it＊s extremely important and I＊ll give you one,
+
+499
+00:33:12,355 --> 00:33:15,399
+ I keep saying one final thing. So this time for sure,
+
+500
+00:33:15,399 --> 00:33:22,648
+ an application of this is what＊s also called Railey＊s identity,
+
+501
+00:33:22,648 --> 00:33:31,699
+ which is nothing more than to say a length of a vector can be obtained in terms of some of the sum of the squares of its components,
+
+502
+00:33:31,699 --> 00:33:33,085
+ all right.
+
+503
+00:33:33,085 --> 00:33:34,941
+ You know how to find the length of a vector in [inaudible].
+
+504
+00:33:34,941 --> 00:33:37,057
+ You add up the sums of the components, right?
+
+505
+00:33:37,057 --> 00:33:46,030
+ You do the same thing here. Railey＊s identity,
+
+506
+00:33:46,030 --> 00:33:48,401
+ and I will not derive it for you,
+
+507
+00:33:48,401 --> 00:33:49,389
+ but it is derived in the book and I even say something like,
+
+508
+00:33:49,389 --> 00:33:50,482
+ ※Do not go to bed until you understand 每
+
+509
+00:33:50,482 --> 00:33:53,296
+ do not go to sleep until you understand every step in the derivation.
+
+510
+00:33:53,296 --> 00:33:58,815
+§ It says the integral from 0 to 1 of F of T squared DT.
+
+511
+00:33:58,815 --> 00:34:00,877
+ You write it in terms of its Fourier coefficients 每
+
+512
+00:34:00,877 --> 00:34:01,591
+ I didn＊t write that down,
+
+513
+00:34:01,591 --> 00:34:03,720
+ is the sum of the squares of the Fourier coefficients.
+
+514
+00:34:03,720 --> 00:34:04,455
+ Okay,
+
+515
+00:34:04,455 --> 00:34:10,098
+ going from minus infinity to infinity of [inaudible] K squared,
+
+516
+00:34:10,098 --> 00:34:11,778
+ all right. That＊s Railey＊s identify.
+
+517
+00:34:11,778 --> 00:34:18,215
+ It says the length of a vector is the sum of the squares of its components,
+
+518
+00:34:18,215 --> 00:34:18,704
+ all right,
+
+519
+00:34:18,704 --> 00:34:23,032
+ the components of the function are its Fourier coefficients,
+
+520
+00:34:23,032 --> 00:34:25,098
+ all right. This is the length of a function;
+
+521
+00:34:25,098 --> 00:34:28,043
+ it is the inner product of the square length of a function.
+
+522
+00:34:28,043 --> 00:34:30,191
+ It＊s the inner product of a function with itself.
+
+523
+00:34:30,191 --> 00:34:33,039
+ It is the sum of the squares of its components.
+
+524
+00:34:33,039 --> 00:34:35,093
+ That＊s all this says.
+
+525
+00:34:35,093 --> 00:34:40,566
+ And it follows algebraically exactly in the same way as you would prove this using inner products for vectors,
+
+526
+00:34:40,566 --> 00:34:43,847
+ exactly, exactly. All right, now,
+
+527
+00:34:43,847 --> 00:34:47,504
+ this was known before any of this stuff was put in place,
+
+528
+00:34:47,504 --> 00:34:48,082
+ all right,
+
+529
+00:34:48,082 --> 00:34:51,503
+ but when all this sort of general framework was put in place,
+
+530
+00:34:51,503 --> 00:34:55,038
+ this identity was known before the general framework or orthogonal functions,
+
+531
+00:34:55,038 --> 00:34:57,547
+ square integrable functions, all the rest of that jazz,
+
+532
+00:34:57,547 --> 00:34:59,595
+ and it was viewed as an identity for energy,
+
+533
+00:34:59,595 --> 00:35:02,073
+ all right, this is the energy, the function and these are somehow,
+
+534
+00:35:02,073 --> 00:35:05,201
+ you know, the individual components here.
+
+535
+00:35:05,201 --> 00:35:06,650
+ And that＊s why one often says,
+
+536
+00:35:06,650 --> 00:35:09,517
+ you can compute the energy and the time domain or the frequency domain,
+
+537
+00:35:09,517 --> 00:35:11,662
+ we＊re gonna find an analogy for this before it transforms,
+
+538
+00:35:11,662 --> 00:35:13,556
+ all right.
+
+539
+00:35:13,556 --> 00:35:15,069
+ But it really says nothing other than the length of the vectors,
+
+540
+00:35:15,069 --> 00:35:16,338
+ the sum of the squares of the components.
+
+541
+00:35:16,338 --> 00:35:21,853
+ How much 每 so let me write down, here＊s F of T is the sum of,
+
+542
+00:35:21,853 --> 00:35:29,158
+ here＊s the Fourier series, [inaudible] either the 2 pi KT,
+
+543
+00:35:29,158 --> 00:35:31,041
+ all right. All right,
+
+544
+00:35:31,041 --> 00:35:38,887
+ how much energy does F have as a signal?
+
+545
+00:35:38,887 --> 00:35:40,929
+ It has this much. All right,
+
+546
+00:35:40,929 --> 00:35:43,872
+ how much energy does each one of its components have?
+
+547
+00:35:43,872 --> 00:35:44,574
+ Well,
+
+548
+00:35:44,574 --> 00:35:50,504
+ the energy of each one of the complex exponentials is one because they＊re of length one.
+
+549
+00:35:50,504 --> 00:35:53,171
+ So, how much energy,
+
+550
+00:35:53,171 --> 00:35:55,203
+ how much square energy does each one of the components have?
+
+551
+00:35:55,203 --> 00:35:57,457
+ It＊s the magnitude of this thing squared;
+
+552
+00:35:57,457 --> 00:36:00,351
+ it＊s the multiplier. It＊s the projection out front.
+
+553
+00:36:00,351 --> 00:36:05,015
+ [Inaudible] squared times the energy, which is 1 of the complex exponential,
+
+554
+00:36:05,015 --> 00:36:06,463
+ so what is the total energy here,
+
+555
+00:36:06,463 --> 00:36:07,988
+ what is the square of the total energy here?
+
+556
+00:36:07,988 --> 00:36:12,019
+ It＊s the sum of the squares or the contributions of that energy from individual components.
+
+557
+00:36:12,019 --> 00:36:17,311
+ Each individual component is contributing an amount [inaudible] of K to the whole sum,
+
+558
+00:36:17,311 --> 00:36:25,659
+ or the energy it contributes is the square of [Inaudible] of K absolute value squared to the whole sum,
+
+559
+00:36:25,659 --> 00:36:26,846
+ the whole number, okay, pretty cool; pretty cool.
+
+560
+00:36:26,846 --> 00:36:33,561
+ All right, here ends the sermon.
+
+561
+00:36:33,561 --> 00:36:41,681
+ Don＊t leave without putting something into the collection plate.
+
+562
+00:36:41,681 --> 00:36:43,501
+ All right. All right,
+
+563
+00:36:43,501 --> 00:36:48,720
+ here ends the sermon on inner product square [inaudible] and so on,
+
+564
+00:36:48,720 --> 00:37:00,119
+ okay? All I can say is trust me; you＊ll run into it again.
+
+565
+00:37:00,119 --> 00:37:03,024
+ Now,
+
+566
+00:37:03,024 --> 00:37:04,556
+ I want to do and I probably won＊t finish it today.
+
+567
+00:37:04,556 --> 00:37:08,648
+ I＊ll finish it up on Wednesday, although it goes pretty fast.
+
+568
+00:37:08,648 --> 00:37:13,293
+ I want to do a classic application of Fourier series to the study of the classic physical problem,
+
+569
+00:37:13,293 --> 00:37:14,441
+ in fact,
+
+570
+00:37:14,441 --> 00:37:16,160
+ the problem that launched the whole subject.
+
+571
+00:37:16,160 --> 00:37:25,167
+ Sop I want to do an application to heat flow.
+
+572
+00:37:25,167 --> 00:37:30,132
+ All right,
+
+573
+00:37:30,132 --> 00:37:33,148
+ this is a very important part of your intellectual heritage,
+
+574
+00:37:33,148 --> 00:37:34,777
+ all right. I'm serious.
+
+575
+00:37:34,777 --> 00:37:38,139
+ That is if you＊re going to be practicing scientists and engineers,
+
+576
+00:37:38,139 --> 00:37:38,819
+ you know,
+
+577
+00:37:38,819 --> 00:37:42,256
+ you want to know something about where the subject came from because again,
+
+578
+00:37:42,256 --> 00:37:45,190
+ you know, you some how wind up re-
+
+579
+00:37:45,190 --> 00:37:46,077
+visiting a lot of these ideas in different context,
+
+580
+00:37:46,077 --> 00:37:47,710
+ but often in similar context.
+
+581
+00:37:47,710 --> 00:37:49,517
+ And this was the problem that really started it all.
+
+582
+00:37:49,517 --> 00:37:51,913
+ This was the problem in studying how heat,
+
+583
+00:37:51,913 --> 00:37:55,740
+ how the temperature varies in time,
+
+584
+00:37:55,740 --> 00:37:57,458
+ when there＊s some initial temperature distribution.
+
+585
+00:37:57,458 --> 00:37:58,052
+ All right,
+
+586
+00:37:58,052 --> 00:38:15,841
+ so you have a region in space and with an initial temperature distribution and an initial distribution F of X of temperature.
+
+587
+00:38:15,841 --> 00:38:18,898
+ I say F of X here just to indicate that X is some sort of spatial variable,
+
+588
+00:38:18,898 --> 00:38:21,384
+ all right, so some region in space, you know,
+
+589
+00:38:21,384 --> 00:38:23,494
+ the dimension of X is the dimension of the region,
+
+590
+00:38:23,494 --> 00:38:27,869
+ all right.
+
+591
+00:38:27,869 --> 00:38:29,246
+ And the question is how does the temperature [inaudible],
+
+592
+00:38:29,246 --> 00:38:30,457
+ all right.
+
+593
+00:38:30,457 --> 00:38:31,371
+ You have an initial distribution of temperature,
+
+594
+00:38:31,371 --> 00:38:34,489
+ that＊s what happens at T equals zero, then as T increases,
+
+595
+00:38:34,489 --> 00:38:35,706
+ the temperature changes. All right,
+
+596
+00:38:35,706 --> 00:38:40,038
+ the heat flows from one part of the body to the other part of the body and you want to know how is that governed,
+
+597
+00:38:40,038 --> 00:38:41,571
+ all right.
+
+598
+00:38:41,571 --> 00:38:51,636
+ How does the temperature change both in position,
+
+599
+00:38:51,636 --> 00:38:54,097
+ I should say vary, well, change is fine 每
+
+600
+00:38:54,097 --> 00:38:59,131
+ how does the temperature change in position and time.
+
+601
+00:38:59,131 --> 00:39:00,562
+ All right, this was an important problem,
+
+602
+00:39:00,562 --> 00:39:06,862
+ still is an important problem actually and we＊re only gonna handle one very special case of it,
+
+603
+00:39:06,862 --> 00:39:09,436
+ the case of the original case that was handled by Fourier series,
+
+604
+00:39:09,436 --> 00:39:12,619
+ the problem with the Fourier study.
+
+605
+00:39:12,619 --> 00:39:25,241
+ Where periodicity comes into the problem naturally because of the periodicity in space.
+
+606
+00:39:25,241 --> 00:39:27,377
+ So to study this problem means to say first of all,
+
+607
+00:39:27,377 --> 00:39:32,970
+ what the region is and then to say what the initial distribution of temperature is or at least say
+
+608
+00:39:32,970 --> 00:39:34,568
+ that there is given an initial distribution of temperature,
+
+609
+00:39:34,568 --> 00:39:47,215
+ all right. So we look at a heated ring. Sound 每
+
+610
+00:39:47,215 --> 00:39:51,579
+ that sound. Okay. All right, something like this,
+
+611
+00:39:51,579 --> 00:39:52,785
+ all right. Given an initial temperature,
+
+612
+00:39:52,785 --> 00:40:04,274
+ given an initial temperature say F of X,
+
+613
+00:40:04,274 --> 00:40:09,019
+ F of X 每 X is a position on the circle; X is a point on the circle,
+
+614
+00:40:09,019 --> 00:40:09,852
+ okay?
+
+615
+00:40:09,852 --> 00:40:19,363
+ And we let U of XT be the temperature at X at time T 每
+
+616
+00:40:19,363 --> 00:40:21,534
+ at position X at time T. All right,
+
+617
+00:40:21,534 --> 00:40:24,085
+ and the question is can we say something about it.
+
+618
+00:40:24,085 --> 00:40:33,948
+ That＊s the function we want to find. We want to study U of XT,
+
+619
+00:40:33,948 --> 00:40:34,436
+ all right. Now,
+
+620
+00:40:34,436 --> 00:40:39,022
+ the fact is periodicity enters into this problem,
+
+621
+00:40:39,022 --> 00:40:41,874
+ periodicity in space because the circle,
+
+622
+00:40:41,874 --> 00:40:46,233
+ the temperature here is the same as the temperature at the same place,
+
+623
+00:40:46,233 --> 00:40:49,584
+ if I increase it by 2 p if I'm going around a circle,
+
+624
+00:40:49,584 --> 00:40:52,892
+ then obviously the temperature is periodic as the position.
+
+625
+00:40:52,892 --> 00:41:09,536
+ Okay,
+
+626
+00:41:09,536 --> 00:41:19,611
+ so the temperature is periodic as a function of X.
+
+627
+00:41:19,611 --> 00:41:20,348
+ All right,
+
+628
+00:41:20,348 --> 00:41:22,324
+ and let＊s normalize things so we assume the period is 1,
+
+629
+00:41:22,324 --> 00:41:23,860
+ so the circle is radius or whatever it is,
+
+630
+00:41:23,860 --> 00:41:28,465
+ or another way of looking at it is just imagine the circle is the interval from 0 to 1 and I identify the end points,
+
+631
+00:41:28,465 --> 00:41:29,871
+ all right. So let＊s supposed we have 每
+
+632
+00:41:29,871 --> 00:41:32,128
+ just because we＊ve been dealing with functions of Period 1,
+
+633
+00:41:32,128 --> 00:41:37,961
+ let＊s suppose that. Let＊s supposed Period 1.
+
+634
+00:41:37,961 --> 00:41:39,003
+ Period 1, all right,
+
+635
+00:41:39,003 --> 00:41:41,788
+ so that is the function of the initial temperature distribution,
+
+636
+00:41:41,788 --> 00:41:45,980
+ F or X is periodic of Period 1 and so is UNX,
+
+637
+00:41:45,980 --> 00:41:46,987
+ not in T;
+
+638
+00:41:46,987 --> 00:41:48,452
+ it＊s not periodic as a function of time,
+
+639
+00:41:48,452 --> 00:41:50,429
+ but it＊s periodic as a function of the spatial variable.
+
+640
+00:41:50,429 --> 00:41:57,659
+ U of X plus 1 for any variable of T is the same thing as U of X at that value of T,
+
+641
+00:41:57,659 --> 00:41:58,191
+ okay?
+
+642
+00:41:58,191 --> 00:42:01,104
+ That＊s fundamental and that＊s how Fourier got into this;
+
+643
+00:42:01,104 --> 00:42:02,057
+ that＊s why he introduced those ideas.
+
+644
+00:42:02,057 --> 00:42:05,874
+ You＊d consider this problem where there＊s periodicity in space.
+
+645
+00:42:05,874 --> 00:42:11,440
+ The symmetry of the object that you＊re heating up and that has consequences.
+
+646
+00:42:11,440 --> 00:42:14,384
+ All right, so now, with a certain amount of confidence,
+
+647
+00:42:14,384 --> 00:42:31,028
+ with a certain amount of bravado, we write down the Fourier series.
+
+648
+00:42:31,028 --> 00:42:33,106
+ So we write the Fourier series,
+
+649
+00:42:33,106 --> 00:42:40,036
+ U of XT is the sum from K going to minus infinity to infinity of C sub K,
+
+650
+00:42:40,036 --> 00:42:44,703
+ I＊ll write it like this, C sub K either the 2 pi KX.
+
+651
+00:42:44,703 --> 00:42:46,750
+ It＊s periodic in the spatial variable,
+
+652
+00:42:46,750 --> 00:42:48,191
+ so the variable in the complex exponential is X.
+
+653
+00:42:48,191 --> 00:42:53,903
+ Where is the time dependents? No,
+
+654
+00:42:53,903 --> 00:42:56,172
+ the time dependents is in the coefficient,
+
+655
+00:42:56,172 --> 00:42:56,727
+ C.
+
+656
+00:42:56,727 --> 00:42:58,688
+ That＊s where the time dependence has to be.
+
+657
+00:42:58,688 --> 00:43:00,008
+ K is just a constant; K is just an integer.
+
+658
+00:43:00,008 --> 00:43:09,589
+ The time dependence is in the cK.
+
+659
+00:43:09,589 --> 00:43:15,585
+ That is a better way and more accurate way of writing it is like so.
+
+660
+00:43:15,585 --> 00:43:35,245
+ U of XT is the sum from K going from minus infinity to infinity of C sub K of T.
+
+661
+00:43:35,245 --> 00:43:36,291
+ I know what it is; it＊s the Fourier coefficient,
+
+662
+00:43:36,291 --> 00:43:38,792
+ I＊ll bring that in later, but let me just write in terms,
+
+663
+00:43:38,792 --> 00:43:44,154
+ let me just call it C right now. C sub K of T times E to the 2 pi KX,
+
+664
+00:43:44,154 --> 00:43:47,842
+ all right, periodic and X varying in T. How does it vary in T;
+
+665
+00:43:47,842 --> 00:43:52,881
+ that＊s what we want to know, all right. The mystery here are the coefficients.
+
+666
+00:43:52,881 --> 00:43:54,537
+ We could solve the problem if I could find the coefficients,
+
+667
+00:43:54,537 --> 00:43:55,813
+ so in terms of the initial temperature distribution,
+
+668
+00:43:55,813 --> 00:44:03,571
+ so what are the CK? That＊s the question.
+
+669
+00:44:03,571 --> 00:44:06,306
+ All right, now,
+
+670
+00:44:06,306 --> 00:44:09,699
+ we＊re gonna be able to attack this problem because independent of periodicity,
+
+671
+00:44:09,699 --> 00:44:11,474
+ independent of anything else,
+
+672
+00:44:11,474 --> 00:44:13,727
+ heat flow is governed by a partial differential equation.
+
+673
+00:44:13,727 --> 00:44:14,536
+ All right,
+
+674
+00:44:14,536 --> 00:44:17,117
+ the flow of heat on a circle or another regions 每
+
+675
+00:44:17,117 --> 00:44:19,008
+ all right, this is in itself a big subject,
+
+676
+00:44:19,008 --> 00:44:20,734
+ but it＊s one of the basic equations,
+
+677
+00:44:20,734 --> 00:44:23,402
+ partial differential equations of mathematical physics,
+
+678
+00:44:23,402 --> 00:44:26,762
+ which you have probably seen somewhere in your life and again,
+
+679
+00:44:26,762 --> 00:44:32,988
+ you will see again, heat flow 每 I＊ll just do it in one dimension,
+
+680
+00:44:32,988 --> 00:44:35,535
+ all right. I'm talking about one-dimensional problems here,
+
+681
+00:44:35,535 --> 00:44:38,878
+ but there are also ways of analyzing this for flow over a two-
+
+682
+00:44:38,878 --> 00:44:40,453
+dimensional or a three-dimensional region.
+
+683
+00:44:40,453 --> 00:44:46,453
+ We have the heat equation,
+
+684
+00:44:46,453 --> 00:44:50,651
+ which says that the time derivative of the temperature is proportional and 
+
+685
+00:44:50,651 --> 00:44:53,120
+somehow maybe I should call it another constant because I＊ve already used K,
+
+686
+00:44:53,120 --> 00:45:00,713
+ A times the second X derivative, all right.
+
+687
+00:45:00,713 --> 00:45:07,725
+ That＊s the one-dimensional heal equation.
+
+688
+00:45:07,725 --> 00:45:08,853
+ All right, I'm not gonna derive that.
+
+689
+00:45:08,853 --> 00:45:13,033
+ Actually I have a derivation of that in the book that sort of follows Bracewell＊s discussion of the heat equation,
+
+690
+00:45:13,033 --> 00:45:16,843
+ but it＊s a fundamental equation of mathematical physics.
+
+691
+00:45:16,843 --> 00:45:20,720
+ The constant A here depends on the physical because this is one of these great dodges of all time.
+
+692
+00:45:20,720 --> 00:45:25,521
+ The constant A depends on the physical characteristics of the region which no one wants to talk much about,
+
+693
+00:45:25,521 --> 00:45:31,192
+ but that affects the size of A, all right.
+
+694
+00:45:31,192 --> 00:45:33,017
+ I should say more generally,
+
+695
+00:45:33,017 --> 00:45:37,063
+ this equation governs not just the flow of heat,
+
+696
+00:45:37,063 --> 00:45:37,675
+ but it＊s in general is called the diffusion equation.
+
+697
+00:45:37,675 --> 00:45:41,687
+ It governs how things diffuse. Things 每 what things,
+
+698
+00:45:41,687 --> 00:45:44,893
+ like charge through a wire is studied by this equation,
+
+699
+00:45:44,893 --> 00:45:47,843
+ holes through a semi conductor are governed by an equation,
+
+700
+00:45:47,843 --> 00:45:50,433
+ a higher dimensional version of the equation but the same idea,
+
+701
+00:45:50,433 --> 00:45:52,207
+ all right, so this is general governs,
+
+702
+00:45:52,207 --> 00:46:00,862
+ this is also called the diffusion equation and it governs phenomenon that are associated with diffusion.
+
+703
+00:46:00,862 --> 00:46:02,155
+ It＊s a general term,
+
+704
+00:46:02,155 --> 00:46:05,702
+ but it＊s a term you＊ll probably run across.
+
+705
+00:46:05,702 --> 00:46:07,913
+ All right, now I want to choose; I'm not gonna get too far today,
+
+706
+00:46:07,913 --> 00:46:10,353
+ but I'm gonna get a little along the way,
+
+707
+00:46:10,353 --> 00:46:12,257
+ so I wanna choose 每
+
+708
+00:46:12,257 --> 00:46:15,311
+ I want to apply this equation to study this function.
+
+709
+00:46:15,311 --> 00:46:26,213
+ All right, I'm gonna use this for the ring.
+
+710
+00:46:26,213 --> 00:46:32,306
+ All right, and just to simplify my calculation,
+
+711
+00:46:32,306 --> 00:46:35,110
+ although it does not make any substantive difference,
+
+712
+00:46:35,110 --> 00:46:38,330
+ I'm gonna choose the constants so that A is equal to .
+
+713
+00:46:38,330 --> 00:46:40,462
+. That＊s a standard choice,
+
+714
+00:46:40,462 --> 00:46:41,774
+ certainly for the mathematical analysis,
+
+715
+00:46:41,774 --> 00:46:43,927
+ but it doesn＊t matter.
+
+716
+00:46:43,927 --> 00:46:48,802
+ You could have the constant tagging along in the whole thing and it wouldn＊t＊ affect the analysis.
+
+717
+00:46:48,802 --> 00:46:52,680
+ So I'm gonna choose A equals . or choose constants of A equals .
+
+718
+00:46:52,680 --> 00:46:53,196
+.
+
+719
+00:46:53,196 --> 00:46:55,477
+ So the equation looks like use of T is equal to .
+
+720
+00:46:55,477 --> 00:47:03,195
+ use of XX, all right. Now, I'm gonna short-
+
+721
+00:47:03,195 --> 00:47:04,480
+cut the discussion a little bit.
+
+722
+00:47:04,480 --> 00:47:06,293
+ There＊s one way of doing it in the book,
+
+723
+00:47:06,293 --> 00:47:07,298
+ in the notes,
+
+724
+00:47:07,298 --> 00:47:14,539
+ which is a little bit more rigorous than what I'm gonna do although both can be justified very easily.
+
+725
+00:47:14,539 --> 00:47:15,250
+ I'm going to plug that equation, that formula for 每
+
+726
+00:47:15,250 --> 00:47:17,355
+ we have a formula for U in some sense, not in some sense,
+
+727
+00:47:17,355 --> 00:47:20,714
+ we have a formula for U in this sense.
+
+728
+00:47:20,714 --> 00:47:23,374
+ And I'm gonna plug this into the equation.
+
+729
+00:47:23,374 --> 00:47:34,171
+ Plug U of XT is sum over K, CK of T, either the 2 pi KX into the equation,
+
+730
+00:47:34,171 --> 00:47:38,799
+ into the use of T is equal to . UXX. What happens?
+
+731
+00:47:38,799 --> 00:47:54,705
+ What happens? Well, so use of T, if I differentiate with respect,
+
+732
+00:47:54,705 --> 00:47:58,197
+ I'm sorry; I should have said this, but I assumed everybody knew,
+
+733
+00:47:58,197 --> 00:48:00,263
+ use of T is a partial [inaudible] with respect of T,
+
+734
+00:48:00,263 --> 00:48:01,650
+ or that function over there, so what is that?
+
+735
+00:48:01,650 --> 00:48:03,092
+ Well,
+
+736
+00:48:03,092 --> 00:48:07,482
+ the only thing that depends on T here is the coefficients,
+
+737
+00:48:07,482 --> 00:48:10,049
+ C sub K. So that is sum over K,
+
+738
+00:48:10,049 --> 00:48:11,888
+ CK prime of T times the complex exponential.
+
+739
+00:48:11,888 --> 00:48:19,161
+ That stays alone -- 2 pi KX. What is UXX of this expression?
+
+740
+00:48:19,161 --> 00:48:19,852
+ Well,
+
+741
+00:48:19,852 --> 00:48:23,872
+ here I＊ve put the derivatives on the complex exponential and I differentiate twice,
+
+742
+00:48:23,872 --> 00:48:26,469
+ differentiating complex exponential is like differentiating an ordinary exponential.
+
+743
+00:48:26,469 --> 00:48:30,708
+ The constant here comes down if I differentiate,
+
+744
+00:48:30,708 --> 00:48:32,094
+ so I get CK of T,
+
+745
+00:48:32,094 --> 00:48:39,562
+ that＊s left alone because I'm differentiating with respect to X and then if I differentiate the 2 pi KX twice,
+
+746
+00:48:39,562 --> 00:48:41,500
+ with respect to X,
+
+747
+00:48:41,500 --> 00:48:49,346
+ I get 2 pi K squared times either the 2 pi KX.
+
+748
+00:48:49,346 --> 00:48:53,468
+ Nothing up my sleeve, no tricks, no deceptions.
+
+749
+00:48:53,468 --> 00:49:01,694
+ Okay, that＊s one more step,
+
+750
+00:49:01,694 --> 00:49:08,764
+ that＊s the sum over K T sub K of T times minus 4 p K squared 
+
+751
+00:49:08,764 --> 00:49:14,284
+because I squared is minus 1 times a complex exponential either the 2 pi KX.
+
+752
+00:49:14,284 --> 00:49:18,607
+ All right, not quite the two. Then we gotta go 每
+
+753
+00:49:18,607 --> 00:49:27,772
+ damn. Equate the two sides, use the heat equation.
+
+754
+00:49:27,772 --> 00:49:36,755
+ Plug into the heat equation.
+
+755
+00:49:36,755 --> 00:49:37,458
+ So I get sum plug into UTs is equal to .
+
+756
+00:49:37,458 --> 00:49:38,619
+ UXX,
+
+757
+00:49:38,619 --> 00:49:41,391
+ and then I get sum over K CK prime of T,
+
+758
+00:49:41,391 --> 00:49:45,540
+ either the 2 pi KX is equal . times that thing,
+
+759
+00:49:45,540 --> 00:50:00,587
+ so it＊s gonna be sum over K minus 2 p squared K squared times C 2 p squared K squared times CK of T,
+
+760
+00:50:00,587 --> 00:50:04,215
+ times the complex exponential, either the 2 pi KX.
+
+761
+00:50:04,215 --> 00:50:11,344
+ Not hard, that＊s not a hard step. Okay, all right,
+
+762
+00:50:11,344 --> 00:50:21,468
+ how would we do? Equate like terms; equate the coefficients.
+
+763
+00:50:21,468 --> 00:50:27,554
+ If I equate the coefficients, something great happens.
+
+764
+00:50:27,554 --> 00:50:32,117
+ [Inaudible] consequences I＊ll do next time.
+
+765
+00:50:32,117 --> 00:50:34,475
+ If I equate the coefficients,
+
+766
+00:50:34,475 --> 00:50:37,526
+ I＊ll get CK prime of T is equal to the coefficient,
+
+767
+00:50:37,526 --> 00:50:39,057
+ when I say equate the coefficients,
+
+768
+00:50:39,057 --> 00:50:40,502
+ I mean the coefficients of the complex exponential.
+
+769
+00:50:40,502 --> 00:50:42,377
+ CK prime into the 2 p KX,
+
+770
+00:50:42,377 --> 00:50:43,987
+ what＊s the corresponding coefficient over here.
+
+771
+00:50:43,987 --> 00:50:48,667
+ It＊s this is equal to minus 2 pi squared K squared,
+
+772
+00:50:48,667 --> 00:51:01,107
+ CK of T. But my friends, you know, that is a simple equation.
+
+773
+00:51:01,107 --> 00:51:10,248
+ That is an ordinary differential equation for CK.
+
+774
+00:51:10,248 --> 00:51:16,322
+ I can solve this other problem. I get CK of T is the CK of 0,
+
+775
+00:51:16,322 --> 00:51:20,934
+ the initial condition times [inaudible] minus 2 p squared,
+
+776
+00:51:20,934 --> 00:51:32,747
+ K squared T. Blow me down, all right. I＊ve found my coefficients 每
+
+777
+00:51:32,747 --> 00:51:37,809
+ pretty cool. All right, extremely cool. Very cool.
+
+778
+00:51:37,809 --> 00:51:46,031
+ And next time what I haven＊t done is I haven＊t brought back in the initial distribution of temperature 
+
+779
+00:51:46,031 --> 00:51:53,477
+and I want to manipulate this solution a little bit more and something absolutely magical happens.
+
+780
+00:51:53,477 --> 00:51:53,477
+ Wait for it on Wednesday. Okay. [End of Audio] Duration:
+
+
